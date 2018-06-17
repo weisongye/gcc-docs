@@ -1772,8 +1772,8 @@ mcmov -mno-cmov
 - mext-string -mno-ext-string
 - mv3push -mno-v3push
 - m16bit -mno-16bit
-- misr-vector-size = num
-- mcache-block-size = num
+- misr-vector-size=num
+- mcache-block-size=num
 3 =拱
 - mcmodel=代码模型-
 mctor -mrelax Nios II 选项
@@ -1827,9 +1827,9 @@ PowerPC 选项请参阅 RS/6000 和 PowerPC 选项。 PowerPC SPE
 sysv -mcall-netbsd
 - maix-struct-return -msvr4-struct-return
 - mabi = abi-type -msecure-plt -mbss-plt
-- mblock-move-inline-limit = num
+- mblock-move-inline-limit=num
 - misel -mno-isel
-- misel = yes -misel = no
+- misel = yes -misel=no
 摩根士丹利亚洲-mno-spe
 摩根士丹利亚洲=是的摩根士丹利= no
 - mfloat-gprs = yes -mfloat-gprs =没有-mfloat-gprs =单-mfloat-gprs =双
@@ -1855,8 +1855,8 @@ sysv -mcall-netbsd
 - mdiv -mno-div
 3 = ISA-string
 - mtune = processor-string
-- mpreferred-stack-boundary = num
-- msmall-data-limit = n 个字节
+- mpreferred-stack-boundary=num
+- msmall-data-limit=n 个字节
 - msave-restore -mno-save-restore
 - mstrict-align -mno-strict-align
 - mcmodel = medlow -mcmodel = medany
@@ -1886,7 +1886,7 @@ RL78 选项
 - msingle-float -mdouble-float -msimple-fpu
 - mupdate -mno-update
 - mavoid-indexed-addresses -mno-avoid-indexed-addresses
-- mffy -mno- fus- madd -mbit-align -mno- bitalign -mno- bitalign - mstric- align -mno-
+- mffy -mno-fus- madd -mbit-align -mno- bitalign -mno- bitalign - mstric- align -mno-
 mno- stric- align -mrelocatable
 - mno-relocatable -mrelocatable-lib -mno-relocatable-lib
 - mtoc -mno-toc -mlittle -mlittle-endian -mbig -mbig -mbig-endian
@@ -1903,10 +1903,10 @@ mno- stric- align -mrelocatable
 
 - maix-struct-return -msvr4-struct-return
 - mabi = abi-type -msecure-plt -mbss-plt
-- mblock-move-inline-limit = num
-- mblock-compare-inline-limit = num
-- mblock-compare-inline-loop-limit = num
-- mstring-compare-inline-limit = num
+- mblock-move-inline-limit=num
+- mblock-compare-inline-limit=num
+- mblock-compare-inline-loop-limit=num
+- mstring-compare-inline-limit=num
 - misel -mno-isel
 - misel =是的-misel =没有-mpaired
 - mvrsave -mno-vrsave
@@ -1975,7 +1975,7 @@ mb 毫升-mdalign -mrelax
 - mdivsi3_libfunc =名字-mfixed-range =寄存器范围
 - maccumulate-outgoing-args
 - matomic-model =原子模型
-- mbranch-cost = num -mzdcbranch -mno-zdcbranch
+- mbranch-cost=num -mzdcbranch -mno-zdcbranch
 - mcbranch-force-delay-slot
 - mfused -mfsca -mfsca -mfsrra -mfsrra -mno-fsrra
 - m 假装-cmove -mtas Solaris 2 选
@@ -2025,7 +2025,7 @@ SPARC 选项
 V850 选项
 - mlong-calls -mno-long-calls  MeP -mno-ep
 - mprolog-function -mno-prolog-function -mspace
-- mtda = n -msda = n -mzda = n
+- mtda=n -msda=n -mzda=n
 - mapp-regs -mno-app-regs
 - mdisable-callt -mno-disable-callt
 - mv850e2v3 -mv850e2 -mv850e1 -mv850es
@@ -2366,26 +2366,26 @@ c++和 Fortran 前端返回 4 。
 递。
 gcc - c t。c 包装 gdb - arg 游戏
 这调用了 `gdb—args` 下所有 gcc 的子程序，因此 cc1 的调用是 `gdb—argscc1...` 。
-- ffile-prefix-map = =新老
+-ffile-prefix-map = =新老
 当编译位于 `old` 目录中的文件时，在编译的结果中记录对它们的任何引用，
 就好像这些文件驻留在 `new` 目录中一样。指定此选项等价于指定所有的 `-f*-
 prefix-map` 选项。这可以用来使可复制的构建独立于位置。参见 `-
 fmacroprefix -map` 和 `-fdebug-prefix-map` 。
-- fplugin = name.so
+-fplugin=name.so
 以文件名加载插件代码。因此，假设是一个由编译器开放的共享对象。共享对
 象文件的基本名称用于标识插件，以便进行参数解析(请参阅)
 
 
 下面的 `-fplugin-arg-name-key =值` )。每个插件都应该定义 Plugins API 中指定的回
 调函数。
-- fplugin-arg-name-key =值
+-fplugin-arg-name-key =值
 定义一个名为 key 的参数，该参数的值为名为 name 的插件的值。
-- fdump-ada-spec(瘦)
+-fdump-ada-spec(瘦)
 对于 C 和 C++源和包含文件，生成相应的 Ada 规范。请参阅 GNAT 用户指南中
  `为 C 和 C++头生成 Ada 绑定` 一节，该节提供关于此特性的详细文档。
-- fada-spec-parent =单位
+-fada-spec-parent =单位
 结合上面的 `-fdump-ada-spec[-slim]` ，生成 Ada spec 作为父单元的子单元。
-- fdump-go-spec =文件
+-fdump-go-spec =文件
 对于任何语言的输入文件，在文件中生成相应的 Go 声明。这将生成 Go const、
 type、var 和 func 声明，这可能是开始编写用其他语言编写的 Go 接口的有用
 方法。
@@ -2531,7 +2531,7 @@ GNU 的方言化 C++ 17。不赞成使用 `gnu++1z` 这个名称。
  `gnu++2a` 的 gnu 方言 `-std=c++2a` 。支持是高度实验性的，并且几乎肯定会在将
 来的版本中以不兼容的方式发生变化。
 
-- fgnu89-inline
+-fgnu89-inline
 选项 `-fgnu89-inline` 告诉 GCC 在 C99 模式下对内联函数使用传统的 GNU 语义。
 参见第 6.43 节[内联函数和宏一样快]，第 539 页。使用此选项大致等同于将
 gnu_inline 函数属性添加到所有内联函数(参见第 6.31 节[函数属性]，第 464
@@ -2541,7 +2541,7 @@ gnu_inline 函数属性添加到所有内联函数(参见第 6.31 节[函数属�
 在 `-std=c90` 或 `-std=gnu90` 模式中不支持此选项。
 可以使用预处理器宏__GNUC_GNU_INLINE__和__GNUC_STDC_INLINE__检查哪些
 语义对内联函数有效。请参阅 C 预处理器中的 `通用预定义宏` 小节。
-- fpermitted-flt-eval-methods =风格
+-fpermitted-flt-eval-methods =风格
 
 
 ISO/IEC TS 18661- 3 为 FLT_EVAL_METHOD 定义了新的允许值，该值表明，对
@@ -2569,18 +2569,18 @@ unprototyped( `我` 、 `N` 新或旧 `O` ,分别在第一个字符的行号和�
 否来自一个声明或定义( `C` 或 `F` ,分别在以下字符)。在函数定义的情况下，在
 声明之后，还提供了一个 k&r 样式的参数列表，并在注释中提供了它们的声
 明。
-- fallow-parameterless-variadic-functions
+-fallow-parameterless-variadic-functions
 接受无命名参数的可变值函数。
 虽然可以定义这样的函数，但这并不是很有用，因为无法读取参数。这只支持
 C，因为 C++允许这个构造。
-- fno-asm 不识别 asm、inline 或 typeof 作为关键字，这样代码就可以使用这些词作为标识
+-fno-asm 不识别 asm、inline 或 typeof 作为关键字，这样代码就可以使用这些词作为标识
 符。你可以用__asm__， __inline__和__typeof__代替。 `ansi` 意味着 `-fno-asm` 。
 在 C++中，这个切换只影响关键字的类型，因为 asm 和 inline 是标准的关键字。
 您可能希望使用 `-fno-gnu-keywords` 标志，它具有相同的效果。在 C99 模式(`
 - std= C99` 或 `-std=gnu99` )中，此切换只影响 asm 和关键字的类型，因为
 inline 是 ISO C99 中的标准关键字。
-- fno-builtin
-- fno-builtin-function
+-fno-builtin
+-fno-builtin-function
 不要识别不以 `__builtin_` 作为前缀的内置函数。请参阅第 6.58 节[GCC 提供的
 其他内置函数]，第 613 页，了解受影响的函数的详细信息，包括在使用严格
 ISO C 一致性的 `-ansi` 或 `-std` 选项时使用的非内置函数，因为它们没有 ISO 标
@@ -2603,7 +2603,7 @@ GCC 通常生成特殊的代码来更有效地处理某些内置函数;例如，
 
 开头。如果一个函数的名称在这个版本的 GCC 中不是内置的，那么这个选项
 
-将被忽略。没有相应的 `- fbuild -function` 选项;如果您希望在使用 `-fno-builtin`
+将被忽略。没有相应的 `-fbuild -function` 选项;如果您希望在使用 `-fno-builtin`
 或 `-ffreestanding` 时有选择地启用内置函数，您可以定义宏，例如:
 
 ```
@@ -2611,38 +2611,38 @@ GCC 通常生成特殊的代码来更有效地处理某些内置函数;例如，
 #定义拷贝字符串(d s) __builtin_strcpy((d)、(s))
 ```
 
-- fgimple
+-fgimple
 
 启用使用__GIMPLE 标记的函数定义的解析。这是一个允许单元测试 GIMPLE 通过
 的实验特性。
-- fhosted
+-fhosted
 
 断言编译目标是托管环境。这意味着 `-fbuiltin` 。托管环境是一个可以使用整个标
 准库的环境，其中 main 具有 int 类型的返回类型。这相当于 `-fno- independence` 。
-- ffreestanding
+-ffreestanding
 断言编译针对独立的环境。这意味着 `-fno-builtin` 。独立的环境中可能不存在
 标准库，程序启动不一定是主要的。最明显的例子是操作系统内核。这相当于
  `-fno-hosted` 。
 参见第 2 章[GCC 支持的语言标准]第 5 页，了解独立和托管环境的详细信息。
-- fopenacc
+-fopenacc
 允许处理 OpenACC 指令#pragmaacc in C/ C++和!$acc in Fortran。当 `-fopenacc`
 被指定时，编译器会根据 OpenACC 应 用 程 序 编 程 接 口 v2.0
 https://www.openacc.org 生成加速代码。此选项表示 `-pthread` ，因此只支持
 支持 `-pthread` 的目标。
-- fopenacc-dim =几何学
+-fopenacc-dim =几何学
 为未显式指定的并行卸载区域指定默认计算维度。geom 值由 `:` 和 `vector` 三部
 分组成，按 `gang` 、 `worker` 和 `vector` 的顺序排列。可以省略大小，以使用
 目标特定的默认值。
-- fopenmp 支持处理 C/ C++中的 OpenMP 指令#pragmaomp, Fortran 中的!$omp。当 `-fopenmp`
+-fopenmp 支持处理 C/ C++中的 OpenMP 指令#pragmaomp, Fortran 中的!$omp。当 `-fopenmp`
 被 指 定 时 ， 编 译 器 会 根 据 OpenMP 应 用 程 序 接 口 v4.5
 [http://www.openmp.org/来生成并行代码。这个选项意味着`](http://www.openmp.org/来生成并行代码。这个选项意味着`) -pthread` ，因此
 只支持支持 `-pthread` 的目标。 `-fopenmp` 意味着 `-fopenmp-simd` 。
-- fopenmp-simd
+-fopenmp-simd
 
 
 启用使用 C/ C++中的#pragmaomp 和 Fortran 中的!$omp 处理 OpenMP 的 SIMD 指
 令。其他 OpenMP 指令被忽略。
-- fgnu-tm 当选项 `-fgnu-tm` 被指定时，编译器将为 Intel 当前事务内存 ABI 规范文档的 Linux
+-fgnu-tm 当选项 `-fgnu-tm` 被指定时，编译器将为 Intel 当前事务内存 ABI 规范文档的 Linux
 变体生成代码(修订 1.1,2009 年 5 月 6 日)。这是一个实验特性，其接口可能会
 随着官方规范的变化而在 GCC 的未来版本中发生变化。请注意，并不是所有
 的体系结构都支持这个特性。
@@ -2652,7 +2652,7 @@ https://www.openacc.org 生成加速代码。此选项表示 `-pthread` ，因�
 图书馆。
 
 注意，事务内存特性不支持非调用异常( `-fnon-call-exception` )。
-- fms-extensions
+-fms-extensions
 接受 Microsoft 头文件中使用的一些非标准结构。
 在 C++代码中，这允许结构中的成员名称与以前的类型声明类似。
 typedef int UOW;结
@@ -2661,19 +2661,19 @@ typedef int UOW;结
 在结构和联合体中某些未命名字段的情况只有在这种情况下才被接受。参见第
 6.62 节[结构体/联合中未命名的结构体/联合字段]，第 781 页。
 注意，除了使用 ms-abi 的 x86 目标外，该选项对所有目标都是关闭的。
-- fplan9-extensions
+-fplan9-extensions
 接受计划 9 代码中使用的一些非标准结构。
 这允许 `-fms-extensions` ，允许将指针传递给具有匿名字段的结构，传递给期
 望指向该字段类型的元素的函数，并允许引用使用 typedef 声明的匿名字段。
 参见第 6.62 节[结构体/联合中未命名的结构体/联合字段]，第 781 页。这只支
 持 C，不支持 C++。
-- fcond-mismatch
+-fcond-mismatch
 允许在第二和第三个参数中使用不匹配类型的条件表达式。这样一个表达式的
 值是无效的。此选项不支持 C++。
-- flax-vector-conversions
+-flax-vector-conversions
 允许不同数量的元素和/或不兼容的元素类型之间的隐式转换。此选项不应用
 于新代码。
-- funsigned-char
+-funsigned-char
 让类型 char 是无符号的，比如 unsignedchar。
 
 
@@ -2685,18 +2685,18 @@ signedchar 或 unsignedchar。但是许多程序都是使用纯字符编写的�
 它的逆选项，让你让这样的程序使用相反的默认值。
 char 类型始终是与每个 signedchar 或 unsigned char 类型不同的类型，尽管它的行
 为总是类似于这两个类型中的一个。
-- fsigned-char
+-fsigned-char
 让类型 char 被签名，比如 signedchar。
 注意，这等价于 `-fno-unsigned-char` ，它是 `-funsigned-char` 的负形式。同样，
 选项 `-fno-signed-char` 等价于 `-funsigned-char` 。
-- fsigned-bitfields
-- funsigned-bitfields
-- fno-signed-bitfields
-- fno-unsigned-bitfields
+-fsigned-bitfields
+-funsigned-bitfields
+-fno-signed-bitfields
+-fno-unsigned-bitfields
 当声明不使用带符号或无符号时，这些选项控制一个位域是带符号还是无符号。
 默认情况下，这样的位字段是有符号的，因为这是一致的:基本的整数类型(如
 int)是有符号的类型。
-- fsso-struct =字节顺序
+-fsso-struct =字节顺序
 将结构和联合的默认标量存储顺序设置为指定的 endianness。接受的值是 `big-
 endian` 、 `little-endian` 和 `native` ，表示目标的原生机缘(默认值)。此选项不
 支持 C++。
@@ -2714,7 +2714,7 @@ endian` 、 `little-endian` 和 `native` ，表示目标的原生机缘(默认�
 第 35 页。
 这里列出了仅用于编译 C++程序的选项:
 
-- fabi-version = n
+-fabi-version=n
 使用版本 n 的 C++ ABI。默认的版本是 0 。
 0 版本是指最符合 C++ ABI 规范的版本。因此，使用 0 版本获得的 ABI 将在不
 同版本的 g++中发生变化，因为 ABI bug 被修复了。
@@ -2737,7 +2737,7 @@ endian` 、 `little-endian` 和 `native` ，表示目标的原生机缘(默认�
 函数中具有相同名称的多个实体(它们在不同的作用域中声明)，现在开始从第
 十二次出现开始更改管理。它也意味着 `-fnew-inheriting-ctors` 。
 参见 `wabi sabi` 。
-- fabi-compat-version = n
+-fabi-compat-version=n
 在支持强别名的目标上，g++在定义一个带有不正确的错误名称的符号时，通
 过创建一个带有正确错误名称的别名来处理修改。此开关指定要为别名使用哪
 个 ABI 版本。
@@ -2746,33 +2746,33 @@ endian` 、 `little-endian` 和 `native` ，表示目标的原生机缘(默认�
 fabi-compat-version=2` 。
 如果没有提供此选项，但是 `-Wabi=n` 是，则该版本用于兼容性别名。如果该
 选项与 `-Wabi` (没有版本)一起提供，则使用该选项的版本进行警告。
-- fno-access-control
+-fno-access-control
 关闭所有访问检查。此开关主要用于解决访问控制代码中的错误。
-- faligned-new
+-faligned-new
 
 
 支持 C++ 17 新 类 型 ， 这 需 要 更 多 的 对 齐 方 式 ， 而 不 是
-void*::operatornew(std::size_t)提供。可以使用诸如- f 对齐-new=32 这样的数
+void*::operatornew(std::size_t)提供。可以使用诸如-f 对齐-new=32 这样的数
 字参数来指定该函数提供了多少对齐(以字节为单位)，但很少有用户需要覆盖
 alignof(std::max_align_t)的默认值。
 默认情况下， `-std=c++17` 启用此标志。
-- fcheck-new
+-fcheck-new
 在尝试修改分配的存储之前，检查 operatornew 返回的指针是否为非空。这种
 检查通常是不必要的，因为 C++标准指定操作符 new 只有在声明为 throw()时
 才返回 0 ，在这种情况下，即使没有这个选项，编译器也总是检查返回值。在
 所有其他情况下，当 operatornew 具有非空异常规范时，通过抛出
 std::bad_alloc 来表示内存耗尽。参见 `新(nothrow)` 。
-- fconcepts
+-fconcepts
 支持概念的 C++扩展技术规范，
 ISO 19217(2015)，允许代码类似。
 模板< T 类>概念 bool 可加=要求(T) {T + T;};模板<Addable T> T add (T a, T b) {return a + b;}
-- fconstexpr-depth = n
+-fconstexpr-depth=n
 将 C++ 11 constexpr 函数的最大嵌套求值深度设置为 n。在常量表达式求值过
 程中，需要对无穷递归进行检测。标准规定的最小值是 512 。
-- fconstexpr-loop-limit = n
+-fconstexpr-loop-limit=n
 将 C++ 14 constexpr 函数中的循环的最大迭代次数设置为 n，在常量表达式求
 值期间检测无限循环需要一个极限。默认值是 262144(1< 18)。
-- fdeduce-init-list
+-fdeduce-init-list
 允许从括起来的初始化器列表中将模板类型参数演绎为 std:: initizerali_list，即。
 模板< T 类>自动转发(T) ->解密(realfn (T))
 {返回 realfn(t);
@@ -2782,7 +2782,7 @@ ISO 19217(2015)，允许代码类似。
 这个演绎被实现为对最初提议的 C++ 11 标准语义的一种可能的扩展，但是它
 不是最终标准的一部分，所以默认情况下它是被禁用的。此选项已被弃用，并
 可能在将来的 g++版本中被删除。
-- ffriend-injection
+-ffriend-injection
 将 friend 函数注入到封闭的命名空间中，这样它们就可以在声明的类的范围之
 外看到。在旧的带注释的 C++参考手册中，Friend 函数被记录为以这种方式工
 作。但是，在 ISO C++中，没有在封闭范围中声明的 friend 函数只能通过参数
@@ -2790,20 +2790,20 @@ ISO 19217(2015)，允许代码类似。
 此选项已被废弃并将被删除。
 
 
-- fno-elide-constructors
+-fno-elide-constructors
 c++标准允许实现省略创建一个临时对象，这个临时对象只用于初始化另一个
 相同类型的对象。指定此选项将禁用该优化，并强制 G+在所有情况下调用复
 制构造函数。这个选项还会导致 g++调用琐碎的成员函数，否则这些函数将被
 内联展开。
 在 C++ 17 中，编译器需要省略这些临时文件，但是这个选项仍然会影响普通成员
 函数。
-- fno-enforce-eh-specs
+-fno-enforce-eh-specs
 不要在运行时生成代码来检查是否违反了异常规范。这个选项违反了 C++标准，
 但是对于减少产品构建中的代码大小可能很有用，就像定义 NDEBUG 一样。
 这并不给予用户代码权限来抛出违反异常规范的异常;编译器仍然基于规范进
 行优化，因此抛出意外异常会在运行时导致未定义的行为。
-- fextern-tls-init
-- fno-extern-tls-init
+-fextern-tls-init
+-fno-extern-tls-init
 c++ 11 和 OpenMP 标准允许 thread_local 和 threadprivate 变量具有动态(运行
 时)初始化。为了支持这一点，任何使用这样的变量都要经过一个执行任何必
 要初始化的包装器函数。当变量的使用和定义在同一个转换单元中时，可以对
@@ -2812,57 +2812,57 @@ c++ 11 和 OpenMP 标准允许 thread_local 和 threadprivate 变量具有动态
 defining 你需要触发动态初始化(由于变量是静态初始化,或使用的变量的定义
 你将使用之前在另一个执行你),他们可以避免这种开销 `-fno-extern-tls-init` 选
 项。
-在支持符号别名的目标上，默认值是 `- fexter- tls-init` 。对于不支持符号别名的目
+在支持符号别名的目标上，默认值是 `-fexter- tls-init` 。对于不支持符号别名的目
 标，默认是
  `-fno-extern-tls-init` 。
-- ffor-scope
-- fno-for-scope
+-ffor-scope
+-fno-for-scope
 如果指定了 `-ffor-scope` ，则 for-initstatement 中声明的变量的范围仅限于 for
 循环本身，这是由 C++标准指定的。如果指定了 `-fno-for-scope` ，则在 for-
 initstatement 中声明的变量的范围扩展到封闭范围的末尾，就像在旧版本的
 g++和 C++的其他(传统的)实现中那样。
 此选项已被废弃，相关的非标准功能将被删除。
-- fno-gnu-keywords
+-fno-gnu-keywords
 不要将 typeof 识别为关键字，这样代码就可以使用这个词作为标识符。您可以
 使用关键字__typeof__代替。这个选项被严格的 ISO C++方言所暗示: `-ansi` ，  `-
 std= C+ 98` ，  `-std= C+ 11` ，等等。
 
 
-- fno-implicit-templates
+-fno-implicit-templates
 不要为隐式实例化的非内联模板(即使用)生成代码;只发出用于显式实例化的代
 码。有关更多信息，请参见第 7.5 节[模板实例化]第 790 页。-fno-implicit-inline-
 templates
 也不要为内联模板的隐式实例化发出代码。默认情况下，以不同的方式处理内
 联，以便无论是否进行优化，都需要相同的显式实例化集。
-- fno-implement-inlines
+-fno-implement-inlines
 为了节省空间，不要释放由#pragmaimplementation 控制的内联函数的离线副
 本。如果这些函数不是在所有调用它们的地方都内联，则会导致链接器错误。
-- fms-extensions
+-fms-extensions
 禁用关于 MFC 中使用的结构的 Wpedantic 警告，例如隐式 int 并通过非标准语法
 获取成员函数指针。
-- fnew-inheriting-ctors
+-fnew-inheriting-ctors
 允许对 C++ 11 构造函数继承的语义进行 P0136 调整。这是 C++ 17 的一部分，
 但也被认为是针对 C++ 11 和 C++ 14 的缺陷报告。此标志默认启用，除非指定`
-- fabi-version=10` 或更低的值。
-- fnew-ttp-matching
+-fabi-version=10` 或更低的值。
+-fnew-ttp-matching
 启用 P0522 解决方案来解决核心问题 150 、模板参数和默认参数:这允许使用
 默认模板参数的模板作为模板参数，模板参数更少。默认情况下， `-
 std=c++17` 启用此标志。
-- fno-nonansi-builtins
+-fno-nonansi-builtins
 禁用 ANSI/ISO 不强制的内置函数声明
 C.这些函数包括 ffs、alloca、_exit、index、b0、conjf 等相关函数。
-- fnothrow-opt
+-fnothrow-opt
 将抛出()异常规范视为 noexcept 规范，以减少或消除相对于没有异常规范的函
 数的文本大小开销。如果函数具有具有非平凡析构函数类型的局部变量，那么
 异常规范实际上会使函数变小，因为可以对这些变量进行 EH 清理。语义效应
 是，在一个函数中抛出异常的异常会导致调用终止，而不是意外。
-- fno-operator-names
+-fno-operator-names
 不要将操作符名称关键字和、位和、位或、compl、not 或和 xor 当作关键词。
-- fno-optional-diags
+-fno-optional-diags
 禁用诊断标准说编译器不需要发出。目前，g++发布的唯一此类诊断是一个类
 中具有多个含义的名称。
-- fpermissive
-将一些关于不一致性代码的诊断从错误降级为警告。因此，使用 `- fperative` 允许
+-fpermissive
+将一些关于不一致性代码的诊断从错误降级为警告。因此，使用 `-fperative` 允许
 编译一些不符合要求的代码。-fno-pretty-templates
 当错误消息指的是函数模板的专门化时，编译器通常会打印模板的签名，后面
 跟着模板参数和签名中的任何 typedefs 或 typenames(例如 voidf(T)[with T=int]，
@@ -2872,51 +2872,51 @@ C.这些函数包括 ffs、alloca、_exit、index、b0、conjf 等相关函数�
 门化时，编译器会忽略与该模板的默认模板参数匹配的任何模板参数。如果其
 中任何一种行为使理解错误消息变得更困难，而不是更容易，您可以使用 `-
 fno-pretty-templates` 来禁用它们。
-- frepo 在链接时启用自动模板实例化。这个选项也 im -
+-frepo 在链接时启用自动模板实例化。这个选项也 im -
 层 `-fno-implicit-templates` 。有关更多信息，请参见第 7.5 节[模板实例化]第 790
 页。
-- fno-rtti
+-fno-rtti
 禁用每一个类的信息，使用由 C++运行时类型标识特性(dynamic_cast 和 typeid)
 使用的虚拟函数。如果不使用语言的这些部分，可以使用此标志节省一些空间。
 注意，异常处理使用相同的信息，但是 g++根据需要生成它。dynamic_cast 操
 作符仍然可以用于不需要运行时类型信息的类型转换，例如，将类型转换为
 void*或无歧义的基类。
-- fsized-deallocation
+-fsized-deallocation
 启用内置的全局声明。
 void 运算符删除(void *， std: size_t) noexcept;void 运算符删除[](void
 *， std: size_t) noexcept;
 介绍了 C++ 14。这对于用户定义的替换释放函数非常有用，例如，使用对象的
 大小使释放速度更快。在 `-std=c+ 14` 和上面的 `-std` 下默认启用。标志 `-
 Wsized-deallocation` 警告可能需要添加定义的位置。
-- fstrict-enums
+-fstrict-enums
 允许编译器使用一个假设，即枚举类型的值只能是枚举的值之一(如 C++标准中
 定义的那样)。基本上，一个值可以表示为表示所有枚举数所需的最小位数。
 如果程序使用强制转换将任意整数值转换为枚举类型，则此假设可能无效。
-- fstrong-eval-order
+-fstrong-eval-order
 评估成员访问，数组下标，以及左对齐顺序的移位表达式，并按照 C++ 17 所采用
 的从右到左的顺序进行赋值。
 默认启用 `-std=c++17` 。 `-fstrong-eval-order=一些`启用了成员访问和移位表达
 式的排序，并且是没有 `-std=c++17` 的默认值。
-- ftemplate-backtrace-limit = n
+-ftemplate-backtrace-limit=n
 将单个警告或错误的模板实例化注释的最大数目设置为 n，默认值为 10 。
-- ftemplate-depth = n
+-ftemplate-depth=n
 将模板类的最大实例化深度设置为 n。在模板类实例化过程中，需要对模板实
 例化深度进行限制，以检测无穷无尽的递归。ANSI/ISO C++兼容程序不能依赖
 于大于 17 的最大深度(在 C++ 11 中更改为 1024)。默认值是 900 ，因为在某些
 情况下，编译器在达到 1024 之前可能会耗尽堆栈空间。
 
 
-- fno-threadsafe-statics
+-fno-threadsafe-statics
 不要发出额外的代码来使用 C++ ABI 中为本地静态的线程安全初始化指定的例
 程。您可以使用此选项在不需要线程安全的代码中稍微减少代码大小。
-- fuse-cxa-atexit
+-fuse-cxa-atexit
 使用__cxa_ atexit 函数而不是 atexit 函数注册具有静态存储时间的对象的析构
 函数。这个选项对于完全符合标准的静态析构函数的处理是必需的，但是只有
 当您的 C 库支持__cxa_atexit 时才会有效。
-- fno-use-cxa-get-exception-ptr
+-fno-use-cxa-get-exception-ptr
 不要使用__cxa_get_exception_ptr 运 行 时 例 程 。 这 会 导 致
 std::uncaught_exception 不正确，但是如果运行时例程不可用，则必须这样做。
-- fvisibility-inlines-hidden
+-fvisibility-inlines-hidden
 该开关声明，用户不尝试将指针与内联函数或在不同共享对象中使用两个函数
 的地址的方法进行比较。
 这样做的效果是，GCC 可以有效地使用__ attribute__(可视性( `hidden` ))标记内
@@ -2930,7 +2930,7 @@ std::uncaught_exception 不正确，但是如果运行时例程不可用，则�
 可见性。用显式可见性标记封闭类没有效果。
 显式实例化的内联方法不受此选项影响，因为它们的链接可能会跨越共享库边
 界。参见第 7.5 节[模板实例化]，第 790 页。
-- fvisibility-ms-compat
+-fvisibility-ms-compat
 此标志试图使用可见性设置使 GCC 的 C++链接模型与 Microsoft Visual Studio 兼容。
 该标志对 GCC 的链接模型做了以下更改:
 1. 它将默认可见性设置为 hidden，如 `-fvisibility=hidden` 。
@@ -2945,7 +2945,7 @@ std::uncaught_exception 不正确，但是如果运行时例程不可用，则�
 具有相同名称的类型违反了 ODR。
 
 
-- fno-weak
+-fno-weak
 即使链接器提供弱符号支持，也不要使用弱符号支持。默认情况下，如果可用，
 G++使用弱符号。此选项仅用于测试，不应被最终用户使用;它导致劣质代码，
 没有任何好处。这个选项可能在将来的 g++版本中被删除。
@@ -3089,7 +3089,7 @@ A(): j (0)， i (1) {}
 };
 编译器为 i 和 j 重新安排成员初始化器，以匹配成员的声明顺序，并向该结果
 发出警告。此警告是由 `-Wall` 启用的。
-- fext-numeric-literals (c++和 objective - C++)
+-fext-numeric-literals (c++和 objective - C++)
 接受虚构的、定点的或机器定义的文字数字后缀作为 GNU 扩展。当关闭此选
 项时，这些后缀将被视为 C++ 11 用户定义的文字数字后缀。这是默认为所有
 前 C++ 11 方言和所有 GNU 方言: `-std=c++98` ，  `-std= GNU ++98` ，  `-std=
@@ -3177,7 +3177,7 @@ gcc -g -fgnu-runtime -O -c some - class.m
 选项(例如， `-Wtraditional` )。类似地，Objective-C+编译可能使用特定于 C++的选项(例如，
  `-Wabi` )。
 以下列出了一些只用于编译 Objective-C 和 objective - C++程序的选项:
-- fconstant-string-class =类名称
+-fconstant-string-class =类名称
 使用类名作为类的名称来实例化使用语法@ `...` 指定的每个字串。如果使用
 GNU 运行时，默认的类名是 NXConstantString，如果使用下一个运行时，则
 NSConstantString(参见下面)。 `-fconstant-cfstrings` 选项(如果也存在的话)可
@@ -3185,23 +3185,23 @@ NSConstantString(参见下面)。 `-fconstant-cfstrings` 选项(如果也存在�
 串。
 
 
-- fgnu-runtime
+-fgnu-runtime
 生成与标准 GNU Objective-C 运行时兼容的对象代码。这是大多数类型系统的默认
 设置。
-- fnext-runtime
+-fnext-runtime
 生成与下一个运行时兼容的输出。这是基于下一个系统的默认设置，包括
 Darwin 和 Mac OS x。
-- fno-nil-receivers
+-fno-nil-receivers
 假设此翻译单元中的所有 Objective-C 消息分派([receivermessage:arg])确保接
 收方不是 nil。这允许在运行时中使用更有效的入口点。此选项仅与下一个运
 行时和 ABI 版本 0 或 1 一起可用。
-- fobjc-abi-version = n
+-fobjc-abi-version=n
 对于所选的运行时，使用 Objective-C ABI 的版本 n。此选项目前只支持下一个
 运行时。在这种情况下， 0 版本是传统的(32 位)ABI，不支持属性和其他
 objective - 2.0 添加。版本 1 是传统的(32 位)ABI，支持属性和其他 Objective-C
 2.0 添加。版本 2 是现代(64 位)ABI。如果没有指定，默认情况是 32 位目标计
 算机上的 0 版本， 64 位目标计算机上的 2 版本。
-- fobjc-call-cxx-cdtors
+-fobjc-call-cxx-cdtors
 对于每个 Objective-C 类，检查它的实例变量中是否有一个是 C++对象，它有一
 个非平凡的默认构造函数。如果是这样，合成一个特殊的(id) .cxx_construct 实
 例方法，该方法在任何此类实例变量上运行非平凡的默认构造函数，然后返回
@@ -3215,9 +3215,9 @@ self。类似地，检查任何实例变量是否是带有非平凡析构函数�
 例之前，将立即调用 cxx_destruction t 方法。
 在编写本文时，只有 Mac OS X 10.4 上的下一个运行时支持调用-(id)。
 cxx_construct 和-(void)。cxx_destruct 方法。
-- fobjc-direct-dispatch
+-fobjc-direct-dispatch
 允许快速跳转到消息分派器。在达尔文，这是通过通讯页面完成的。
-- fobjc-exceptions
+-fobjc-exceptions
 在 Objective-C 中启用对结构化异常处理的语法支持，类似于 C++提供的。这个
 选项需要使用 Objective-C 关键字@try， @throw， @catch， @finally 和
 @synchronized。此选项可与 GNU 运行时和下一个运行时一起使用(但不能与
@@ -3226,32 +3226,32 @@ Mac OS X 10.2 和更早版本上的下一个运行时一起使用)。-fobjc-gc
 一个运行时;GNU 运行时具有不同的垃圾收集实现，不需要特殊的编译器标志。
 
 
-- fobjc-nilcheck
+-fobjc-nilcheck
 对于下一个使用 ABI 版本 2 的运行时，在进行实际的方法调用之前，检查方法
 调用中的 nil 接收器。这是默认设置，可以使用 `-fno- object -nilcheck` 禁用。
 无论这个标志设置为什么，类方法和超调用都不会以这种方式检查 nil。当前，
 当使用 GNU 运行时或下一个运行时 ABI 的旧版本时，此标志不起作用。
-- fobjc-std = objc1
+-fobjc-std = objc1
 遵循 Objective-C 1.0 的语言语法，这是 GCC 4.0 承认的语言。这只影响对 C/
 c++语言的 Objective-C 添加;它不影响对 C/ C++标准的一致性，该标准由独立的
 C/ C++方言选项标志控制。当此选项与 Objective-C 或 objective - C++编译器一
 起使用时，任何 GCC 4.0 不能识别的 Objective-C 语法都将被拒绝。如果您需要
 确保您的 Objective-C 代码可以与旧版本的 GCC 一起编译，那么这是非常有用
 的。
-- freplace-objc-classes
+-freplace-objc-classes
 发出一个特殊的标记，指示 ld(1)不静态地链接结果对象文件，并允许 dyld(1)
 在运行时加载它。这与 `修改并继续` 调试模式一起使用，在此模式中，相关的
 对象文件可以在程序执行过程中重新编译并动态地重新加载，而不需要重新启
 动程序本身。目前，只有在 Mac OS X 10.3 及以后的运行时中，才能使用 `修改
 并继续` 功能。
-- fzero-link
+-fzero-link
 当编译下一个运行时时，编译器通常用静态类引用替换对 objc_getClass( `...` )的
 调用(当类的名称在编译时已知时)，这些静态类引用在加载时初始化，从而提
 高运行时性能。指定 `-fzero-link` 标志会抑制这种行为，并导致要保留对
 objc_getClass( `...` )的调用。这在零链接调试模式中很有用，因为它允许在程序
 执行期间修改单个类实现。GNU 运行时当前总是保留对 objc_get_class( `...` )的
 调用，而不考虑命令行选项。
-- fno-local-ivars
+-fno-local-ivars
 默认情况下，Objective-C 中的实例变量可以被访问，就好像它们是声明在类中
 的方法中的本地变量一样。这可能导致实例变量和其他变量之间的隐藏，这些
 变量要么在类方法内部局部声明，要么在名称相同的全局声明。指定 `-fno-
@@ -3298,21 +3298,21 @@ local-ivars` 标志将禁用此行为，从而避免变量隐藏问题。-fivar-
 
 信息。注意，有些语言前端可能不支持这些选项。
 
-- fmessage-length = n
+-fmessage-length=n
 尝试格式化错误消息，使它们符合大约 n 个字符的行。如果 n 为 0 ，则不进行
 换行;每个错误消息出现在一行中。这是所有前端的默认值。
-- fdiagnostics-show-location =一次
+-fdiagnostics-show-location =一次
 只有在行包装模式下才有意义。指示诊断消息报告器发送一次源位置信息;也
 就是说，如果消息太长，无法适应单个物理行，并且必须进行包装，那么在后
 续的延续行中，源位置将不会(作为前缀)一次又一次地发出。这是默认行为。
 
 
-- fdiagnostics-show-location =每一行
+-fdiagnostics-show-location =每一行
 只有在行包装模式下才有意义。指示诊断消息报告程序为物理行发送相同的源
 位置信息(作为前缀)，这些物理行是由中断消息的过程导致的，该过程太长，
 无法适应单个行。
-- fdiagnostics-color[=当]
-- fno-diagnostics-color
+-fdiagnostics-color[=当]
+-fno-diagnostics-color
 
 在诊断中使用的颜色。什么时候是  ` 从不 `  、  ` 总是 `  或  ` 自动 `  。默认设置取决于
 
@@ -3321,7 +3321,7 @@ local-ivars` 标志将禁用此行为，从而避免变量隐藏问题。-fivar-
 境变量，也可以是 `从不` ，否则可以是 `自动` 。 `自动` 是指只有在标准错误是
 
 终端时才使用颜色。表单 `-fdiagnostics-color` 和 `-fno- diagnosis -color` 分别是`
-- fdiagnostics-color=always` 和 `-fdiagnostics-color=never` 的别名。
+-fdiagnostics-color=always` 和 `-fdiagnostics-color=never` 的别名。
 颜色由环境变量 GCC_COLORS 定义。它的值是一个用冒号分隔的功能列表，并
 选择图形显示(SGR)子字符串。SGR 命令由终端或终端模拟器解释。(请参阅文
 本终端文档中有关允许值及其作为字符属性的含义的部分。)这些子字符串值
@@ -3365,16 +3365,16 @@ diff-insert =
 在生成的补丁中插入行的 SGR 子字符串。
 type-diff =
 用于突出显示 C++前端中的模板参数中的不匹配类型的 SGR 子字符串。
-- fno-diagnostics-show-option
+-fno-diagnostics-show-option
 默认情况下，发送的每个诊断都包含文本，这些文本指示直接控制诊断的命令
 行选项(如果诊断机制知道此类选项的话)。指定 `-fno 诊断-显示-选项` 标志会抑
 制这种行为。
-- fno-diagnostics-show-caret
+-fno-diagnostics-show-caret
 缺省情况下,每个诊断包括原始行和脱字符号发出 `^` 表示列。此选项抑制此信
 息。如果给出 `-fmessage-length=n` 选项，则将源行截断为 n 个字符。当对终端
 执行输出时，宽度限制为列环境变量给定的宽度，如果没有设置，则限制为终
 端宽度。
-- fdiagnostics-parseable-fixits
+-fdiagnostics-parseable-fixits
 以机器解析的格式发出提示，适合 ide 使用。对于每个 fix-it，在相关诊断之后
 将打印一行，从字符串 `fix-it:` 开始。例如:
 救助: `test.c` :{ 45:3-45:21 }: `gtk_widget_show_all`
@@ -3388,7 +3388,7 @@ gtk_widget_showall(dlg);^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
  `垂直` 标签为 `\013` )为 `\` 。
 一个空的替换字符串表示给定的范围将被删除。空范围(例如 `45:3-45:3` )表示
 字符串将被插入到给定的位置。
-- fdiagnostics-generate-patch
+-fdiagnostics-generate-patch
 打印修改——在任何诊断信息被打印出来后，以统一的 diff 格式提示 stderr。例如:
 推荐- - - - - - test.c
 + + + test.c
@@ -3402,7 +3402,7 @@ gtk_widget_showall(dlg);
 }
 diff 可能是彩色的，也可能不是，遵循与诊断相同的规则(参见 `-fdiagnostics-
 color` )。
-- fdiagnostics-show-template-tree
+-fdiagnostics-show-template-tree
 在 C++前端中，当打印诊断显示不匹配模板类型时，例如:
 无法转换 `std::map<int, std::vector<double> >()`
 从 `地图<[...),矢量<双> >` 到 `地图< <飘> >[...],向量
@@ -3412,13 +3412,13 @@ color` )。
 [...),矢量<
 (双! =浮动)> >
 不同的部分用颜色突出显示(在本例中是 `double` 和 `float` )。
-- fno-elide-type
+-fno-elide-type
 默认情况下，当 C++前端打印出显示错误匹配模板类型的诊断信息时，类型的
 公共部分将被打印为 `[......来简化错误信息。例如:
 无法转换 `std::map<int, std::vector<double> >()`
 从 `地图<[...),矢量<双> >` 到 `地图<[...，向量<float>>，指定 `-fno-elide-type` 标志，抑
 制该行为。此标志还影响 `-fdiagnostics-show-template-tree` 标志的输出。
-- fno-show-column
+-fno-show-column
 不要在诊断中打印列号。如果诊断被不理解列号(如 dejagnu)的程序扫描，这
 可能是必要的。
 
@@ -3958,8 +3958,7 @@ int b[2][2] = { { 0, 1 }, { 2, 3 } };
 
 -Wmultistatement-macros
 
-警告不安全的多个语句宏，它们似乎由一个子句保护，例如 if、else、for、
-switch 或 while，其中只有第一个语句在宏展开之后才被实际保护。
+警告不安全的多个语句宏，它们似乎由一个子句保护，例如 if、else、for、switch 或 while，其中只有第一个语句在宏展开之后才被实际保护。
 
 例如:
 
@@ -3971,10 +3970,17 @@ if (c)
 
 将无条件地增加 y，而不仅仅是 c 保持不变。通常可以通过将宏封装在 do-while 循
 环中来修复:
-定义 DOIT do {x++;y + +;} while (0) if (c)
-DOIT;
+
+```
+#define DOIT do { x++; y++; } while (0)
+if (c)
+  DOIT;
+```
+
 C 和 C++中的 `-Wall` 启用了此警告。
+
 -Wparentheses
+
 如果在某些上下文中省略了括号，比如在需要真值的上下文中有赋值，或者在
 嵌套操作符(其优先级常常让人感到困惑)时，要发出警告。
 如果出现类似 x<=y<=z 的比较，也要发出警告;它等于(x<=y?1:0)<=z，与普通
@@ -3984,14 +3990,19 @@ C 和 C++中的 `-Wall` 启用了此警告。
 算的值。
 对于 C++，这也警告了一些声明中不必要的括号的情况，这些声明可以表示试图调
 用函数，而不是声明:
+
+```
 {
-/声明一个名为 mymutex 的本地变量。
+  // Declares a local variable called mymutex.
+  std::unique_lock<std::mutex> (mymutex);
+  // User meant std::unique_lock<std::mutex> lock (mymutex);
+}
+```
 
-
-std::unique_lock < std::互斥>(锁定 mymutex);
-//用户意味着 std::unique_lock<std::mutex> lock (mymutex);}
 此警告是由 `-Wall` 启用的。
+
 -Wsequence-point
+
 警告由于违反了 C 和 C++标准中的序列点规则而可能具有未定义语义的代码。
 C 和 C++标准定义了在 C/ C++程序中表达式以序列点计算的顺序，序列点表示
 程序部分执行之间的部分排序:在序列点之前执行的表达式，以及在序列点之
@@ -4002,31 +4013,39 @@ C 和 C++标准定义了在 C/ C++程序中表达式以序列点计算的顺序�
 顺序，因为，例如，如果在一个表达式中调用两个函数，而它们之间没有序列
 点，那么调用函数的顺序就没有被指定。然而，标准委员会已经裁定函数调用
 不重叠。
+
 当对对象的值进行序列点修改时，不指定它。行为依赖于此的程序有未定义的
 行为;C 和 C++标准规定， `在前一个序列点和下一个序列点之间，一个对象的
 存储值最多只能通过表达式的求值来修改一次。` 此外，必须只读取先前值以
 确定要存储的值。` 如果程序违反了这些规则，那么任何特定实现的结果都是
 完全不可预测的。
+
 具有未定义行为的代码示例有 a=a+; a[n]=b[n++]和 a[i++]=i;一些更复杂的病例
 没有通过这个选项诊断出来，它可能会偶尔产生错误的阳性结果，但总的来说，
 它在检测程序中的这类问题上被发现是相当有效的。
+
 在更多的情况下，c++ 17 标准将定义操作数的求值顺序:特别是它要求赋值的
 右边在左边之前求值，因此上面的例子不再没有定义。但是，这个警告仍然会
 对它们提出警告，以帮助人们避免编写在 C 中没有定义的代码和 C++的早期版
 本。
+
 标准的措辞令人困惑，因此在一些微妙的情况下，对于序列点规则的确切含义
 存在一些争论。有关这个问题的讨论的链接，包括建议的正式定义，可以在
 GCC 阅读页面 http://gcc.gnu.org/readings.html 找到。
 此警告由 C 和 C++的 `-Wall` 启用。
+
 -Wno-return-local-addr
+
 不要警告将指针(或 C++中的引用)返回给函数返回后超出范围的变量。
+
 -Wreturn-type
+
 当函数定义为默认值为 int 的返回类型时，请警告，也要警告返回类型为非
 void 的函数的任何返回值(从函数体的尾部掉下来，认为返回值没有值)。
+
 仅对于 C，警告返回语句中返回类型为空的函数中的表达式，除非表达式类型
 也是空的。作为 GNU 的扩展，除非使用 `-Wpedantic` ，否则不需要警告就可以
 接受后一种情况。
-
 
 对于 C++，没有返回类型的函数总是会生成诊断消息，即使指定了 `-Wno-
 return-type` 。唯一的例外是在系统头中定义的主函数和函数。
@@ -4034,11 +4053,15 @@ return-type` 。唯一的例外是在系统头中定义的主函数和函数。
 警告移位计数是否为负。此警告默认启用。
 -Wshift-count-overflow
 如果移位计数>=类型宽度警告。此警告默认启用。
+
 -Wshift-negative-value
+
 如果向左移动一个负值就警告。C99 和 C++ 11 模式(以及更新的模式)中的 `-Wextra`
 启用了此警告。
+
 -Wshift-overflow
--Wshift-overflow = n
+-Wshift-overflow=n
+
 警告左移位溢出。此警告在 C99 和 C++ 11 模式(以及更新的模式)中默认启用。
 -Wshift-overflow = 1
 这是 `-Wshift-overflow` 的警告级别，在 C99 和 C++ 11 模式(以及更
@@ -4119,7 +4142,7 @@ Wall` 启用的。
 Wall` 启用的。
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
 -Wunused-const-variable
--Wunused-const-variable = n
+-Wunused-const-variable=n
 当一个常量静态变量在其声明之外未使用时警告。
  `-Wunused-const-variable=1` 是由 C 的 `-Wunused-variable` 而不是 C++启用的。
 在 C 中，这声明了变量存储，但是在 C++中，这不是一个错误，因为 const 变
@@ -4204,7 +4227,7 @@ foo(x);
 此选项仅在 `-fstrict- alialize` 激活时才有效。它警告说，代码可能会打破编译
 器用于优化的严格混叠规则。这个警告并没有捕捉到所有的情况，而是试图捕
 捉更常见的陷阱。它包含在 `-Wall` 中。它等于 `-Wstrict - alialize = 3`
--Wstrict-aliasing = n
+-Wstrict-aliasing=n
 此选项仅在 `-fstrict- alialize` 激活时才有效。它警告说，代码可能会打破编译
 器用于优化的严格混叠规则。更高的水平对应更高的准确度(更少的假阳性)。
 更高的层次也意味着更多的努力，类似于 `o` 的工作方式。 `-Wstrict - alialize`
@@ -4221,7 +4244,7 @@ foo(x);
 使用流敏感的点-到信息的多个 case 语句。只有当转换后的指针被取消引用时
 才发出警告。不警告不完整类型。
 -Wstrict-overflow
--Wstrict-overflow = n
+-Wstrict-overflow=n
 
 
 此选项仅在未定义带符号溢出时才激活。它警告编译器基于无符号溢出假设进
@@ -4340,7 +4363,7 @@ buf);...
 警告添加属性可能有益的情况。下面列出了当前支持的属性。
 -Wsuggest-attribute =纯
 -Wsuggest-attribute =常量
--Wsuggest-attribute = noreturn
+-Wsuggest-attribute=noreturn
 -Wsuggest-attribute = malloc
 警告可能属于纯属性、const 或 noreturn 或 malloc 的函数。编译
 器只对其他编译单元中可见的函数发出警告，如果不能证明函数
@@ -4387,13 +4410,13 @@ GCC 还警告说，函数定义可能是格式属性的候选。同样，这些�
 对 align ned_alloc、alloca、calloc、malloc 和 realloc 的内置形式的调用。因为
 这些函数在调用时的行为在不同的实现中是不同的(在 realloc 的情况下已经被
 弃用)，依赖它可能会导致微妙的可移植性错误，应该避免这种错误。
--Walloc-size-larger-than = n
+-Walloc-size-larger-than=n
 警告使用属性 alloc_size 修饰的函数调用，这些函数试图分配大于指定字节数
 的对象，或者在具有无限精度的整数类型中，大小计算的结果将超过
 SIZE_MAX/2。选项参数 n 可以在一个标准后缀中结束，它指定了 kB 和 KiB 的
 倍数，分别为 kB 和 kibibyte, MB 和 MiB 为 MB 和 mebibyte，等等。参见第
 6.31 节[功能属性]，第 464 页。
--Walloca 这个选项警告所有使用 alloca 的来源。-Walloca-larger-than = n
+-Walloca 这个选项警告所有使用 alloca 的来源。-Walloca-larger-than=n
 
 
 此选项警告对不受控制谓词限制的对 alloca 的调用，该控制谓词将其整型类型
@@ -4427,9 +4450,9 @@ func(有符号 int n)
 于预期的参数。该选项还会在循环中使用 alloca 时发出警告。
 这个警告不是由 `-Wall` 启用的，只有在 `-ftree-vrp` 是活动的时候才会激活(默认
 值为 `-O2` 及以上)。
-参见 `-Wvla-larger-than = n` 。
+参见 `-Wvla-larger-than=n` 。
 -Warray-bounds
--Warray-bounds = n
+-Warray-bounds=n
 此选项仅在 `-ftree-vrp` 处于活动状态时才有效( `-O2` 及以上的默认值)。它警告
 说数组的下标总是超出界限。此警告是由 `-Wall` 启用的。
 -Warray-bounds = 1
@@ -4638,7 +4661,7 @@ compatiblelocal` 不会发出警告。因为它们的类型是不兼容的，如
 使用了没有显式对齐参数的分配函数。此选项由 `-Wall` 启用。
 通常这只警告全局分配函数，但是 `-Walign -new - all` 也警告类成员分配函数。
 -Wplacement-new
--Wplacement-new = n
+-Wplacement-new=n
 
 
 警告放置未定义行为的新表达式，例如在缓冲区中构造小于对象类型的对象。
@@ -5146,7 +5169,7 @@ Wall` 启用。-Wno-int-to-pointer-cast
 moved-from 对象移动，则可以禁用此警告。
 -Wvla 警告代码中是否使用了可变长度数组。 `-Wno-vla` 阻止可变长度数组的 `-Wpedantic` 警
 告。
--Wvla-larger-than = n
+-Wvla-larger-than=n
 如果使用此选项，编译器将警告使用可变长度的数组，这些数组的大小要么是无
 界的，要么是受大于 n 字节的参数的限制。这与 `-Walloca-larger-than=n` 的工作方
 式类似，但使用可变长度数组。
@@ -5154,7 +5177,7 @@ moved-from 对象移动，则可以禁用此警告。
 可能不会被触发。
 这个警告不是由 `-Wall` 启用的，只有在 `-ftree-vrp` 是活动的时候才会激活(默认
 值为 `-O2` 及以上)。
-参见 `-Walloca-larger-than = n` 。
+参见 `-Walloca-larger-than=n` 。
 -Wvolatile-register-var
 警告，如果寄存器变量被声明为 volatile。volatile 修饰符不会抑制所有可能消
 除对寄存器变量的读和/或写的优化。此警告是由 `-Wall` 启用的。
@@ -5253,28 +5276,28 @@ GCC 不再支持 DWARF 版本 1 ，它与版本 2 以及以后的版本有很大
 支持宏扩展。
  `-gdwarf` 不接受连接的调试级别，以避免与 `-gdwarf-level` 混淆。相反，可以
 使用一个附加的 `-glevel` 选项来更改 DWARF 的调试级别。
-- feliminate-unused-debug-symbols
+-feliminate-unused-debug-symbols
 以 stabs 格式(如果支持的话)生成调试信息，只用于实际使用的符号。
-- femit-class-debug-always
+-femit-class-debug-always
 而不是在一个对象文件中为 C++类发出调试信息，而是在所有使用类的对象文
 件中发出它。这个选项应该只用于不能处理 GCC 通常为类发出调试信息的调
 试器，因为使用这个选项会使调试信息的大小增加两倍。
-- fno-merge-debug-strings
+-fno-merge-debug-strings
 引导链接器不合并在不同对象文件中相同的调试信息中的字符串。所有的汇编
 程序或链接器都不支持合并。合并减少了输出文件中的调试信息的大小，但代
 价是增加了链接处理时间。默认情况下允许合并。
-- fdebug-prefix-map = =新老
+-fdebug-prefix-map = =新老
 当编译位于 `old` 目录中的文件时，记录调试信息，将它们描述为文件驻留在
  `new` 目录中。这可以用调试信息中的安装时路径替换构建时路径。它也可以
 用来改变绝对路径到相对路径使用`。为新。这可以提供更多可复制的构建，
 它们是位置无关的，但是可能需要一个额外的命令来告诉 GDB 在哪里找到源
 文件。参见 `-ffile-prefix-map` 。
-- fvar-tracking
+-fvar-tracking
 变量跟踪运行通过。它计算变量在代码中每个位置的存储位置。然后生成更好
 的调试信息(如果调试信息格式支持此信息)。
 在使用优化( `-Os` 、 `-O` 、 `-O2` 、...)、调试信息( `-g` )和调试信息格式进行编
 译时，默认启用它。
-- fvar-tracking-assignments
+-fvar-tracking-assignments
 在编译的早期对用户变量赋值进行注释，并尝试在整个编译过程中一直将注释
 传递到最后，试图在优化时改进调试信息。建议同时使用 `- g 矮人-4` 。
 即使禁用了 var-tracking，也可以启用它，在这种情况下，会创建和维护注释，
@@ -5291,7 +5314,7 @@ GCC 不再支持 DWARF 版本 1 ，它与版本 2 以及以后的版本有很大
 - ggnu-pubnames
 以适合转换为 GDB 索引的格式生成.debug_pubnames 和.debug_pubtypes 部分。
 这个选项只对能够生成 GDB 索引版本 7 的链接器有用。
-- fdebug-types-section
+-fdebug-types-section
 在使用 DWARF 版本 4 或更高版本时，可以将类型 die 放到它们自己的.debug_types
 部分中，而不是将它们作为.debug_info 部分的一部分。
 将它们放在单独的 comdat 节中会更有效，因为链接器随后可以删除重复的内
@@ -5381,21 +5404,21 @@ ginline-points
 的 zlib 压缩 ) 。如果链接器不支持编写压缩的调试节，则拒绝该选项。否则，如
 
 果汇编程序不支持它们，那么在生成对象文件时， `-gz` 将被悄悄地忽略。
-- femit-struct-debug-baseonly
+-femit-struct-debug-baseonly
 只有当编译源文件的基本名称与定义结构的文件的基本名称相匹配时，才会为
 结构类型的类型发出调试信息。
 这个选项大大减少了调试信息的大小，但是对调试器来说，类型信息有很大的
 潜在损失。参见 `-femit-struct-debug-reduce` 以获得一个不那么激进的选项。
 有关更详细的控制，请参见 `-femit-struct-debug- details` 。
 此选项仅限 DWARF 调试输出。
-- femit-struct-debug-reduced
+-femit-struct-debug-reduced
 只有当编译源文件的基本名称与定义类型的文件的基本名称相匹配时，才为类
 结构类型发出调试信息，除非结构是模板或在系统头中定义。
 这个选项显著减少了调试信息的大小，并且可能会给调试器带来一些类型信息
 的损失。请参阅 `-femit-struct-debug-baseonly` ，以获得更具侵略性的选项。
 有关更详细的控制，请参见 `-femit-struct-debug- details` 。
 此选项仅限 DWARF 调试输出。
-- femit-struct-debug-detailed(=规格清单)
+-femit-struct-debug-detailed(=规格清单)
 指定编译器生成调试信息的类结构类型。目的是减少相同程序中不同对象文件
 之间的重复结构调试信息。
 这个选项是 `-femit-struct-debug-reduce` 和 `-femit-struct-debug-baseonly` 的详细版
@@ -5420,9 +5443,9 @@ ginline-points
 您可能需要进行实验，以确定应用程序的最佳设置。
 默认值是 `-femit-struct-debug-detailed =所有` 。
 此选项仅限 DWARF 调试输出。
-- fno-dwarf2-cfi-asm
+-fno-dwarf2-cfi-asm
 作为编译器生成的.eh_frame 部分而不是使用 GAS. xen_ *指令生成矮人展开信息。
-- fno-eliminate-unused-debug-types
+-fno-eliminate-unused-debug-types
 通常，在生成 DWARF 输出时，GCC 避免为编译源文件中不使用的类型生成调
 试符号输出。有时是有用的 GCC 发出调试信息对所有类型中声明一个编译单
 元,无论是否实际使用编译单元,例如,如果在调试器中,你想把一个值的类型没有
@@ -5468,49 +5491,49 @@ o1 群优化。优化编译需要更多的时间，对于大型函数需要更�
 
  `-O` 打开以下优化标志:
 
-- fauto-inc-dec
-- fbranch-count-reg
-- fcombine-stack-adjustments
-- fcompare-elim
-- fcprop-registers
-- fdce
-- fdefer-pop
-- fdelayed-branch
-- fdse
-- fforward-propagate
-- fguess-branch-probability
-- fif-conversion2
-- fif-conversion
-- finline-functions-called-once
-- fipa-pure-const
-- fipa-profile
-- fipa-reference
-- fmerge-constants
-- fmove-loop-invariants
-- fomit-frame-pointer
-- freorder-blocks
-- fshrink-wrap
-- fshrink-wrap-separate
-- fsplit-wide-types
-- fssa-backprop
-- fssa-phiopt
-- ftree-bit-ccp
-- ftree-ccp
-- ftree-ch
-- ftree-coalesce-vars
-- ftree-copy-prop
-- ftree-dce
-- ftree-dominator-opts
-- ftree-dse
-- ftree-forwprop
-- ftree-fre
-- ftree-phiprop
-- ftree-sink
-- ftree-slsr
-- ftree-sra
-- ftree-pta
-- ftree-ter
-- funit-at-a-time
+-fauto-inc-dec
+-fbranch-count-reg
+-fcombine-stack-adjustments
+-fcompare-elim
+-fcprop-registers
+-fdce
+-fdefer-pop
+-fdelayed-branch
+-fdse
+-fforward-propagate
+-fguess-branch-probability
+-fif-conversion2
+-fif-conversion
+-finline-functions-called-once
+-fipa-pure-const
+-fipa-profile
+-fipa-reference
+-fmerge-constants
+-fmove-loop-invariants
+-fomit-frame-pointer
+-freorder-blocks
+-fshrink-wrap
+-fshrink-wrap-separate
+-fsplit-wide-types
+-fssa-backprop
+-fssa-phiopt
+-ftree-bit-ccp
+-ftree-ccp
+-ftree-ch
+-ftree-coalesce-vars
+-ftree-copy-prop
+-ftree-dce
+-ftree-dominator-opts
+-ftree-dse
+-ftree-forwprop
+-ftree-fre
+-ftree-phiprop
+-ftree-sink
+-ftree-slsr
+-ftree-sra
+-ftree-pta
+-ftree-ter
+-funit-at-a-time
 
 
 
@@ -5518,66 +5541,66 @@ o1 群优化。优化编译需要更多的时间，对于大型函数需要更�
 与 `-O` 相比，这个选项增加了编译时间和生成代码的性能。
  `-O2` 打开 `-O` 指定的所有优化标志。优化标志:
 
-- fthread-jumps
-- falign-functions -falign-jumps
-- falign-loops -falign-labels
-- fcaller-saves
-- fcrossjumping
-- fcse-follow-jumps -fcse-skip-blocks
-- fdelete-null-pointer-checks
-- fdevirtualize -fdevirtualize-speculatively
-- fexpensive-optimizations
-- fgcse -fgcse-lm
-- fhoist-adjacent-loads
-- finline-small-functions
-- findirect-inlining
-- fipa-cp
-- fipa-bit-cp
-- fipa-vrp
-- fipa-sra
-- fipa-icf
-- fisolate-erroneous-paths-dereference
-- flra-remat
-- foptimize-sibling-calls
-- foptimize-strlen
-- fpartial-inlining
-- fpeephole2
-- freorder-blocks-algorithm =优质
+-fthread-jumps
+-falign-functions -falign-jumps
+-falign-loops -falign-labels
+-fcaller-saves
+-fcrossjumping
+-fcse-follow-jumps -fcse-skip-blocks
+-fdelete-null-pointer-checks
+-fdevirtualize -fdevirtualize-speculatively
+-fexpensive-optimizations
+-fgcse -fgcse-lm
+-fhoist-adjacent-loads
+-finline-small-functions
+-findirect-inlining
+-fipa-cp
+-fipa-bit-cp
+-fipa-vrp
+-fipa-sra
+-fipa-icf
+-fisolate-erroneous-paths-dereference
+-flra-remat
+-foptimize-sibling-calls
+-foptimize-strlen
+-fpartial-inlining
+-fpeephole2
+-freorder-blocks-algorithm =优质
 
 它也打开
 
-- freorder-blocks-and-partition -freorder-functions
-- frerun-cse-after-loop
-- fsched-interblock -fsched-spec
-- fschedule-insns -fschedule-insns2
-- fstore-merging
-- fstrict-aliasing
-- ftree-builtin-call-dce
-- ftree-switch-conversion -ftree-tail-merge
-- fcode-hoisting
-- ftree-pre
-- ftree-vrp
-- fipa-ra
+-freorder-blocks-and-partition -freorder-functions
+-frerun-cse-after-loop
+-fsched-interblock -fsched-spec
+-fschedule-insns -fschedule-insns2
+-fstore-merging
+-fstrict-aliasing
+-ftree-builtin-call-dce
+-ftree-switch-conversion -ftree-tail-merge
+-fcode-hoisting
+-ftree-pre
+-ftree-vrp
+-fipa-ra
 请注意 `-fgcse` 下关于在使用计算 goto 的程序上调用 `-O2` 的警告。
 o3 优化更多。 `-O3` 打开 `-O2` 指定的所有优化
 打开以下优化标志:
-- finline-functions
-- funswitch-loops
-- fpredictive-commoning
-- fgcse-after-reload
-- ftree-loop-vectorize
+-finline-functions
+-funswitch-loops
+-fpredictive-commoning
+-fgcse-after-reload
+-ftree-loop-vectorize
 
 
-- ftree-loop-distribution
-- ftree-loop-distribute-patterns
-- floop-interchange
-- floop-unroll-and-jam
-- fsplit-paths
-- ftree-slp-vectorize
-- fvect-cost-model
-- ftree-partial-pre
-- fpeel-loops
-- fipa-cp-clone
+-ftree-loop-distribution
+-ftree-loop-distribute-patterns
+-floop-interchange
+-floop-unroll-and-jam
+-fsplit-paths
+-ftree-slp-vectorize
+-fvect-cost-model
+-ftree-partial-pre
+-fpeel-loops
+-fipa-cp-clone
 
 o0 (^) 减少编译时间，使调试产生预期的结果。这是默认的。
 操作系统
@@ -5585,9 +5608,9 @@ o0 (^) 减少编译时间，使调试产生预期的结果。这是默认的。
 步的优化，以减少代码的大小。
  `-Os` 禁用以下优化标志:
 
-- falign-functions -falign-jumps -falign-loops
-- falign-labels -freorder-blocks -freorder-blocks-algorithm =优质
-- freorder-blocks-and-partition -fprefetch-loop-arrays
+-falign-functions -falign-jumps -falign-loops
+-falign-labels -freorder-blocks -freorder-blocks-algorithm =优质
+-freorder-blocks-and-partition -fprefetch-loop-arrays
 - Ofast
 不严格的标准遵从性。 `-Ofast` 支持所有 `-O3` 优化。它还支持对所有标准兼容
 程序无效的优化。它会打开 `-ffast-math` 和 fortran 特有的 `-fstack-array` ，除非
@@ -5603,12 +5626,12 @@ o0 (^) 减少编译时间，使调试产生预期的结果。这是默认的。
 以通过删除 `否` 或添加 `否` 来找出另一种形式。
 以下选项控制特定的优化。它们要么被 `o` 选项激活，要么与 `o` 选项相关。当需要 `微调`
 要执行的优化时，您可以在罕见的情况下使用以下标志。
-- fno-defer-pop
+-fno-defer-pop
 当函数返回时，总是将参数弹出到每个函数调用。对于必须在函数调用后弹出
 参数的机器，编译器通常允许在堆栈上为多个函数调用积累参数，并一次弹出
 所有参数。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 中禁用。
-- fforward-propagate
+-fforward-propagate
 
 
 对 RTL 执行正向传播传递。通过尝试合并两个指令，并检查结果是否可以简
@@ -5618,13 +5641,13 @@ o0 (^) 减少编译时间，使调试产生预期的结果。这是默认的。
 历。
 
 此选项在优化级别 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 时默认启用。
-- ffp-contract =风格
+-ffp-contract =风格
  `-ffp-contract=off` 禁用浮点表达式收缩。 `-ffp-contract=fast` ，如果目标对其有
 本地支持，则可以进行浮点表达式的收缩，如合并的多重添加操作。 `-ffp-
 contract=on` 允许在语言标准允许的情况下，浮点表达式收缩。这目前还没有
 实现，并被视为 `-ffp-contract=off` 。
 默认值是 `-ffp-contract =快` 。
-- fomit-frame-pointer
+-fomit-frame-pointer
 在不需要帧指针的函数中省略帧指针。这避免了保存、设置和恢复帧指针的指
 令;对于许多目标，它还提供了一个额外的寄存器。
 在一些目标上，这个标志没有效果，因为标准的调用序列总是使用一个帧指针，
@@ -5632,23 +5655,23 @@ contract=on` 允许在语言标准允许的情况下，浮点表达式收缩。�
 注意， `-fno- omno -frame-pointer` 并不保证所有函数都使用框架指针。一些目
 标总是忽略叶函数中的帧指针。
 在 `-O` 和更高处默认启用。
-- foptimize-sibling-calls
+-foptimize-sibling-calls
 优化兄弟和尾部递归调用。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- foptimize-strlen
+-foptimize-strlen
 将 各 种 标 准 C 字 符 串 函 数(例如 strlen、strchr 或 strcpy)和 它 们 的
 _FORTIFY_SOURCE 对应项优化为更快的替代品。
 在 `-O2` 、 `-O3` 级别启用。
-- fno-inline
+-fno-inline
 不要扩展任何内联的函数，除了那些用 always_ inline 属性标记的函数。这是不优
 化时的默认设置。
 可以通过使用 noinline 属性对单个函数进行标记来避免内联。
-- finline-small-functions
+-finline-small-functions
 当函数体小于预期的函数调用代码时，将函数集成到调用者中(因此程序的总
 体大小会变小)。编译器以启发式的方式决定哪些函数足够简单，值得以这种
 方式进行集成。这个内联适用于所有函数，甚至是那些未声明为内联的函数。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- findirect-inlining
+-findirect-inlining
 
 
 内联也间接调用，由于之前的内联，在编译时被发现是已知的。只有当内联本
@@ -5656,27 +5679,27 @@ _FORTIFY_SOURCE 对应项优化为更快的替代品。
 身被 `-finline-function` 或 `-finline-small-function` 选项打开时，该选项才会产生
 任何影响。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- finline-functions
+-finline-functions
 考虑所有的内联函数，即使它们没有被声明为内联。编译器以启发式的方式决定
 哪些函数值得这样积分。
 如果对给定函数的所有调用都被集成，并且函数被声明为静态的，那么函数通
 常不会作为汇编代码输出。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- finline-functions-called-once
+-finline-functions-called-once
 考虑所有被调用一次的静态函数，以便内联到它们的调用者中，即使它们没有
 被标记为内联。如果对给定函数的调用被集成，那么函数本身就不是作为汇编
 代码输出的。
 在 `-O1` 、 `-O2` 、 `-O3` 和 `-Os` 级别启用。
-- fearly-inlining
+-fearly-inlining
 以 always_inline 和函数为标记的内联函数，其主体在执行 `-fprofile-generate`
 工具和真正的内联传递之前，似乎比函数调用的开销要小。这样做可以显著降
 低分析的成本，并且通常在具有大量嵌套包装函数链的程序上内联速度更快。
 默认启用。
-- fipa-sra
+-fipa-sra
 执行程序间的标量替换聚合，删除未使用的参数，用值传递的参数替换引用传
 递的参数。
 在 `-O2` 、 `-O3` 和 `-Os` 级别启用。
-- finline-limit = n
+-finline-limit=n
 默认情况下，GCC 限制可以内联的函数的大小。这个标志允许对这个限制进行
 
 粗略的控制。 n 是可以在伪指令数中内联的函数的大小。
@@ -5695,38 +5718,38 @@ max-inline-ins -ins -auto 被
 指令的计数，因此，它的确切含义可能会从一个版本变化到另一个版本。
 
 
-- fno-keep-inline-dllexport
+-fno-keep-inline-dllexport
 这是一个更细粒度的 `-fkeep-inline-functions` 版本，它只适用于使用 dllexport
 属性或 declspec 声明的函数。参见第 6.31 节[声明函数的属性]，第 464 页。
-- fkeep-inline-functions
+-fkeep-inline-functions
 在 C 语言中，即使函数已经内联到它的所有调用者中，也会发出被声明为内联
 到对象文件中的静态函数。此开关不影响使用 GNU C90 中的外部扩展的函数。
 在 C++中，将所有内联函数释放到对象文件中。
-- fkeep-static-functions
+-fkeep-static-functions
 将静态函数发送到对象文件中，即使从未使用该函数。
-- fkeep-static-consts
+-fkeep-static-consts
 当优化未打开时，即使变量未被引用，也会发出声明为 staticconst 的变量。
 默认情况下，GCC 支持这个选项。如果您想强制编译器检查是否引用了一个变
 量，而不管是否打开了优化，请使用 `-fno-keep-static-consts` 选项。
-- fmerge-constants
+-fmerge-constants
 尝试跨编译单元合并相同的常量(字符串常量和浮点常量)。
 如果汇编程序和链接器支持，此选项是优化编译的默认选项。使用 `-fno-merge-
 constant` 来抑制这种行为。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fmerge-all-constants
+-fmerge-all-constants
 尝试合并相同的常数和相同的变量。
 这个选项意味着 `-fmerge-constants` 。除了 `-fmer -constants -constant` 之外，
 它还包括用整数或浮点类型初始化数组或常量变量。C 或 C++等语言要求每个
 变量(包括递归调用中相同变量的多个实例)具有不同的位置，因此使用此选项
 会导致不符合约定的行为。
-- fmodulo-sched
+-fmodulo-sched
 在第一个调度通过之前立即执行 swing 模块调度。这个通过查看最里面的循环，
 并通过重叠不同的迭代来重新排序它们的指令。
-- fmodulo-sched-allow-regmoves
+-fmodulo-sched-allow-regmoves
 执行更具有侵略性的基于 sm 的模块化调度，允许注册移动。通过设置此标志，将
 删除某些反依赖的边缘，从而触发基于生命范围分析的 reg-move 生成。这个选项
 只有在启用 `-fmodulo-sched` 时才有效。
-- fno-branch-count-reg
+-fno-branch-count-reg
 避免在计数寄存器上使用 `递减和分步` 指令的遍历扫描，而不是生成递减寄存
 器的指令序列，将其与 0 进行比较，然后根据结果进行分支。此选项仅对支持
 此类指令的体系结构有意义，其中包括 x86、PowerPC、IA- 64 和 S/390。注
@@ -5736,44 +5759,44 @@ constant` 来抑制这种行为。
 
 
 默认值是 `-fbranch-count-reg` 。
-- fno-function-cse
+-fno-function-cse
 不要在寄存器中放置函数地址;使每个调用常量函数的指令都显式地包含函数的地
 址。
 这个选项会导致效率低下的代码，但是一些奇怪的改变汇编程序输出的技巧可
 能会被不使用此选项时执行的优化所迷惑。
 默认值是 `-ffunction-cse`
-- fno-zero-initialized-in-bss
+-fno-zero-initialized-in-bss
 如果目标支持 BSS 部分，默认情况下 GCC 会将初始化为 0 的变量放入 BSS 中。这
 可以在生成的代码中节省空间。
 这个选项关闭了这个行为，因为一些程序显式地依赖于数据部分的变量—例
 如。，以便产生的可执行文件可以找到该部分的开头，并/或基于此做出假设。
 默认值是 `-fzero-initialized-in-bss` 。
-- fthread-jumps
+-fthread-jumps
 执行优化，检查跳转是否分支到第一个包含的另一个比较的位置。如果是这样，
 第一个分支将被重定向到第二个分支的目的地或紧接着第二个分支的点，这取
 决于条件是真还是假。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fsplit-wide-types
+-fsplit-wide-types
 当使用占用多个寄存器(如 32 位系统上的 longlong)的类型时，将寄存器分开
 并独立地分配它们。这通常会为这些类型生成更好的代码，但可能会使调试更
 加困难。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fcse-follow-jumps
+-fcse-follow-jumps
 在常见的子表达式消除(CSE)中，当其他路径无法到达跳转目标时，通过跳转指令
 进行扫描。例如，当 CSE 遇到带有 else 子句的 if 语句时，当测试条件为 false 时，
 CSE 会跟随跳转。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fcse-skip-blocks
+-fcse-skip-blocks
 这类似于 `-fcs -follow-jump` ，但会导致 CSE 遵循有条件跳过块的跳转。当 CSE
 遇到一个没有其他子句的简单 if 语句时， `-fcse- skipblock` 会导致 CSE 跟随在
 if 的主体上跳跃。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- frerun-cse-after-loop
+-frerun-cse-after-loop
 执行循环优化后，重新运行公共子表达式消除。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
 
 
-- fgcse 执行一个全局通用的子表达式消除通行证。此传递还执行全局常量和复制传播。
+-fgcse 执行一个全局通用的子表达式消除通行证。此传递还执行全局常量和复制传播。
 
 注意 : 当使用 GCC 扩展 computed goto 编译程序时，如果在命令行中添加  `-fno-
 
@@ -5782,58 +5805,58 @@ gcse`  来禁用全局通用子表达式消除传递，那么您可能会获得�
 能。
 
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fgcse-lm
+-fgcse-lm
 当 `-fgcse-lm` 被启用时，全局通用子表达式消除尝试将仅被商店杀死的负载移
 到它们自己中。这允许将包含加载/存储序列的循环更改为循环外的负载，以
 及循环中的复制/存储。
 在 `-fgcse` 被启用时默认启用。
-- fgcse-sm
+-fgcse-sm
 当 `-fgcse-sm` 被启用时，在全局通用子表达式消除之后运行一个存储动作传递。
 此传递尝试将存储移出循环。当与 `-fgcse-lm` 结合使用时，包含负载/存储序
 列的循环可以在循环之前变为负载，在循环之后变为存储。
 在任何优化级别都未启用。
-- fgcse-las
+-fgcse-las
 启用 `-fgcse-las` 时，全局通用子表达式消除将存储后的冗余负载转移到相同的
 内存位置(包括部分冗余和完全冗余)。
 在任何优化级别都未启用。
-- fgcse-after-reload
+-fgcse-after-reload
 当 `-fgcse-after-reload` 启用时，在重新加载后执行冗余负载消除传递。此通行
 证的目的是清理冗余溢出。
-- faggressive-loop-optimizations
+-faggressive-loop-optimizations
 此选项告诉循环优化器使用语言约束来为循环的迭代次数派生边界。这假定循环
 代码不会调用未定义的行为，例如导致有符号整型溢出或超出界限的数组访问。
 循环迭代次数的边界用于指导循环展开、剥离和循环退出测试优化。此选项默认
 启用。
-- funconstrained-commons
+-funconstrained-commons
 这个选项告诉编译器在公共块(例如 Fortran)中声明的变量以后可能会被长尾
 数组覆盖。这防止了依赖于已知数组边界的某些优化。
-- fcrossjumping
+-fcrossjumping
 执行 cross-jumping 转换。此转换统一了等效的代码并保存了代码大小。结果
 代码的性能可能比没有交叉跳转要好，也可能不会。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fauto-inc-dec
+-fauto-inc-dec
 结合地址的增加或减少访问内存。在没有指示支持这一点的体系结构上，总是
 跳过这个传递。默认情况下在 `-O` 和更高的架构上启用。
 
 
-- fdce (^) 在 RTL 上执行死代码消除(DCE)。在 `-O` 和更高处默认启用。
-- fdse (^) 在 RTL 上执行死存储消除(DSE)。在 `-O` 和更高处默认启用。
+-fdce (^) 在 RTL 上执行死代码消除(DCE)。在 `-O` 和更高处默认启用。
+-fdse (^) 在 RTL 上执行死存储消除(DSE)。在 `-O` 和更高处默认启用。
 
-- fif-conversion
+-fif-conversion
 尝试将条件跳转转换为无分支的等价。这包括使用条件移动、最小值、最大值、
 设置标志和 abs 指令，以及一些标准算术可实现的技巧。在可用的芯片上使用
 条件执行是由 `-fif-conversion 2 ` 控制的。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fif-conversion2
+-fif-conversion2
 使用条件执行(可用)将条件跳转转换为无分支等效项。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fdeclone-ctor-dtor
+-fdeclone-ctor-dtor
 c++ ABI 需要构造函数和析构函数有多个入口点:一个用于基本子对象，一个用
 于完整的对象，一个用于虚拟析构函数，然后调用操作符 delete。对于具有虚
 拟基的层次结构，基和完整的变体是克隆，这意味着函数的两个副本。有了这
 个选项，基本和完整的变体将被更改为调用公共实现的 thunks。
 通过 `操作系统` 。
-- fdelete-null-pointer-checks
+-fdelete-null-pointer-checks
 假设程序不能安全地取消引用空指针，并且没有代码或数据元素驻留在地址零。
 此选项支持在所有优化级别上进行简单的常量折叠优化。此外，GCC 中的其他优
 化通过使用这个标志来控制全局数据流分析，以消除空指针的无用检查;这些假
@@ -5844,28 +5867,28 @@ c++ ABI 需要构造函数和析构函数有多个入口点:一个用于基本�
 此选项在大多数目标上默认启用。在 Nios II ELF 上，它默认为 off。在 AVR、
 CR16 和 MSP430 上，这个选项完全禁用。
 通过使用 dataflow 信息在不同的优化级别上独立启用。
-- fdevirtualize
+-fdevirtualize
 尝试将对虚拟函数的调用转换为直接调用。这是在一个过程中完成的，也是作
 为间接内联(-findirect-内联)和过程间持续传播(-fipa-cp)的一部分。在 `-O2` 、
  `-O3` 、 `-Os` 级别启用。
-- fdevirtualize-speculatively
+-fdevirtualize-speculatively
 尝试将对虚拟函数的调用转换为投机性的直接调用。在分析类型继承图的基础
 上，为给定的调用确定一组可能的目标。如果集合很小，最好是大小为 1 ，将
 调用更改为直接调用和间接调用之间的条件决定。投机性调用支持更多的优化，
 比如内联。当它们在进一步优化后显得无用时，就会被转换回原来的形式。
 
 
-- fdevirtualize-at-ltrans
+-fdevirtualize-at-ltrans
 在本地转换模式下运行链接时间优化器时，流执行主动去虚拟化所需的额外信
 息。此选项支持更多的去虚拟化，但显著增加了流数据的大小。由于这个原因，
 它在默认情况下是禁用的。
-- fexpensive-optimizations
+-fexpensive-optimizations
 执行一些相对昂贵的小优化。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
 尝试删除冗余扩展指令。这对于 x86- 64 体系结构特别有用，它在写完 64 位寄存器后隐式
 地零扩展到它们的 32 位半寄存器。
 启用 Alpha, AArch64 和 x86 在水平 `-O2` ，  `-O3` ，  `-Os` 。
-- fno-lifetime-dse
+-fno-lifetime-dse
 在 C++中，对象的值只受其生命周期内的更改的影响:当构造函数开始时，对象
 有一个不确定的值，对象生命周期内的任何更改在对象被销毁时都是死的。通
 常死店消除将利用这一点;如果您的代码依赖于对象的生命周期之外的对象存
@@ -5873,15 +5896,15 @@ CR16 和 MSP430 上，这个选项完全禁用。
 (例如，因为您的操作符 new 清除了对象存储)，但是在析构函数启动后仍然将
 对象视为已死对象，可以使用 `-flifetime-dse=1` 。默认行为可以显式地选择 `-
 flifetime-dse=2` 。 `-flifetime-dse=0` 等于 `-fno-lifetime-dse` 。
-- flive-range-shrinkage
+-flive-range-shrinkage
 尝试通过寄存器活区收缩来降低寄存器压力。
 这对于具有小或中等大小寄存器集的快速处理器很有帮助。
-- fira-algorithm =算法
+-fira-algorithm =算法
 使用指定的着色算法用于集成的寄存器分配器。算法参数可以是 `优先级` ，它
 指定了 Chow 的优先颜色，或者 `CB` ，它指定了 Chaitin-Briggs 着色。Chaitin-
 Briggs 着色不是针对所有架构实现的，但是对于支持它的目标，它是默认的，
 因为它生成更好的代码。
-- fira-region =地区
+-fira-region =地区
 使用指定区域作为集成寄存器分配器。区域论点应是下列论点之一:
  `所有`  使用所有循环作为寄存器分配区域。这可以给具有小的和/或不规
 则寄存器集的机器带来最好的结果。
@@ -5891,120 +5914,120 @@ Briggs 着色不是针对所有架构实现的，但是对于支持它的目标�
 
  `一个`  将所有函数作为一个区域使用。这通常导致最小的代码大小，默
 认情况下为 `-Os` 或 `-O0` 启用。
-- fira-hoist-pressure
+-fira-hoist-pressure
 使用 IRA 对代码提升通行证中的寄存器压力进行评估，以做出提升表达式的决
 定。这个选项通常会导致更小的代码，但是它会降低编译速度。
 
 
 此选项在所有目标的 `-Os` 级别启用。
-- fira-loop-pressure
+-fira-loop-pressure
 使用 IRA 来评估循环中的寄存器压力，以决定是否移动循环不变量。这个选项
 通常会在具有大型寄存器文件(>= 32 寄存器)的机器上生成更快和更小的代码，
 但是它可以降低编译器的速度。
 此选项在某些目标的 `-O3` 级别启用。
-- fno-ira-share-save-slots
+-fno-ira-share-save-slots
 禁止共享栈槽用于保存调用使用的硬盘寄存器的调用。每个硬寄存器都有一个
 单独的堆栈槽，因此函数堆栈帧更大。
-- fno-ira-share-spill-slots
+-fno-ira-share-spill-slots
 禁止共享为伪寄存器分配的堆栈槽。每个没有硬寄存器的伪存储符都有一个单
 独的堆栈槽，因此函数堆栈帧会更大。
-- flra-remat
+-flra-remat
 在 LRA 中启用 cfg 敏感的再物化。LRA 没有加载溢出的伪值，而是试图在有利可
 图的情况下重新实现(重新计算)值。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fdelayed-branch
+-fdelayed-branch
 如果支持目标机器，则尝试重新排序指令，以利用延迟分支指令后可用的指令槽。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fschedule-insns
+-fschedule-insns
 如果支持目标机器，则尝试重新排序指令，以消除由于无法获得所需数据而导
 致的执行延迟。这可以帮助具有缓慢浮点或内存加载指令的机器，允许发出其
 他指令，直到需要加载或浮点指令的结果。
 在 `-O2` 、 `-O3` 级别启用。
-- fschedule-insns2
+-fschedule-insns2
 类似于 `-fschedule-insns` ，但是在完成了寄存器分配之后，请求额外的指令调
 度通行证。这对于寄存器数量相对较少、内存加载指令占用一个以上周期的机
 器尤其有用。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fno-sched-interblock
+-fno-sched-interblock
 不要在基本块上安排指令。这通常在寄存器分配之前的调度中被默认启用，例
 如使用 `-fschedule-insns` 或在 `-O2` 或更高。
-- fno-sched-spec
+-fno-sched-spec
 不允许非加载指令的推测性运动。这通常在寄存器分配之前的调度中被默认启
 用，例如使用 `-fschedule-insns` 或在 `-O2` 或更高。
 
 
-- fsched-pressure
+-fsched-pressure
 在寄存器分配之前启用寄存器压力敏感的 insn 调度。这只在启用寄存器分配
 之前进行调度时才有意义，例如使用 `-fschedule-insns` 或在 `-O2` 或更高的位
 置。使用此选项可以改进生成的代码，并通过防止寄存器压力增加超过可用的
 硬式寄存器的数量和寄存器分配中随后的溢出来减小代码的大小。
-- fsched-spec-load
+-fsched-spec-load
 允许推测一些负载指令的运动。这只在寄存器分配之前进行调度时才有意义，
 例如使用 `-fschedule-insns` 或 `-O2` 或更高。
-- fsched-spec-load-dangerous
+-fsched-spec-load-dangerous
 允许推测更多的负载指令的运动。这只在寄存器分配之前进行调度时才有意义，
 例如使用 `-fschedule-insns` 或 `-O2` 或更高。
-- fsched-stalled-insns
-- fsched-stalled-insns = n
+-fsched-stalled-insns
+-fsched-stalled-insns=n
 定义有多少个 insns(如果有的话)可以在第二个调度传递期间从已停止的 insns
 队列中提前移动到准备列表中。 `-fno-sched-stalled-insns` 表示没有提前移动
 insns，  `-fsched-stalled-insns=0` 表示没有限制可以提前移动多少队列 insns。`
-- fsched-stalled-insns` 没有值等于 `-fsched-stalled-insns=1` 。
-- fsched-stalled-insns-dep
-- fsched-stalled-insns-dep = n
+-fsched-stalled-insns` 没有值等于 `-fsched-stalled-insns=1` 。
+-fsched-stalled-insns-dep
+-fsched-stalled-insns-dep=n
 定义检查了多少 insn 组(循环)，以确定是否依赖于一个已停止的 insn，该 insn
 是从已停止的 insn 队列中提前删除的候选。这只在第二次调度过程中产生效
 果，且仅在使用 `-fsched-stalled-insns` 时才生效。相当于 `-fno-sched-stalled-
 insns-dep`
  `-fsched-stalled-insns-dep = 0` 。没有值的 `-fsched-stalled-insns-dep` 等价于 `-
 fsched-stalled- insnsns-dep =1` 。
-- fsched2-use-superblocks
+-fsched2-use-superblocks
 当调度后的寄存器分配，使用超级块调度。这允许跨基本块边界移动，从而导
 致更快的调度。这个选项是实验性的，因为不是 GCC 使用的所有机器描述都
 对 CPU 进行足够的建模，以避免算法产生不可靠的结果。
 这只在寄存器分配后进行调度时才有意义，即使用 `-fschedule-insns2` 或 `-O2` 或更
 高的值。
-- fsched-group-heuristic
+-fsched-group-heuristic
 在调度程序中启用组启发式。这种启发式倾向于属于调度组的指令。在启用调
 度时，这是默认启用的，例如使用 `-fschedule-insns` 或 `-fschedule-insns2` 或 `-
 O2` 或更高。
-- fsched-critical-path-heuristic
+-fsched-critical-path-heuristic
 
 
 在调度程序中启用临界路径启发式。这种启发式有利于关键路径上的指令。在
 
 启用调度时，这是默认启用的，例如使用 `-fschedule-insns` 或 `-fschedule-
 insns2` 或 `-O2` 或更高。
-- fsched-spec-insn-heuristic
+-fsched-spec-insn-heuristic
 在调度程序中启用推测指令启发式。这种启发式倾向于具有更大依赖性弱点的
 推测性指令。在启用调度时，这是默认启用的，例如使用 `-fschedule-insns` 或
  `-fschedule-insns2` 或 `-O2` 或更高。
-- fsched-rank-heuristic
+-fsched-rank-heuristic
 在调度程序中启用秩启发式。这种启发式倾向于指令属于一个更大的大小或频
 率的基本块。在启用调度时，这是默认启用的，例如使用 `-fschedule-insns` 或
  `-fschedule-insns2` 或 `-O2` 或更高。
-- fsched-last-insn-heuristic
+-fsched-last-insn-heuristic
 在调度程序中启用最后指令启发式。这种启发式更倾向于不太依赖于计划的最
 后一条指令的指令。在启用调度时，这是默认启用的，例如使用 `-fschedule-
 insns` 或 `-fschedule-insns2` 或 `-O2` 或更高。
-- fsched-dep-count-heuristic
+-fsched-dep-count-heuristic
 在调度器中启用依赖计数启发式。这种启发式倾向于有更多指令的指令。在启
 用调度时，这是默认启用的，例如使用 `-fschedule-insns` 或 `-fschedule-insns2
 `或 `-O2` 或更高。
-- freschedule-modulo-scheduled-loops
+-freschedule-modulo-scheduled-loops
 模块化调度是在传统调度之前进行的。如果循环是模块化调度的，那么以后的
 调度传递可能会改变它的调度。使用此选项来控制该行为。
-- fselective-scheduling
+-fselective-scheduling
 使用选择性调度算法调度指令。选择性调度运行而不是第一个调度程序通过。
-- fselective-scheduling2
+-fselective-scheduling2
 使用选择性调度算法调度指令。选择调度运行而不是第二个调度程序通过。
-- fsel-sched-pipelining
+-fsel-sched-pipelining
 在选择性调度期间，启用软件流水线操作最内部的循环。这个选项没有任何效
 果，除非 `-fselective 调度` 或 `-fselective-scheduling2` 被打开。
-- fsel-sched-pipelining-outer-loops
+-fsel-sched-pipelining-outer-loops
 在选择性调度过程中，当管道循环时，也会有管道外环。
 除非 `-fsel-sched-流水线` 打开，否则此选项无效。
-- fsemantic-interposition
+-fsemantic-interposition
 有些对象格式，如 ELF，允许动态链接器插入符号。这意味着，对于从 DSO 导
 出的符号，编译器不能执行过程间传播、内联和其他优化，因为预期相关的函
 数或变量可能会更改。虽然这个特性对于通过调试实现重写内存分配函数很有
@@ -6015,173 +6038,173 @@ interposition` ，编译器假定如果函数发生了换位，重写函数将�
 语义(以及副作用)。类似地，如果变量发生互换，则变量的构造函数将是相同
 的。对于显式声明为内联的函数和显式声明为弱的符号，标志没有任何作用
 (在这种情况下，不允许交换来更改语义)。
-- fshrink-wrap
+-fshrink-wrap
 仅在需要函数的部分之前而不是在函数的顶部发出函数 prologues。默认情况
 下，此标志在 `-O` 或更高处启用。
-- fshrink-wrap-separate
+-fshrink-wrap-separate
 在前言和后记中分别收缩包装，这样只有在需要的时候才执行。此选项在默认
 情况下是打开的，但是除非 `-fshrink-wrap` 也被打开并且目标支持此选项，否
 则无效。
-- fcaller-saves
+-fcaller-saves
 通过发出额外的指令来保存和恢复这些调用周围的寄存器，允许将值分配给被
 函数调用阻塞的寄存器。这种分配只有在看起来能产生更好的代码时才会进行。
 默认情况下，在某些机器上总是启用此选项，通常是那些没有调用保留寄存器的
 机器。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fcombine-stack-adjustments
+-fcombine-stack-adjustments
 跟踪堆栈调整(push 和 pop)和堆栈内存引用，然后尝试找到合并它们的方法。
 在 `-O1` 或更高的位置默认启用。
-- fipa-ra 使用调用者保存寄存器进行分配，如果这些寄存器没有被任何调用函数使用。在这
+-fipa-ra 使用调用者保存寄存器进行分配，如果这些寄存器没有被任何调用函数使用。在这
 种情况下，不需要围绕调用保存和恢复它们。只有当被调用的函数是与当前函
 数相同的编译单元的一部分时，这才有可能，而且它们是在它之前编译的。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用，但是，如果生成的代码将被检测为分析( `-p`
 或 `-pg` )，或者如果不知道 callee 的寄存器使用情况(这种情况发生在不公开 rrr
 中的 prologues 和 epilogues 的目标上)，则禁用该选项。
-- fconserve-stack
+-fconserve-stack
 尝试最小化堆栈使用。编译器尝试使用更少的堆栈空间，即使这会使程序变慢。
 此选项意味着设置
  `大堆栈帧` 参数为 100 ， `大堆栈帧-增长` 参数为 400 。
-- ftree-reassoc
+-ftree-reassoc
 执行重新组合在树上。 默认情况下，此标志在 `-O` 或更高处启用。
-- fcode-hoisting
+-fcode-hoisting
 提升执行代码。代码提升试图尽早将在所有路径上执行的表达式的计算移到函
 数退出。这对于代码大小优化特别有用，但它通常也有助于提高代码速度。默
 认情况下，此标志在 `-O2` 或更高位置启用。
-- ftree-pre
+-ftree-pre
 对树执行部分冗余消除(PRE)。默认情况下，此标志在 `-O2` 和 `-O3` 上启用。
 
 
-- ftree-partial-pre
+-ftree-partial-pre
 使部分冗余消除(PRE)更具侵略性。默认情况下，此标志在 `-O3` 上启用。
-- ftree-forwprop
+-ftree-forwprop
 对树进行正向传播。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-fre
+-ftree-fre
 对树执行完全冗余消除(FRE)。FRE 和 PRE 的区别在于 FRE 只考虑在导致冗余
 计算的所有路径上计算的表达式。这种分析比 PRE 要快，尽管它暴露的冗余
 更少。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-phiprop
+-ftree-phiprop
 执行从树上的条件指针提升负载。默认情况下，此传递在 `-O` 或更高处启用。
-- fhoist-adjacent-loads
+-fhoist-adjacent-loads
 推测地从 if-then-else 的两个分支提升负载，如果负载来自相同结构的相邻位
 置，并且目标体系结构具有条件移动指令。默认情况下，此标志在 `-O2` 或更
 高位置启用。
-- ftree-copy-prop
+-ftree-copy-prop
 在树上执行复制传播。此传递消除了不必要的复制操作。默认情况下，此标志在 `-
 O` 或更高处启用。
-- fipa-pure-const
+-fipa-pure-const
 发现哪些函数是纯函数或常数函数。在 `-O` 和更高处默认启用。
-- fipa-reference
+-fipa-reference
 发现哪些静态变量不转义编译单元。在 `-O` 和更高处默认启用。
-- fipa-pta
+-fipa-pta
 进行程序间指针分析、程序间修改和参考分析。这个选项可能会导致在大型编
 译单元上使用过多的内存和编译时。默认情况下，在任何优化级别都不启用它。
-- fipa-profile
+-fipa-profile
 执行程序间传播。仅从冷函数调用的函数被标记为冷。还可以识别一次执行的
 函数(如 cold、noreturn、静态构造函数或析构函数)。然后对执行过一次的冷
 函数和循环少的函数部分进行优化，以适应大小。在 `-O` 和更高处默认启用。
-- fipa-cp 执行过程间常数传播。这种优化分析程序，以确定传递给函数的值何时为常量，然
+-fipa-cp 执行过程间常数传播。这种优化分析程序，以确定传递给函数的值何时为常量，然
 后相应地进行优化。如果应用程序将常量传递给函数，那么这种优化可以显著
 提高性能。默认情况下，此标志在 `-O2` 、 `-Os` 和 `-O3` 上启用。
-- fipa-cp-clone
+-fipa-cp-clone
 执行功能克隆，使程序间的持续传播更强。当启用时，当外部可见的函数可以
 用常量参数调用时，程序间的常数传播执行函数克隆。由于这种优化可以创建
 多个函数副本，因此可能会显著增加代码大小(参见 `-paramipcp-unit-
 growth=value` )。默认情况下，此标志在 `-O3` 上启用。
-- fipa-bit-cp
+-fipa-bit-cp
 
 
 启用时，执行过程间的位常数传播。默认情况下，此标志在 `-O2` 上启用。它需
 
 要启用 `-fipa-cp` 。
-- fipa-vrp
+-fipa-vrp
 启用时，执行值范围的过程间传播。默认情况下，此标志在 `-O2` 上启用。它需
 要启用 `-fipa-cp` 。
-- fipa-icf
+-fipa-icf
 对函数和只读变量执行相同的代码折叠。这种优化减少了代码的大小，并可能
 通过使用不同名称的等效函数替换函数来干扰展开堆栈。在启用了链接时间优
 化的情况下，优化工作更有效。
 尽管如此，这种行为与金链接器 ICF 优化类似，GCC ICF 工作于不同的级别，
 因此优化并不相同——只有 GCC 才能找到等价，只有 Gold 才能找到等价。
 此标志默认为 `-O2` 和 `-Os` 。
-- fisolate-erroneous-paths-dereference
+-fisolate-erroneous-paths-dereference
 检测触发错误或未定义行为的路径，因为取消了空指针。将这些路径与主控制
 流隔离，并将错误或未定义的行为转换为陷阱。默认情况下，该标志在 `-O2`
 或更高处启用，并依赖于 `-fdelete-null-pointer-check` 也启用。
-- fisolate-erroneous-paths-attribute
+-fisolate-erroneous-paths-attribute
 检测由于 returns_nonnull 或非空属性禁止使用 null 值而触发错误或未定义行
 为的路径。将这些路径与主控制流隔离，并将错误或未定义的行为转换为陷阱。
 这目前还没有启用，但将来可能会通过 `-O2` 启用。
-- ftree-sink
+-ftree-sink
 对树执行正向存储动作。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-bit-ccp
+-ftree-bit-ccp
 对树执行稀疏条件位常数传播并传播指针对齐信息。此传递仅对本地标量变量
 进行操作，默认情况下在 `-O` 和更高处启用。它需要启用 `-ftree-ccp` 。
-- ftree-ccp
+-ftree-ccp
 对树执行稀疏条件常数传播(CCP)。此传递仅对本地标量变量进行操作，默认情况
 下在 `-O` 和更高处启用。
-- fssa-backprop
+-fssa-backprop
 在定义链上传播关于值的使用的信息，以便简化定义。例如，如果值的符号不
 重要，则此传递将带符号操作。默认情况下，标志在 `-O` 或更高处启用。
-- fssa-phiopt
+-fssa-phiopt
 在 SSA 节点上执行模式匹配以优化条件代码。
 默认情况下，此传递在 `-O` 或更高处启用。
-- ftree-switch-conversion
+-ftree-switch-conversion
 
 
 在开关中将简单的初始化转换为来自标量数组的初始化。默认情况下，此标志在 `-
 
 O2` 或更高位置启用。
 
-- ftree-tail-merge
+-ftree-tail-merge
 查找相同的代码序列。找到后，用跳转到另一个替换其中一个。这种优化称为
 尾部合并或交叉跳跃。默认情况下，此标志在 `-O2` 或更高位置启用。通过使
 用 `max-tail-merge-比较` 参数和 `max-tail-merge-迭代` 参数，可以对该传递过
 程中的编译时间进行限制。
-- ftree-dce
+-ftree-dce
 在树上执行死代码消除(DCE)。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-builtin-call-dce
+-ftree-builtin-call-dce
 对可能设置 errno 但在其他方面没有副作用的内置函数执行条件死代码消除
 (DCE)。默认情况下，如果没有指定 `-Os` ，则在 `-O2` 和 `更高` 处启用此标志。
-- ftree-dominator-opts
+-ftree-dominator-opts
 基于 domino 树遍历执行各种简单的标量清理(常量/复制传播、冗余消除、范
 围传播和表达式简化)。这也执行跳转线程(以减少跳转到跳转)。默认情况下，
 此标志在 `-O` 或更高处启用。
-- ftree-dse
+-ftree-dse
 对树执行死存储消除(DSE)。死存储区是存储到内存位置的存储区，该存储区
 随后被另一个存储区覆盖，而不存在任何插入的负载。在这种情况下，可以删
 除前面的存储。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-ch
+-ftree-ch
 对树执行循环头复制。这是有益的，因为它提高了代码运动优化的有效性。它
 还节省了一次跳跃。默认情况下，此标志在 `-O` 或更高处启用。它不支持 `-Os` ，
 因为它通常会增加代码的大小。
-- ftree-loop-optimize
+-ftree-loop-optimize
 对树执行循环优化。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-loop-linear
-- floop-strip-mine
-- floop-block
+-ftree-loop-linear
+-floop-strip-mine
+-floop-block
 执行循环嵌套优化。 `-floop-nest-optimize` 一样。要使用这个代码转换，GCC
 必须配置为 `-with-isl` 以启用石墨循环转换基础结构。
-- fgraphite-identity
+-fgraphite-identity
 启用石墨的标识变换。对于每个 SCoP，我们生成多面体表示并将其转换回
 gimple。使用 `-fgraphite-identity` ，我们可以检查 GIMPLE ->石墨-> GIMPLE 转
 换的成本或收益。代码生成器 isl 还执行了一些最小的优化，如索引分割和循
 环中的死代码消除。
 
 
-- floop-nest-optimize
+-floop-nest-optimize
 启用基于 isl 的循环嵌套优化器。这是一个基于 Pluto 优化算法的通用循环嵌套
 优化器。它计算一个优化数据局部性和并行性的循环结构。这个选项是实验性
 的。
-- floop-parallelize-all
+-floop-parallelize-all
 使用石墨数据依赖分析来识别可并行化的循环。并行化所有可以被分析为不包
 含环路的环路的环路，而不检查并行化环路是否有利可图。
-- ftree-coalesce-vars
+-ftree-coalesce-vars
 在从 SSA 表示法转换程序时，尝试通过合并不同用户定义变量的版本来减少复
 制，而不仅仅是编译器临时变量。这可能会严重限制调试使用 `-fno-var-
 tracking-assignments` 编译的优化程序的能力。在否定形式中，此标志防止用
 户变量的 SSA 合并。如果启用了优化，则默认启用此选项，否则它几乎不起作
 用。
-- ftree-loop-if-convert
+-ftree-loop-if-convert
 尝试将内部循环中的条件跳转转换为无分支的等效项。目的是从最内部的循环
 中删除控制流，以提高矢量化传递处理这些循环的能力。如果启用了矢量化，
 则默认启用。-ftree-loop-distribution
@@ -6198,7 +6221,7 @@ ENDDO
 I = 1,n?
 D(I) = E(I) * F
 ENDDO
-- ftree-loop-distribute-patterns
+-ftree-loop-distribute-patterns
 执行可通过调用库生成代码的模式的循环分布。默认情况下，此标志在 `-O3` 上
 启用。
 此传递分发初始化循环并生成对 memset 0 的调用。例如,循环
@@ -6216,7 +6239,7 @@ ENDDO
 I = 1,n?
 B(I) = A(I) + I
 ENDDO 和初始化循环被转换为对 memset 0 的调用。
-- floop-interchange
+-floop-interchange
 在石墨外面进行环路交换。此标志可以改进循环嵌套的缓存性能，并允许进行
 进一步的循环优化，如向量化。例如,循环
 for (int i = 0;我< N;我+ +)
@@ -6227,45 +6250,45 @@ for (int i = 0;我< N;我+ +)
 for (int k = 0;k < N;k + +)
 for (int j = 0;j < N;j + +)
 c[i][i][j]. [i][j] + a[i][k]
-- ftree-loop-im
+-ftree-loop-im
 对树执行循环不变运动。这种传递只移动在 RTL 级别很难处理的不变量(函数
-调用，扩展到 insns 的非平凡序列的操作)。有了 `- funswitchloop` ，它也会将
+调用，扩展到 insns 的非平凡序列的操作)。有了 `-funswitchloop` ，它也会将
 不变量的操作数从循环中移动，这样我们就可以在循环中使用简单的不变式分
 析。通行证还包括存储运动。
-- ftree-loop-ivcanon
+-ftree-loop-ivcanon
 为循环中的迭代数量创建一个标准计数器，在循环中确定迭代的数量需要复杂
 的分析。之后的优化可以很容易地确定这个数字。特别适用于展开。
-- fivopts 对树进行诱导变量优化(强度降低、诱导变量合并、诱导变量消除)。
-- ftree-parallelize-loops = n
+-fivopts 对树进行诱导变量优化(强度降低、诱导变量合并、诱导变量消除)。
+-ftree-parallelize-loops=n
 并行化循环,即。，将它们的迭代空间分割为在 n 个线程中运行。这只适用于迭
 代是独立的且可任意重新排序的循环。这种优化只在多处理器机器上是有利可
 图的，对于 cpu 密集型的循环，而不是受到内存带宽的限制。此选项表示 `-
 pthread` ，因此只支持支持 `-pthread` 的目标。
-- ftree-pta
+-ftree-pta
 执行功能-局部点-对树进行分析。默认情况下，此标志在 `-O` 或更高处启用。
-- ftree-sra
+-ftree-sra
 执行标量替换聚合。此传递使用标量替换结构引用，以防止过早地将结构提交
 到内存中。默认情况下，此标志在 `-O` 或更高处启用。
-- fstore-merging
+-fstore-merging
 执行合并狭窄的存储到连续的内存地址。这一过程将相邻的直接值存储区合并
 到更小的范围内，以减少指令的数量。默认情况下，这是在 `-O2` 和 `-Os` 上启
 用的。
 
 
-- ftree-ter
+-ftree-ter
 在 SSA->正常阶段进行临时表达替换。单使用/单 def 临时器在其使用位置用其
 定义表达式替换。这导致了非 gimple 代码，但是为扩展器提供了更复杂的树，
 从而产生更好的 RTL 生成。默认情况下，在 `-O` 或更高的位置启用此功能。
-- ftree-slsr
+-ftree-slsr
 对树木进行直线强度降低。它识别包含乘法的相关表达式，并在可能的情况下
 用更便宜的计算代替它们。默认情况下，在 `-O` 或更高的位置启用此功能。
-- ftree-vectorize
+-ftree-vectorize
 执行向量化在树上。如果没有显式指定，此标志支持 `-ftree-loop-vectorize` 和 `-
 ftree-slp-vectorize` 。-ftree-loop-vectorize
 对树执行循环矢量化。默认情况下，该标志在 `-O3` 和 `-ftree vectorize` 时启用。
-- ftree-slp-vectorize
+-ftree-slp-vectorize
 对树执行基本的块向量化。默认情况下，该标志在 `-O3` 和 `-ftree vectorize` 时启用。
-- fvect-cost-model =模型
+-fvect-cost-model =模型
 改变用于矢量化的成本模型。模型参数应该是 `无限制的` 、 `动态的` 或 `便宜
 的` 。使用 `无限制` 模型时，可假定矢量化代码路径是有利可图的，而使用 `动
 态` 模型时，运行时检查将保护矢量化代码路径，使其只对迭代计数有效，而
@@ -6273,19 +6296,19 @@ ftree-slp-vectorize` 。-ftree-loop-vectorize
 这样做会使成本难以承受，例如，由于需要对数据依赖或对齐进行运行时检查，
 但否则与 `动态` 模型相同。默认的成本模型依赖于其他优化标志，要么是 `动
 态的` ，要么是 `便宜的` 。
-- fsimd-cost-model =模型
+-fsimd-cost-model =模型
 修改成本模型，用于向量化带有 OpenMP simd 指令的循环。模型论证应该是
- `无限的` 、 `动态的` 、 `便宜的` 。模型的所有值都具有与 `- fvwe -cost-model` 中
-描述的相同的含义，在默认情况下，使用 `- fvwe -cost-model` 定义的成本模型。
-- ftree-vrp
+ `无限的` 、 `动态的` 、 `便宜的` 。模型的所有值都具有与 `-fvwe -cost-model` 中
+描述的相同的含义，在默认情况下，使用 `-fvwe -cost-model` 定义的成本模型。
+-ftree-vrp
 在树上执行值范围传播。这类似于常量传播传递，但是会传播值的范围而不是
 值。这允许优化器删除不必要的范围检查，如数组绑定检查和空指针检查。在
  `-O2` 或更高的位置，这是默认启用的。如果启用了 `-fdelet - Null -
 pointercheck` ，则只执行空指针检查。
-- fsplit-paths
+-fsplit-paths
 有裂隙的路径通向环形山脊。这可以改善死代码消除和常见的子表达式消除。
 默认情况下，在 `-O2` 和以上位置启用该功能。
-- fsplit-ivs-in-unroller
+-fsplit-ivs-in-unroller
 允许在未滚动循环的后续迭代中使用第一次迭代中的值来表示归纳变量的值。
 这将打破长依赖链，从而提高调度传递的效率。
 
@@ -6293,22 +6316,22 @@ pointercheck` ，则只执行空指针检查。
  `-fweb` 和 CSE 的组合通常足以获得相同的效果。但是，在循环体比单个基本
 块更复杂的情况下，这是不可靠的。由于 CSE pass 中的限制，它在某些体系
 结构上也不工作。默认情况下启用此优化。
-- fvariable-expansion-in-unroller
+-fvariable-expansion-in-unroller
 使用此选项，编译器在展开循环时创建一些局部变量的多个副本，这将导致更好
 的代码。-fpartial-inlining
 内联的部分功能。只有当内联本身被 `-finline-function` 或 `-finline-small-
 function` 选项打开时，该选项才会产生任何影响。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fpredictive-commoning
+-fpredictive-commoning
 执行预测公共优化，即。，重用以前循环迭代中执行的计算(特别是内存负载和存
 储)。
 此选项在 `-O3` 级别启用。
-- fprefetch-loop-arrays
+-fprefetch-loop-arrays
 如果目标机器支持，则生成预取内存的指令，以提高访问大型数组的循环的性
 能。
 此选项可能生成更好或更差的代码;结果高度依赖于源代码中的循环结构。
 在水平禁用 `操作系统` 。
-- fno-printf-return-value
+-fno-printf-return-value
 不要将常量替换为格式化输出函数的已知返回值，如 sprintf、snprintf、
 vsprintf 和 vsnprintf(但不替换 printf 的 printf)。这种转换允许 GCC 基于这些
 函数的已知返回值进行优化甚至删除分支，这些函数的参数要么是常量，要么
@@ -6321,13 +6344,13 @@ buf)...
  `-fprintf-return-value` 选项依赖于其他优化，并在 `-O2` 或以上的情况下产生最
 佳结果。它与 `-Wformat-overflow` 和 `-Wformat-truncation` 选项协同工作。默
 认情况下启用 `-fprintf- returnvalue` 选项。
-- fno-peephole
-- fno-peephole2
+-fno-peephole
+-fno-peephole2
 禁用任何特定于机器的窥视孔优化。之间的区别
  `-fno-peephole` 和 `-fno-peephole2` 是如何在编译器中实现的;有些目标用一个，有
 些用另一个，有些两者都用。
  `-fpeephole` 默认启用。 `-fpeephole2` 在级别上启用 `-O2` 、 `-O3` 、 `-Os` 。
-- fno-guess-branch-probability
+-fno-guess-branch-probability
 
 
 不要用启发式猜测分支概率。
@@ -6339,16 +6362,16 @@ fprofile-arcs` )。这些启发式是基于控制流图的。如果__builtin_exp
 部分的分支概率。heuristics 和__builtin_expect 之间的交互可能很复杂，在某些
 情况下，禁用启发式可能会很有用，因此__builtin_expect 的效果更容易理解。
 默认值是 `-fguess-branch-概率`在 `-O` ，  `-O2` ，  `-O3` ，  `-Os` 。
-- freorder-blocks
+-freorder-blocks
 重新排序编译函数中的基本块，以减少所取分支的数量并改进代码的局部性。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- freorder-blocks-algorithm =算法
+-freorder-blocks-algorithm =算法
 使用指定的算法对基本块重新排序。算法参数可以是 `简单的` ，它不会增加代
 码的大小(除了有时由于次要的影响，比如对齐)，也可以是 `stc` ，即 `软件跟
 踪缓存` 算法，它试图将所有经常执行的代码放在一起，通过生成额外的代码
 拷贝来最小化执行的分支的数量。
 默认设置是 `简单` 在-O， - Os，和 `stc` 在-O2， - O3。
-- freorder-blocks-and-partition
+-freorder-blocks-and-partition
 除了重新排序已编译函数中的基本块之外，为了减少所取分支的数量，还将热
 和冷的基本块划分为程序集和`的单独部分。o` 文件，以改进分页和缓存本地
 性能。
@@ -6357,7 +6380,7 @@ linkonce 节、具有用户定义节属性的函数和不支持命名节的任�
 自动关闭此优化。当使用 `-fsplit-stack` 时，默认情况下不启用这个选项(以避
 免链接器错误)，但是可以显式地启用(如果使用工作链接器)。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用 x86。
-- freorder-functions
+-freorder-functions
 重新排序对象文件中的函数，以改进代码的局部性。这是通过使用特殊的子
 节.text 实现的。最常用的执行函数和.text。不太可能执行不太可能的功能。重
 新排序是由链接器完成的，因此对象文件格式必须支持指定的部分，链接器必
@@ -6365,7 +6388,7 @@ linkonce 节、具有用户定义节属性的函数和不支持命名节的任�
 另外，必须提供概要信息反馈以使此选项有效。有关详细信息,请参阅 `-fprofile-
 arcs` 。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fstrict-aliasing
+-fstrict-aliasing
 允许编译器假定适用于正在编译的语言的最严格的别名规则。对于 C(和 C++)，
 这将激活基于表达式类型的优化。特别是，假设一个类型的对象永远不会与另
 
@@ -6395,59 +6418,59 @@ int f(){
 双 d = 3.0;返回((union a_union *) &d)->i;
 }
  `-fstrict- alialize` 选项在 level  `-O2` 、 `-O3` 、 `-Os` 时启用。
-- falign-functions
-- falign-functions = n
+-falign-functions
+-falign-functions=n
 将函数的开始对齐到下一个大于 n 的 2 次方，跳过最多 n 个字节。例如， `-
 falign-functions=32` 将函数对齐到下一个 32 字节的边界，而 `-falign-
 functions=24` 将对齐到下一个 32 字节的边界，只有在跳过 23 字节或更少的
 时候才能做到这一点。
- `-fno- aligni -function` 和 `- faligni -function =1` 是等价的，表示函数没有对齐。
+ `-fno- aligni -function` 和 `-faligni -function =1` 是等价的，表示函数没有对齐。
 有些汇编程序只在 n 为 2 的幂时支持这个标志;在这种情况下，它是四舍五入的。
 如果 n 没有指定或为零，则使用机器相关的默认值。最大允许的 n 选项值是 65536 。
 在 `-O2` 、 `-O3` 级别启用。
-- flimit-function-alignment
+-flimit-function-alignment
 如果启用此选项，编译器将尝试避免不必要的超调函数。它试图指示汇编程序
 按照 `-falign-functions` 指定的数量进行对齐，但不能跳过比函数大小更多的字
 节。
-- falign-labels
+-falign-labels
 
 
-- falign-labels = n
-将所有分支目标对齐到一个 2 次幂的边界，跳过 n 个字节，如 `- falignn -
+-falign-labels=n
+将所有分支目标对齐到一个 2 次幂的边界，跳过 n 个字节，如 `-falignn -
 function` 。这个选项可以很容易地使代码变慢，因为它必须为在通常的代码流
 中到达分支目标时插入虚拟操作。
- `-fno- aligni -label` 和 `- faligni -label =1` 是等价的，意味着标签没有对齐。
-如果 `- faligni -loop` 或 `- faligni -jump` 是适用的，且大于此值，则使用它们的值。
+ `-fno- aligni -label` 和 `-faligni -label =1` 是等价的，意味着标签没有对齐。
+如果 `-faligni -loop` 或 `-faligni -jump` 是适用的，且大于此值，则使用它们的值。
 如果没有指定 n 或 n 为 0 ，则使用依赖于机器的默认值，它很可能是 `1` ，意味
 着没有对齐。最大允许的 n 选项值是 65536 。
 在 `-O2` 、 `-O3` 级别启用。
-- falign-loops
-- falign-loops = n
+-falign-loops
+-falign-loops=n
 对齐循环到两个边界，跳跃到 n 个字节，比如 `-falign-functions` 。如果循环执
 行多次，这将弥补虚拟操作的任何执行。
- `-fno- aligni -loop` 和 `- faligni -loop =1` 是等价的，表示循环没有对齐。最大允许的
+ `-fno- aligni -loop` 和 `-faligni -loop =1` 是等价的，表示循环没有对齐。最大允许的
 n 选项值是 65536 。
 如果没有指定 n 或为 0 ，则使用依赖于机器的默认值。
 在 `-O2` 、 `-O3` 级别启用。
-- falign-jumps
-- falign-jumps = n
+-falign-jumps
+-falign-jumps=n
 将分支目标对齐到两个边界的幂次，对于只能通过跳转达到目标的分支目标，
-跳过最多 n 个字节，如 `- falignn -function` 。在这种情况下，不需要执行虚拟
+跳过最多 n 个字节，如 `-falignn -function` 。在这种情况下，不需要执行虚拟
 操作。
  `-fno- aligni -jump` 和 `-fali -jump =1` 是等价的，意味着循环没有对齐。
 如果 n 没有指定或为零，则使用机器相关的默认值。最大允许的 n 选项值是 65536 。
 在 `-O2` 、 `-O3` 级别启用。
-- funit-at-a-time
+-funit-at-a-time
 由于兼容性的原因，这个选项被保留。 `-funit-at- time` 没有影响，而 `-fno-
 unit-at- time` 意味着 `-fno-toplevel-reorder` 和 `-fno- sectionanchor` 。
 默认启用。
-- fno-toplevel-reorder
+-fno-toplevel-reorder
 不要重新排序顶级函数、变量和 asm 语句。以输入文件中出现的顺序输出它
 们。当使用此选项时，不删除未引用的静态变量。此选项旨在支持依赖于特定
 排序的现有代码。对于新代码，最好尽可能使用属性。
 启用 `o0` 级。当显式禁用时，它还意味着 `-fno- sec- anchor` ，否则在某些目标上的
  `-O0` 上启用。
-- fweb 构建通常用于寄存器分配目的的 web，并分配每个 web 个体的伪寄存器。这允许寄
+-fweb 构建通常用于寄存器分配目的的 web，并分配每个 web 个体的伪寄存器。这允许寄
 存器分配传递直接对 pseudos 进行操作，但也加强了其他一些优化传递，如
 
 
@@ -6455,13 +6478,13 @@ CSE、循环优化器和普通的死代码删除程序。但是，它可以使�
 
 因为变量不再停留在 `home register` 中。
 默认启用 `-funroll-loop` 。
-- fwhole-program
+-fwhole-program
 假设当前编译单元表示正在编译的整个程序。除了 main 函数和被属性
 externally_visible 合并的函数和变量外，所有公共函数和变量都是静态函数，
 实际上，过程间优化器对它们进行了更积极的优化。
 此选项不应与 `-flto` 组合使用。相反，依赖链接器插件应该提供更安全、更精确
 的信息。
-- flto[= n]
+-flto[= n]
 这个选项运行标准的链接时间优化器。当使用源代码调用时，它将生成
 GIMPLE (GCC 的内部表示之一)并将其写入对象文件中的特殊 ELF 部分。当对
 象文件被链接在一起时，所有的函数体将从这些 ELF 区段中读取并实例化，就
@@ -6493,7 +6516,7 @@ GCC 将自动执行链接时优化。一般来说，您应该指定用于链接�
 
 
 
-部可见的符号向编译器传递信息。当链接器插件不可用时， `- fall -program` 应
+部可见的符号向编译器传递信息。当链接器插件不可用时， `-fall -program` 应
 该被用来允许编译器做出这些假设，从而导致更激进的优化决策。
 当不启用 `-fuse-linker-plugin` 时，当使用 `-flto` 编译文件时，生成的对象文件
 比常规对象文件大，因为它包含 GIMPLE 字节码和通常的最终代码(参见 `-ffat-
@@ -6502,7 +6525,7 @@ lto-objects` )。这意味着具有 LTO 信息的对象文件可以链接为普�
 lto-object` 启用时，编译阶段会更快，但不能对它们执行常规的非 lto 链接。
 此外，用于编译单个文件的优化标志不一定与链接时使用的标志相关。例如,
 - c -O0 -ffat-lto 对象-flto foo。c gcc -c -O0 -ffat-lto 对象
-- flto bar。c gcc -o myprog - o3foo。o bar.o
+-flto bar。c gcc -o myprog - o3foo。o bar.o
 这将生成具有未优化汇编代码的单个对象文件，但生成的二进制 `myprog` 在 `-
 O3` 上进行优化。相反，如果最终的二进制代码是用 `-fno-lto` 生成的，那么
  `myprog` 就没有得到优化。
@@ -6515,10 +6538,10 @@ GCC 在生成字节码时保留了一些代码生成标志，因为它们需要�
 如果在链接时没有指定优化级别选项 `-O` ，那么 GCC 将使用编译对象文件时使用
 的最高优化级别。
 目前，以下选项及其设置是从第一个明确指定它们的对象文件中获取的: `-fPIC` ，`
-- fPIC` ，  `-fpie` ，  `-fcommon` ，
- `-fexception` 、 `- fnon-call-exception` 、 `-fgnu-tm` 以及所有 `-m` 目标标志。
+-fPIC` ，  `-fpie` ，  `-fcommon` ，
+ `-fexception` 、 `-fnon-call-exception` 、 `-fgnu-tm` 以及所有 `-m` 目标标志。
 需要某些修改 abi 的标志来匹配所有编译单元，并且试图在链接时用冲突值覆
-盖此标志将被忽略。这包括一些选项，如 `- fres -struct-return` 和 `-fpcc-struct-
+盖此标志将被忽略。这包括一些选项，如 `-fres -struct-return` 和 `-fpcc-struct-
 return` 。
 其他选项如 `-ffp-contract` 、 `-fno-strict-overflow` 、 `-fwrapv` 、 `-fno-trapv` 或
  `-fno-strict- alialize` 将传递到链接阶段，并对相互冲突的翻译单元进行保守合
@@ -6566,7 +6589,7 @@ make 程序，使用 n 个并行作业并行执行。环境变量 MAKE 可以用
 行作业的数量。这在 Makefile 调用 GCC 已经并行执行时非常有用。您必须在
 父 Makefile 中的命令配方中预先输入 `+` ，以使其工作。此选项可能只在 MAKE
 是 GNU MAKE 时有效。
-- flto-partition = alg
+-flto-partition = alg
 指定链接时间优化器使用的分区算法。这个值可以是 `1to1` 来指定一个镜像原
 始源文件的分区，也可以是 `balanced` 来指定分区为大小相同的块(如果可能的
 话)，或者是 `max` 来为每个符号创建新的分区。将 `none` 指定为算法会完全禁
@@ -6575,14 +6598,14 @@ make 程序，使用 n 个并行作业并行执行。环境变量 MAKE 可以用
 
 决方案，但 `max` 分区只用于内部测试。值 `one` 指定应该使用一个分区，而值
  `none` 绕过分区并直接从 WPA 阶段执行链接时间优化步骤。
-- flto-odr-type-merging
+-flto-odr-type-merging
 在链接时间内，启用被损坏的 C++类型名称和它们的统一流。这增加了 LTO 对
 象文件的大小，但允许对违反定义规则的情况进行诊断。
-- flto-compression-level = n
+-flto-compression-level=n
 这个选项指定了写到 LTO 对象文件的中间语言的压缩级别，并且只有在与 LTO
 模式( `-flto` )结合时才有意义。有效值为 0(无压缩)到 9(最大压缩)。这个范围
 之外的值被限制为 0 或 9 。如果没有给定选项，则使用默认的平衡压缩设置。
-- fuse-linker-plugin
+-fuse-linker-plugin
 允许在链接时间优化过程中使用链接器插件。这个选项依赖于链接器中的插件
 支持，链接器可以在 gold 版或 GNU ld 2.21 或更新版中使用。
 此选项允许使用 GIMPLE 字节码从库存档中提取对象文件。通过向链接时间优
@@ -6592,7 +6615,7 @@ make 程序，使用 n 个并行作业并行执行。环境变量 MAKE 可以用
 何使用。
 当启用 GCC 中的 LTO 支持时，这个选项在默认情况下是启用的，GCC 配置为
 使用支持插件的链接器(GNU ld 2.21 或更新或黄金)。
-- ffat-lto-objects
+-ffat-lto-objects
 Fat LTO 对象是包含中间语言和目标代码的对象文件。这使得它们可以用于
 LTO 链接和普通链接。此选项仅在使用 `-flto` 编译时有效，在链接时被忽略。
  `-fno-fat- LTO -object` 在普通 LTO 上提高了编译时间，但是需要完整的工具链
@@ -6604,23 +6627,23 @@ GCC 提供 GCC -ar、GCC -nm、GCC -ranlib 包装器，以便将正确的选项�
  `$libdir/bfd-plugins` 中，其效果与命令包装器(gccar、gcc-nm 和 gcc-ranlib)的
 使用效果相同。
 默认是 `-fno-fat-lto-objects` ，支持链接器插件。
-- fcompare-elim
+-fcompare-elim
 在寄存器分配和后寄存器分配指令分割之后，识别计算处理器标记的算术指令，
 类似于基于该算法的比较操作。如果可能，消除显式比较操作。
 此传递只适用于在注册分配完成之前不能明确表示比较操作的某些目标。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
 
 
-- fcprop-registers
+-fcprop-registers
 在寄存器分配和后寄存器分配指令分割之后，执行一个复制传播传递，试图减
 少调度依赖关系，偶尔消除副本。
 在 `-O` 、 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- fprofile-correction
+-fprofile-correction
 使用插装的二进制文件为多线程程序收集的概要文件可能由于错过了计数器更
 新而不一致。当指定此选项时，GCC 使用启发式来纠正或消除此类不一致性。
 默认情况下，当检测到不一致的概要时，GCC 会发出错误消息。
-- fprofile-use
-- fprofile-use =路径
+-fprofile-use
+-fprofile-use =路径
 启用配置文件反馈导向的优化，以及以下优化，这些优化通常只在配置文件反馈
 可用的情况下才有利可图:
  `-fbranch- probability  ` `-fvpt  ` ` `-funroll-loop  ` ` ` `-fpeel-loop  ` ` ` ` `-ftracer  ` ` `-
@@ -6631,12 +6654,12 @@ ftree vectorize` 和 `ftree-loop- distribution -patterns`
 错误可以通过使用 `-Wcoverage -错配` 转换为警告。注意，这可能会导致优化
 不佳的代码。
 如果指定了路径，GCC 会查看路径以找到概要反馈数据文件。看到 `-fprofile-dir` 。
-- fauto-profile
-- fauto-profile =路径
+-fauto-profile
+-fauto-profile =路径
 启用基于采样的反馈导向优化，以及以下优化，这些优化通常只在配置文件反馈
 可用的情况下才有利可图:
-- fbranch- probability，  `-fvpt` ，  `-funroll-loop` ，  `-fpeel-loop` ，  `-ftracer` ，`
-- ftree-vectorize` ，  `-finline-functions` ，  `-fipa-cp` ，  `-fipa-cp-clone` ，  `-
+-fbranch- probability，  `-fvpt` ，  `-funroll-loop` ，  `-fpeel-loop` ，  `-ftracer` ，`
+-ftree-vectorize` ，  `-finline-functions` ，  `-fipa-cp` ，  `-fipa-cp-clone` ，  `-
 fpredicer` ，`
 
 path 是包含 AutoFDO 概要信息的文件的名称。如果省略，则默认为 fbdata。在
@@ -6663,7 +6686,7 @@ profile.afdo
 此。对于大多数程序来说，过高的精度只会带来好处，但是有一些程序依赖于
 IEEE 浮点的精确定义。对这些程序使用 `-ffloat-store` ，修改后将所有相关的中
 间计算存储到变量中。
-- fexcess-precision =风格
+-fexcess-precision =风格
 此选项允许进一步控制在以比 IEEE 标准和交换浮点类型更精确或范围更广的
 格式进行浮点操作的机器上的超额精度。默认情况下， `-fexcess-
 precision=fast` 实际上;这意味着，如果操作会导致代码更快，那么操作的执行
@@ -6677,7 +6700,7 @@ precision=fast` 。
  `-fexcess-precision=standard` 不是针对 c 语言实现的，在 x86 上，如果指定 `-
 mfpmath=sse` 或 `-mfpmath=sse+387` ，则没有效果;在前一种情况下，IEEE 语
 义应用不需要过分精确，而在后一种情况下，四舍五入是不可预测的。
-- ffast-math
+-ffast-math
 设置选项 `-fno-math-errno` ，  `-funsafe-math-optimization` ，  `-ffinite-math-
 only` ，  `-fno- round- math` ，  `-fno-signaling-nans` ，  `-fcx-limit -range` 和 `-
 fexcess-precision=fast` 。
@@ -6685,7 +6708,7 @@ fexcess-precision=fast` 。
 除了 `-Ofast` 之外，任何 `-O` 选项都不会打开这个选项，因为它会导致程序输出
 错误，而这些程序依赖于 IEEE 或 ISO 规则/规范对数学函数的精确实现。但
 是，它可以为不需要这些规范的保证的程序提供更快的代码。
-- fno-math-errno
+-fno-math-errno
 在调用使用单个指令执行的数学函数(例如，sqrt)后，不要设置 errno。一个依
 赖于 IEEE 异常进行数学错误处理的程序可能想要使用这个标志进行速度处理，
 同时保持 IEEE 算术兼容性。
@@ -6697,17 +6720,17 @@ fexcess-precision=fast` 。
 
 在达尔文系统中，数学库从不设置 errno。因此，编译器没有理由考虑这种可
 能性，而 `-fno-math-errno` 是默认值。
-- funsafe-math-optimizations
+-funsafe-math-optimizations
 允许对浮点算法进行优化(a)假设参数和结果是有效的，(b)可能违反 IEEE 或
 ANSI 标准。当在链接时使用时，它可能包括更改默认 FPU 控制字或其他类似
 优化的库或启动文件。
 任何 `-O` 选项都不会打开此选项，因为它可能导致依赖于精确实现的 IEEE 或
 用于数学函数的 ISO 规则/规范的程序输出不正确。但是，它可以为不需要这
 些规范的保证的程序提供更快的代码。
-允许 `-fno-signed-zeros` 、 `-fno-trapping-math` 、 `- fassociationmath` 和 `-
+允许 `-fno-signed-zeros` 、 `-fno-trapping-math` 、 `-fassociationmath` 和 `-
 freciprocal-math` 。
 默认值是 `-fno-unsafe-math-optimizations` 。
-- fassociative-math
+-fassociative-math
 允许在一系列浮点运算中重新关联操作数。这违反了 ISO C 和 C++语言标准，
 可能会改变计算结果。注意:重新排序可以改变 0 的符号，也可以忽略 NaNs，
 抑制或创建欠流或溢出(因此不能用于依赖于舍入行为(x+2* 52)-2* 52 的代码。
@@ -6716,23 +6739,23 @@ freciprocal-math` 。
 math` 没有多大意义。对于 Fortran 来说，当 `-fno-signe - 0` 和 `-fno-trapping-
 math` 同时生效时，该选项将自动启用。
 默认值是 `-fno-associative-math` 。
-- freciprocal-math
+-freciprocal-math
 如果允许优化，则允许使用值的倒数而不是除以值。例如，可以用 x*(1/y)替
 换 x/y，这在(1/y)服从公共子表达式消除时很有用。注意，这将失去精度，并
 增加在值上操作的失败数。
 默认值是 `-fno-reciprocal-math` 。
-- ffinite-math-only
+-ffinite-math-only
 允许对浮点算法进行优化，假设参数和结果不是 NaNs 或+ infs。
 任何 `-O` 选项都不会打开此选项，因为它可能导致依赖于精确实现的 IEEE 或
 用于数学函数的 ISO 规则/规范的程序输出不正确。但是，它可以为不需要这
 些规范的保证的程序提供更快的代码。
 默认值是 `-fno-finite-math-only` 。
-- fno-signed-zeros
+-fno-signed-zeros
 允许对浮点算法进行优化，忽略零的符号。IEEE 算术指定不同的行为+ 0.0−0.0
 值,然后禁止简化表达式,如 x + 0.0 或 0.0 *(即使 `-ffinite-math-only` )。这个选项
 意味着零结果的符号不重要。
 默认值是 `-fsigned-zeros` 。
-- fno-trapping-math
+-fno-trapping-math
 
 
 假设浮点操作不能生成用户可见的陷阱，那么编译代码。这些陷阱包括零除、
@@ -6743,7 +6766,7 @@ math` 同时生效时，该选项将自动启用。
 这个选项不应该被任何 `-O` 选项打开，因为它可能导致依赖于精确实现的 IEEE
 或 ISO 规则/规格的数学函数的错误输出。
 默认值是 `-ftrapping-math` 。
-- frounding-math
+-frounding-math
 禁用假定默认浮点舍入行为的转换和优化。对于所有浮点到整数的转换，这是
 一个从零到零的循环，对于所有其他的算术截断，这是一个从零到零的循环。
 对于动态更改 FP 舍入模式的程序，或者可以使用非默认舍入模式执行的程序，
@@ -6753,14 +6776,14 @@ math` 同时生效时，该选项将自动启用。
 该选项是实验性的，目前还不能保证禁用受舍入模式影响的所有 GCC 优化。未
 来版本的 GCC 可以使用 C99 的 FENV_ACCESS pragma 提供对该设置更好的控
 制。这个命令行选项将用于指定 FENV_ACCESS 的默认状态。
-- fsignaling-nans
+-fsignaling-nans
 编译代码，假定 IEEE 信令 NaNs 可能在浮点操作期间生成用户可见的陷阱。
 设置此选项将禁用优化，这些优化可能会更改发送 NaNs 信号时可见的异常数
 量。这个选项意味着 `-ftrapping-math` 。
 此选项将定义预处理器宏__SUPPORT_SNAN__。
 默认值是 `-fno-signaling-nans` 。
 这个选项是实验性的，目前不能保证禁用所有影响到 NaN 行为的 GCC 优化。
-- fno-fp-int-builtin-inexact
+-fno-fp-int-builtin-inexact
 不允许内置函数 ceil、floor、round 和 trunc 以及它们的 float 和 longdouble 变体
 生成对非整数参数引发 `不精确` 浮点异常的代码。ISO C99 和 C11 允许这些函数引
 发 `不精确` 异常，但是 ISO/IEC TS 18661- 1:14, ieee754 - 2008 的 C 绑定不允许这
@@ -6769,9 +6792,9 @@ math` 同时生效时，该选项将自动启用。
 ftrappingmath` 生效。
 即使使用了 `-fno-fp-int- build -inexact` ，如果函数生成对库函数的调用，那么
 如果库实现不遵循 TS 18661，则可能会引发 `不精确` 异常。
-- fsingle-precision-constant
+-fsingle-precision-constant
 将浮点常量视为单精度，而不是隐式地将它们转换为双精度常量。
-- fcx-limited-range
+-fcx-limited-range
 
 
 当启用时，此选项声明在执行复杂除法时不需要范围缩小步骤。此外，也没有
@@ -6780,14 +6803,14 @@ ftrappingmath` 生效。
 fno-cx-limit -range` ，但通过 `-ffast-math` 启用。
 此选项控制 ISO C99 CX_LIMITED_RANGE 实用程序的默认设置。不过，这个选项适
 用于所有语言。
-- fcx-fortran-rules
+-fcx-fortran-rules
 复乘法和除法遵循 Fortran 规则。范围缩小是作为复杂除法的一部分进行的，
 但是没有检查复杂乘法或除法的结果是否为 NaN+I*NaN，试图挽救这种情况。
 默认值是 `-fno-cx-fortran-rules` 。
 
 下面的选项控制优化，可以提高性能，但是不能通过任何 `-O` 选项启用。这一部分包括可能
 产生坏代码的实验选项。
-- fbranch-probabilities
+-fbranch-probabilities
 在运行一个用 `-fprofile-arcs` 编译的程序(参见第 3.11 节[Instrumentation
 Options]，第 172 页)之后，您可以使用 `-fbranch- probability` 对它进行第二次
 编译，以改进基于每个分支被执行的次数的优化。当一个程序用 `-fprofile-arcs`
@@ -6798,20 +6821,20 @@ Options]，第 172 页)之后，您可以使用 `-fbranch- probability` 对它�
  `REG_BR_PROB` 。这些可以用来改进优化。目前，它们只在一个地方使
 用:reorg。c` 不是猜测一个分支最有可能走哪条路径，而是使用 `REG_BR_PROB`
 值来准确地确定更经常选择哪条路径。
-- fprofile-values
+-fprofile-values
 如果与 `-fprofile-arcs` 组合，它会添加代码，以便收集程序中有关表达式值的一些
 数据。
 使用 `-fbranch- probability` ，它从表达式的分析值中读取数据，以便在优化中使
 用。
 使用 `-fprofile-generate` 和 `-fprofile-use` 启用。
-- fprofile-reorder-functions
+-fprofile-reorder-functions
 基于配置文件的函数重新排序收集第一次执行一个函数并按升序对这些函数进行
 排序。
 启用 `-fprofile-use` 。
-- fvpt 如果与 `-fprofile-arcs` 结合，此选项指示编译器添加代码以收集有关表达式值的信息。
+-fvpt 如果与 `-fprofile-arcs` 结合，此选项指示编译器添加代码以收集有关表达式值的信息。
 使用 `-fbranch- probability` ，它会读取收集到的数据，并根据它们实际执行优
 化。目前的优化包括使用关于分母值的知识进行划分操作的专门化。
-- frename-registers
+-frename-registers
 
 
 尝试通过使用注册分配后留下的寄存器来避免计划代码中的错误依赖。这种优
@@ -6820,39 +6843,39 @@ Options]，第 172 页)之后，您可以使用 `-fbranch- probability` 对它�
 
 它可能使调试变得不可能，因为变量不再驻留在 `home register` 中。
 默认启用 `-funroll-loop` 。
-- fschedule-fusion
+-fschedule-fusion
 通过指令流执行目标相关的传递来调度相同类型的指令，因为如果目标机器在
 指令流中彼此相邻，那么它们可以更有效地执行它们。
 在 `-O2` 、 `-O3` 、 `-Os` 级别启用。
-- ftracer 进行尾部复制以扩大超块大小。这个转换简化了函数的控制流，允许其他优化做得
+-ftracer 进行尾部复制以扩大超块大小。这个转换简化了函数的控制流，允许其他优化做得
 更好。
 启用 `-fprofile-use` 。
-- funroll-loops
+-funroll-loops
 Unroll 循环的迭代次数可以在编译时或进入循环时确定。 `-funroll-loop` 表示 `-
 frerun-cse- afterloop` 、 `-fweb` 和 `-frenam -register` 。它还打开完整的循环剥
 离(即完全删除循环，并进行少量的迭代)。这个选项使代码变得更大，可能使
 它运行得更快，也可能不会。
 启用 `-fprofile-use` 。
-- funroll-all-loops
+-funroll-all-loops
 展开所有循环，即使它们的迭代次数在输入循环时是不确定的。这通常会使程
 序运行得更慢。 `-funroll-all-loop` 和 `-funroll-loop` 意思相同。
-- fpeel-loops
+-fpeel-loops
 皮循环中有足够的信息，它们不会滚动太多(来自概要反馈或静态分析)。它还
 会打开完整的循环剥离(即完全去除循环，并且迭代次数较少)。
 使用 `-O3` 和/或 `-fprofile-use` 启用。
-- fmove-loop-invariants
+-fmove-loop-invariants
 在 RTL 循环优化器中启用循环不变运动传递。启用 `o1 群` 级
-- fsplit-loops
+-fsplit-loops
 如果循环包含一个条件，对于迭代空间的一端总是为真，另一端则为假，则将循
 环分割为两个。
-- funswitch-loops
+-funswitch-loops
 将具有循环不变量条件的分支移出循环，并在两个分支上复制循环(根据条件修
 改)。
-- floop-unroll-and-jam
+-floop-unroll-and-jam
 在可行的循环上应用 unroll 和 jam 转换。在一个循环嵌套中，它将外部环路由
 某个因素展开，并融合产生的多个内循环。
-- ffunction-sections
-- fdata-sections
+-ffunction-sections
+-fdata-sections
 
 
 如果目标支持任意区段，则将每个函数或数据项放置到输出文件中自己的区段
@@ -6873,22 +6896,22 @@ frerun-cse- afterloop` 、 `-fweb` 和 `-frenam -register` 。它还打开完整
 响代码生成。它们阻止编译器和汇编器使用翻译单元内的相对位置进行优化，
 因为在链接时间之前，位置是未知的。这种优化的一个例子是放松对短调用指
 令的调用。
-- fbranch-target-load-optimize
+-fbranch-target-load-optimize
 在开始/结束线程之前执行分支目标寄存器的负载优化。目标寄存器的使用通
 常只能在重载期间公开，因此从循环中提升负载并执行块间调度需要单独的优
 化通行证。
-- fbranch-target-load-optimize2
+-fbranch-target-load-optimize2
 在开始/结束线程之后执行分支目标寄存器负载优化。
-- fbtr-bb-exclusive
+-fbtr-bb-exclusive
 在执行分支目标寄存器负载优化时，不要在任何基本块中重用分支目标寄存器。
-- fstdarg-opt
+-fstdarg-opt
 针对这些参数的使用，优化二元参数函数的前言。
-- fsection-anchors
+-fsection-anchors
 尝试通过使用共享的 `锚` 符号来处理附近的对象来减少符号地址计算的数量。
 这种转换可以帮助减少获取条目的数量并访问某些目标。
 例如，以下函数 foo 的实现:
 静态 int a, b, c;int foo (void){返回 a + b + c;}
-通常计算所有三个变量的地址，但是如果您使用 `- fsec- anchor` 编译它，它会
+通常计算所有三个变量的地址，但是如果您使用 `-fsec- anchor` 编译它，它会
 从一个公共锚点访问变量。效果类似于下面的伪代码(它不是有效的 C):
 int foo(空白)
 {注册 int *xr = &x;返回 xr[& &x] + xr[&b - &x] + xr[&c - &x];
@@ -7591,7 +7614,7 @@ GCC 支持许多命令行选项，用于控制将运行时工具添加到它通�
 时，必须使用此选项，并且在链接时也必须使用该选项。
 - pg 生成额外代码，编写适合 gprof 分析程序的配置文件信息。在编译所需数据的源文件时
 必须使用此选项，在链接时也必须使用此选项。
-- fprofile-arcs
+-fprofile-arcs
 添加代码，以便检测程序流ARC 。在执行过程中，程序记录每个分支和调用执行
 的次数，以及执行或返回的次数。在支持具有优先级支持的构造函数的目标上，
 概要分析可以正确地处理类的构造函数、析构函数和 C++构造函数(和析构函
@@ -7628,34 +7651,34 @@ fbranch- probability` 重新编译源文件(参见第 3.10 节[控制优化的�
 第 114 页)。
 - 对于测试覆盖率分析，使用 gcov 从 `` 生成人类可读信息。gcno’和‘。gcda`
 文件。有关更多信息，请参阅 gcov 文档。
-使用 `- fprofiles -arcs` ，程序 GCC 的每个函数都会创建一个程序流图，然后为
+使用 `-fprofiles -arcs` ，程序 GCC 的每个函数都会创建一个程序流图，然后为
 图找到一个生成树。只有不在生成树上的ARC 才需要检测:编译器添加代码来计
 算执行这些ARC 的次数。当电ARC 是块的唯一出口或唯一入口时，可以将插装代码
 添加到块中;否则，必须创建一个新的基本块来保存插装代码。
-- ftest-coverage
+-ftest-coverage
 生成 gcov 代码覆盖实用程序(参见第 10 章[gcov -一个测试覆盖程序]，第 821
 页)可以用来显示程序覆盖的注释文件。每个源文件的注释文件被称为
  `auxname.gcno` 。请参阅上面的 `-fprofile-arcs` 选项，以了解关于如何生成测
 试覆盖率数据的 auxname 和说明。如果不进行优化，则覆盖率数据与源文件
 的匹配程度更高。
-- fprofile-abs-path
+-fprofile-abs-path
 自动转换相对源文件名到绝对路径名。gcno` 文件。这使得 gcov 能够在使用不
 同工作目录进行编译的项目中找到正确的源。
-- fprofile-dir =路径
+-fprofile-dir =路径
 将目录设置为在路径中搜索配置文件数据文件。此选项只影响 `-fprofile-generate`
 生成的配置文件数据，
  `-ftest-coverage` ，  `-fprofile-ARC 线`以及 `-fprofile-use` 和 `-fbranch- probability`
 及其相关选项。绝对和相对路径都可以使用。默认情况下，GCC 使用当前目录
 作为路径，因此概要数据文件出现在与对象文件相同的目录中。
-- fprofile-generate
-- fprofile-generate =路径
+-fprofile-generate
+-fprofile-generate =路径
 启用通常用于检测应用程序的选项，以生成对以后使用基于概要反馈的优化重
 新编译有用的概要文件。编译时和连接程序时都必须使用 `-fprofile-generate` 。
 启用以下选项: `-fprofile-ARC` 、 `-fprofile-values` 、 `-fvpt` 。
 如果指定了路径，GCC 会查看路径以找到概要反馈数据文件。看到 `-fprofile-dir` 。
 使用 `-fprofile-use` 来优化基于收集的概要信息的程序。有关更多信息，请参阅
 第 3.10 节[优化选项]第 114 页。
-- fprofile-update =方法
+-fprofile-update =方法
 修改基于概要反馈的优化的应用程序仪器的更新方法。方法参数应该是 `单个` 、
  `原子` 或 `首选原子` 。第一个对于单线程应用程序非常有用，而第二个则通过
 发出线程安全代码来防止概要文件损坏。
@@ -7667,7 +7690,7 @@ fbranch- probability` 重新编译源文件(参见第 3.10 节[控制优化的�
 
 使用 `prefer-atomic` 将在目标支持时转换为 `atomic` ，否则转换为 `atomic` 。当
 命令行中出现 `-pthread` 时，GCC 驱动程序会自动选择 `prefer-atomic` 。
-- fsanitize =地址
+-fsanitize =地址
 启用寻址杀毒器，一个快速的内存错误检测器。内存访问指令被检测到越界和
 使用后的 bug。选项允许 `-fsanitize-address-use-after-scope` 。有关详细信息，
 请 参 见 https:/github.com/google/sanitizers/wiki/addresssanitizer。使用
@@ -7676,17 +7699,17 @@ ASAN_OPTIONS 环境变量可以影响运行时行为。当设置为 help=1 时�
 https://github.com/google/sanitizers/wiki/addresssanitizerflags #run-time-
 flags 关于支持选项的列表。选项不能与 `-fsanitize=thread` 和/或 `-fcheck-
 pointer-bounds` 结合使用。
-- fsanitize =内核地址
+-fsanitize =内核地址
 为 Linux 内核启用 AddressSanitizer。详情请参见 https://github.com/谷歌
 /kasan/wiki。该选项不能与 `-fcheck-pointer-bounds -bounds 边界` 结合。
-- fsanitize = pointer-compare
+-fsanitize = pointer-compare
 与指针操作数进行仪器比较操作(<，<=，>，>=)。该选项必须与 `-fsanitize=内
 核地址`或 `-fsanitize=address` 选项不能结合使用
  `-fsanitize =线程` 和/或 `-fcheck-pointer-bounds` 。注意:默认情况下，在运行时
 禁用该检查。要启用它，将 detect_invalid_ pointer_pair =2 添加到环境变量
 ASAN_OPTIONS。使用 detect_invalid_pointer_pair =1 只在两个指针都为非空时
 检测无效操作。
-- fsanitize = pointer-subtract
+-fsanitize = pointer-subtract
 有指针操作数的仪器减法。选项必须与 `-fsanitize=内核地址`或 `-
 fsanitize=address` 选项不能与 `-fsanitize=thread` 和/或 `-fsanitize=thread` 或 `-
 fsanitize=address` 选项结合使用
@@ -7694,7 +7717,7 @@ fsanitize=address` 选项结合使用
 时间。要启用它，向环境变量 ASAN_OPTIONS 添加 detect_invalid_pointer_pair
 =2。使用 detect_invalid_pointer_pair =1 只在两个指针都为非空时检测无效操
 作。
-- fsanitize =线程
+-fsanitize =线程
 启用 ThreadSanitizer，一种快速数据竞争检测器。内存访问指令用于检测数据
 竞争错误。有关更多细节，请参见 `https:/github。com /谷歌/sanitizers /wiki#threadsanitizer`。
 可以使用 TSAN_OPTIONS 环境变量影响运行时行为;请参见
@@ -7708,35 +7731,35 @@ pointer-bounds` 结合使用。
 不能抛出异常
 
 ( `-fnon-call-exceptions` )。
-- fsanitize =泄漏
+-fsanitize =泄漏
 启用泄漏消毒器，一个内存泄漏检测器。此选项仅对可执行文件的链接起作用，
 可执行文件被链接到覆盖 malloc 和其他分配器函数的库。详细信息请参见
 https://github.com/google/sanitizers /wiki/ addresssanitizerleaktizer。可以
 使用 LSAN_OPTIONS 环境变量影响运行时行为。选项不能与 `-fsanitize=thread
 `组合。
-- fsanitize =未定义
+-fsanitize =未定义
 启用不可定义的行为消毒剂，一个快速不可定义的行为检测器。各种计算被检
 测，以检测未定义的行为在运行时。电流,则有:
-- fsanitize =转变
+-fsanitize =转变
 此选项允许检查移位操作的结果是否未定义。注意，在 C 和 C++，
 以及 ISO C90 和 C99 等等之间，被认为是未定义的东西有细微差
 别。
  `-fsanitize = shift-base` 和 `-fsanitize = shift-exponent` 。
-- fsanitize = shift-exponent
+-fsanitize = shift-exponent
 此选项允许检查移位操作的第二个参数是否为负值，并且小于提
 升的第一个参数的精度。
-- fsanitize = shift-base
+-fsanitize = shift-base
 如果移位操作的第二个参数在范围内，请检查移位操作的结果是
 否没有定义。注意，在 C 和 C++之间，以及 ISO C90 和 C99 之间，
 被认为是未定义的东西略有不同。
-- fsanitize = integer-divide-by-zero
+-fsanitize = integer-divide-by-zero
 检测整数除法的 0 和 INT_MIN/- 1 除法。-fsanitize =遥不可及的
 使用此选项，编译器将__builtin_unreavailable 调用转换为诊断消
 息调用。当到达__builtin_unreunavailable 调用时，该行为是未定
 义的。
-- fsanitize = vla-bound
+-fsanitize = vla-bound
 此选项指示编译器检查可变长度数组的大小为正。
-- fsanitize =零
+-fsanitize =零
 此选项允许指针检查。特别是，在尝试取消引用空指针时，或者
 引用(可能是 rvalue 引用)被绑定到空指针时，或者如果方法被调
 用到由空指针指向的对象上时，使用该选项构建的应用程序将发
@@ -7744,83 +7767,83 @@ https://github.com/google/sanitizers /wiki/ addresssanitizerleaktizer。可以
 
 
 
-- fsanitize =返回
+-fsanitize =返回
 此选项允许返回语句检查。打开这个选项所构建的程序将在到达
 非 void 函数的末尾时发出错误消息，但实际上没有返回值。此选
 项仅在 C++中有效。
-- fsanitize = signed-integer-overflow
+-fsanitize = signed-integer-overflow
 该选项使有符号整数溢出检查。我们检查+ *和一元和二元-的结果
 在有符号算术中没有溢出。注意，必须考虑整数推广规则。也就
 是说，以下不是溢流:
 符号字符 a = SCHAR_MAX;+ +;
-- fsanitize =边界
+-fsanitize =边界
 此选项允许插装数组边界。检测到各种越界访问。灵活的数组成
 员、灵活的类成员数组以及具有静态存储的变量的初始化器都没
 有被检测。该选项不能与 `-fcheck-pointer-bounds -bounds 边界` 结
 合。
-- fsanitize = bounds-strict
+-fsanitize = bounds-strict
 此选项允许严格检测数组边界。大多数越界访问被检测到，包括
 灵活的数组成员和灵活的数组成员数组。使用静态存储的变量的
 初始化器不插装。该选项不能与 `-fcheck-pointer-bounds -bounds
 边界` 结合。
-- fsanitize =对齐
+-fsanitize =对齐
 该选项允许检查指针在被取消引用时的对齐方式，或者引用绑定
 到未被充分对齐的目标时的对齐方式，或者在未被充分对齐的对
 象上调用方法或构造函数时的对齐方式。
-- fsanitize =物体大小
+-fsanitize =物体大小
 此选项允许使用
 __builtin_object_size 函数。检测到各种超出边界的指针访问。
-- fsanitize = float-divide-by-zero
+-fsanitize = float-divide-by-zero
 用 0 检测浮点除法。与其他类似的选项不同， `-fsanitize=浮点数-
 by- 0` 不 支 持 `-fsanitize=undefined` ， 因为使用 `-
 fsanitize=undefined` 进行浮点数除法可以获得不定式和非限定性。
-- fsanitize = float-cast-overflow
+-fsanitize = float-cast-overflow
 此选项允许浮点类型到整数转换检查。我们检查转换的结果是否没有
 溢出。
 与其他类似的选项不同， `-fsanitize=漂浮-cast-overflow` 没有通过
  `-fsanitize=undefined` 启用。在启用 FE_INVALID 异常的情况下，
 此选项不能正常工作。
-- fsanitize = nonnull-attribute
+-fsanitize=nonnull-attribute
 
 
 此选项允许插装调用，检查是否没有将空值传递给被非空函数属
 
 性标记为需要非空值的参数。
 
-- fsanitize = returns-nonnull-attribute
+-fsanitize = returns-nonnull-attribute
 此选项允许在带有 returns_nonnull 函数属性的函数中检测返回语
 句，以检测这些函数返回的空值。
-- fsanitize = bool
+-fsanitize = bool
 这个选项允许检测来自 bool 的负载。如果加载了 0/1 以外的值，则会
 发出运行时错误。
-- fsanitize =枚举
+-fsanitize =枚举
 这个选项允许从枚举类型中装载负载。如果加载了枚举类型的值
 范围之外的值，则会发出运行时错误。
-- fsanitize = vptr
+-fsanitize = vptr
 此选项允许插装 C++成员函数调用、成员访问和指向基类和派生类
 的指针之间的一些转换，以验证所引用的对象具有正确的动态类
 型。
-- fsanitize = pointer-overflow
+-fsanitize = pointer-overflow
 此选项允许使用指针算术工具。如果指针算术溢出，则会发出运行时
 错误。
-- fsanitize =装入的
+-fsanitize =装入的
 此选项允许检测选定的内建函数的参数。如果将无效值传递给此
 类参数，则会发出运行时错误。例如:将 0 作为参数传递给。
 __builtin_ctz 或__builtin_clz 调用未定义的行为，并通过此选项进行诊
 断。
 虽然 `-ftrapv` 会导致发出带符号溢出的陷阱，但 `-fsanitize=undefined` 会给出
 一条诊断消息。这目前只适用于 C 族语言。
-- fno-sanitize =所有
+-fno-sanitize =所有
 此选项将禁用所有先前启用的杀毒软件。 `-fsanitize=all` 是不允许的，因为有些消
 毒剂不能同时使用。
-- fasan-shadow-offset =号
+-fasan-shadow-offset =号
 此选项强制 GCC 在 AddressSanitizer 检查中使用自定义阴影偏移。它对于在内
 核寻址杀毒器中实验不同的影子内存布局非常有用。
-- fsanitize-sections = s1,s2,...
+-fsanitize-sections = s1,s2,...
 
 在选定的用户定义部分中清理全局变量。如果可能包含通配符。
 
-- fsanitize-recover(=选择)
+-fsanitize-recover(=选择)
  `-fsanitize- recovery =` 控制选项列表中提到的杀毒软件的错误恢复模式。为
 sanitizer 组件启用此选项会导致它试图继续运行程序，就好像没有发生错误一
 样。这意味着在一次程序运行中可以报告多个运行时错误，即使报告了错误，
@@ -7831,7 +7854,7 @@ sanitizer 组件启用此选项会导致它试图继续运行程序，就好像�
 目前这个特性只适用于 `-fsanitize=undefined` (其子选项中除了 `-fsanitize= un`
 和 `-fsanitize=return` )、 `-fsanitize=float-cast-overflow` 、 `-fsanitize=float-
 divideed -by-zero` 、 `-fsanitize -address` 对于这些杀毒软件，默认情况下，除`
-- fsanitize=address` 外，恢复是打开的。
+-fsanitize=address` 外，恢复是打开的。
 
 即使在编译器端打开恢复模式，也需要在运行库端启用它，否则失败仍然是致
 
@@ -7840,17 +7863,17 @@ halt_on_error=0，而 AddressSanitizer 的默认值为 halt_on_error= 1。可以
 在相应的环境变量中设置 halt_on_error 标志来覆盖它。
 不使用显式 opts 参数的语法。这相当于指定一份备选名单:
 未定义,float-cast-overflow float-divide-by-zero bounds-strict
-- fsanitize-address-use-after-scope
+-fsanitize-address-use-after-scope
 允许对本地变量进行清理，以检测使用后的范围错误。该选项将 `-fstack-重用` 设
 置为 `none` 。
-- fsanitize-undefined-trap-on-error
+-fsanitize-undefined-trap-on-error
  `-fsanitize-undefined-trap-on-error` 选项指示编译器使用__builtin_trap 而不是
 libubsan 库例程报告未定义的行为。这样做的好处是不需要 libubsan 库，也不
 链接，因此即使在独立的环境中也可以使用它。
-- fsanitize-coverage = trace-pc
+-fsanitize-coverage = trace-pc
 启用覆盖引导的模糊代码检测。在每个基本块中插入对 sanitizer_cov_trace_pc 的调
 用。
-- fsanitize-coverage = trace-cmp
+-fsanitize-coverage = trace-cmp
 启用 dataflow 引导的 fuzzing 代码检测。调用__sanitizer_cov_trace_cmp1、
 __sanitizer_cov_trace_cmp2、
 __sanitizer_cosani_cosanie_cosanie_cosani_trac_consanie_cosani_consanie_integ
@@ -7858,10 +7881,10 @@ ral 常量，
 __sanitie_cosanie_cosani_conve_cosani_consani_contrac_contrac_contrac_conwi
 nd_consani_conpo_conmp_conpo_conmp_conpo_conmp_conmp_conmp_conmp_
 conpo_conmp_conmp_conpo_conpo_conpo_conmp_conpo_conmp_conmp_1，
-- fbounds-check
+-fbounds-check
 对于支持它的前端，生成其他代码来检查用于访问数组的索引是否在声明的范
 围内。这目前只有 Fortran 前端支持，其中这个选项默认为 false。
-- fcheck-pointer-bounds
+-fcheck-pointer-bounds
 启用指针边界检查器检测。每个内存引用都通过检查用于内存访问的指针与该
 指针关联的边界。
 
@@ -7885,56 +7908,56 @@ static-libmpx` 。使用各种 CHKP_RT_*环境变量可以影响运行时库行�
 函数属性(参见第 6.31 节[函数属性]，第 464 页)。GCC 还提供了许多用于控制
 指针边界检查器的内置函数。有关更多信息，请参见第 6.57 节[指针边界检查
 器构建项]第 611 页。
-- fchkp-check-incomplete-type
+-fchkp-check-incomplete-type
 为不完全类型的变量生成指针边界检查。默认启用。
-- fchkp-narrow-bounds
+-fchkp-narrow-bounds
 指针边界检查器用于指向对象字段的指针的控制界限。如果启用了收缩，则使
 用字段边界。否则使用对象边界。参见 `-fchkp 窄到内层数组` 和 `-fchkp-first
 field-has-own-bounds` 。默认启用。
-- fchkp-first-field-has-own-bounds
+-fchkp-first-field-has-own-bounds
 强制指针边界检查器为结构中的第一个字段的地址使用有限的边界。默认情况
 下，指向第一个字段的指针与指向整个结构的指针具有相同的边界。
-- fchkp-flexible-struct-trailing-arrays
+-fchkp-flexible-struct-trailing-arrays
 强制指针边界检查器处理结构中的所有尾数组，使其尽可能灵活。默认情况下，
 只有零长度或标有属性 bnd 变量大小的数组字段被视为灵活的。
-- fchkp-narrow-to-innermost-array
+-fchkp-narrow-to-innermost-array
 强制指针边界检查器在嵌套静态数组访问时使用最内部数组的边界。默认情况
 下，禁用此选项，并使用最外层数组的边界。
-- fchkp-optimize
+-fchkp-optimize
 启用指针边界检查器优化。在优化级别 `-O` 、 `-O2` 、 `-O3` 默认启用。
-- fchkp-use-fast-string-functions
+-fchkp-use-fast-string-functions
 
 
 允许通过指针边界检查器使用*_nobnd 版本的字符串函数(不复制边界)。默认情况
 下禁用。
-- fchkp-use-nochk-string-functions
+-fchkp-use-nochk-string-functions
 允许通过指针边界检查器使用*_nochk 版本的字符串函数(不检查边界)。默认情况
 下禁用。
-- fchkp-use-static-bounds
+-fchkp-use-static-bounds
 允许指针边界检查器生成静态变量的静态边界保持边界。默认启用。
-- fchkp-use-static-const-bounds
+-fchkp-use-static-const-bounds
 使用静态初始化的边界，而不是在每次需要时生成它们。在 `-fchkp-use-static-
 bounds` 启用时，默认启用。-fchkp-treat-zero-dynamic-size-as-infinite
 使用此选项，不完整类型的对象的动态获得的大小为零，将被指针边界检查器
 视为具有无限大小。如果程序链接到库中，丢失了一些符号的大小信息，这个
 选项可能会很有用。默认情况下禁用。
-- fchkp-check-read
+-fchkp-check-read
 指示指针边界检查器生成所有读访问内存的检查。默认启用。
-- fchkp-check-write
+-fchkp-check-write
 指示指针边界检查器，以生成所有内存写入访问的检查。默认启用。
-- fchkp-store-bounds
+-fchkp-store-bounds
 指示指针边界检查器，以生成用于指针写入的边界存储。
 默认启用。
-- fchkp-instrument-calls
+-fchkp-instrument-calls
 指示指针边界检查器将指针的界限传递给调用。默认启用。
-- fchkp-instrument-marked-only
+-fchkp-instrument-marked-only
 指示指针边界检查器只对标有 bnd_instrument 属性的函数进行检查(参见第
 6.31 节[函数属性]，第 464 页)。默认情况下禁用。
-- fchkp-use-wrappers
+-fchkp-use-wrappers
 允许指针边界检查器将对内置函数的调用替换为对包装器函数的调用。当 `-
 fchk1 -use-wrappers` 用于链接程序时，GCC 驱动程序会自动链接到
  `libmpxwrappers` 。参见 `-static-libmpxwrappers` 。默认启用。
-- fcf-protection =(完整的| | |返回分支没有)
+-fcf-protection =(完整的| | |返回分支没有)
 通过检查控制流传输指令的目标地址(例如间接函数调用、函数返回、间接跳
 转)，启用控制流传输的代码检测来增加程序安全性。这可以防止将控制流转
 移到意想不到的目标。这是为了防止诸如面向返回编程(ROP)和类似的面向调
@@ -7950,19 +7973,19 @@ fchk1 -use-wrappers` 用于链接程序时，GCC 驱动程序会自动链接到
 第 6.31 节[函数属性]，第 464 页)。
 目前 x86 GNU/Linux target 提供了一个基于 Intel Control-flow Enforcement 技术
 (CET)的实现。
-- fstack-protector
+-fstack-protector
 发出额外的代码来检查缓冲区溢出，例如堆栈崩溃攻击。这是通过向具有脆弱
 对象的函数添加一个保护变量来实现的。这包括调用 alloca 的函数，以及具有
 大于 8 字节的缓冲区的函数。在输入函数时初始化保护，然后在函数退出时检
 查。如果一个保护检查失败，将打印一个错误消息，程序将退出。
-- fstack-protector-all
+-fstack-protector-all
 就像" -fstack- protected "除了所有的函数都是受保护的。
-- fstack-protector-strong
+-fstack-protector-strong
 类似于 `-fstack- protected` ，但是包含了需要保护的附加函数——那些具有本
 地数组定义或引用本地帧地址的函数。
-- fstack-protector-explicit
+-fstack-protector-explicit
 就像 `-fstack- protected` 一样，但是只保护那些具有 stack_protect 属性的函数。
-- fstack-check
+-fstack-check
 生成代码以验证您没有超出堆栈边界。如果在具有多个线程的环境中运行，您
 应该指定此标志，但是您很少需要在单线程环境中指定它，因为如果只有一个
 堆栈，那么几乎所有系统都自动检测到堆栈溢出。
@@ -7983,15 +8006,15 @@ fchk1 -use-wrappers` 用于链接程序时，GCC 驱动程序会自动链接到
  `-fstack-check=` 是为 Ada 检测无限递归和堆栈溢出的需要而设计的。在编译
 Ada 代码时， `specific` 是一个很好的选择。一般来说，防范堆栈冲突攻击是不
 够的。为了防止你想要的 `-fstack-clash-protection` 。
-- fstack-clash-protection
+-fstack-clash-protection
 生成代码以防止堆栈冲突样式的攻击。当启用此选项时，编译器一次只会分配
 一页的堆栈空间，并且在分配后立即访问每个页面。因此，它防止分配跳过操
 作系统提供的任何堆栈保护页。
 大多数目标不完全支持堆栈冲突保护。然而，在这些目标上 `-fstack- collision -
 protection` 将保护动态堆栈分配。如果目标支持 `-fstack-check=specific` ，那么
  `-fstack-clash-protection` 也可以为静态堆栈分配提供有限的保护。
-- fstack-limit-register = reg -fstack-limit-symbol =符号
-- fno-stack-limit
+-fstack-limit-register = reg -fstack-limit-symbol =符号
+-fno-stack-limit
 生成代码以确保堆栈不会超出某个值，即寄存器的值或符号的地址。如果需要
 更大的堆栈，则在运行时发出信号。对于大多数目标来说，信号在堆栈超过边
 界之前被提升，因此可以在不采取特殊预防措施的情况下捕获信号。
@@ -8001,7 +8024,7 @@ __stack_limit=0x7ffe0000` 来实现 128KB 的堆栈限制。注意，这可能�
 GNU 链接器。
 您可以使用 no_stack_limit 函数属性在本地重写堆栈限制检查(参见第 6.31 节[函数
 属性]，第 464 页)。
-- fsplit-stack
+-fsplit-stack
 生成代码在堆栈溢出之前自动分割堆栈。产生的程序具有一个不连续堆栈，只
 有当程序无法分配更多内存时，该堆栈才会溢出。这在运行线程程序时非常有
 用，因为不再需要为每个线程计算一个好的堆栈大小。这目前只适用于运行
@@ -8011,8 +8034,8 @@ GNU/Linux 的 x86 目标。
 括库代码)不是一个选项，那么链接器可以修复这些调用，以便在没有 `-fsplit-
 stack` 的情况下编译的代码总是有一个很大的堆栈。支持这一功能的是在 GNU
 binutils 版本 2.21 和之后的 gold linker 中实现的。
-- fvtable-verify =[性病| preinit |没有)
-此选项仅在编译 C++代码时可用。它打开(或关闭，如果使用 `- ftable -verify=none
+-fvtable-verify =[性病| preinit |没有)
+此选项仅在编译 C++代码时可用。它打开(或关闭，如果使用 `-ftable -verify=none
 `)在运行时验证每个虚拟调用的安全特性，即进行调用的 vtable 指针对于对象的类
 型是有效的，并且没有被破坏或覆盖。如果在运行时检测到一个无效的 vtable 指
 针，则会报告一个错误并立即停止程序的执行。
@@ -8025,7 +8048,7 @@ binutils 版本 2.21 和之后的 gold linker 中实现的。
 前构建它们。
 如果该选项在指定值的命令行中多次出现，那么 `none` 将优先于 `std` 和`
 preinit` ; `preinit` 优先于 `std` 。
-- fvtv-debug
+-fvtv-debug
 当与 `-fvtable-verify=std` 或 `-fvtable-verify=preinit` 一起使用时，会导致调用
 vtable 验证特性的运行时函数的调试版本。这个标志还会导致编译器记录关于
 它为每个类找到哪个 vtable 指针的信息。该信息被写入一个名为
@@ -8033,7 +8056,7 @@ vtable 验证特性的运行时函数的调试版本。这个标志还会导致�
 该目录)中记录`，否则记录当前工作目录。
 注意:该特性将数据附加到日志文件。如果您想要一个新的日志文件，请确保删除
 任何现有的日志文件。
-- fvtv-counts
+-fvtv-counts
 这 是 一个 调试 标识。 当 使用 在 结合 与
  `-fvtable-verify =性病`  或  `-fvtable-verify = preinit` , 这 使编译器跟踪它遇
 到的虚拟调用的总数以及它插入的验证数。它还计算了对某些运行时库函数的调
@@ -8043,7 +8066,7 @@ vtable 验证特性的运行时函数的调试版本。这个标志还会导致�
 并将此信息写入 `vtv_class_set_size` 中。在同一个目录中登录。
 注意:这个特性将数据附加到日志文件中。要获得新的日志文件，请确保删除任
 何现有的日志文件。
-- finstrument-functions
+-finstrument-functions
 生成对函数的入口和出口的插装调用。在函数输入之后和函数退出之前，使用
 当前函数及其调用站点的地址调用下面的分析函数。(在某些平台上，
 __builtin_return_address 不能在当前函数之外工作，因此调用站点信息可能不
@@ -8064,24 +8087,24 @@ void * call_site);
 没有完成。例如，这可以用于上面列出的分析函数、高优先级中断例程以及无
 法安全地调用分析函数的任何函数(如果分析例程生成输出或分配内存，可能
 是信号处理程序)。
-- finstrument-functions-exclude-file-list =文件,文件,...
+-finstrument-functions-exclude-file-list =文件,文件,...
 设置从插装中排除的函数列表(参见 `-finstrument-functions` 的描述)。如果包
 含函数定义的文件与文件中的一个相匹配，则该函数不会被检测。匹配是在子
 字符串上完成的:如果文件参数是文件名的子字符串，则认为它是匹配的。
 例如:
-- finstrument-functions-exclude-file-list = /位/ stl,包括/ sys
+-finstrument-functions-exclude-file-list = /位/ stl,包括/ sys
 排除路径名包含 `/bits/stl` 或 `include/sys` 的文件中定义的任何内联函数。
 如果出于某种原因，您想要在 sym 中包含字母 `，` ，那么请写 `\，` 。例如， `-
 finstrument-functions- exclusive -file-list=  `\，\，tmp "(注意选项周围的单引
 号)。
-- finstrument-functions-exclude-function-list =符号,符号,...
+-finstrument-functions-exclude-function-list =符号,符号,...
 这类似于 `-finstrument-functions- exclusive -file-list` ，但此选项设置要从检测
 中排除的函数名列表。要匹配的函数名是它的用户可见名称，比如向量
 <int>blah(constvector<int>&)， 而 不 是 内 部 损 坏 的 名 称(例 如 ，
 _z4blahrst6vectoriisiee)。匹配是在子字符串上完成的:如果 sym 参数是函数名
 的子字符串，那么它被认为是匹配的。对于 C99 和 C++扩展标识符，函数名必
 须使用 UTF- 8 ，而不是使用通用字符名。
-- fpatchable-function-entry = N[M]
+-fpatchable-function-entry = N[M]
 在每个函数的开头生成 N 个 NOPs，在 Mth NOP 之前的函数入口点。如果忽略
 M，它默认为 0 ，因此函数入口指向第一个 NOP 处的地址。如果代码段是可写
 的，那么 NOP 指令保留了额外的空间，可用于在运行时修补任何所需的插装。
@@ -8091,7 +8114,7 @@ M，它默认为 0 ，因此函数入口指向第一个 NOP 处的地址。如�
 对于运行时标识，这些区域的起始地址(对应于它们各自的函数项减去 M)将在
 生成的二进制文件的__patchable_function_entries 部分中额外收集。
 注意，__attribute__(patchable_function_ entry, N,M)的值优先于命令行选项 `-
-fpatch- function-entry=N,M` 。这可以用来增加面积大小或在一个函数上完全删
+fpatch-function-entry=N,M` 。这可以用来增加面积大小或在一个函数上完全删
 除它。如果 N=0，则没有记录任何 pad 位置。
 NOP 指令被插入——可能在此之前，取决于 m——函数入口地址，甚至在序言之
 前。
@@ -8193,34 +8216,34 @@ MF]，第 188 页)，但如果没有 `-E` ，则每个 `-o` 被理解为指定�
 件。
 由于 `-E` 没有隐含， `-MD` 可以用于生成依赖输出文件，作为编译过程的副作用。
 多党民主运动 像 `-MD` 除了只提到用户头文件，而不是系统头文件。
-- fpreprocessed
+-fpreprocessed
 向预处理程序表明输入文件已经被预处理。这抑制了宏扩展、三图转换、转义
 换行拼接和处理大多数指令。预处理器仍然能够识别和删除注释，因此您可以
 将一个用 `-C` 预处理的文件传递给编译器，而不会出现任何问题。在这种模式
 下，集成预处理器仅仅是前端的标记器。
-如果输入文件有一个扩展名，则 `- fpreprocessing` 是隐式的。我`,`。二世` 或
+如果输入文件有一个扩展名，则 `-fpreprocessing` 是隐式的。我`,`。二世` 或
  `.mi` 。这些扩展是 GCC 用于 `-save-temps` 创建的预处理文件的扩展。
-- fdirectives-only
+-fdirectives-only
 在预处理时，处理指令，但不展开宏。
-选项的行为取决于 `-E` 和 `- fpreprocessing` 选项。
+选项的行为取决于 `-E` 和 `-fpreprocessing` 选项。
 对于 `-E` ，预处理仅限于处理诸如`#define`、`#ifdef` 和`#error` 之类的指令。不执
 行其他预处理操作，如宏展开和三图转换。此外， `-dD` 选项是隐式启用的。
-使用 `- fpreprocessing` ，命令行的预先定义和大多数内置宏都是禁用的。像
+使用 `-fpreprocessing` ，命令行的预先定义和大多数内置宏都是禁用的。像
 __LINE__这样的与上下文相关的宏通常会被处理。这允许编译以前只使用- e -
 fdirectivess 预处理的文件。
-对于 `-E` 和 `- fpreprocessing` ， `- fpreprocessing` 的规则优先。这使之前预处理
+对于 `-E` 和 `-fpreprocessing` ， `-fpreprocessing` 的规则优先。这使之前预处理
 的文件能够完全的预处理- e -fdirectives。
-- fdollars-in 标识符接受 `$` 标识符。
-- fextended-identifiers
+-fdollars-in 标识符接受 `$` 标识符。
+-fextended-identifiers
 在标识符中接受通用字符名。默认情况下，C99(以及以后的 C 标准版本)和 C++可
 以启用此选项。
-- fno-canonical-system-headers
+-fno-canonical-system-headers
 当预处理时，不要用规范化来缩短系统头路径。
-- ftabstop =宽度
+-ftabstop =宽度
 设置选项卡停止之间的距离。这有助于预处理器在警告或错误中报告正确的列
 号，即使标签出现在行上。如果值小于 1 或大于 100 ，则忽略该选项。默认是
 8 。
-- ftrack-macro-expansion(=级别)
+-ftrack-macro-expansion(=级别)
 
 
 通过宏展开跟踪令牌的位置。这允许编译器在宏扩展中发生编译错误时对当前
@@ -8238,38 +8261,38 @@ fdirectivess 预处理的文件。
 位置。这个值是最需要记忆的。当这个选项没有参数时，默认参数值是 `2` 。
 
 注意-ftrack- macroexpand =2 默认激活。
-- fmacro-prefix-map = =新老
+-fmacro-prefix-map = =新老
 当预处理文件驻留在目录 `old` 中时，将__FILE__和__BASE_FILE__宏展开，就像
 在目录 `new` 中保存的文件一样。可以使用`将绝对路径更改为相对路径。对于
 新的，可以产生更多的可再生的建筑，是独立于位置的。此选项还会在编译期
 间影响__builtin_FILE()。参见 `-ffile-prefix-map` 。
-- fexec-charset =字符集
+-fexec-charset =字符集
 
 设置执行字符集，用于字符串和字符常量。默认的是 utf - 8 。 charset 可以是系
 
 统的 iconv 库例程支持的任何编码。
 
-- fwide-exec-charset =字符集
+-fwide-exec-charset =字符集
 设置宽执行字符集，用于宽字符串和字符常量。默认是 UTF- 32 或 UTF- 16 ，两
 者对应 wchar_t 的宽度。与 `-fexec-charset` 一样，charset 可以是系统的 iconv
 库例程支持的任何编码;但是，您会遇到编码问题，这些编码并不完全适合
 wchar_t。
-- finput-charset =字符集
+-finput-charset =字符集
 设置输入字符集，用于将输入文件的字符集转换为 GCC 使用的源字符集。如果
 语言环境没有指定，或者 GCC 不能从语言环境中获取这些信息，默认是 UTF-
 8 。这可以被语言环境或命令行选项覆盖。目前，如果存在冲突，命令行选项
 
 优先。 charset 可以是系统的 iconv 库例程支持的任何编码。
 
-- fpch-deps
+-fpch-deps
 当使用预编译的标头(请参阅第 3.21 节[预编译标头]第 425 页)时，此标志将导
 致依赖输出标志也列出来自预编译标头的依赖项的文件。如果没有指定，则只
 列出预编译头，而不列出用于创建头的文件，因为使用预编译头时不参考这些
 文件。
-- fpch-preprocess
+-fpch-preprocess
 此选项允许使用预编译头(参见第 3.21 节[预编译头]，第 425 页)和 `-E` 。它在
 输出中插入一个特殊的#pragma， #pragma GCCpch_preprocess `filename` 来标
-记查找预编译头的位置及其文件名。当使用 `- fpreprocessing` 时，GCC 识别这
+记查找预编译头的位置及其文件名。当使用 `-fpreprocessing` 时，GCC 识别这
 个#pragma 并加载 PCH。
 这个选项在默认情况下是关闭的，因为产生的预处理输出只真正适合作为 GCC 的
 输入。它由 `-save-temps` 打开。
@@ -8278,7 +8301,7 @@ wchar_t。
 您不应该在自己的代码中编写这个#pragma，但是如果 PCH 文件在其他位置可
 用，那么编辑文件名是安全的。文件名可以是绝对的，也可以是相对于 GCC 当
 前目录的。
-- fworking-directory
+-fworking-directory
 允许在预处理程序输出中生成 linemarkers，以便编译器在预处理时知道当前
 工作目录。当启用此选项时，预处理器会在初始的 linemarker 之后发出第二
 个 linemarker，它具有当前的工作目录，后面跟着两个斜线。GCC 在预处理的
@@ -8353,7 +8376,7 @@ dn (^) 像 `-dD` ，但只发出宏名，而不是扩展名。
 - dU 类似 `-dD` 除了只有扩展的宏，或者在预处理程序指令中测试其定义的宏是
 输出;输出被延迟到宏的使用或测试;和 `#undef` 指令也为测试但未
 定义的宏输出。
-- fdebug-cpp
+-fdebug-cpp
 
 
 此选项只对调试 GCC 有用。当从 CPP 或与 `-E` 一起使用时，它将转储关于位置
@@ -8417,9 +8440,9 @@ _object-file-name_
 - s
 - E 如果使用了这些选项中的任何一个，则链接器不会运行，对象文件名不应该用作参数。参见
 第 3.2 节[总体选项]，第 29 页。
-- fuse-ld = bfd
+-fuse-ld = bfd
 使用 bfd 链接器而不是默认链接器。
-- fuse-ld =金
+-fuse-ld =金
 使用黄金链接器而不是默认链接器。
 - llibrary
 - llibrary
@@ -8533,7 +8556,7 @@ lead to subtle defects. Supplying them in cases where they are not necessary is 
 该链接将与 `libubsan` 的共享版本相关联。 `-static-libubsan` 选项指示 GCC 驱动
 程序静态地链接 `libubsan` ，而不必静态地链接其他库。
 - static-libmpx
-当 `- fcheckpointerbounds` 和 `-mmpx` 选项用于链接一个程序时，GCC 驱动程序
+当 `-fcheckpointerbounds` 和 `-mmpx` 选项用于链接一个程序时，GCC 驱动程序
 会自动链接到 `libmpx` 。如果 `libmpx` 作为共享库可用，并且不使用 `-static` 选
 项，那么该选项将链接到 `libmpx` 的共享版本。 `-static-libmpx` 选项指示 GCC
 驱动程序静态地链接‘libmpx’，而不必静态地链接其他库。
@@ -8699,7 +8722,7 @@ dir/usr/include` 。此选项禁止添加此类后缀。
 大多数都有正负两种形式; `-ffoo` 的否定形式是 `-fno-foo` 。在下面的表格中，只有一个表
 单被列出来了——这个表单不是默认的。您可以通过删除 `否` 或添加 `否` 来找出另一种形
 式。
-- fstack-reuse = reuse-level
+-fstack-reuse = reuse-level
 此选项控制用户声明的本地/自动变量的堆栈空间重用，以及编译器生成的临时变
 
 量。重用级别可以是  `all`  、  `named_vars`  或  `none`  。  `all` 允许对所有本地变量和临
@@ -8749,48 +8772,48 @@ A(int k): i(k)， j(k) {} int i;int j;
 栈空间和其他临时变量或作用域的局部变量，它们的活动范围与它不重叠。然
 而，一些遗留代码依赖于不重用临时程序堆栈空间的旧编译器的行为，这种积
 极的堆栈重用可能导致运行时错误。此选项用于控制临时堆栈重用优化。
-- ftrapv (^) 此选项为加、减、乘操作上的带符号溢出生成陷阱。选项 `-ftrapv` 和 `-fwrapv`
+-ftrapv (^) 此选项为加、减、乘操作上的带符号溢出生成陷阱。选项 `-ftrapv` 和 `-fwrapv`
 相互覆盖，因此在命令行上使用 `-ftrapv  ` ` `-fwrapv` 会导致 `-fwrapv` 有效。注
 意，只有活动选项会覆盖命令行，所以在命令行上使用 `-ftrapv  `-fwrapv  ` `-
 fno-wrapv` 会使 `-ftrapv` 有效。
-- fwrapv (^) 此选项指示编译器假设加法、减法和乘法的带符号算术溢出使用二补表示法。
+-fwrapv (^) 此选项指示编译器假设加法、减法和乘法的带符号算术溢出使用二补表示法。
 这个标志支持一些优化和禁用其他。选项 `-ftrapv` 和 `-fwrapv` 相互覆盖，因此
 在命令行上使用 `-ftrapv  ` ` `-fwrapv` 会导致 `-fwrapv` 有效。注意，只有活动选
-项会覆盖命令行，所以在命令行上使用 `-ftrapv  `- fwrapv  ` `-fno-wrapv` 会使 `-
+项会覆盖命令行，所以在命令行上使用 `-ftrapv  `-fwrapv  ` `-fno-wrapv` 会使 `-
 ftrapv` 有效。
 
-- fwrapv-pointer
+-fwrapv-pointer
 这个选项指示编译器假设在加法和减法上的指针算术溢出使用两个 s-补表示。
 此标志禁用某些假定指针溢出无效的优化。
-- fstrict-overflow
+-fstrict-overflow
 这个选项意味着 `-fno-wrapv  ` `-fno-wrapv 指针`，当被否定时意味着 `-fwrapv  ` `-
 fwrapv 指针`。
-- fexceptions
+-fexceptions
 使异常处理。生成传播异常所需的额外代码。对于某些目标，这意味着 GCC 为
 所有函数生成框架展开信息，这可以产生大量的数据大小开销，尽管它不会影
 响执行。如果不指定此选项，GCC 默认情况下允许 C+等通常需要异常处理的
 语言使用此选项，而不允许 C 等通常不需要异常处理的语言使用此选项。但是，
 在编译需要与 C++编写的异常处理程序的 C 代码时，您可能需要启用这个选项。
 如果您正在编译不使用异常处理的旧 C++程序，您可能还希望禁用此选项。
-- fnon-call-exceptions
+-fnon-call-exceptions
 生成允许捕获指令抛出异常的代码。请注意，这需要特定于平台的运行时支持，
 这种支持在任何地方都不存在。此外，它只允许捕获指令抛出异常，例如内存
 引用或浮点指令。它不允许从诸如 SIGALRM 这样的任意信号处理程序中抛出
 异常。
-- fdelete-dead-exceptions
+-fdelete-dead-exceptions
 
 
 考虑到可能抛出异常但对程序执行没有贡献的指令可以被优化。在 Ada 语言规
 范允许的情况下，Ada 前端默认启用此选项。导致取消死异常的优化传递在不
 同的优化级别上是独立启用的。
-- funwind-tables
+-funwind-tables
 类似于 `-fexception` ，除了它只生成所需的任何静态数据，但不会以任何其他
 方式影响生成的代码。通常不需要启用此选项;相反，需要这种处理的语言处
 理器可以代表您启用它。
-- fasynchronous-unwind-tables
+-fasynchronous-unwind-tables
 生成矮人格式的展开表，如果目标机器支持的话。该表在每个指令边界上都是
 精确的，因此可以使用它从异步事件(如调试器或垃圾收集器)进行堆栈展开。
-- fno-gnu-unique
+-fno-gnu-unique
 在使用最近的 GNU 汇编程序和 C 库的系统上，c++编译器使用
 STB_GNU_UNIQUE 绑定来确保即使在 RTLD_LOCAL 的存在下，内联函数中的
 模板静态数据成员和静态局部变量的定义也是惟一的;这对于避免两个不同的
@@ -8798,36 +8821,36 @@ RTLD_LOCAL 插件使用的库的问题是必要的，这些插件依赖于其中
 的定义，因此不同意另一个关于符号绑定的问题。但这导致了 dlclose 被忽略，
 因为它影响了 DSOs;如果您的程序依赖于通过 dlclose 和 dlopen 重新初始化
 DSO，您可以使用 `-fno-gnu-unique` 。
-- fpcc-struct-return
+-fpcc-struct-return
 在内存中返回 `短` 结构和联合值，就像长一些的一样，而不是在寄存器中。这
 种约定效率较低，但它的优点是允许在与其他编译器(尤其是可移植的 C 编译
 器)一起编译的 gcc 编译的文件和文件之间进行互斥。
 在内存中返回结构的精确约定取决于目标配置宏。
 短结构和联合是那些其大小和对齐与某些整数类型匹配的。
-警告:用 `- fpcd -struct-return` 开关编译的代码与使用 `-freg-struct-return` 开关编
+警告:用 `-fpcd -struct-return` 开关编译的代码与使用 `-freg-struct-return` 开关编
 译的代码不兼容。使用它来符合非默认的应用程序二进制接口。
-- freg-struct-return
+-freg-struct-return
 尽可能在寄存器中返回 struct 和 union 值。这对于小结构比 `-fpcc-struct-return` 更
 有效。
-如果您既不指定 `-fpcc-struct-return` ，也不指定 `- fres -struct-return` ，则 GCC 默
-认使用目标的标准约定。如果没有标准约定，GCC 就默认为 `- fpcct -struct-return` ，
+如果您既不指定 `-fpcc-struct-return` ，也不指定 `-fres -struct-return` ，则 GCC 默
+认使用目标的标准约定。如果没有标准约定，GCC 就默认为 `-fpcct -struct-return` ，
 除非 GCC 是主要的编译器。在这些情况下，我们可以选择标准，我们选择更有效
 的寄存器返回选项。
-警告:使用 `- fpar -struct-return` 开关编译的代码与使用 `-fpcc-struct-return` 开关
+警告:使用 `-fpar -struct-return` 开关编译的代码与使用 `-fpcc-struct-return` 开关
 编译的代码不兼容。使用它来符合非默认的应用程序二进制接口。
-- fshort-enums
+-fshort-enums
 分配到枚举类型，只需要声明的可能值范围的字节数。具体来说，enum 类型
 相当于具有足够空间的最小整数类型。
 
 
 警告: `-fshort-enums` 开关导致 GCC 生成与没有该开关生成的代码不兼容的二进
 制代码。使用它来符合非默认的应用程序二进制接口。
-- fshort-wchar
+-fshort-wchar
 将 wchar_t 的底层类型重写为 shortuntunsignedint，而不是目标的默认类型。
 这个选项对于构建在 WINE 下运行的程序非常有用。
-警告: `- fwchar` 开关导致 GCC 生成的代码与没有该开关生成的代码不兼容。使
+警告: `-fwchar` 开关导致 GCC 生成的代码与没有该开关生成的代码不兼容。使
 用它来符合非默认的应用程序二进制接口。
-- fno-common
+-fno-common
 在 C 代码中，该选项控制在没有初始化器(在 C 标准中称为暂定定义)的情况下
 定义的全局变量的位置。暂定定义与使用 extern 关键字(不分配存储)的变量声
 明不同。
@@ -8841,13 +8864,13 @@ ISO C 不需要这种行为，在某些目标上，对变量引用可能会有�
 译单元中定义，就会得到一个多定义错误。使用 `-fno-common` 编译对于提供
 更好性能的目标非常有用，或者如果您希望验证该程序将在其他系统上工作，
 这些系统总是以这种方式处理未初始化的变量定义。
-- fno-ident
+-fno-ident
 忽略了#识别指令。
-- finhibit-size-directive
+-finhibit-size-directive
 不要输出.size 汇编器指令，或者如果函数在中间被分割，并且这两个部分被放置
 在内存中相隔很远的位置上，会引起麻烦的其他任何东西。此选项用于编译
  `crtstuff.c` ;你不应该把它用于其他任何事情。
-- fverbose-asm
+-fverbose-asm
 在生成的汇编代码中添加额外的注释信息，使其更具可读性。这个选项通常只
 适用于那些真正需要阅读生成的汇编代码的人(也许是在调试编译器本身时)。
  `-fno-verbose-asm` 是默认值，它会忽略额外的信息，在比较两个汇编程序文件时
@@ -8898,7 +8921,7 @@ tmp92
 ```
 
 评论是针对人类而不是机器的，因此评论的精确格式可能会改变。
-- frecord-gcc-switches
+-frecord-gcc-switches
 此开关导致用于调用编译器的命令行被记录到正在创建的对象文件中。这种转
 换只在某些目标上实现，记录的确切格式与目标和二进制文件格式有关，但是
 它通常采用包含 ASCII 文本的部分的形式。此开关与 `-fverbose-asm` 开关有关，
@@ -8924,12 +8947,12 @@ fpic (^) 如果支持目标机器，则发出位置无关的代码，适用于�
 位置无关的代码需要特殊的支持，因此只能在某些机器上工作。
 当设置此标志时，宏__pic__和__pic__被定义为 2 。
 
-- fpie
-- fPIE 这些选项类似于 `-fpic` 和 `-fpic` ，但是生成的位置独立代码只能链接到可执行
+-fpie
+-fPIE 这些选项类似于 `-fpic` 和 `-fpic` ，但是生成的位置独立代码只能链接到可执行
 文件中。通常在链接期间使用 `-pie` GCC 选项时使用这些选项。
  `-fpie` 和 `-fpie` 都定义宏__pie__和__pie__。宏的值为 `-fpie` 为 1 ， `-fpie` 为 2 。
 
-- fno-plt (^) 不要在位置无关的代码中对外部函数调用使用 PLT。相反，从 get 和分支加载
+-fno-plt (^) 不要在位置无关的代码中对外部函数调用使用 PLT。相反，从 get 和分支加载
 调用站点的被调用地址。通过消除 PLT 存根并将 get 负载公开到优化中，这将
 导致更有效的代码。在 32 位 x86 这样的体系结构中，PLT 存根期望得到特定
 寄存器中的 get 指针，这为编译器提供了更多的寄存器分配自由。延迟绑定需
@@ -8938,11 +8961,11 @@ fpic (^) 如果支持目标机器，则发出位置无关的代码，适用于�
 在位置相关的代码中，一些目标还将调用转换为标记为不使用 PLT 的函数，以替
 代 get。
 
-- fno-jump-tables
+-fno-jump-tables
 不要对 switch 语句使用跳转表，即使它比其他代码生成策略更有效。此选项
 与 `-fpic` 或 `-fpic` 一起使用，用于构建构成动态链接器的一部分且不能引用跳
 转表的地址的代码。对于某些目标，跳转表不需要 get，也不需要这个选项。
-- ffixed-reg
+-ffixed-reg
 将命名为 reg 的寄存器视为一个固定寄存器;生成的代码不应该引用它(除了可
 能作为堆栈指针、帧指针或其他固定角色)。
 
@@ -8953,14 +8976,14 @@ REGISTER_NAMES 宏中定义。
 
 这个标志没有否定形式，因为它指定了三种方式的选择。
 
-- fcall-used-reg
+-fcall-used-reg
 将命名为 reg 的寄存器视为可分配的寄存器，该寄存器被函数调用所阻塞。它
 可以分配给临时变量或不跨调用的变量。这样编译的函数不会保存和恢复寄存
 器 reg。
 将此标志与框架指针或堆栈指针一起使用是错误的。将此标志用于在机器执行
 模型中具有固定普遍角色的其他寄存器会产生灾难性的结果。
 这个标志没有否定形式，因为它指定了三种方式的选择。
-- fcall-saved-reg
+-fcall-saved-reg
 将命名为 reg 的寄存器当作函数保存的可分配寄存器。它甚至可以分配给在一
 个调用中生存的临时变量或变量。函数以这种方式编译，如果使用它，则保存
 并恢复寄存器 reg。
@@ -8968,20 +8991,20 @@ REGISTER_NAMES 宏中定义。
 模型中具有固定普遍角色的其他寄存器会产生灾难性的结果。
 另一种类型的灾难来自于使用此标志进行寄存器，在该寄存器中可以返回函数值。
 这个标志没有否定形式，因为它指定了三种方式的选择。
-- fpack-struct[= n]
+-fpack-struct[= n]
 在没有指定值的情况下，将所有结构成员打包在一起，不带孔。当指定了一个
 值(必须是两个值的小幂)时，根据这个值对结构成员进行分组，表示最大对齐
 (即，默认对齐要求大于这个值的对象在下一个拟合位置可能是未对齐的。
 警告: `-fpack-struct` 开关会导致 GCC 生成与没有该开关生成的代码不兼容的二
 进制代码。此外，它使代码不理想。使用它来符合非默认的应用程序二进制接
 口。
-- fleading-underscore
+-fleading-underscore
 此选项及其对应项 `-fno-lead -下划线` 强制更改对象文件中表示 C 符号的方式。
 一个用途是帮助链接遗留汇编代码。
 警告: `-flead -下划线` 开关导致 GCC 生成与没有该开关生成的代码不兼容的二进
 制代码。使用它来符合非默认的应用程序二进制接口。并不是所有的目标都为
 这个转换提供完整的支持。
-- ftls-model =模型
+-ftls-model =模型
 修改要使用的线程本地存储模型(参见第 6.63 节[ThreadLocal]，第 782 页)。
 模型参数应该是 `全局动态` 、 `本地动态` 、 `initial-exec` 或 `local-exec` 。注意，
 选择取决于优化:编译器可以对翻译单元之外不可见的符号使用更有效的模型，
@@ -8989,7 +9012,7 @@ REGISTER_NAMES 宏中定义。
 没有 `-fpic` 的默认值是 `初始执行` ;对于 `-fpic` ，默认是 `全局动态` 。
 
 
-- ftrampolines
+-ftrampolines
 对于通常需要为嵌套函数生成蹦床的目标，总是生成它们，而不是使用描述符。
 否则，对于不需要它们的目标(例如 HP-PA 或 IA-64)，什么也不做。
 蹦床是在堆栈上运行时获取嵌套函数的地址时创建的一小段代码，用于间接调
@@ -9001,7 +9024,7 @@ REGISTER_NAMES 宏中定义。
 此外，如果存在嵌套函数，使用 `-ftrampolines` 编译的代码和使用 `-fno-
 trampolines` 编译的代码是不兼容二进制的。因此，必须在整个规划范围内使
 用这一选择，并极其小心地加以处理。
-- fvisibility =(默认隐藏内部| | |保护)
+-fvisibility =(默认隐藏内部| | |保护)
 将默认的 ELF 图像符号可见性设置为指定的选项——除非在代码中重写，否则
 所有的符号都用这个标记。使用这个特性可以大大提高共享对象库的链接和加
 载时间，生成更优化的代码，提供近乎完美的 API 导出，并防止符号冲突。强
@@ -9042,7 +9065,7 @@ extern 声明不受‘-fvisibility’的影响，因此很多代码可以通过�
 节点。
 这 些 技 术 、 它 们 的 优 点 以 及 如 何 使 用 它 们 的 概 述 见
 http://gcc.gnu.org/wiki/Visibility。
-- fstrict-volatile-bitfields
+-fstrict-volatile-bitfields
 如果访问易失性位字段(或其他结构字段，尽管编译器通常会优先使用这些类
 型)的访问应该使用字段类型宽度的单一访问，如果可能的话，应该与自然对
 齐。例如，具有内存映射外围寄存器的目标可能需要所有此类访问都是 16 位
@@ -9058,7 +9081,7 @@ http://gcc.gnu.org/wiki/Visibility。
 注意:由于 C/ C++ 11 内存模型的限制，不允许对非位域成员进行写访问。因此，
 建议将字段类型的所有位定义为位域成员。
 此选项的默认值由目标处理器的应用程序二进制接口决定。
-- fsync-libcalls
+-fsync-libcalls
 此选项控制是否可以使用__sync 家族的任何离线实例来实现 C++ 11 __atomic 家族
 的函数。
 该选项的默认值被启用，因此该选项惟一有用的形式是 `-fno-sync-libcall` 。此
@@ -9076,8 +9099,8 @@ http://gcc.gnu.org/wiki/Visibility。
 编译和链接任务，几乎不需要使用任何这些选项。
 
 - dletters
-- fdump-rtl-pass
-- fdump-rtl-pass =文件名
+-fdump-rtl-pass
+-fdump-rtl-pass =文件名
 表示在编译期间按字母指定的时间进行调试转储。这用于调试基于 rtlr 的编译
 器传递。大多数转储文件的文件名是通过在 dumpname 中附加一个传递号和
 一个单词来创建的，这些文件是在输出文件的目录中创建的。在 `=filename` 选
@@ -9096,141 +9119,141 @@ pass 注册到 pass 管理器中时，传递号被分配。大多数传递都按
 [预处理器选项]，第 187 页，获取关于预处理程序特定转储选项的信息。
 可以使用 `-fdump-rtl` 开关或一些 `-d` 选项字符来启用调试转储。以下是在信和
 信中可能用到的字母，以及它们的含义:
-- fdump-rtl-alignments
+-fdump-rtl-alignments
 已经计算了一个又一个分支对齐。
-- fdump-rtl-asmcons
+-fdump-rtl-asmcons
 修改 rtl 语句后的转储，该语句不满足 in/out 约束。
-- fdump-rtl-auto_inc_dec
+-fdump-rtl-auto_inc_dec
 转储 auto-inc-dec 后发现。此传递仅在具有 auto inc 或 auto dec 指令
 的体系结构上运行。
-- fdump-rtl-barriers
+-fdump-rtl-barriers
 清理完隔板后倾倒。
-- fdump-rtl-bbpart
+-fdump-rtl-bbpart
 在划分热块和冷块之后转储。
-- fdump-rtl-bbro
+-fdump-rtl-bbro
 块重新排序后转储。
-- fdump-rtl-btl1
-- fdump-rtl-btl2
+-fdump-rtl-btl1
+-fdump-rtl-btl2
  `-fdump-rtl-btl1` 和 `-fdump-rtl-btl2` 允许在两个分支目标负载优化通
 过后进行转储。-fdump-rtl-bypass
 跳过跳转后转储并控制流优化。
-- fdump-rtl-combine
+-fdump-rtl-combine
 
 
 
 在 RTL 指令组合通过后转储。
 
-- fdump-rtl-compgotos
+-fdump-rtl-compgotos
 在重复计算 goto 之后转储。
-- fdump-rtl-ce1
-- fdump-rtl-ce2
-- fdump-rtl-ce3
+-fdump-rtl-ce1
+-fdump-rtl-ce2
+-fdump-rtl-ce3
  `-fdump-rtl-ce1` ，  `-fdump-rtl-ce2` ，  `-fdump-rtl-ce3` 在三个 if 转换
 通过后可以转储。
-- fdump-rtl-cprop_hardreg
+-fdump-rtl-cprop_hardreg
 在硬注册复制传播后转储。
-- fdump-rtl-csa
+-fdump-rtl-csa
 合并堆栈调整后的转储。
-- fdump-rtl-cse1
-- fdump-rtl-cse2
+-fdump-rtl-cse1
+-fdump-rtl-cse2
  `-fdump-rtl-cse1` 和 `-fdump-rtl-cse2` 可以在两个常见的子表达式消除
 通过后进行转储。
-- fdump-rtl-dce
+-fdump-rtl-dce
 在独立死代码消除通过后转储。
-- fdump-rtl-dbr
+-fdump-rtl-dbr
 延迟分支调度后的转储。
-- fdump-rtl-dce1
-- fdump-rtl-dce2
+-fdump-rtl-dce1
+-fdump-rtl-dce2
  `-fdump-rtl-dce1` 和 `-fdump-rtl-dce2` 可以在两个死商店消除通过后
 倾倒。
-- fdump-rtl-eh
+-fdump-rtl-eh
 EH 处理代码结束后转储。
-- fdump-rtl-eh_ranges
+-fdump-rtl-eh_ranges
 在 EH 处理范围区域转换后转储。
-- fdump-rtl-expand
+-fdump-rtl-expand
 RTL 代后转储。
-- fdump-rtl-fwprop1
-- fdump-rtl-fwprop2
+-fdump-rtl-fwprop1
+-fdump-rtl-fwprop2
  `-fdump-rtl-fwprop1` 和 `-fdump-rtl-fwprop2` 可以在两个正向传播后
 进行倾倒。
-- fdump-rtl-gcse1
-- fdump-rtl-gcse2
+-fdump-rtl-gcse1
+-fdump-rtl-gcse2
 
 
 
  `-fdump-rtl-gcse1` 和 `-fdump-rtl-gcse2` 可以在全球共同子表达式消
 除后进行倾倒。-fdump-rtl-init-regs
 在寄存器初始化之后转储。
-- fdump-rtl-initvals
+-fdump-rtl-initvals
 转储后的初始值集的计算。
-- fdump-rtl-into_cfglayout
+-fdump-rtl-into_cfglayout
 在转换为 cfglayout 模式后转储。
-- fdump-rtl-ira
+-fdump-rtl-ira
 在重复的寄存器分配之后转储。
-- fdump-rtl-jump
+-fdump-rtl-jump
 第二次跳转优化后转储。
-- fdump-rtl-loop2
+-fdump-rtl-loop2
  `-fdump-rtl-loop2` 允许在 rtl 循环优化通过后转储。
-- fdump-rtl-mach
+-fdump-rtl-mach
 在执行机器相关的重组传递后转储，如果该传递存在的话。
-- fdump-rtl-mode_sw
+-fdump-rtl-mode_sw
 删除冗余模式开关后转储。
-- fdump-rtl-rnreg
+-fdump-rtl-rnreg
 转储后重新编号登记。
-- fdump-rtl-outof_cfglayout
+-fdump-rtl-outof_cfglayout
 从 cfglayout 模式转换后转储。
-- fdump-rtl-peephole2
+-fdump-rtl-peephole2
 在窥视孔后倾倒。
-- fdump-rtl-postreload
+-fdump-rtl-postreload
 转储后 post-reload 优化。
-- fdump-rtl-pro_and_epilogue
+-fdump-rtl-pro_and_epilogue
 生成函数 prologues 和 epilogues 后进行转储。
-- fdump-rtl-sched1
-- fdump-rtl-sched2
+-fdump-rtl-sched1
+-fdump-rtl-sched2
  `-fdump-rtl-sched1` 和 `-fdump-rtl-sched2` 在基本块调度通过后启用转
 储。
-- fdump-rtl-ree
+-fdump-rtl-ree
 符号/零扩展消除后转储。
-- fdump-rtl-seqabstr
+-fdump-rtl-seqabstr
 在常见序列发现之后转储。
-- fdump-rtl-shorten
+-fdump-rtl-shorten
 转储后缩短分支。
 
 
 
-- fdump-rtl-sibling
+-fdump-rtl-sibling
 在兄弟调用优化之后转储。
-- fdump-rtl-split1
-- fdump-rtl-split2
-- fdump-rtl-split3
-- fdump-rtl-split4
-- fdump-rtl-split5
+-fdump-rtl-split1
+-fdump-rtl-split2
+-fdump-rtl-split3
+-fdump-rtl-split4
+-fdump-rtl-split5
 这些选项允许在 5 轮指令分割后转储。
-- fdump-rtl-sms
+-fdump-rtl-sms
 转储后模调度。 此传递仅在某些体系结构上运行。
-- fdump-rtl-stack
+-fdump-rtl-stack
 从 GCC 的 `平面寄存器文件` 寄存器转换到 x87 的堆栈式寄存器之后进
 行转储。此传递仅在 x86 变体上运行。
-- fdump-rtl-subreg1
-- fdump-rtl-subreg2
+-fdump-rtl-subreg1
+-fdump-rtl-subreg2
  `-fdump-rtl-subreg1` 和 `-fdump-rtl-subreg2` 在两个 subreg 扩展通过
 后启用转储。
-- fdump-rtl-unshare
+-fdump-rtl-unshare
 转储毕竟 rtl 是未共享的。
-- fdump-rtl-vartrack
+-fdump-rtl-vartrack
 转储后变量跟踪。
-- fdump-rtl-vregs
+-fdump-rtl-vregs
 将虚拟寄存器转换为硬寄存器后进行转储。
-- fdump-rtl-web
+-fdump-rtl-web
 在活范围分割后转储。
-- fdump-rtl-regclass
-- fdump-rtl-subregs_of_mode_init
-- fdump-rtl-subregs_of_mode_finish
-- fdump-rtl-dfinit
-- fdump-rtl-dfinish
+-fdump-rtl-regclass
+-fdump-rtl-subregs_of_mode_init
+-fdump-rtl-subregs_of_mode_finish
+-fdump-rtl-dfinit
+-fdump-rtl-dfinish
 这些转储被定义，但总是产生空文件。
 - da
-- fdump-rtl-all
+-fdump-rtl-all
 生成上面列出的所有转储文件。
 
 - da (^) 用杂项调试信息注释汇编程序输出。
@@ -9244,29 +9267,29 @@ dp 在汇编程序输出中转储 RTL 作为每个指令之前的注释。还打
 释。
 
 - dx 只是为一个函数生成 RTL 而不是编译它。通常使用 `-fdump-rtl-expand` 。
-- fdump-noaddr
+-fdump-noaddr
 在进行调试转储时，抑制地址输出。这使得在调试转储中使用 diff 对使用不同
 编译器二进制文件和/或不同文本/ bss /数据/堆/堆栈/ dso 启动位置的编译器
 调用更加可行。
-- freport-bug
+-freport-bug
 如果发生内部编译器错误(ICE)，则将调试信息收集并转储到临时文件中。
-- fdump-unnumbered
+-fdump-unnumbered
 在进行调试转储时，抑制指令号和地址输出。这使得对具有不同选项的编译器
 调用在调试转储中使用 diff 变得更加可行，特别是使用和不使用 `-g` 。
-- fdump-unnumbered-links
+-fdump-unnumbered-links
 在进行调试转储时(请参阅上面的 `-d` 选项)，按顺序删除指向前一条和下一条指令
 的链接的指令号。
-- fdump-ipa-switch
+-fdump-ipa-switch
 在程序间分析语言树的各个阶段对转储文件进行控制。文件名是通过将一个特
 定于交换机的后缀附加到源文件名而生成的，该文件在与输出文件相同的目录
 中创建。以下转储是可能的:
  `所有`  启用所有过程间分析转储。
  `cgraph` 转储有关调用图优化、未使用的函数删除和内联决策的信息。
  `内联`  后转储函数内联。
-- fdump-lang-all
-- fdump-lang-switch
-- fdump-lang-switch-options
-- fdump-lang-switch-options =文件名
+-fdump-lang-all
+-fdump-lang-switch
+-fdump-lang-switch-options
+-fdump-lang-switch-options =文件名
 控制语言特定信息的转储。选项和文件名部分的行为与 `-fdump-tree` 选项中描
 述的一样。下面的开关值被接受:
  `所有`
@@ -9276,18 +9299,18 @@ dp 在汇编程序输出中转储 RTL 作为每个指令之前的注释。还打
 
 
  `生`  转储原始内部树数据。此选项仅限 C++。
-- fdump-passes
+-fdump-passes
 在 `stderr` 上打印当前命令行选项打开和关闭的优化传递列表。
-- fdump-statistics-option
+-fdump-statistics-option
 在单独的文件中启用并控制传递统计信息的转储。文件名是通过添加以`结尾
 的后缀来生成的。统计到源文件名，该文件在与输出文件相同的目录中创建。
 如果使用了 `-option` 表单， `-stats` 将导致计数器在整个编译单元上进行求和，
 而 `-details` 将在传递生成每个事件时转储它们。没有选项的默认选项是为每个
 编译的函数求和计数器。
-- fdump-tree-all
-- fdump-tree-switch
-- fdump-tree-switch-options
-- fdump-tree-switch-options =文件名
+-fdump-tree-all
+-fdump-tree-switch
+-fdump-tree-switch-options
+-fdump-tree-switch-options =文件名
 在处理中间语言树到文件的各个阶段控制转储。文件名是通过将一个特定于开
 关的后缀附加到源文件名而生成的，该文件在与输出文件相同的目录中创建。
 在 `=filename` 选项中，转储是在给定文件上的输出，而不是自动命名的转储文
@@ -9335,8 +9358,8 @@ GraphViz 查看的控制流图的表示转储为 `file.passid.pass.dot` 。文
 输出到给定的文件名中，而不是自动命名的转储文件。文件名
  `stdout` 和 `stderr` 都是经过特殊处理的，并且被认为是已经开放
 的标准流。例如,
-gcc - 02 - ftree-vectorize -fdump-tree-vect-blocks = foo.dump
-- fdump-tree-pre = / dev / stderr 文件。c 输出向量化器转储到 foo 中。
+gcc - 02 -ftree-vectorize -fdump-tree-vect-blocks = foo.dump
+-fdump-tree-pre = / dev / stderr 文件。c 输出向量化器转储到 foo 中。
 转储，而预转储是输出到 `stderr` 。如果为相同的传递提供了两个
 相互冲突的转储文件名，那么后一个选项将覆盖前面的那个。
  `所有`  打开所有选项，除了 `raw` 、 `slim` 、 `verbose` 和 `lineno` 。
@@ -9357,9 +9380,9 @@ fdump-tree-evrp` 选项调用 GCC。可以选择指定转储文件的名称。�
 (RTL 传递的字母 `r` ),最后是通过代码。例如，早期的 VRP 传递转储可能
 位于一个名为 `myfile.c.038t` 的文件中。evrp` 在当前工作目录中。注意，
 数字代码不稳定，可能会从 GCC 的一个版本更改到另一个版本。
-- fopt-info
-- fopt-info-options
-- fopt-info-options =文件名
+-fopt-info
+-fopt-info-options
+-fopt-info-options =文件名
 从各种优化传递中控制优化转储。如果使用 `-options` 表单，选项是 `-` 分隔的
 选项关键字列表，用于选择转储细节和优化。
 选项可以分为两组:描述转储的详细信息的选项，以及描述应该包含哪些优化
@@ -9398,7 +9421,7 @@ fdump-tree-evrp` 选项调用 GCC。可以选择指定转储文件的名称。�
 这个例子:
 gcc o3 -fopt-info-missed = missed.all
 输出错过的优化报告从所有的传递到 `错过` 。所有的,这一个:
-gcc - 02 - ftree-vectorize -fopt-info-vec-missed
+gcc - 02 -ftree-vectorize -fopt-info-vec-missed
 在 `stderr` 上打印关于从矢量化传递错过的优化机会的信息。注意， `-fopt-
 info-vec-missed` 相当于 `-fopt-info- mis- vec` 。在 `-fopt-info` 之后列出的优化组
 名称和消息类型的顺序无关紧要。
@@ -9410,25 +9433,25 @@ gcc -fopt-info-vec-missed =矢量。小姐-fopt-info-loop-optimized = loop.opt
 这里有两个输出文件名 vec。小姐` 和 `循环。选择 `在冲突中，因为只允许一个
 输出文件。在这种情况下，只有第一个选项生效，随后的选项被忽略。因此只
 有矢量。产生的 miss` 包含来自向量化器的关于错过的机会的转储。
-- fsched-verbose = n
+-fsched-verbose=n
 对于使用指令调度的目标，此选项控制调度器打印到转储文件的调试输出的数量。
 对于大于 0 的 n，  `-fsched-verbose` 输出与 0 相同的信息
  `-fdump-rtl-sched1` 和 `-fdump-rtl-sched2` 。对于 n 大于 1 ，它还输出基本的块
 概率，详细的准备列表信息和单位/insn 信息。对于大于 2 的 n，它包括中止
 点的 RTL、控制流和区域信息。对于 n / 4，  `-fsched-verbose` 也包含依赖信
 息。
-- fenable-kind-pass
-- fdisable-kind-pass = range-list
+-fenable-kind-pass
+-fdisable-kind-pass = range-list
 这是一组用于显式禁用/启用优化传递的选项。这些选项用于调试 GCC。编译
 器用户应该使用常规选项来启用/禁用传递。
-- fdisable-ipa-pass
+-fdisable-ipa-pass
 
 禁用 IPA 传递过去。 pass 是传递名。如果在编译器中多次静态地
 
 调用相同的传递，那么传递名应该附加一个从 1 开始的序号。
 
-- fdisable-rtl-pass
-- fdisable-rtl-pass = range-list
+-fdisable-rtl-pass
+-fdisable-rtl-pass = range-list
 
 
 禁用 RTL 传递过去。 pass 是传递名。如果在编译器中多次静态地
@@ -9442,20 +9465,20 @@ gcc -fopt-info-vec-missed =矢量。小姐-fopt-info-loop-optimized = loop.opt
 将数字对简化为单个数字。如果函数的调用图节点的 uid 位于指定
 范围内，则该函数的 pass 将被禁用。uid 显示在转储文件的函数
 头中，并且可以使用 `-fdump-pass` 选项转储传递名。
-- fdisable-tree-pass
-- fdisable-tree-pass = range-list
+-fdisable-tree-pass
+-fdisable-tree-pass = range-list
 禁用树传递过去。有关选项参数的描述，请参见 `-fdisable-rtl` 。
-- fenable-ipa-pass
+-fenable-ipa-pass
 
 使异丙醇通过通过。 pass 是传递名。如果在编译器中多次静态地
 
 调用相同的传递，那么传递名应该附加一个从 1 开始的序号。
 
-- fenable-rtl-pass
-- fenable-rtl-pass = range-list
+-fenable-rtl-pass
+-fenable-rtl-pass = range-list
 使 RTL 传递过去。有关选项参数描述和示例，请参见 `-fdisable-rtl` 。
-- fenable-tree-pass
-- fenable-tree-pass = range-list
+-fenable-tree-pass
+-fenable-tree-pass = range-list
 使树传递过去。有关选项参数的描述，请参见 `-fdisable-rtl` 。
 下面是一些示例，展示了这些选项的用途。
 
@@ -9475,11 +9498,11 @@ gcc -fopt-info-vec-missed =矢量。小姐-fopt-info-loop-optimized = loop.opt
 启用树完全展开-fenable-tree展开
 ```
 
-- fchecking
-- fchecking = n
+-fchecking
+-fchecking=n
 使内部一致性检查。缺省值取决于编译器配置。 `-fcheck =2` 支持进一步的内
 部一致性检查，这可能会影响代码生成。
-- frandom-seed =字符串
+-frandom-seed =字符串
 
 
 这个选项提供了一个种子，GCC 使用它来代替随机数来生成某些符号名称，这
@@ -9541,10 +9564,10 @@ yfoobar。我` 、 `dir2 / yfoobar。年代` 和 `dir2 / yfoobar.o` 。
 
 在程序名之前移动 `用户时间` 和 `系统时间` ，并显示传递给程序的选项，以便
 以后可以知道正在编译什么文件，以及使用哪些选项。
-- fdump-final-insns(=文件)
+-fdump-final-insns(=文件)
 将最终的内部表示(RTL)转储到文件中。如果省略了可选参数(或者如果文件
 是。)，则通过将.gkd 附加到编译输出文件名后确定转储文件的名称。
-- fcompare-debug(=选择)
+-fcompare-debug(=选择)
 如果在编译过程中没有出现错误，请再次运行编译器，将 opts 和 `-fcompare-
 debug-second` 添加到第二个编译的参数中。在两个编译中转储最终的内部表
 示，如果它们不同，则打印一个错误。
@@ -9559,7 +9582,7 @@ fcompare-debug` 。如果 GCC_COMPARE_DEBUG 定义为以破折号开头的字符
 设置为 `-fcompare-debug-not- override` ，在任何实际的编译(而不是预处理、组装
 或链接)中，GCC 拒绝将其作为无效选项。为了得到一个警告，将
 GCC_COMPARE_DEBUG 设置为 `-w%n-fcompare- debugnotoverriding` 就可以了。
-- fcompare-debug-second
+-fcompare-debug-second
 这个选项被隐式地传递给编译器，用于 `-fcompare-debug` 请求的第二次编译，
 以及静默警告选项，并省略其他可能导致编译器输出到文件或标准输出作为副
 作用的选项。转储文件和保留的临时文件被重新命名，以便在第二次编译期间
@@ -9569,36 +9592,36 @@ GCC_COMPARE_DEBUG 设置为 `-w%n-fcompare- debugnotoverriding` 就可以了。
 - gtoggle 关闭调试信息的生成，如果省略此选项将生成调试信息，或者在第 2 级打开调试
 信息。此参数在命令行中的位置无关紧要;它在处理所有其他选项之后生效，
 而且它只执行一次，不管它被给定多少次。这主要用于 `-fcompare-debug` 。
-- fvar-tracking-assignments-toggle
+-fvar-tracking-assignments-toggle
 
 
 切换 `-fvar-track -assignments -assignments -assignments -指派` 的方式，与 `-
 gtoggle` 切换 `toggles`  `-g` 的方式相同。
 - Q 使编译器打印出每个函数名，并在完成时打印一些数据。
-- ftime-report
+-ftime-report
 使编译器打印一些统计信息，说明每次完成时所消耗的时间。
-- ftime-report-details
+-ftime-report-details
 每次通过时分别记录基础设施部件所消耗的时间。
-- fira-verbose = n
+-fira-verbose=n
 控制集成寄存器分配器的转储文件的冗长性。默认值是 5 。如果值 n 大于或等
 于 10 ，转储输出将使用与 n - 10 相同的格式发送到 stderr。
-- flto-report
+-flto-report
 打印关于链接时间优化器工作的内部详细信息的报告。本报告的内容因版本而
 异。当以 LTO 模式(通过 `-flto` )处理对象文件时，它对 GCC 开发人员来说是有
 用的。
 默认情况下禁用。
-- flto-report-wpa
+-flto-report-wpa
 类似于 `-flto-report` ，但仅用于链接时间优化的 WPA 阶段。
-- fmem-report
+-fmem-report
 使编译器在结束时打印一些关于永久内存分配的统计信息。
-- fmem-report-wpa
+-fmem-report-wpa
 使编译器只打印一些关于 WPA 阶段的永久内存分配的统计信息。
-- fpre-ipa-mem-report
-- fpost-ipa-mem-report
+-fpre-ipa-mem-report
+-fpost-ipa-mem-report
 使编译器在过程间优化之前或之后打印一些关于永久内存分配的统计信息。
-- fprofile-report
+-fprofile-report
 使编译器打印一些关于(估计的)概要文件的一致性和单个传递的影响的统计信息。
-- fstack-usage
+-fstack-usage
 使编译器输出程序的堆栈使用信息。转储的文件名是通过添加`来创建的。苏
 
 auxname` 。 auxname 是由输出文件的名称生成的，如果显式指定，则它不是可
@@ -9628,11 +9651,11 @@ auxname` 。 auxname 是由输出文件的名称生成的，如果显式指定�
 
 第二个字段只表示有限制的部分。
 
-- fstats 在编译结束时发出关于前端处理的统计信息。此选项仅由 C++前端支持，并且这些
+-fstats 在编译结束时发出关于前端处理的统计信息。此选项仅由 C++前端支持，并且这些
 信息通常只对 g++开发团队有用。
-- fdbg-cnt-list
+-fdbg-cnt-list
 打印所有调试计数器的名称和计数器上限。
-- fdbg-cnt = counter-value-list
+-fdbg-cnt = counter-value-list
 
 设置内部调试计数器上限。反值列表是一个引用的名称 : 值对列表，它将每个
 
@@ -9767,7 +9790,7 @@ math 优化` 时才有效果。启用这一功能可以将倒数的平方根结�
 - mlow-precision-div
 - mno-low-precision-div
 启用或禁用分割近似。这个选项只有在
- `- ffastor -math` 或 `- funmath 优化` 也被使用。这样做可以将分割结果的精度降
+ `-ffastor -math` 或 `-funmath 优化` 也被使用。这样做可以将分割结果的精度降
 低到 16 位左右，而将精度降低到 32 位左右，达到双精度。
 
 3 =名字
@@ -9882,18 +9905,18 @@ A 之前使用此选项。
 - mprefer-short-insn-regs
 优先分配允许短指令生成的寄存器。这可能导致指令计数增加，因此这可能会
 减少或增加总体代码大小。
-- mbranch-cost = num
+- mbranch-cost=num
 将分支的成本大致设置为 num `简单` 指令。这种成本只是一种启发式，并不能
 保证跨发行版产生一致的结果。
 - mcmove 支持条件移动的生成。
-- mnops = num
+- mnops=num
 在每个其他生成指令之前发出 num NOPs。
 - mno-soft-cmpsf
 对于单精度浮点比较，发出 fsub 指令并测试标志。这比软件比较快，但在存
 在 NaNs 的情况下，或者当两个不同的小数字被比较时，它们的差异被计算为
 零，这可能会得到不正确的结果。默认的是 `-msoft-cmpsf` ，它使用较慢的，
 但与 ieee 兼容的软件比较。
-- mstack-offset = num
+- mstack-offset=num
 
 
 设置堆栈顶部和堆栈指针之间的偏移量。例如，值为 8 意味着在 sp+0 范围内的
@@ -9950,7 +9973,7 @@ A 之前使用此选项。
 - mnovect-double
 将首选的 SIMD 模式更改为 SImode。默认的是 `- mvar -double` ，它使用 DImode
 作为首选的 SIMD 模式。
-- max-vect-align = num
+- max-vect-align=num
 
 SIMD 矢量模式类型的最大对齐。 num 可以是 4 或 8 。默认是 8 。注意，这是一
 
@@ -10283,7 +10306,7 @@ cpu 支持的值是
 使用 XMAC 块对 ARC700 CPU 进行调优。
  `ARC 725 D`  优化 ARC725D CPU。
  `ARC 750 D`  优化 ARC750D CPU。
-- mmultcost = num
+- mmultcost=num
 对于 `4` 等于一个普通指令的乘法指令，假定成本。
 - munalign-prob-threshold =概率
 设置不对齐分支的概率阈值。在为 `ARC700` 进行调优和为速度进行优化时，
@@ -10320,7 +10343,7 @@ linux-uclibc 目标，支持 big -endian 代码，而 big endian 是默认的。
 - mtune = cpu
 价值 `arc600` 、 `arc601` 、 `arc700` 和 `arc700-xmac` 的 cpu 分 别 被 `arc600` 、
  `arc601` 、 `arc700` 和 `arc700-xmac` 所取代。
-- multcost = num
+- multcost=num
 取而代之的是 `-mmultcost` 。
 
 #### 3.18.4 ARM 选项
@@ -10649,7 +10672,7 @@ GNU/Linux 上得到支持，并不是所有的体系结构都能被识别。如�
 败，则该选项无效。
 - mfpu =名字
 它指定目标上可用的浮点硬件(或硬件模拟)。 `vfpv3-fp16` 、 `vfpv3-fp16` 、
- `vfpv3- fp3 -fp16` 、 `vfpv2 - vpv3 - vpv3 - 16` 、
+ `vfpv3-fp3 -fp16` 、 `vfpv2 - vpv3 - vpv3 - 16` 、
  `vfpvpvvvvvvvvvvvvvvvvvvvv3vvvvvvvv3vvvvd - 16` 注意， `氖` 是 `neon-vfpv3`
 的别名， `vfp` 是 `vfpv2` 的别名。
  `自动` 是默认设置，是特殊设置。它使编译器根据 `-mcpu` 和 `-march` 的设置选
@@ -10664,7 +10687,7 @@ GNU/Linux 上得到支持，并不是所有的体系结构都能被识别。如�
 指定__fp16 半精度浮点类型的格式。允许的名称是 `none` 、 `ieee` 和
  `alternative` ;默认值为 `none` ，在这种情况下__fp16 类型没有定义。有关更多
 信息，请参阅第 6.12 节[半精确性]，第 450 页。
-- mstructure-size-boundary = n
+- mstructure-size-boundary=n
 所有结构和联合的大小都是这个选项所设置的位数的倍数。允许值为 8 、 32 和
 64 。默认值随着不同的工具链而变化。对于面向 COFF 的工具链，默认值是 8 。
 只有在基础 ABI 支持时才允许 64 的值。
@@ -10927,7 +10950,7 @@ attiny12, attiny15, attiny28, at90s1200 。
 - mmain-is-OS_task
 不要将寄存器主存。效果与附加属性 6.31.5 [OS_task]、第 486 页到 main 是一
 样的。如果优化打开，它将被激活。
-- mn-flash = num
+- mn-flash=num
 假设闪存的大小是 num 乘以 64 KiB。
 - mno-interrupts
 生成的代码与硬件中断不兼容。 代码大小更小。
@@ -11222,7 +11245,7 @@ mno -低- 64 k
 使用 uClinux 内核将信息放入 L1 的 scratchpad 内存中进行堆栈检查。
 - mid-shared-library
 通过库 ID 方法生成支持共享库的代码。这允许在没有虚拟内存管理的环境中
-就地执行和共享库。这个选项意味着- fpic。对于一个 `精灵` 目标，这个选项意
+就地执行和共享库。这个选项意味着-fpic。对于一个 `精灵` 目标，这个选项意
 味着 `-msim` 。
 - mno-id-shared-library
 生成不假定使用基于 id 的共享库的代码。
@@ -11233,7 +11256,7 @@ mno -低- 64 k
 - mno-leaf-id-shared-library
 不要假设正在编译的代码不会链接到任何 ID 共享库。为跳转和调用 insns 生成较
 慢的代码。
-- mshared-library-id = n
+- mshared-library-id=n
 指定正在编译的基于 id 的共享库的标识号。指定一个 0 值将生成更紧凑的代
 码;指定其他值将强制将该数字分配到当前库，但与省略此选项相比，这并没
 有更节省空间或时间。
@@ -11322,7 +11345,7 @@ ETRAX 100 LX 的 `v3` 、 `v8` 和 `v10` 。默认是 `v0` ，除了 cris-axis-l
 - mtune =建筑类型
 调优到体系结构类型，除了 ABI 和可用指令集之外，关于生成的代码适用的所
 有东西。对体系结构类型的选择与 `-march=architecture-type` 相同。-mmax-
-stack-frame = n
+stack-frame=n
 当函数的堆栈帧超过 n 字节时发出警告。
 - metrax4
 - metrax100
@@ -11425,7 +11448,7 @@ header` 。h` 在 `PrivateHeaders` 或 `header` 目录中找到。
 像 `-F` 一样，除了目录是一个系统目录。这个 `-iframework` 和 `-F` 之间的主要
 区别在于，对于 `-iframework` ，编译器不会对包含在通过 dir 找到的头文件中
 的结构发出警告。此选项仅对 C 族语言有效。
-殷墟 为所使用的符号发出调试信息。对于 stabs 调试格式，这允许 `- fe- unused-
+殷墟 为所使用的符号发出调试信息。对于 stabs 调试格式，这允许 `-fe- unused-
 debug-symbols` 。这是默认的 ON。
 - gfull 为所有符号和类型发出调试信息。^
 - mmacosx-version-min =版本
@@ -11448,8 +11471,8 @@ builtin` 和 `-mlong-branch` 。
 容。使用此开关可能需要重新编译程序中的所有其他模块，包括系统库。使用
 此开关来符合非默认数据模型。
 - mfix-and-continue
-- ffix-and-continue
-- findirect-data
+-ffix-and-continue
+-findirect-data
 
 
 生成适合快速周转开发的代码，例如允许 GDB 动态加载。o` 文件到已经运行的程
@@ -11469,7 +11492,7 @@ ld(1)。
 - dynamiclib
 当通过此选项时，GCC 使用 Darwin  `libtool` 命令在链接时生成动态库，而不是可
 执行文件。
-- force_cpusubtype_ALL
+-force_cpusubtype_ALL
 这会导致 GCC 的输出文件具有 `所有` 子类型，而不是由 `-mcpu` 或 `-march` 选项控
 制。
 - allowable_clientclient_name
@@ -11483,8 +11506,8 @@ ld(1)。
 动态
 - exported_symbols_list
 文件列表
-- flat_namespace
-- force_flat_namespace
+-flat_namespace
+-force_flat_namespace
 - headerpad_max_install_names
 - image_base
 
@@ -12472,17 +12495,17 @@ rtd 指令由 68010 、 68020 、 68030 、 68040 、 68060 和 CPU32 处理器�
 不要(一定)假设不对齐的内存引用是由系统处理的。
 - msep-data
 生成允许数据段位于与文本段不同的内存区域的代码。这允许在没有虚拟内存管
-理的环境中就地执行。这个选项意味着- fpic。
+理的环境中就地执行。这个选项意味着-fpic。
 - mno-sep-data
 生成假定数据段跟随文本段的代码。
 这是默认的。
 - mid-shared-library
 通过库 ID 方法生成支持共享库的代码。这允许在没有虚拟内存管理的环境中
-就地执行和共享库。这个选项意味着- fpic。
+就地执行和共享库。这个选项意味着-fpic。
 - mno-id-shared-library
 生成不假定使用基于 id 的共享库的代码。
 这是默认的。
-- mshared-library-id = n
+- mshared-library-id=n
 指定正在编译的基于 id 的共享库的标识号。指定一个 0 值将生成更紧凑的代
 码;指定其他值将强制将该数字分配到当前库，但这并不比省略此选项更节省
 空间或时间。
@@ -12552,7 +12575,7 @@ GOTs 一起工作。然而，使用 `-mxgot` 生成的代码效率较低，因�
 辑和饱和。
 - maverage
 启用 ave 指令，该指令计算两个寄存器的平均值。
-- mbased = n
+- mbased=n
 默认情况下，大小为 n 字节或更小的变量放在基于.的部分中。基于变量使用
 $tp 寄存器作为基本寄存器，基于.的部分有 128 字节的限制。
 
@@ -12606,7 +12629,7 @@ mc =名字 选择要放入哪个 section 常量数据。名字可以是  ` 小 `
 连接模拟器运行时库，不包括对重置和异常向量和表的内置支持。
 
 mtf (^) 使所有函数默认为.far 部分。如果没有此选项，函数默认为.near 部分。
-- mtiny = n (^) 将 n 字节或更小的变量分配给.tiny 部分。这些变量使用$gp 基寄存器。这个选
+- mtiny=n (^) 将 n 字节或更小的变量分配给.tiny 部分。这些变量使用$gp 基寄存器。这个选
 项的默认值是 4 ，但是请注意，.tiny 部分有一个 65536 字节的限制。
 
 #### 3.18.25 MicroBlaze 选项
@@ -12760,7 +12783,7 @@ MIPS16 代码的生成也可以通过 MIPS16 和 nomips16 属性来控制。有�
 就已经存在了，并且为了向后兼容而保留。
 - mabi = 32
 - mabi = o64
-- mabi = n32
+- mabi=n32
 - mabi = 64
 - mabi = eabi
 为给定的 ABI 生成代码。
@@ -13135,7 +13158,7 @@ R10K 上，即使是失败的指令也会有副作用。
 地址、内存范围的大小和数字 3(用于刷新两个缓存)。默认情况取决于 GCC 配
 置的目标，但通常是_flush_func 或__cpu_flush。
 
-mbranch-cost = num
+mbranch-cost=num
 将分支的成本大致设置为 num `简单` 指令。这种成本只是一种启发式，并不能
 保证跨发行版产生一致的结果。零成本冗余选择默认值，它基于 `-mtune` 设置。
 
@@ -13401,9 +13424,9 @@ mhwmult = 描述目标支持的硬件类型乘以。接受的值为 `none` ，�
 - m16-bit 生成 16 位指令。
 - mno- 16 - bit
 不要生成 16 位指令。
-- misr-vector-size = num
+- misr-vector-size=num
 指定每个中断向量的大小，必须是 4 或 16 。
-- mcache-block-size = num
+- mcache-block-size=num
 指定每个缓存块的大小，该大小必须是 4 到 512 之间的 2 次方。
 
 3 =拱
@@ -13527,7 +13550,7 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
  `fsqrts`  一元平方根操作。
 
  `fcoss` 、 `国际` 、 `ftans’,‘fatans’,‘fexps’, `鞭策`
-浮点三角函数和指数函数。这些指令只在 `- funsecuritymath 优化`
+浮点三角函数和指数函数。这些指令只在 `-funsecuritymath 优化`
 指定的情况下生成。
 双精度浮点数:
  `faddd` ，  `fsubd` ，  `fdivd` ，  `fmuld` 二
@@ -13543,7 +13566,7 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
  `fsqrtd`  一元平方根操作。
 
  `fcosd` 、 `fsind’,‘ftand’,‘fatand’,‘fexpd’,‘flogd’
-双精度三角函数和指数函数。这些指令只在 `- funsecuritymath 优
+双精度三角函数和指数函数。这些指令只在 `-funsecuritymath 优
 化` 指定的情况下生成。
 转换:
  `fextsd`  从单精度到双精度的转换。
@@ -13580,12 +13603,12 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
 - mcustom-fmuls = 252
 - mcustom-fadds = 253
 - mcustom-fsubs = 254
-- fone -precision-constant  `-mcustom-fpu-cfg=60-2` ，等于:
+-fone -precision-constant  `-mcustom-fpu-cfg=60-2` ，等于:
 - mcustom-fmuls = 252
 - mcustom-fadds = 253
 - mcustom-fsubs = 254
 - mcustom-fdivs = 255
-- fsingle-precision-constant
+-fsingle-precision-constant
  `-mcustom-fpu-cfg = 72 - 3` 相当于:
 - mcustom-floatus = 243
 - mcustom-fixsi = 244
@@ -13600,7 +13623,7 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
 - mcustom-fadds = 253
 - mcustom-fsubs = 254
 - mcustom-fdivs = 255
-- fsingle-precision-constant
+-fsingle-precision-constant
 由单个 `-mcustom-insn=` 选项提供的自定义指令分配覆盖 `-mcustom-fpu-cfg=`
 的指令分配，而不考虑命令行上选项的顺序。
 注意，您可以通过使用 target( `custom-fpu-cfg=name` )函数属性(参见第 6.31 节
@@ -13967,7 +13990,7 @@ insn 进入一个新组。
 - mabi = spe
 使用 SPE ABI 扩展扩展当前 ABI。这不会改变默认的 ABI，而是将 SPE ABI 扩展添
 加到当前的 ABI 中。
-- mabi = no-spe
+- mabi=no-spe
 
 
 禁用当前 ABI 的 Book-E SPE ABI 扩展。
@@ -14045,7 +14068,7 @@ msdata=eabi` 相同，否则编译代码与 `-msdata=sysv` 相同。
 - mno-sdata
 在嵌入式 PowerPC 系统上，将所有初始化的全局和静态数据放在.data 部分，所
 有未初始化的数据放在.bss 部分。
-- mblock-move-inline-limit = num
+- mblock-move-inline-limit=num
 
 
 内联所有块移动(如对 memcpy 或结构拷贝的调用)小于或等于 num 字节。num 的
@@ -14152,7 +14175,7 @@ guard-offset -offset=offset` 进一步指定要使用哪个寄存器作为读取
 
 这些命令行选项是为 RISC-V 目标定义的:
 
-- mbranch-cost = n
+- mbranch-cost=n
 将分支的成本设置为大约 n 个指令。
 - mplt
 - mno-plt 生成 PIC 代码时，是否允许使用 PLTs。non-PIC 忽略。默认值是 `-mplt` 。
@@ -14186,12 +14209,12 @@ F 寄存器只有 32 位宽。
 
 - mtune = processor-string
 优化给定处理器的输出，由微体系结构名称指定。
-- mpreferred-stack-boundary = num
+- mpreferred-stack-boundary=num
 尝试保持堆栈边界对齐到增加到 num 字节边界的 2 。如果没有指定 `-
 mpreferred-stack-boundary` ，默认值为 4(16 字节或 128 位)。
 警告:如果使用此开关，则必须构建所有具有相同值的模块，包括任何库。这
 包括系统库和启动模块。
-- msmall-data-limit = n
+- msmall-data-limit=n
 将小于 n 字节的全局和静态数据放入一个特殊的部分(针对某些目标)。
 - msave-restore
 - mno-save-restore
@@ -14749,19 +14772,19 @@ msdata=eabi` 相同，否则编译代码与 `-msdata=sysv` 相同。
 - mreadonly-in-sdata
 - mreadonly-in-sdata
 将只读对象也放在.sdata 部分。这是默认的。
-- mblock-move-inline-limit = num
+- mblock-move-inline-limit=num
 内联所有块移动(如对 memcpy 或结构拷贝的调用)小于或等于 num 字节。num 的
 最小值是 32 位目标上的 32 字节和 64 位目标上的 64 字节。默认值是特定于目标
 的。
-- mblock-compare-inline-limit = num
+- mblock-compare-inline-limit=num
 为所有块比较(例如对 memcmp 或结构比较的调用)生成小于或等于 num bytes
 的非循环内联代码。如果 num 为 0 ，则禁用块比较的所有内联扩展(非循环和
 循环)。默认值是特定于目标的。
-- mblock-compare-inline-loop-limit = num
+- mblock-compare-inline-loop-limit=num
 使用循环代码为小于或等于 num 字节但大于非循环内联块比较扩展的限制的
 所有块生成内联扩展。如果块的长度不是常量，那么在调用 memcmp 来比较
 块的其余部分之前，将对大多数 num 字节进行比较。默认值是特定于目标的。
-- mstring-compare-inline-limit = num
+- mstring-compare-inline-limit=num
 生成最多的几对负载指令，以内联地比较字符串。如果在内联末尾没有找到字
 符串的差异或结束，那么对 strcmp 或 strncmp 的调用将处理其余的比较。默
 认情况下是 8 对负载，在 64 位目标上比较 64 字节，在 32 位目标上比较 32
@@ -14842,7 +14865,7 @@ tanhd2,atanhf4,cbrtd2,cbrtf4,cosd2,cosf4,coshd2,coshf4,erfcd2,erfcf4,erfd2,erff
 4,exp2d2,exp2f4,expd2,expf4,expm1d2,expm1f4,hypotd2,hypotf4,lgammad2,lg
 ammaf4,log10d2,log10f4,log1pd2,log1pf4,log2d2,log2f4,logd2,logf4,powd2,po
 wf4,sind2,sinf4,sinhd2,sinhf4,sqrtd2,sqrtf4,tand2,tanf4,tanhd2,在为 power7 生
-成代码时使用 tanhf4。同时还必须启用 `-ftree-vectorize` 和 `- fun 安全性-优化` 。
+成代码时使用 tanhf4。同时还必须启用 `-ftree-vectorize` 和 `-fun 安全性-优化` 。
 - mfriz
 - mno-friz
 当使用 `-funsafe-math 优化` 选项将浮点值优化为 64 位整数并返回浮点数时，
@@ -15183,11 +15206,11 @@ m2e 的 为 SH2e 生成代码。
 - m2a-nofpu
 为没有 FPU 的 SH2a 生成代码，或者为 SH2a-FPU 生成不使用浮点单元的代码。
 - m2a-single-only
-为 sha - fpu 生成代码，以不使用双精度浮点操作的方式。
+为 sha -fpu 生成代码，以不使用双精度浮点操作的方式。
 - m2a-single
-假设浮点单元默认处于单精度模式，则为 sha - fpu 生成代码。
+假设浮点单元默认处于单精度模式，则为 sha -fpu 生成代码。
 
-- m2a (^) 假设浮点单元默认处于双精度模式，则为 sha - fpu 生成代码。
+- m2a (^) 假设浮点单元默认处于双精度模式，则为 sha -fpu 生成代码。
 m3 (^) 为 SH3 生成代码。
 
 - m3e 为 SH3e 生成代码。^
@@ -15365,7 +15388,7 @@ inline-ic_invalidate` 。当目标是 sh*-*-linux*时， `-musermode` 是默认�
 生成将给定寄存器范围视为固定寄存器的代码。固定寄存器是寄存器分配器不
 能使用的寄存器。这在编译内核代码时很有用。寄存器范围被指定为由破折号
 分隔的两个寄存器。可以用逗号分隔多个寄存器范围。
-- mbranch-cost = num
+- mbranch-cost=num
 假设 num 是分支指令的成本。如果可能的话，较高的数字会使编译器尝试生
 成更多无分支的代码。如果没有指定，则根据正在编译的处理器类型选择值。
 - mzdcbranch
@@ -15458,7 +15481,7 @@ float` ，以便它能工作。
 定的函数。这是默认的。
 在撰写本文时，没有任何 SPARC 实现对四字浮点指令有硬件支持。它们都为
 其中一条指令调用一个陷阱处理程序，然后陷阱处理程序模拟指令的效果。由
-于陷阱处理程序的开销，这比调用 ABI 库例程要慢得多。因此， `-msoft- four -
+于陷阱处理程序的开销，这比调用 ABI 库例程要慢得多。因此， `-msoft-four -
 float` 选项是默认选项。
 - mno-unaligned-doubles
 - munaligned-doubles
@@ -15706,7 +15729,7 @@ ppuside 变量的软件管理缓存的原子更新。如果您使用原子更新
 缓存线中的其他 PPU 变量的更改。如果不使用原子更新，可能会发生这种干
 扰;但是，回写缓存行更有效。默认行为是使用原子更新。
 - mdual-nops
-- mdual-nops = n
+- mdual-nops=n
 
 默认情况下，当 GCC 预期会提高性能时，会插入 NOPs 以增加双重问题。 n 可
 
@@ -15714,11 +15737,11 @@ ppuside 变量的软件管理缓存的原子更新。如果您使用原子更新
 
 nops` 。禁用与
  `操作系统` 。
-- mhint-max-nops = n
+- mhint-max-nops=n
 为分支提示插入的 NOPs 的最大数目。分支提示必须至少有 8 条指令离开它所
 影响的分支。GCC 最多插入 n 个 NOPs 来执行这个操作，否则它不会生成分支
 提示。
-- mhint-max-distance = n
+- mhint-max-distance=n
 分支提示指令的编码将提示限制在它所影响的分支的 256 个指令之内。默认情
 况下，GCC 确保它在 125 以内。
 - msafe-hints
@@ -15789,11 +15812,11 @@ TILEPro 支持以下 `-m` 选项:
 - mspace (^) 尽量使代码尽可能小。目前，这只是打开了 `-mep` 和 `-mprolog-function` 选
 项。
 
-- mtda = n 将大小为 n 字节或以下的静态或全局变量放入注册 ep 点的小数据区域。这个
+- mtda=n 将大小为 n 字节或以下的静态或全局变量放入注册 ep 点的小数据区域。这个
 小的数据区域总共可以容纳 256 字节(字节引用的 128 字节)。
-- msda = n 将大小为 n 字节或更小的静态或全局变量放入注册 gp 点的小数据区域。这个
+- msda=n 将大小为 n 字节或更小的静态或全局变量放入注册 gp 点的小数据区域。这个
 小数据区域最多可以保存 64 千字节。
-- mzda = n 将大小为 n 字节或以下的静态或全局变量放入前 32 千字节的内存中。
+- mzda=n 将大小为 n 字节或以下的静态或全局变量放入前 32 千字节的内存中。
 
 - mv850 (^) 指定目标处理器为 V850。
 
@@ -16280,7 +16303,7 @@ mno - 80387
 在函数返回浮点数导致 80387 寄存器堆栈的机器上，即使使用了 `-msoft-float` ，
 也可能会发出一些浮点操作码。
 
-在 387 年- mno - fp -受潮湿腐烂
+在 387 年- mno -fp -受潮湿腐烂
 不要将 FPU 寄存器用于函数的返回值。
 通常的调用约定有函数返回 FPU 寄存器中浮动类型和双精度类型的值，即使没
 有 FPU。其思想是操作系统应该模仿 FPU。
@@ -16344,7 +16367,7 @@ mlong -双- 128
 将生成不正确的代码。
 此外，如果调用一个参数太多的函数，会导致严重错误的代码。(通常情况下，额
 外的争论都被忽略了，这是无害的。)
-- mregparm = num
+- mregparm=num
 
 
 控制用于传递整数参数的寄存器的数量。默认情况下，不使用寄存器来传递参
@@ -16384,7 +16407,7 @@ GCC 的旧版本生成的现有代码保持兼容时，才使用此选项。-mpc
 结语，如果需要的话，可以重新排列运行时堆栈。这支持将保留 4 字节堆栈对
 齐的遗留代码与保留 16 字节堆栈对齐以实现 SSE 兼容性的现代代码混合。还
 请参见属性 force_align_arg_pointer，该属性适用于单个函数。
-- mpreferred-stack-boundary = num
+- mpreferred-stack-boundary=num
 尝试保持堆栈边界对齐到增加到 num 字节边界的 2 。如果未指定 `-mpreferred-
 stack-boundary` ，则默认为 4(16 字节或 128 位)。
 警告:当为禁用 SSE 扩展的 x86- 64 架构生成代码时，可以使用 `-mpreferred-stack-
@@ -16401,7 +16424,7 @@ boundary=3` 来保持堆栈边界对齐到 8 字节边界。因为 x86-64 ABI �
 long double 和 int128)，变量参数处理不当，导致错误的结果。 您必须使用`
 - mpreferred-stack-boundary=3` 构建所有模块，包括任何库。这包括系统库和
 启动模块。
-- mincoming-stack-boundary = num
+- mincoming-stack-boundary=num
 假设传入堆栈对齐到一个上升到 num 字节边界的 2 。如果没有指定 `-
 mincoming-stack-boundary` ，则使用 `-mpreferred-stack-boundary` 指定的边
 界。
@@ -16882,13 +16905,13 @@ Windows 预定义宏，但不影响运行时库/启动代码的选择。
 - mwindows
 此选项可用于 Cygwin 和 MinGW 目标。它指定通过指示链接器适当地设置 PE
 头子系统类型来生成 GUI 应用程序。
-- fno-set-stack-executable
+-fno-set-stack-executable
 此选项可用于 MinGW 目标。它指定未设置嵌套函数使用的堆栈的可执行标志，
 这对于在 Microsoft Windows 内核模式下运行的二进制文件是必要的，因为用
 于设置可执行特权的 User32 API 是不可用的。
 
 
-- fwritable-relocated-rdata
+-fwritable-relocated-rdata
 此选项可用于 MinGW 和 Cygwin 目标。它指定将只读部分中的重定位数据放
 入.data 部分。对于不支持修改.rdata 节以进行伪重定位的旧运行时，这是必需
 的。
@@ -17459,13 +17482,13 @@ SOURCE_DATE_EPOCH 的值必须是一个 UNIX 时间戳，定义为自 1970 年 1
 - 在构建和使用预编译头时，通常必须使用相同的 `-m` 选项。参见第 3.18 节[子模型选
 项]，第 228 页，对于任何放松规则的情况。
 - 在构建和使用预编译头时，以下每个选项必须相同:
-- fexceptions
+-fexceptions
 - 其他一些以 `-f` 、 `-p` 或 `-O` 开头的命令行选项必须按照生成预编译头时的方式进行定
 义。目前还不清楚哪些选择是安全的，哪些是不安全的;最安全的选择是在生成和使用
 预编译头时使用完全相同的选项。以下是安全的:
-- fmessage-length = -fpreprocessed -fsched-interblock
-- fsched-spec -fsched-spec-load -fsched-spec-load-dangerous
-- fsched-verbose = -fschedule-insns - fvisibility 数量=
+-fmessage-length = -fpreprocessed -fsched-interblock
+-fsched-spec -fsched-spec-load -fsched-spec-load-dangerous
+-fsched-verbose = -fschedule-insns -fvisibility 数量=
 - pedantic-errors
 对于所有这些(最后一个除外)，如果不满足条件，编译器将自动忽略预编译头。如果您
 发现一个选项组合不起作用，并且没有导致预编译头被忽略，请考虑归档一个 bug 报告，
@@ -17758,7 +17781,7 @@ C90 6.5.2.1, C99 和 C11 6.7.2, C99 和 C11 6.7.2.1) 。
 通常,类型是 unsignedint 如果没有负面的枚举值,否则 int。如果指定 `-fshort-enums` ,然
 后如果有负值 signedchar 这是第一,短和 int 能代表所有的值,否则它是第一个
 unsignedchar,unsignedshort 和 unsignedint 能代表所有的值。
-在某些指标上， `- fums -enums` 是默认的;这是由英国保险协会决定的。
+在某些指标上， `-fums -enums` 是默认的;这是由英国保险协会决定的。
 ### 4.10 限定符
 
 • 对具有波动限定类型的对象(C90 6.5.3、C99 和 C11 6.7.3)的访问。
@@ -19116,7 +19139,7 @@ fn_ptr)()= old_fn;
 externally_visible
 这个属性附加到一个全局变量或函数上，会使 `-fwhole-program` 命令行选项的
 效果无效，因此对象在当前编译单元之外仍然可见。
-如果 `-fwhole-program` 与 `- flto` 一起使用，并且使用 gold 作为链接器插件，那
+如果 `-fwhole-program` 与 `-flto` 一起使用，并且使用 gold 作为链接器插件，那
 么 externally_visible 属性将自动添加到根据 gold 生成的解析文件在 LTO 对象
 之外访问的函数(由于当前的黄金问题，它还不是可变的)中。对于不能生成解
 析文件的其他链接器，仍然需要显式的 externally_visible 属性。
@@ -19179,7 +19202,7 @@ format_arg 属性允许您识别自己的函数来修改格式字符串，以便
 对 printf、scanf、strftime 或 strfmon 类型函数的调用，这些函数的操作数是
 对您自己函数的调用。编译器总是以这种方式处理 gettext、dgettext 和
 dcgettext，除非 `-ansi` 或适当的请求严格的 ISO C 支持
-使用 `-std` 选项，或 `-ffreestanding` 或 `- fno-builtin` 。参见第 3.4 节[控制 C 方
+使用 `-std` 选项，或 `-ffreestanding` 或 `-fno-builtin` 。参见第 3.4 节[控制 C 方
 言的选项]，第 35 页。
 对于 Objective-C 方言，format-arg 属性可以引用一个 NSString 引用来与上面
 的 format 属性兼容。
@@ -19406,7 +19429,7 @@ patchable_function_entry
 如果目标的文本段可以通过任何方法在运行时进行可写，那么可以使用一些
 NOPs 填充函数条目，以提供一个通用的工具。
 patchable_function_entry 函数属性可以用来将 NOPs 的数量更改为任何想要的
-值。双值语法与命令行开关的- fpatch- function-entry=N,M` 相同，生成 N 个
+值。双值语法与命令行开关的-fpatch-function-entry=N,M` 相同，生成 N 个
 
 NOPs，函数入口点位于第 Mth NOP 指令之前。如果省略， M 默认为 0 ，例如
 
@@ -20284,7 +20307,7 @@ Reentrant 函数在进入时禁用中断，在退出时启用中断。可重入�
 较低的部分。如果空间不足，则将对象放置在相应的上部。注意，放置算法不
 是很复杂。它不试图寻找最优的包装下段。它只是让一个人通过对象并尽其所
 
-能。但是，使用 `- ffunc- sections` 和 `-fdata-sections` 命令行选项可以帮助打包，
+能。但是，使用 `-ffunc- sections` 和 `-fdata-sections` 命令行选项可以帮助打包，
 因为它们生成更小、更容易打包区域。
 #### 6.31.20 NDS32 函数属性
 
@@ -31698,7 +31721,7 @@ c++概念为通用编程提供了更好的支持。特别是，它们允许对�
 假设(n > 0)。
 axiom 引入了一个公理的定义。公理引入了对值的要求。
 原则,
-在一个公理中引入一个普遍的量化对象。例如,尽管(intn)n + 0 = = n)。
+在一个公理中引入一个普遍的量化对象。例如,尽管(intn)n + 0 ==n)。
 概念
 引入了一个概念的定义。概念是对类型及其值的语法和语义需求的集合。
 需要
@@ -31714,8 +31737,8 @@ __is_same(类型 1,类型 2)
 已经完成，其中的一些特性将被更好的替代方案所取代。在某些情况下，使用旧特性可能
 会导致警告，该特性将在未来被删除。在其他情况下，功能可能已经消失。
 虽然下面的清单并非详尽无遗，但它记录了一些现在已弃用或已删除的选择:
-- fno-for-scope
-- ffriend-injection
+-fno-for-scope
+-ffriend-injection
 这两个选项提供了与标准前 C++的兼容性。参见第 7.12 节[向后兼容性]，第
 799 页。
 
@@ -32116,7 +32139,7 @@ expr;...
 重新抛出任何异常，都将发生这种情况。@catch 部分，类似于 Java 中的 finally 子句的行
 为。
 使用新的例外机制有几个注意事项:
-- 编译时必须使用 `- fobject -exception` 命令行选项
+- 编译时必须使用 `-fobject -exception` 命令行选项
 使用异常的 Objective-C 文件。
 - 对于 GNU 运行时，异常总是被实现为 `本机` 异常，建议在链接时使用 `-fexception` 和
  `-shared-libgcc` 选项。
@@ -32475,7 +32498,7 @@ a
 - d
 ——显示进展
 在标准输出上显示进度。
-- f
+-f
 ——function-summaries
 除了文件级摘要之外，每个函数的输出摘要。
 - h
@@ -32617,7 +32640,7 @@ ftest-coverage` 。这告诉编译器生成 gcov 所需的附加信息(基本上
 
 使用程序的源文件名作为参数运行 gcov，现在将生成代码的列表，以及每一行的执行频
 率。例如，如果您的程序被称为 `tmp` 。cpp，这是你在使用 gcov 基本设施时看到的:
-$ g+ - fprofilearcs -ftest-coverage tmp.cpp。
+$ g+ -fprofilearcs -ftest-coverage tmp.cpp。
 a.o ut 美元
 gcov tmp 美元。cpp - m
 文件 `tmp.cpp`
@@ -32646,9 +32669,9 @@ stdio. h >
 1: 7: Foo(): b (1000) {}
 - - - - - - - - - - - - - - - - - -
 2 *: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < char >::公司():
+- - - - - - - - - - - - - - - - -foo < char >::公司():
 # # # # #: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < int >::公司():
+- - - - - - - - - - - - - - - - -foo < int >::公司():
 2: 8: void inc () {b++;}
 - - - - - - - - - - - - - - - - - -
 - - - : 9:
@@ -32713,9 +32736,9 @@ stdio. h >
 1: 7: Foo(): b (1000) {}
 - - - - - - - - - - - - - - - - - -
 2 *: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < char >::公司():
+- - - - - - - - - - - - - - - - -foo < char >::公司():
 # # # # #: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < int >::公司():
+- - - - - - - - - - - - - - - - -foo < int >::公司():
 2: 8: void inc () {b++;}
 - - - - - - - - - - - - - - - - - -
 - - - : 9:
@@ -32805,9 +32828,9 @@ stdio. h >
 函数 Foo<int>::Foo()调用 1 返回 100%块执行 100% 1: 7: Foo(): b (1000) {}
 - - - - - - - - - - - - - - - - - -
 2 *: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < char >::公司():
+- - - - - - - - - - - - - - - - -foo < char >::公司():
 函数 Foo<char>::inc()调用 0 返回 0 块执行 0 ###: 8: void inc () {b++;}
-- - - - - - - - - - - - - - - - - foo < int >::公司():
+- - - - - - - - - - - - - - - - -foo < int >::公司():
 函数 Foo<int>::inc()调用了 100%的 100%执行块。
 2: 8: void inc () {b++;}
 - - - - - - - - - - - - - - - - - -
@@ -33023,10 +33046,10 @@ gcov-tool 接受以下选项:
 有数之和计数器值的总和在概要 1 和概要
 2,分别。
 
-- f
+-f
 ——函数
 打印函数级重叠分数。
-- f
+-f
 ——fullname
 打印完整 gcda 文件名。
 - h
@@ -33453,10 +33476,10 @@ parameters. This shorter term will also be used in the rest of this section.
 前基类中的声明是不可见的。因此，编译器将产生以下错误消息:
 x。cc:在成员函数 `int 派生出<T>:::g()` :
 x。cc:6: error:没有依赖于模板参数的 `f` 参数，所以必须有 `f` 的声明
-x。cc:6: error:(如果您使用 `- fperative` ，G++将接受您的代码，但是不赞成使用未声明的名称)
-要使代码有效，可以使用这个->f()或 Base<T>::f()。使用 `- fperative` 标志还可以让编译
+x。cc:6: error:(如果您使用 `-fperative` ，G++将接受您的代码，但是不赞成使用未声明的名称)
+要使代码有效，可以使用这个->f()或 Base<T>::f()。使用 `-fperative` 标志还可以让编译
 器接受代码，方法是标记所有在模板定义时不可见的函数调用，以便在实例化时进行后续
-查找，就像它是一个依赖调用一样。我们不建议使用 `- fper` 来处理无效代码，而且它也只
+查找，就像它是一个依赖调用一样。我们不建议使用 `-fper` 来处理无效代码，而且它也只
 会捕获调用基类中的函数的情况，而不是使用基类中的变量(如上面的例子)。
 请注意，一些编译器(包括 3.4 之前的 g++版本)错误地理解了这些示例，并在没有错误
 的情况下接受了上面的代码。这些编译器不能正确地实现两个阶段的名称查找。
@@ -35429,7 +35452,7 @@ GCC 的命令行选项在这里被索引，没有任何初始的 `-` 或 `-` 。
 # # # ............................................ 31 日
 
 **- - - - - -**
-- fipa-bit-cp ................................ 131 年-fipa-
+-fipa-bit-cp ................................ 131 年-fipa-
 vrp ....................................131 年
 - mfunction-return .......................... 411 年
 - mindirect-branch .......................... 410 年
@@ -35941,7 +35964,7 @@ enum ..............................178 fsanitize = float-cast-
 overflow .............178 fsanitize = float-divide-by-
 zero ...........178 fsanitize = integer-divide-by-
 zero .........176 fsanitize =内核地址..................175 fsanitize
-= ..............................泄漏 176 fsanitize = nonnull-
+= ..............................泄漏 176 fsanitize=nonnull-
 attribute ...............178 年零.............................. fsanitize =177
 fsanitize =物体大小......................178 fsanitize = pointer-
 
@@ -36245,7 +36268,7 @@ gnu .....................................318 mabi =
 ibmlongdouble ....................337 年、 356 年 mabi =
 ieeelongdouble ...................337 年、 356 年 mabi =
 mmixware ...............................318 mabi =
-n32 .....................................306 mabi = no-
+n32 .....................................306 mabi=no-
 spe .................................337 mabi =
 o64 .....................................306 mabi =
 spe .....................................337 年
@@ -36884,7 +36907,7 @@ func ..............................295 年 mno-flush-
 trap ..............................294 年 mno-
 fmaf .....................................380 年 mno-fp-in-
 toc ..........................333 年、 350 年 mno-fp-
-regs .................................276 mno - fp - ret -在-
+regs .................................276 mno -fp - ret -在-
 38 7 ..........................397 年 mno-
 fprnd ....................................346 年 mno-
 fpu .................................376 年、 387 年 mno-
@@ -37878,7 +37901,7 @@ suggest-attribute ................. =冷 86 年
 Wno-suggest-attribute = const ................ 85 年
 Wno-suggest-attribute =格式............... 85 年
 Wno-suggest-attribute = malloc ............... 85 年
-Wno-suggest-attribute = noreturn ............. 85 年
+Wno-suggest-attribute=noreturn ............. 85 年
 Wno-suggest-attribute =纯................. 85 年
 Wno-suggest-final-methods .................. 86 年
 Wno-suggest-final-types ..................... 86 年 Wno-
@@ -37997,7 +38020,7 @@ Wsuggest-attribute =冷.....................86 Wsuggest-
 attribute = const ...................85 年
 Wsuggest-attribute =格式.................. 85 年
 Wsuggest-attribute = malloc .................. 85 年
-Wsuggest-attribute = noreturn ................ 85 年
+Wsuggest-attribute=noreturn ................ 85 年
 Wsuggest-attribute =纯..................... 85 年
 Wsuggest-final-methods ...................... 86 年
 
