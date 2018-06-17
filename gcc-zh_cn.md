@@ -136,7 +136,6 @@ iii
 3.18.4 ..........................................手臂选项 245 年
 ```
 
-iv Using the GNU Compiler Collection (GCC)
 
 ```
 3.18.5 AVR 选项..........................................258 3.18.5.1 EIND 和具有大于 128
@@ -238,7 +237,6 @@ VxWorks 选项 388 年
 
 
 ```
-vi Using the GNU Compiler Collection (GCC)
 ```
 ```
 4.12 语句................................................. 435 年 4.13 预 处 理 指
@@ -352,7 +350,6 @@ Visium ...........................函数属性 506 年
 6.31.34 ....................... Xstormy16 函数属性 512 年
 
 
-viii Using the GNU Compiler Collection (GCC)
 
 6.32 指定的属性变量........................... 513 年
 6.32.1 常见的变量属性........................... 513 年
@@ -466,7 +463,6 @@ _.............................................................._ 609 年
 6.59.1 AArch64 内置函数............................ 626 年
 
 
-x Using the GNU Compiler Collection (GCC)
 
 6.59.2α...............................内置函数 627 年 6.59.3 阿尔特拉 nio .......................
 II 内置函数 628 年 6.59.4 弧................................内置函数 630 年
@@ -573,7 +569,6 @@ Pragmas ........................................疲软 777 年
 ```
 
 ```
-xii Using the GNU Compiler Collection (GCC)
 ```
 ```
 7.6 提 取 绑 定 的 函 数 指 针 指 向 成 员 函 数 的 指
@@ -680,7 +675,6 @@ xiii
 
 
 ```
-xiv Using the GNU Compiler Collection (GCC)
 ```
 ### 资金自由软件 ........................... 861 年
 
@@ -794,7 +788,6 @@ std=gnu11 '(对于带有 GNU 扩展的 C11)。
 ```
 
 ```
-6 Using the GNU Compiler Collection (GCC)
 ISO C 标准(第 4 条)定义了两类符合标准的实现。符合标准的托管实现支持整个标准，包
 括所有图书馆设施;一个独立的实现只需要提供特定的库设施:<float >中的那些。h >、<限
 制。h >,< stdarg。h >和< stddef.h >;由于 AMD1，也属于<iso646.h>;C99 以后，也在<stdbool >
@@ -887,7 +880,6 @@ noreturn、sentinel、format)、方法参数的未使用属性、实例变量的
 ```
 
 ```
-8 Using the GNU Compiler Collection (GCC)
 Objective-C 2.0 语言扩展，这将导致编译器识别 GCC 4.0 识别的相同的 Objective-C 语言语
 法，并在使用新特性时产生错误。
 GCC 目前不支持非脆弱实例变量。
@@ -971,7 +963,6 @@ ansi 标准-fgnu89-inline 化
 - fpermitted-flt-eval-methods =标准
 
 
-10 Using the GNU Compiler Collection (GCC)
 
 - aux-info 文件名-fallow-parameterless-variadic-functions
 - fno-asm -fno-builtin -fno-builtin-function -fgimple
@@ -1086,7 +1077,6 @@ wc + +兼容 wc + + 11-compat wc + + 14-compat
 - Werror -Werror = * -Wextra-semi -Wfatal-errors
 
 
-12 Using the GNU Compiler Collection (GCC)
 
 - Wfloat-equal -Wformat -Wformat = 2
 - Wno-format-contains-nul -Wno-format-extra-args
@@ -1197,7 +1187,6 @@ C 和 Objective-C-only 警告选项
 - fearly-inlining -fipa-sra -fexpensive-optimizations -ffat-lto-objects
 
 
-14 Using the GNU Compiler Collection (GCC)
 
 - ffast-math -ffinite-math-only -ffloat-store -fexcess-precision =风格
 - fforward-propagate -ffp-contract = -ffunction-sections 风格
@@ -1305,7 +1294,6 @@ sections=s1,s2，...
 预处理器的选择
 
 
-16 Using the GNU Compiler Collection (GCC)
 
 参见第 3.12 节[控制预处理器的选项]，第 187 页。
 
@@ -1422,7 +1410,6 @@ object-file-name -fuse-ld = 链接器 - llibrary
 - fprofile-report
 
 
-18 Using the GNU Compiler Collection (GCC)
 
 - frandom-seed =字符串-fsched-verbose = n
 - fsel-sched-verbose -fsel-sched-dump-cfg -fsel-sched-pipelining-verbose
@@ -1531,7 +1518,6 @@ mlow - 64 k -mno-low64k -mstack-check-l1 -mid-shared-library
 - msep-data -mno-sep-data -mlong-calls -mno-long-calls
 
 
-20 Using the GNU Compiler Collection (GCC)
 
 - mfast-fp -minline-plt -mcorea -mcoreb -msdram -micplb
 
@@ -1640,7 +1626,6 @@ names -msdata -mno-sdata
 - minline-int-divide-max-throughput
 
 
-22 Using the GNU Compiler Collection (GCC)
 
 - mno-inline-int-divide
 - minline-sqrt-min-latency -minline-sqrt-max-throughput
@@ -1750,7 +1735,6 @@ mlocal-sdata -mno- mno-local- data
 - mcompact-branches =政策
 
 
-24 Using the GNU Compiler Collection (GCC)
 
 - mfp-exceptions -mno-fp-exceptions
 - mvr4130-align -mno-vr4130-align -msynci -mno-synci
@@ -1859,7 +1843,6 @@ sysv -mcall-netbsd
 - mstack-protector-guard-offset =抵消 RISC-V 选项
 
 
-26 Using the GNU Compiler Collection (GCC)
 
 - mbranch-cost = N-instruction
 - mplt -mno-plt
@@ -1966,7 +1949,6 @@ mlong -双- 64 mlong -双- 64
 - msmall-exec -mno-small-exec -mmvcle -mno-mvcle
 
 
-28 Using the GNU Compiler Collection (GCC)
 
 - m64 -m31 -mdebug -mno-debug -mesa -mzarch
 - mhtm -mvx -mzvector
@@ -2076,7 +2058,6 @@ mno - fp -回收-在- 387 - m80387 -mhard-float -msoft-float
 - mincoming-stack-boundary = num
 
 
-30 Using the GNU Compiler Collection (GCC)
 
 - mcld -mcx16 -msahf -mmovbe -mcrc32
 - mrecip -mrecip =选择
@@ -2207,7 +2188,6 @@ objective - c++不应该被预处理的源代码。
 ```
 
 ```
-32 Using the GNU Compiler Collection (GCC)
 ```
 _file.tcc_ (^) 将 c++头文件转换为预编译头文件或 Ada 规范。
 
@@ -2330,7 +2310,6 @@ output-E”)指示 gcc 什么都不做。
 
 
 ```
-34 Using the GNU Compiler Collection (GCC)
 ```
 ——帮助= {类|[^]限定符}[......]
 
@@ -2439,7 +2418,6 @@ fmacroprefix -map”和“-fdebug-prefix-map”。
 
 
 ```
-36 Using the GNU Compiler Collection (GCC)
 ```
 ```
 下面的“-fplugin-arg-name-key =值”)。每个插件都应该定义 Plugins API 中指定的回
@@ -2532,7 +2510,6 @@ std=gnu99-Wpedantic '则没有。
 C 代码的“-ansi”相同。
 ```
 
-38 Using the GNU Compiler Collection (GCC)
 
 ```
 “iso9899:199409”
@@ -2687,7 +2664,6 @@ gnu_inline 函数属性添加到所有内联函数(参见第 6.31 节[函数属�
 
 
 ```
-40 Using the GNU Compiler Collection (GCC)
 ```
 ISO/IEC TS 18661- 3 为 FLT_EVAL_METHOD 定义了新的允许值，该值表明，对
 
@@ -2796,7 +2772,6 @@ https://www.openacc.org 生成加速代码。此选项表示“-pthread”，因
 
 
 ```
-42 Using the GNU Compiler Collection (GCC)
 ```
 ```
 启用使用 C/ c++中的#pragmaomp 和 Fortran 中的!$omp 处理 OpenMP 的 SIMD 指
@@ -2887,7 +2862,6 @@ endian”、“little-endian”和“native”，表示目标的原生机缘(默
 ```
 
 ```
-44 Using the GNU Compiler Collection (GCC)
 ```
 - fabi-version = n
 使用版本 n 的 c++ ABI。默认的版本是 0 。
@@ -2970,7 +2944,6 @@ ISO 19217(2015)，允许代码类似。
 
 
 ```
-46 Using the GNU Compiler Collection (GCC)
 ```
 - fno-elide-constructors
 c++标准允许实现省略创建一个临时对象，这个临时对象只用于初始化另一个
@@ -3053,7 +3026,6 @@ C.这些函数包括 ffs、alloca、_exit、index、b0、conjf 等相关函数�
 
 
 ```
-48 Using the GNU Compiler Collection (GCC)
 ```
 ```
 而不是 voidf(int))，这样就很清楚涉及哪个模板。当错误消息引用类模板的专
@@ -3137,7 +3109,6 @@ std::uncaught_exception 不正确，但是如果运行时例程不可用，则�
 
 
 ```
-50 Using the GNU Compiler Collection (GCC)
 ```
 - fno-weak
 即使链接器提供弱符号支持，也不要使用弱符号支持。默认情况下，如果可用，
@@ -3221,7 +3192,6 @@ delete 用于销毁具有虚函数和非虚析构函数的类的实例。如果�
 
 
 ```
-52 Using the GNU Compiler Collection (GCC)
 ```
 ```
 # include < inttypes。h > # include <
@@ -3310,7 +3280,6 @@ std=c++11 '，...)。
 
 
 ```
-54 Using the GNU Compiler Collection (GCC)
 ```
 ```
 此选项还支持“-Wnon-virtual-dtor”，这也是有效的 c++推荐之一。但是，检查也扩
@@ -3398,7 +3367,6 @@ NSConstantString(参见下面)。“-fconstant-cfstrings”选项(如果也存�
 
 
 ```
-56 Using the GNU Compiler Collection (GCC)
 ```
 - fgnu-runtime
 生成与标准 GNU Objective-C 运行时兼容的对象代码。这是大多数类型系统的默认
@@ -3483,7 +3451,6 @@ local-ivars”标志将禁用此行为，从而避免变量隐藏问题。-fivar
 
 
 ```
-58 Using the GNU Compiler Collection (GCC)
 ```
 - Wno-protocol (Objective-C 和 objective - c++)
 如果一个类被声明为实现一个协议，则会对协议中没有被类实现的每个方法发
@@ -3580,7 +3547,6 @@ fixit-delete =
 ```
 
 ```
-60 Using the GNU Compiler Collection (GCC)
 ```
 用于修改的 SGR 子字符串——它暗示要删除文本。
 
@@ -3675,7 +3641,6 @@ color”)。
 
 
 ```
-62 Using the GNU Compiler Collection (GCC)
 ```
 - Werror 将所有警告变为错误。
 - Werror=将指定的警告变为错误。附加警告说明符;例如' -Werror=switch ' -Wswitch '控制的
@@ -3766,7 +3731,6 @@ c++ -Winit-self(只)
 - Wmaybe-uninitialized
 
 
-64 Using the GNU Compiler Collection (GCC)
 
 - Wmemset-elt-size
 - Wmemset-transposed-args
@@ -3864,7 +3828,6 @@ c++ -Wnarrowing(只)
 
 
 ```
-66 Using the GNU Compiler Collection (GCC)
 ```
 - w- decl-specifier (C 和 Objective-C)
 警告声明是否具有重复的 const、volatile、limit 或_Atomic 说明符。此警告是由“-
@@ -3952,7 +3915,6 @@ format-zero-length’。' -Wformat '由' -Wall '启用。
 参数的最大长度。当可以假定格式指示的数值参数的
 
 
-68 Using the GNU Compiler Collection (GCC)
 
 范围小于其类型的精度时，选择格式说明符的适当长
 
@@ -4038,7 +4000,6 @@ int i =我;
 
 
 ```
-70 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在声明函数之前，无论何时使用函数，都要给出一个警告。在 C99 模式(' -std=
@@ -4125,7 +4086,6 @@ fallthrough 注释。
 
 
 ```
-72 Using the GNU Compiler Collection (GCC)
 ```
 ```
 类型或 void 发出。ISO C 禁止函数定义上的限定 void 返回类型，因此即使没
@@ -4213,7 +4173,6 @@ C 和 c++中的“-Wall”启用了此警告。
 
 
 ```
-74 Using the GNU Compiler Collection (GCC)
 ```
 ```
 std::unique_lock < std::互斥>(锁定 mymutex);
@@ -4301,7 +4260,6 @@ C 和 c++程序默认启用此警告。
 
 
 ```
-76 Using the GNU Compiler Collection (GCC)
 ```
 ```
 当一个 switch 语句包含控制表达式和第一个 case 标签之间的语句时发出警告，该
@@ -4387,7 +4345,6 @@ Wall '意味着' - wused -parameter ')，或者单独指定' -Wunused-parameter 
 
 
 ```
-78 Using the GNU Compiler Collection (GCC)
 ```
 - Wuninitialized
 警告，如果一个自动变量在没有初始化的情况下使用，或者一个变量可能被
@@ -4476,7 +4433,6 @@ foo(x);
 
 
 ```
-80 Using the GNU Compiler Collection (GCC)
 ```
 此选项仅在未定义带符号溢出时才激活。它警告编译器基于无符号溢出假设进
 
@@ -4572,7 +4528,6 @@ char * str;开关(clr)
 
 
 ```
-82 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在下面的示例中，对 strncat 的调用指定了一个小于源字符串长度的绑定。因
@@ -4666,7 +4621,6 @@ SIZE_MAX/2。选项参数 n 可以在一个标准后缀中结束，它指定了 
 
 
 ```
-84 Using the GNU Compiler Collection (GCC)
 ```
 ```
 此选项警告对不受控制谓词限制的对 alloca 的调用，该控制谓词将其整型类型
@@ -4757,7 +4711,6 @@ Wall”中。- wno - lose -qualifier (C 和 Objective-C)
 
 
 ```
-86 Using the GNU Compiler Collection (GCC)
 ```
 如果数组中的指针目标类型限定符被丢弃，不要发出警告。通常，编译器会发
 
@@ -4844,7 +4797,6 @@ ISO C 结构，以及/或应该避免的有问题的结构。
 
 
 ```
-88 Using the GNU Compiler Collection (GCC)
 ```
 C 特性会出现在代码中。这个警告对于嵌套函数也被忽略，因为该特性已经
 
@@ -4930,7 +4882,6 @@ compatiblelocal '不会发出警告。因为它们的类型是不兼容的，如
 
 
 ```
-90 Using the GNU Compiler Collection (GCC)
 ```
 警告放置未定义行为的新表达式，例如在缓冲区中构造小于对象类型的对象。
 
@@ -5027,7 +4978,6 @@ FOO......
 
 
 ```
-92 Using the GNU Compiler Collection (GCC)
 ```
 ```
 _Alignas 说明符、Alignof 运算符、_Generic 关键字等等。此选项与标准模式无
@@ -5115,7 +5065,6 @@ conversion”可以禁用有符号整数和无符号整数之间的转换警告�
 
 
 ```
-94 Using the GNU Compiler Collection (GCC)
 ```
 么在多个翻译单元中定义它将违反 ODR，因为在每个翻译单元中 B 的含义是
 
@@ -5205,7 +5154,6 @@ Wall”启用的。
 
 
 ```
-96 Using the GNU Compiler Collection (GCC)
 ```
 ```
 针，并且建议一个可能的修正，或者关于 memcpy(&foo,ptr,sizeof(&foo));' -
@@ -5293,7 +5241,6 @@ __TIMESTAMP__、__TIME__、__DATE__、__FILE__和__BASE_FILE__的警告。
 
 
 ```
-98 Using the GNU Compiler Collection (GCC)
 ```
 ```
 的声明声明声明重载，而不是与前面的声明冲突。使用“- wmis- declaration”检
@@ -5377,7 +5324,6 @@ Wextra- wno - over 约车 init”。- wover 共乘副作用(仅 C 和 Objective-
 
 
 ```
-100 Using the GNU Compiler Collection (GCC)
 ```
 - Wpacked 警告如果一个结构被赋予了填充属性，但是填充属性对结构的布局或大小没有影
 响。这样的结构可能会被错误地对齐，而不会带来什么好处。例如，在这段代
@@ -5461,7 +5407,6 @@ Wall”启用。-Wno-int-to-pointer-cast
 
 
 ```
-102 Using the GNU Compiler Collection (GCC)
 ```
 ```
 如果使用长龙类型请警告。在 ISO C90 和 c++ 98 模式中，可以使用' -Wpedantic
@@ -5552,7 +5497,6 @@ bug 的程序使用优化器是合理的。
 
 
 ```
-104 Using the GNU Compiler Collection (GCC)
 ```
 试器崩溃或拒绝阅读程序。如果您想确定是否要生成额外的信息，请使用' -
 
@@ -5639,7 +5583,6 @@ GCC 不再支持 DWARF 版本 1 ，它与版本 2 以及以后的版本有很大
 
 
 ```
-106 Using the GNU Compiler Collection (GCC)
 ```
 ```
 将尽可能多的矮人调试信息分离到一个扩展名为“.dwo”的单独输出文件中。此
@@ -5729,7 +5672,6 @@ ginline-points
 
 
 ```
-108 Using the GNU Compiler Collection (GCC)
 ```
 为内联函数生成扩展的调试信息。位置视图跟踪标记被插入到内联的入口点，
 
@@ -5838,7 +5780,6 @@ ginline-points
 o1 群优化。优化编译需要更多的时间，对于大型函数需要更多的内存。
 
 
-110 Using the GNU Compiler Collection (GCC)
 
 使用“-O”，编译器试图减少代码大小和执行时间，而不执行任何需要大量编译时间
 
@@ -5947,7 +5888,6 @@ o3 优化更多。' -O3 '打开' -O2 '指定的所有优化
 
 
 ```
-112 Using the GNU Compiler Collection (GCC)
 ```
 - ftree-loop-distribution
 - ftree-loop-distribute-patterns
@@ -6039,7 +5979,6 @@ _FORTIFY_SOURCE 对应项优化为更快的替代品。
 
 
 ```
-114 Using the GNU Compiler Collection (GCC)
 ```
 内联也间接调用，由于之前的内联，在编译时被发现是已知的。只有当内联本
 
@@ -6132,7 +6071,6 @@ constant”来抑制这种行为。
 
 
 ```
-116 Using the GNU Compiler Collection (GCC)
 ```
 ```
 默认值是“-fbranch-count-reg”。
@@ -6222,7 +6160,6 @@ gcse” 来禁用全局通用子表达式消除传递，那么您可能会获得
 
 
 ```
-118 Using the GNU Compiler Collection (GCC)
 ```
 - fdce (^) 在 RTL 上执行死代码消除(DCE)。在' -O '和更高处默认启用。
 - fdse (^) 在 RTL 上执行死存储消除(DSE)。在' -O '和更高处默认启用。
@@ -6309,7 +6246,6 @@ Briggs 着色不是针对所有架构实现的，但是对于支持它的目标�
 
 
 ```
-120 Using the GNU Compiler Collection (GCC)
 ```
 ```
 此选项在所有目标的“-Os”级别启用。
@@ -6391,7 +6327,6 @@ O2 '或更高。
 
 
 ```
-122 Using the GNU Compiler Collection (GCC)
 ```
 在调度程序中启用临界路径启发式。这种启发式有利于关键路径上的指令。在
 
@@ -6480,7 +6415,6 @@ interposition”，编译器假定如果函数发生了换位，重写函数将�
 
 
 ```
-124 Using the GNU Compiler Collection (GCC)
 ```
 - ftree-partial-pre
 使部分冗余消除(PRE)更具侵略性。默认情况下，此标志在“-O3”上启用。
@@ -6564,7 +6498,6 @@ growth=value ')。默认情况下，此标志在“-O3”上启用。
 
 
 ```
-126 Using the GNU Compiler Collection (GCC)
 ```
 在开关中将简单的初始化转换为来自标量数组的初始化。默认情况下，此标志在“-
 
@@ -6652,7 +6585,6 @@ I = 1,n?
 
 
 ```
-128 Using the GNU Compiler Collection (GCC)
 ```
 ENDDO
 
@@ -6738,7 +6670,6 @@ pointercheck”，则只执行空指针检查。
 
 
 ```
-130 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “-fweb”和 CSE 的组合通常足以获得相同的效果。但是，在循环体比单个基本
@@ -6827,7 +6758,6 @@ arcs”。
 
 
 ```
-132 Using the GNU Compiler Collection (GCC)
 ```
 ```
 一个类型的对象位于同一个地址，除非类型几乎相同。例如，unsignedint 可
@@ -6915,7 +6845,6 @@ unit-at- time”意味着“-fno-toplevel-reorder”和“-fno- sectionanchor”
 
 
 ```
-134 Using the GNU Compiler Collection (GCC)
 ```
 CSE、循环优化器和普通的死代码删除程序。但是，它可以使调试变得不可能，
 
@@ -7005,7 +6934,6 @@ g+ -o myprog -flto -O3 foo。o 酒吧。o 巴兹。o -lgfortran
 
 
 ```
-136 Using the GNU Compiler Collection (GCC)
 ```
 ```
 注意，最后的链接是使用 g++来获取 c++运行时库，并添加“-lgfortran”来获取
@@ -7091,7 +7019,6 @@ GCC 提供 GCC -ar、GCC -nm、GCC -ranlib 包装器，以便将正确的选项�
 
 
 ```
-138 Using the GNU Compiler Collection (GCC)
 ```
 - fcprop-registers
 在寄存器分配和后寄存器分配指令分割之后，执行一个复制传播传递，试图减
@@ -7184,7 +7111,6 @@ fexcess-precision=fast '。
 
 
 ```
-140 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在达尔文系统中，数学库从不设置 errno。因此，编译器没有理由考虑这种可
@@ -7272,7 +7198,6 @@ ftrappingmath”生效。
 
 
 ```
-142 Using the GNU Compiler Collection (GCC)
 ```
 当启用时，此选项声明在执行复杂除法时不需要范围缩小步骤。此外，也没有
 
@@ -7364,7 +7289,6 @@ frerun-cse- afterloop”、“-fweb”和“-frenam -register”。它还打开�
 
 
 ```
-144 Using the GNU Compiler Collection (GCC)
 ```
 如果目标支持任意区段，则将每个函数或数据项放置到输出文件中自己的区段
 
@@ -7453,7 +7377,6 @@ gotoduplicate -insns。默认值是 8 。
 max-delay-slot-insn-search
 ```
 
-146 Using the GNU Compiler Collection (GCC)
 
 查找指令以填充延迟插槽时要考虑的最大指令数。如果搜索的指
 
@@ -7541,7 +7464,6 @@ max-inline-recursive-depth max-inline-recursive-depth-auto
 指定用于递归内联的最大递归深度。
 ```
 
-148 Using the GNU Compiler Collection (GCC)
 
 ```
 '——parammax-inline- recursivedepth '适用于声明为内联的函数。
@@ -7624,7 +7546,6 @@ max-completely-peel-times
 循环的最大迭代次数，以适应完全剥离。
 ```
 
-150 Using the GNU Compiler Collection (GCC)
 
 ```
 max-completely-peel-loop-nest-depth
@@ -7706,7 +7627,6 @@ tracer-min-branch-ratio
 当最佳边的反向概率小于这个阈值(百分比)时，停止反向增长。
 ```
 
-152 Using the GNU Compiler Collection (GCC)
 
 ```
 tracer-min-branch-probability tracer-min-branch-probability-feedback
@@ -7791,7 +7711,6 @@ sched-mem-true-dep-cost
 默认值是 1 。selsched-max-lookahead
 ```
 
-154 Using the GNU Compiler Collection (GCC)
 
 选择调度的前视窗口的最大大小。它是搜索可用指令的深度。默
 
@@ -7875,7 +7794,6 @@ sccvn-max-alias-queries-per-access
 ira-max-loops-num
 ```
 
-156 Using the GNU Compiler Collection (GCC)
 
 IRA 默认使用区域寄存器分配。如果一个函数包含的循环比这个参
 
@@ -7973,7 +7891,6 @@ loop-unroll-jam-size
 指定“-floop-unroll- jam”选项的 unroll 因子。
 
 
-158 Using the GNU Compiler Collection (GCC)
 
 默认值是 4 。
 
@@ -8057,7 +7974,6 @@ max-slsr-cand-scan
 项的最大数量。
 
 
-160 Using the GNU Compiler Collection (GCC)
 
 ```
 asan-globals
@@ -8139,7 +8055,6 @@ unroll-jam-max-unroll
 ```
 
 ```
-162 Using the GNU Compiler Collection (GCC)
 ```
 ### 3.11 项目仪表的选择
 
@@ -8232,7 +8147,6 @@ fbranch- probability”重新编译源文件(参见第 3.10 节[控制优化的�
 
 
 ```
-164 Using the GNU Compiler Collection (GCC)
 ```
 警告:当应用程序没有正确连接所有线程(或创建一个分离的线程)时，概要文件仍
 
@@ -8322,7 +8236,6 @@ https://github.com/google/sanitizers /wiki/ addresssanitizerleaktizer。可以
 出错误消息。
 
 
-166 Using the GNU Compiler Collection (GCC)
 
 - fsanitize =返回
 此选项允许返回语句检查。打开这个选项所构建的程序将在到达
@@ -8409,7 +8322,6 @@ sanitizer 组件启用此选项会导致它试图继续运行程序，就好像�
 
 
 ```
-168 Using the GNU Compiler Collection (GCC)
 ```
 ```
 程序的退出代码也可能表明成功。可以使用' -fno-sanitize- recovery = '选项来
@@ -8499,7 +8411,6 @@ field-has-own-bounds”。默认启用。
 
 
 ```
-170 Using the GNU Compiler Collection (GCC)
 ```
 ```
 允许通过指针边界检查器使用*_nobnd 版本的字符串函数(不复制边界)。默认情况
@@ -8585,7 +8496,6 @@ fchk1 -use-wrappers”用于链接程序时，GCC 驱动程序会自动链接到
 ```
 
 ```
-172 Using the GNU Compiler Collection (GCC)
 ```
 ```
 ' -fstack-check= '是为 Ada 检测无限递归和堆栈溢出的需要而设计的。在编译
@@ -8674,7 +8584,6 @@ void * call_site);
 
 
 ```
-174 Using the GNU Compiler Collection (GCC)
 ```
 ```
 一个函数可以被赋予属性 no_instrument_function，在这种情况下，这个插装
@@ -8766,7 +8675,6 @@ uname 取消任何之前定义的名字，要么内置，要么提供' -D '选�
 
 
 ```
-176 Using the GNU Compiler Collection (GCC)
 ```
 ```
 此选项不抑制预处理器的调试输出，如“-dM”。为了避免将这种调试输出与依
@@ -8859,7 +8767,6 @@ fdirectivess 预处理的文件。
 
 
 ```
-178 Using the GNU Compiler Collection (GCC)
 ```
 通过宏展开跟踪令牌的位置。这允许编译器在宏扩展中发生编译错误时对当前
 
@@ -8965,7 +8872,6 @@ CPP 手册。
 
 
 ```
-180 Using the GNU Compiler Collection (GCC)
 ```
 支持 ISO C 三字母词。这些是三个字符的序列，都以“?? ?”，由 ISO C 定义为代
 
@@ -9061,7 +8967,6 @@ _object-file-name_
 
 
 ```
-182 Using the GNU Compiler Collection (GCC)
 ```
 不以特殊识别后缀结尾的文件名被认为是命名一个对象文件或库。(目标文件
 
@@ -9143,7 +9048,6 @@ model 子选项)。
 
 
 ```
-184 Using the GNU Compiler Collection (GCC)
 ```
 - shared 生成一个共享对象，该对象可以与其他对象链接，形成可执行文件。不是所有的系
 统都支持这个选项。对于可预测的结果，您还必须指定用于编译的相同选项集
@@ -9232,7 +9136,6 @@ assert-Xlinker 定义'。写' -Xlinker ' -assertdefinition '是行不通的，�
 
 
 ```
-186 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在使用 GNU 链接器时，通常使用“option=value”语法将参数传递给链接器选项
@@ -9325,7 +9228,6 @@ isystem”和/或“-idirafter”选项(以及当前文件的目录，如果合�
 
 
 ```
-188 Using the GNU Compiler Collection (GCC)
 ```
 ```
 将目录设置为搜索' -fplugin=name '而不是' -fplugin=path/name.so '传递的插件。
@@ -9427,7 +9329,6 @@ A(int k): i(k)， j(k) {} int i;int j;
 ```
 
 ```
-190 Using the GNU Compiler Collection (GCC)
 ```
 {一个(20);....
 
@@ -9519,7 +9420,6 @@ DSO，您可以使用“-fno-gnu-unique”。
 
 
 ```
-192 Using the GNU Compiler Collection (GCC)
 ```
 ```
 警告:“-fshort-enums”开关导致 GCC 生成与没有该开关生成的代码不兼容的二进
@@ -9612,7 +9512,6 @@ grecord-gcc-switch”。
 
 
 ```
-194 Using the GNU Compiler Collection (GCC)
 ```
 fpic (^) 生成适合在共享库中使用的位置独立代码(PIC)，如果支持目标机器的话。这
 样的代码通过全局偏移表(get)访问所有常量地址。动态加载程序在程序启动
@@ -9699,7 +9598,6 @@ REGISTER_NAMES 宏中定义。
 
 
 ```
-196 Using the GNU Compiler Collection (GCC)
 ```
 - ftrampolines
 对于通常需要为嵌套函数生成蹦床的目标，总是生成它们，而不是使用描述符。
@@ -9788,7 +9686,6 @@ http://gcc.gnu.org/wiki/Visibility。
 
 
 ```
-198 Using the GNU Compiler Collection (GCC)
 ```
 内存使用和执行时间;以及关于 GCC 配置的打印信息，比如它在哪里搜索库。对于普通的
 
@@ -9878,7 +9775,6 @@ RTL 代后转储。
 - fdump-rtl-gcse2
 
 
-200 Using the GNU Compiler Collection (GCC)
 
 ```
 ' -fdump-rtl-gcse1 '和' -fdump-rtl-gcse2 '可以在全球共同子表达式消
@@ -9962,7 +9858,6 @@ dd (^) 除了正常输出之外，在预处理结束时转储所有宏定义。
 
 
 ```
-202 Using the GNU Compiler Collection (GCC)
 ```
 dh (^) 当出现错误时，生成一个核心转储。
 dp 用注释来注释汇编器输出，说明使用了哪种模式和选择。每个指
@@ -10046,7 +9941,6 @@ dp 在汇编程序输出中转储 RTL 作为每个指令之前的注释。还打
 “统计数据” 启用转储关于 pass 的各种统计信息(不是每个转储选项都遵守)。
 ```
 
-204 Using the GNU Compiler Collection (GCC)
 
 “块” 启用显示基本块边界(在原始转储中禁用)。
 
@@ -10135,7 +10029,6 @@ fdump-tree-evrp”选项调用 GCC。可以选择指定转储文件的名称。�
 
 
 ```
-206 Using the GNU Compiler Collection (GCC)
 ```
 如果提供了文件名，则所有相关优化的转储都连接到文件名中。否则，转储将
 
@@ -10237,7 +10130,6 @@ gcc -fopt-info-vec-missed =矢量。小姐-fopt-info-loop-optimized = loop.opt
 
 
 ```
-208 Using the GNU Compiler Collection (GCC)
 ```
 这个选项提供了一个种子，GCC 使用它来代替随机数来生成某些符号名称，这
 
@@ -10331,7 +10223,6 @@ GCC_COMPARE_DEBUG 设置为' -w%n-fcompare- debugnotoverriding '就可以了。
 
 
 ```
-210 Using the GNU Compiler Collection (GCC)
 ```
 ```
 切换“-fvar-track -assignments -assignments -assignments -指派”的方式，与“-
@@ -10434,7 +10325,6 @@ amd64 '、' sparcv9 '或' ev6 '。
 
 
 ```
-212 Using the GNU Compiler Collection (GCC)
 ```
 ```
 gcc -nostdlib 文件...“gcc -print-libgcc-file-name”
@@ -10525,7 +10415,6 @@ long int 和指针为 64 位。
 
 
 ```
-214 Using the GNU Compiler Collection (GCC)
 ```
 mfix -皮层 a53 - 835769
 mno -修正-皮层 a53 - 835769
@@ -10612,7 +10501,6 @@ GCC 使用 name 来确定在生成汇编代码时可以发出什么样的指令(
 
 
 ```
-216 Using the GNU Compiler Collection (GCC)
 ```
 ```
 启用或禁用 pc -相对文字负载。使用此选项，可以使用单个指令访问文字池，并在
@@ -10699,7 +10587,6 @@ A 之前使用此选项。
 
 
 ```
-218 Using the GNU Compiler Collection (GCC)
 ```
 ```
 设置堆栈顶部和堆栈指针之间的偏移量。例如，值为 8 意味着在 sp+0 范围内的
@@ -10803,7 +10690,6 @@ mcpu=ARCEM”生效。
 
 
 ```
-220 Using the GNU Compiler Collection (GCC)
 ```
 为 ARC EM4 DMIPS CPU 编译。
 
@@ -10901,7 +10787,6 @@ mcpu=ARC700 '启用。
 ```
 
 ```
-222 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “wlh1”
@@ -11021,7 +10906,6 @@ lp_count -mirq-ctrl-saved =寄存器范围,眨眼
 
 
 ```
-224 Using the GNU Compiler Collection (GCC)
 ```
 ```
 传递给汇编程序以启用 DSP 包扩展。还设置了预处理器符号__Xdsp_packa。不建
@@ -11102,7 +10986,6 @@ arc-linux-uclibc 和 arceb-linux-uclibc 目标构建的工具链中启用此选�
 
 
 ```
-226 Using the GNU Compiler Collection (GCC)
 ```
 启用索引负载的使用。这可能是有问题的，因为一些优化器假设有索引的存储，
 
@@ -11190,7 +11073,6 @@ linux-uclibc 目标，支持 big -endian 代码，而 big endian 是默认的。
 
 
 ```
-228 Using the GNU Compiler Collection (GCC)
 ```
 ```
 取而代之的是“-mspfp-compact”。
@@ -11280,7 +11162,6 @@ armv7-先进的 simd (Neon)扩展，用于' armv7-a '和 armv8-a 的变体 armv8
 “armv6kz”
 
 
-230 Using the GNU Compiler Collection (GCC)
 
 ```
 “armv6t2”“armv6
@@ -11371,7 +11252,6 @@ vfpv4 浮点指令，具有 32 个双精度寄存器。
 “+密码” 密码指令。
 
 
-232 Using the GNU Compiler Collection (GCC)
 
 ```
 ' + nocrypto '
@@ -11483,7 +11363,6 @@ d16 可以用作此扩展的别名。
 ```
 
 ```
-234 Using the GNU Compiler Collection (GCC)
 ```
 ```
 ' -march=native '使编译器自动检测构建计算机的体系结构。目前，这个特性只
@@ -11575,7 +11454,6 @@ cortex-a35”、“cortex-a73。cortex-a53’和‘cortex-a75.cortex-a55”。
 ```
 
 ```
-236 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “vfpv3-d16”、“vfpv3’,‘vfpv3-d16-fp16’,‘vfpv3-fp16’,‘vfpv4-d16’,‘vfpv4’,‘霓虹
@@ -11670,7 +11548,6 @@ fp、ip,# 4
 ```
 
 ```
-238 Using the GNU Compiler Collection (GCC)
 ```
 ```
 ”——mode = '状态配置选项。
@@ -11761,7 +11638,6 @@ _armv818_armv8m_security_extentys_security_extensions_reqs__dev_pdf 上找到。
 
 
 ```
-240 Using the GNU Compiler Collection (GCC)
 ```
 #### 3.18.5 AVR 选项
 
@@ -11884,7 +11760,6 @@ attiny12, attiny15, attiny28, at90s1200 。
 
 
 ```
-242 Using the GNU Compiler Collection (GCC)
 ```
 假设静态存储中的所有数据都可以通过 LDS / STS 指令访问。这个选项只对减
 
@@ -11967,7 +11842,6 @@ sbiw r26,常量 ;X - =常量
 
 
 ```
-244 Using the GNU Compiler Collection (GCC)
 ```
 - Wmisspelled-isr
 如果 ISR 拼错了，即没有 向量的前缀。默认启用。
@@ -12062,7 +11936,6 @@ RAMPD 与直接寻址一起使用。
 
 
 ```
-246 Using the GNU Compiler Collection (GCC)
 ```
 - 对于 AVR 目标，GCC 不支持大于 64 KiB 的 RAM。如果使用内联汇编程序从 16 位地址范
 围之外的位置读取，并更改 RAMP 寄存器之一，则必须在访问后将其重置为零。
@@ -12166,7 +12039,6 @@ __AVR_SFR_OFFSET__ =抵消
 
 
 ```
-248 Using the GNU Compiler Collection (GCC)
 ```
 可以直接处理 I/O 特殊功能的指令寄存器，如 IN, OUT，
 
@@ -12260,7 +12132,6 @@ mno -低- 64 k
 
 
 ```
-250 Using the GNU Compiler Collection (GCC)
 ```
 - msep-data
 生成允许数据段位于与文本段不同的内存区域的代码。这允许在没有虚拟内存
@@ -12358,7 +12229,6 @@ stack-frame = n
 
 
 ```
-252 Using the GNU Compiler Collection (GCC)
 ```
 ```
 选项' -metrax4 '和' -metrax100 '分别是' -march=v3 '和' -march=v8 '的同义词。
@@ -12452,7 +12322,6 @@ ld 悄悄地为可执行文件提供其任何输入文件中最受限制的子�
 
 
 ```
-254 Using the GNU Compiler Collection (GCC)
 ```
 头只能出现在包含子框架的框架的头中，或者在同级子框架头中。如果两个子
 
@@ -12543,7 +12412,6 @@ ld(1)。
 
 
 ```
-256 Using the GNU Compiler Collection (GCC)
 ```
 初始化
 
@@ -12633,7 +12501,6 @@ fptmtrap-mode”。陷阱模式可以设置为以下四个值之一:
 
 
 ```
-258 Using the GNU Compiler Collection (GCC)
 ```
 “n” (^) 这是默认(正常)设置。唯一被启用的陷阱是那些在软件中不能被禁
 用的陷阱(例如，零陷阱除法)。
@@ -12732,7 +12599,6 @@ fptmtrap-mode”。陷阱模式可以设置为以下四个值之一:
 
 
 ```
-260 Using the GNU Compiler Collection (GCC)
 ```
 ```
 当使用“-msmall-text”时，编译器假定整个程序(或共享库)的代码可以容纳 4MB，
@@ -12858,7 +12724,6 @@ mgpr - 64
 ```
 
 ```
-262 Using the GNU Compiler Collection (GCC)
 ```
 mfpr - 64
 
@@ -12952,7 +12817,6 @@ fPIC”所暗示，而没有“-mfdpic”。您不应该必须显式地使用它
 
 
 ```
-264 Using the GNU Compiler Collection (GCC)
 ```
 启用条件移动指令(默认)。
 
@@ -13051,7 +12915,6 @@ mh 为 H8/300H 生成代码。
 ```
 
 ```
-266 Using the GNU Compiler Collection (GCC)
 ```
 ```
 锰 在正常模式下为 H8S 和 H8/300H 生成代码。这个开关必须使用“-mh”或“-
@@ -13141,7 +13004,6 @@ HI-UX 下使用。
 
 
 ```
-268 Using the GNU Compiler Collection (GCC)
 ```
 - mgnu-ld (^) 使用特定于 GNU ld 的选项。这将在构建共享库时传递' -shared '给 ld。当使用
 GNU 链接器显式或隐式地配置 GCC 时，它是默认的。此选项不影响调用哪个
@@ -13233,7 +13095,6 @@ ABI。
 
 
 ```
-270 Using the GNU Compiler Collection (GCC)
 ```
 - mno-sdata
 - msdata 禁用(或启用)使用小数据部分的优化。这对于解决优化器错误可能很有用。
@@ -13315,7 +13176,6 @@ spec-insns
 
 
 ```
-272 Using the GNU Compiler Collection (GCC)
 ```
 - msched-prefer-non-data-spec-insns
 如果启用，只有在当前没有其他选择时，才为计划选择数据推测指令。这使得
@@ -13411,7 +13271,6 @@ seth/add3/jl 指令序列)。
 
 
 ```
-274 Using the GNU Compiler Collection (GCC)
 ```
 - msdata =没有
 禁用小数据区域的使用。变量被放入.data、.bss 或.rodata 中的一个(除非指定了
@@ -13502,7 +13361,6 @@ ColdFire cpu 如下表所示，也将 cpu 分为家庭:
 
 
 ```
-276 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “5475” ' 5470 ' 5471 ' 5472 ' 5473 ' 5474 ' 5475 ' 547x ' 5480 ' 5481 ' 5482 '
@@ -13591,7 +13449,6 @@ mcpu=5206e”。
 
 
 ```
-278 Using the GNU Compiler Collection (GCC)
 ```
 - m68881 生成浮点指令。这是 68020 及以上版本的默认设置，对于具有 FPU 的 ColdFire
 设备也是如此。它定义了 M680x0 目标上的宏__have_68881__和 ColdFire 目标
@@ -13676,7 +13533,6 @@ GCC 通常使用一条指令从 get 加载值。虽然这是相对有效的，�
 
 
 ```
-280 Using the GNU Compiler Collection (GCC)
 ```
 ```
 如果发生这种情况，您应该用' -mxgot '重新编译代码。然后它应该与非常大的
@@ -13772,7 +13628,6 @@ mc =名字 选择要放入哪个 section 常量数据。名字可以是 “ 小 
 
 
 ```
-282 Using the GNU Compiler Collection (GCC)
 ```
 梅尔 生成低位优先的代码。
 
@@ -13862,7 +13717,6 @@ mtf (^) 使所有函数默认为.far 部分。如果没有此选项，函数默�
 ```
 
 ```
-284 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “引导”用于使用引导加载程序加载的应用程序。该模型使用启动文件 crt2。它
@@ -13952,7 +13806,6 @@ march '宏相同。
 
 
 ```
-286 Using the GNU Compiler Collection (GCC)
 ```
 生成(不生成)MIPS16 代码。如果 GCC 的目标是 MIPS32 或 MIPS64 架构，那么它
 
@@ -14040,7 +13893,6 @@ GCC 通常使用一条指令从 get 加载值。虽然这是相对有效的，�
 
 
 ```
-288 Using the GNU Compiler Collection (GCC)
 ```
 - mgp64 (^) 假定通用寄存器为 64 位宽。
 - mfp32 (^) 假设浮点寄存器是 32 位宽的。
@@ -14129,7 +13981,6 @@ Support]，第 649 页。此选项需要启用硬件浮点支持。
 
 
 ```
-290 Using the GNU Compiler Collection (GCC)
 ```
 使用(不使用)MIPS-3D ASE。见第 6.59.15.3 节[MIPS-3D 内置函数]，第 653 页。选
 
@@ -14226,7 +14077,6 @@ local-sdata”构建大型库，以便库为主程序留出更多空间。
 
 
 ```
-292 Using the GNU Compiler Collection (GCC)
 ```
 - mcode-readable = yes
 指令可以自由地访问可执行部分。这是默认设置。
@@ -14309,7 +14159,6 @@ FCSR 刷新为零的限制。在某些情况下，这可能是不可取的。在
 
 
 ```
-294 Using the GNU Compiler Collection (GCC)
 ```
 −双字或一个变量转变可能给出错误结果如果整数除法后立即开始执行。
 
@@ -14397,7 +14246,6 @@ MIPS32 和 MIPS64 体系结构和处理器除外;对于这些，默认情况下�
 
 
 ```
-296 Using the GNU Compiler Collection (GCC)
 ```
 - mcompact-branches =没有
 - mcompact-branches =最优
@@ -14484,7 +14332,6 @@ _clear_cache 时生成 synci 指令(如果启用)。
 
 
 ```
-298 Using the GNU Compiler Collection (GCC)
 ```
 生成传递函数参数和返回值(在调用函数中)的代码，这些值被视为寄存器$0 或
 
@@ -14574,7 +14421,6 @@ CPU 类型必须是“mn10300”、“am33”、“am33- 2 ”或“am34”。
 
 
 ```
-300 Using the GNU Compiler Collection (GCC)
 ```
 - mmmcu =选择目标 MCU。它用于基于 MCU 名称创建一个 C 预处理器符号，转换为大写
 并使用“__”进行预固定和后固定。这反过来又被“msp430”使用。h '头文件选择
@@ -14664,7 +14510,6 @@ mhwmult = 描述目标支持的硬件类型乘以。接受的值为“none”，
 
 
 ```
-302 Using the GNU Compiler Collection (GCC)
 ```
 不要生成字符串扩展指令。
 
@@ -14762,7 +14607,6 @@ Nios II ABI 不允许来自共享库的 GPrelative 访问。
 
 
 ```
-304 Using the GNU Compiler Collection (GCC)
 ```
 3 =拱
 
@@ -14864,7 +14708,6 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
 ```
 
 ```
-306 Using the GNU Compiler Collection (GCC)
 ```
 ```
 从单精度浮点到有符号整数的“round”转换，舍入到最接近的整数，并与 0 保
@@ -14956,7 +14799,6 @@ mhal”有用。
 
 
 ```
-308 Using the GNU Compiler Collection (GCC)
 ```
 ```
 动一样。所有的原子操作和对运行时的调用(malloc, free, vprintf)都是有条件执
@@ -15053,7 +14895,6 @@ msymbol-as-address
 
 
 ```
-310 Using the GNU Compiler Collection (GCC)
 ```
 ```
 下面列出的是 3.18.40 [RS/6000 和 PowerPC 选项]，第 345 页。
@@ -15155,7 +14996,6 @@ TOC 中使用浮点常量，而“-mno- sumin - TOC”迫使 GCC 生成代码来
 
 
 ```
-312 Using the GNU Compiler Collection (GCC)
 ```
 运行时的常量，而不是将其放入 TOC 中。您可以指定其中一个或两个选项。
 
@@ -15246,7 +15086,6 @@ mrelocatable”选项的任何组合编译的对象相关联。
 
 
 ```
-314 Using the GNU Compiler Collection (GCC)
 ```
 - mtoc (^) 在 System V.4 和嵌入式 PowerPC 系统上，不要(do)假设寄存器 2 包含指向全
 局区域的指针，指向程序中使用的地址。
@@ -15334,7 +15173,6 @@ insn 进入一个新组。
 
 
 ```
-316 Using the GNU Compiler Collection (GCC)
 ```
 ```
 禁用当前 ABI 的 Book-E SPE ABI 扩展。
@@ -15421,7 +15259,6 @@ msdata=eabi”相同，否则编译代码与“-msdata=sysv”相同。
 
 
 ```
-318 Using the GNU Compiler Collection (GCC)
 ```
 ```
 内联所有块移动(如对 memcpy 或结构拷贝的调用)小于或等于 num 字节。num 的
@@ -15509,7 +15346,6 @@ precision '。双精度平方根估计指令不是默认在低精度机器上生
 
 
 ```
-320 Using the GNU Compiler Collection (GCC)
 ```
 旧版本的 GCC(4.9.0 之前)没有在 128 位边界上对齐结构参数，因为该结构包含一
 
@@ -15604,7 +15440,6 @@ mpreferred-stack-boundary”，默认值为 4(16 字节或 128 位)。
 
 
 ```
-322 Using the GNU Compiler Collection (GCC)
 ```
 - mno-exlicit-relocs
 在处理符号地址时使用或不使用汇编重定位操作符。另一种选择是使用汇编程
@@ -15694,7 +15529,6 @@ MDUC 寄存器，因为这会使中断处理程序更快。需要传递目标选
 
 
 ```
-324 Using the GNU Compiler Collection (GCC)
 ```
 - mno-cmpb
 - mmfpgpr
@@ -15787,7 +15621,6 @@ mtune '设置的调度参数。
 
 
 ```
-326 Using the GNU Compiler Collection (GCC)
 ```
 ```
 使用“-maltivec”而不是“-maltivec=le”或“-maltivec=be”时，AltiVec intrinsic 的元
@@ -15870,7 +15703,6 @@ PowerPC Linux 系统。
 
 
 ```
-328 Using the GNU Compiler Collection (GCC)
 ```
 - mno-float1 28 - hardware
 启用/禁用使用 ISA 3.0 硬件指令来支持 float128 数据类型。
@@ -15961,7 +15793,6 @@ msimple-fpu”)、“dp_lite”(等效于“-mdouble-float-msimple-fpu”)、“
 
 
 ```
-330 Using the GNU Compiler Collection (GCC)
 ```
 ```
 endian PowerPC 系统上使用“-mmultiple”，因为当处理器处于 little-endian 模
@@ -16048,7 +15879,6 @@ mbig-endian”选项与“-mbig”选项相同。
 
 
 ```
-332 Using the GNU Compiler Collection (GCC)
 ```
 此选项控制在指令调度期间被目标成本高昂的依赖项。参数依赖类型具有以下
 
@@ -16139,7 +15969,6 @@ insn 进入一个新组。
 
 
 ```
-334 Using the GNU Compiler Collection (GCC)
 ```
 清除条件代码寄存器(CR)的第 6 位，以指示在函数接受变量参数时，是否在浮
 
@@ -16227,7 +16056,6 @@ BSS 节中，而不是常规数据或 BSS 节中。默认情况下，num 是 8 �
 
 
 ```
-336 Using the GNU Compiler Collection (GCC)
 ```
 - mlongcall
 - mno-longcall
@@ -16318,7 +16146,6 @@ mno- poins -to-nested-function”，则不能通过指针调用嵌套函数，�
 
 
 ```
-338 Using the GNU Compiler Collection (GCC)
 ```
 - msave-toc-indirect
 - mno-save-toc-indirect
@@ -16418,7 +16245,6 @@ nofpu”。
 
 
 ```
-340 Using the GNU Compiler Collection (GCC)
 ```
 因此，在某些情况下，限制指令中使用的常量的大小是有益的。太大的常量被
 
@@ -16521,7 +16347,6 @@ mlong -双- 128
 
 
 ```
-342 Using the GNU Compiler Collection (GCC)
 ```
 ```
 mno-packed-stack”生效时，回链指针存储在堆栈帧的底部;当“-mpacked-stack”
@@ -16614,7 +16439,6 @@ cpu 类型的可能值是
 
 
 ```
-344 Using the GNU Compiler Collection (GCC)
 ```
 ```
 默认值是“3 月= z900”。“g5”/“arch3”和“g6”已被弃用，将在以后的版本中删除。
@@ -16706,7 +16530,6 @@ m3 (^) 为 SH3 生成代码。
 
 
 ```
-346 Using the GNU Compiler Collection (GCC)
 ```
 - m4-single
 默认情况下，假设浮点单元处于单精度模式，则为 SH4 生成代码。
@@ -16802,7 +16625,6 @@ musermode”不起作用，那么内联代码将直接使用关联写操作指�
 
 
 ```
-348 Using the GNU Compiler Collection (GCC)
 ```
 组。这不仅要求在运行时使用特权模式，而且如果缓存线已经通过 TLB 进行
 
@@ -16900,7 +16722,6 @@ inline-ic_invalidate '。当目标是 sh*-*-linux*时，' -musermode '是默认�
 ```
 
 ```
-350 Using the GNU Compiler Collection (GCC)
 ```
 - mdivsi3_libfunc =名字
 将用于 32 位签名的库函数的名称设置为名称。这只会影响“调用”除法策略中
@@ -16992,7 +16813,6 @@ SPARC 支持这些“-m”选项:
 
 
 ```
-352 Using the GNU Compiler Collection (GCC)
 ```
 生成包含浮点指令的输出。这是默认的。
 
@@ -17079,7 +16899,6 @@ supersparc 芯片，如 SPARCStation 10、 1000 和 2000 系列中使用的。
 
 
 ```
-354 Using the GNU Compiler Collection (GCC)
 ```
 ```
 这是原始的 SPARClite，没有 FPU。使用' -mcpu=f934 '，编译器对 Fujitsu
@@ -17169,7 +16988,6 @@ mcpu=leon '之外，在 CPU 上使用 FPU 支持 V8 或 V9 时，默认设置为
 
 
 ```
-356 Using the GNU Compiler Collection (GCC)
 ```
 ```
 启用 Atmel AT697F 处理器的单勘误表(对应于 AT697E 处理器的勘误表#13)的文
@@ -17260,7 +17078,6 @@ SPU 的加载程序不处理动态重定位。默认情况下，当 GCC 生成�
 
 
 ```
-358 Using the GNU Compiler Collection (GCC)
 ```
 - mea64 (^) 编译代码假定通过__ea 命名的地址空间限定符访问的 PPU 地址空间的指针是
 32 位或 64 位宽。默认是 32 位。由于这是一个修改 abi 的选项，所以可执行
@@ -17366,7 +17183,6 @@ TILEPro 支持以下“-m”选项:
 
 
 ```
-360 Using the GNU Compiler Collection (GCC)
 ```
 - mno-long-calls
 把所有的电话都看成是远(近)的。如果假设调用距离很远，编译器总是将函数
@@ -17454,7 +17270,6 @@ callt”命令行选项。
 
 
 ```
-362 Using the GNU Compiler Collection (GCC)
 ```
 - 在寄存器 r10 中返回整数大小的结构和联合。
 - 通过引用传递大型结构和联合(大小超过 8 字节)。
@@ -17550,7 +17365,6 @@ inter_size。
 
 
 ```
-364 Using the GNU Compiler Collection (GCC)
 ```
 #### 3.18.55 VxWorks 选项
 
@@ -17643,7 +17457,6 @@ FSGSBASE、RDRND 和 F16C 指令集支持。
 SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, AVX, AVX2，
 
 
-366 Using the GNU Compiler Collection (GCC)
 
 AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI, BMI2 和
 
@@ -17749,7 +17562,6 @@ Opteron、Athlon 64 和 Athlon 64。(这个超集 MMX, SSE, SSE2,
 3 dnow !和 64 位指令集扩展。
 ```
 
-368 Using the GNU Compiler Collection (GCC)
 
 ```
 “k8-sse3”
@@ -17833,7 +17645,6 @@ SSSE3 和 SSE4.1 指令集。(此芯片不执行调度)
 
 
 ```
-370 Using the GNU Compiler Collection (GCC)
 ```
 “nano-x2” (^) 通过支持 x86- 64 、MMX、SSE、SSE2、SSE3、SSSE3 和 SSE4.1 指
 令集的 Nano 双核心 CPU。(此芯片不执行调度)
@@ -17931,7 +17742,6 @@ GCC register 分配器不能很好地建模单独的功能单元，导致性能�
 
 
 ```
-372 Using the GNU Compiler Collection (GCC)
 ```
 - mhard-float
 为浮点生成包含 80387 指令的输出。
@@ -18018,7 +17828,6 @@ mlong -双- 128
 
 
 ```
-374 Using the GNU Compiler Collection (GCC)
 ```
 控制用于传递整数参数的寄存器的数量。默认情况下，不使用寄存器来传递参
 
@@ -18116,7 +17925,6 @@ mincoming-stack-boundary”，则使用“-mpreferred-stack-boundary”指定的
 
 
 ```
-376 Using the GNU Compiler Collection (GCC)
 ```
 - mavx512ifma
 - mavx512vbmi
@@ -18219,7 +18027,6 @@ cld '编译器选项来抑制 cld 指令的生成。
 
 
 ```
-378 Using the GNU Compiler Collection (GCC)
 ```
 ```
 此选项指示 GCC 在将控制流从函数中传输出去之前发出 vzeroupper 指令，以
@@ -18308,7 +18115,6 @@ mrecip”(或以上选项组合)。
 
 
 ```
-380 Using the GNU Compiler Collection (GCC)
 ```
 ```
 由于 64 位 ABIs 的差异，任何调用 System V ABI 函数的 Microsoft ABI 函数都
@@ -18400,7 +18206,6 @@ t3，零长度位场不会影响杆的对齐，也不会影响结构的大小。
 
 
 ```
-382 Using the GNU Compiler Collection (GCC)
 ```
 结构体
 
@@ -18494,7 +18299,6 @@ x86 体系结构上，“-mfentry”和“-pg”目前不可能使用 ms_hook_pr
 
 
 ```
-384 Using the GNU Compiler Collection (GCC)
 ```
 - mno-8bit-idiv
 在某些处理器上，如 Intel Atom, 8 位无符号整数除法要比 32 位/64 位整数除
@@ -18580,7 +18384,6 @@ Linux 内核代码。
 
 
 ```
-386 Using the GNU Compiler Collection (GCC)
 ```
 为媒体模型生成代码:程序链接在地址空间的下半部分 2 GB。小的符号也被放
 
@@ -18673,7 +18476,6 @@ Xtensa 目标支持以下选项:
 
 
 ```
-388 Using the GNU Compiler Collection (GCC)
 ```
 - mtext-section-literals
 - mno-text-section-literals
@@ -18765,7 +18567,6 @@ GCC 来显式地指定语言。例如:
 说。zz 文件实际上是 c++源文件。
 
 
-390 Using the GNU Compiler Collection (GCC)
 
 #名称 这会导致错误消息说:
 
@@ -18868,7 +18669,6 @@ Spec 字符串是要传递给相应程序的命令行选项的列表。此外，
 
 
 ```
-392 Using the GNU Compiler Collection (GCC)
 ```
 ```
 %啊 替换对象文件的后缀。注意，当它紧接在' %g、%u 或%u '之后时，这是特别
@@ -18964,7 +18764,6 @@ O % s)\
 replace-outfile
 ```
 
-394 Using the GNU Compiler Collection (GCC)
 
 ```
 replace-outfile spec 函数接受两个参数。它在 outfiles 数组中查找
@@ -19061,7 +18860,6 @@ m”或“-W”开关的否定形式出现在命令行后面，那么前面的�
 
 
 ```
-396 Using the GNU Compiler Collection (GCC)
 ```
 它内置在 GCC 中，交换机接受参数，而不接受参数。(您可能认为将其一般化是有用的，
 
@@ -19173,7 +18971,6 @@ CPATH
 
 
 ```
-398 Using the GNU Compiler Collection (GCC)
 ```
 C_INCLUDE_PATH
 
@@ -19264,7 +19061,6 @@ SOURCE_DATE_EPOCH 的值必须是一个 UNIX 时间戳，定义为自 1970 年 1
 的宏。
 
 
-400 Using the GNU Compiler Collection (GCC)
 
 - 如果在使用预编译头(使用' -g '或类似的)时输出调试信息，那么在构建预编译头时必
 须输出相同的调试信息。然而，在没有输出调试信息时，可以在编译中使用“-g”编译
@@ -19291,7 +19087,6 @@ SOURCE_DATE_EPOCH 的值必须是一个 UNIX 时间戳，定义为自 1970 年 1
 
 
 ```
-402 Using the GNU Compiler Collection (GCC)
 ```
 ## 4 C 实现定义的行为
 
@@ -19419,7 +19214,6 @@ C99 和 C11 6.4.5) 。
 
 
 ```
-404 Using the GNU Compiler Collection (GCC)
 ```
 ```
 参见 C 预处理器中的“实现定义的行为”一节。char16_t 和 char32_t 字面值总是以 UTF-
@@ -19529,7 +19323,6 @@ extension.
 
 
 ```
-406 Using the GNU Compiler Collection (GCC)
 ```
 6.3.6 C99 C11 6.5.6)
 
@@ -19631,7 +19424,6 @@ GCC 仅受可用内存的限制。
 
 
 ```
-408 Using the GNU Compiler Collection (GCC)
 ```
 ### 4.13 预处理指令
 
@@ -19769,7 +19561,6 @@ ABI 决定”。参见第 9 章[二进制兼容性]、第 817 页和 http://gcc.
 
 
 ```
-412 Using the GNU Compiler Collection (GCC)
 ```
 ## 扩展到 C 语言家族
 
@@ -19862,7 +19653,6 @@ __label__发现; \
 ```
 
 ```
-414 Using the GNU Compiler Collection (GCC)
 ```
 ```
 typeof(*(数组))*_SEARCH_array =(数组); \^
@@ -19968,7 +19758,6 @@ bar (int *array, int offset, int size)
 }
 ```
 
-416 Using the GNU Compiler Collection (GCC)
 
 在允许变量定义的地方，函数内部允许嵌套函数定义;即，在任何块中，与块中的其他
 
@@ -20082,7 +19871,6 @@ goto 失败;
 ```
 
 ```
-418 Using the GNU Compiler Collection (GCC)
 ```
 #### __builtin_va_arg_pack() (内置函数)
 
@@ -20188,7 +19976,6 @@ char * y[4];
 
 
 ```
-420 Using the GNU Compiler Collection (GCC)
 ```
 ```
 ({__auto_type _a = (a));\
@@ -20288,7 +20075,6 @@ longdouble 的别名。
 
 
 ```
-422 Using the GNU Compiler Collection (GCC)
 ```
 - __ibm128 可用于 PowerPC 目标，并提供对 IBM 扩展双格式的访问，这是 longdouble
 的当前格式。当将来 PowerPC 上从 longdouble 过渡到__float128 时，__ibm128 将继
@@ -20382,7 +20168,6 @@ p3 乘以 8 ，得到 0x1 的值。fp3 和 1.55e1 是一样的。
 ```
 
 ```
-424 Using the GNU Compiler Collection (GCC)
 ```
 ### 6.15 定点类型
 
@@ -20490,7 +20275,6 @@ __memx (^) 这是一个 24 位的地址空间，它线性化了闪存和 RAM:如
 6.59.10
 
 
-426 Using the GNU Compiler Collection (GCC)
 
 ```
 (__builtin_avr_flash_segment),639 页。
@@ -20593,7 +20377,6 @@ extern int __ea 我;
 ```
 
 ```
-428 Using the GNU Compiler Collection (GCC)
 ```
 ```
 结构线*thisline = (struct line *)
@@ -20694,7 +20477,6 @@ struct entry tester (int len;字符数据(len)(len),int len)
 ```
 
 ```
-430 Using the GNU Compiler Collection (GCC)
 ```
 在这里的......是可变参数。在这样一个宏的调用中，它表示零或多个令牌，直到结束调用
 
@@ -20800,7 +20582,6 @@ char **foo = (char *[]){“x”，“y”，“z”};
 ```
 
 ```
-432 Using the GNU Compiler Collection (GCC)
 ```
 ```
 对于标量类型和联合类型也允许使用复合文字。在下面的示例中，将变量 i 初始化为值
@@ -20904,7 +20685,6 @@ int 空白[256]
 ```
 
 ```
-434 Using the GNU Compiler Collection (GCC)
 ```
 而不是:
 
@@ -21013,7 +20793,6 @@ alloc_size
 
 
 ```
-436 Using the GNU Compiler Collection (GCC)
 ```
 ```
 alloc_size 属性用于告诉编译器函数返回值指向内存，其中的大小由一个或两
@@ -21109,7 +20888,6 @@ fn_ptr)()= old_fn;
 
 
 ```
-438 Using the GNU Compiler Collection (GCC)
 ```
 ```
 这对于编译时检查非常有用，特别是与__builtin_constant_p 和内联函数一起，
@@ -21208,7 +20986,6 @@ gnu_inline
 
 
 ```
-440 Using the GNU Compiler Collection (GCC)
 ```
 变成了一个外部引用，就好像你只声明了函数，而没有定义它一样。这几乎具
 
@@ -21305,7 +21082,6 @@ GNU C 库版本 2.11.1。
 ```
 
 ```
-442 Using the GNU Compiler Collection (GCC)
 ```
 函数或实现函数在当前编译单元中定义并使用静态变量。编写这样的信号处理
 
@@ -21397,7 +21173,6 @@ Wnonnull”选项，则发出警告。编译器也可以根据某些函数参数
 my_memcpy (void *dest, const void *src, size_t len) __attribute__(nonnull);
 
 
-444 Using the GNU Compiler Collection (GCC)
 
 noplt noplt 属性是选项“-fno-plt”的对应项。在位置无关的代码中使用此属性标记的
 函数的调用不使用 PLT。
@@ -21489,7 +21264,6 @@ returns_double 属性告诉编译器一个函数可以返回多个时间。编�
 
 
 ```
-446 Using the GNU Compiler Collection (GCC)
 ```
 通常，编译器将生成的代码放在文本部分。但是，有时您需要附加的部分，或
 
@@ -21583,7 +21357,6 @@ int i __attribute__(能见度(“隐藏”));
 可见性类型的可能值对应于 ELF gABI 中的可见性设置。
 ```
 
-448 Using the GNU Compiler Collection (GCC)
 
 默认的 默认可见性是对象文件格式的通常情况。此值可用于可见性属
 
@@ -21700,7 +21473,6 @@ general-regs-only
 
 
 ```
-450 Using the GNU Compiler Collection (GCC)
 ```
 指示在为该函数生成代码时不应使用浮点或高级 SIMD 寄存器。如果函数显式
 
@@ -21809,7 +21581,6 @@ short_call
 
 
 ```
-452 Using the GNU Compiler Collection (GCC)
 ```
 ```
 这些属性指定如何调用特定的函数。这些属性覆盖“-mlong-calls”和“-
@@ -21914,7 +21685,6 @@ AVR 后端支持这些功能属性:
 
 
 ```
-454 Using the GNU Compiler Collection (GCC)
 ```
 中断
 
@@ -22015,7 +21785,6 @@ nmi_handler
 
 
 ```
-456 Using the GNU Compiler Collection (GCC)
 ```
 #### 6.31.7 CR16 函数属性
 
@@ -22117,7 +21886,6 @@ function_vector
 
 
 ```
-458 Using the GNU Compiler Collection (GCC)
 ```
 ```
 每个向量表都有在 jsrs 指令中使用的特殊页码(18 到 255)。例程的跳转地址是
@@ -22231,7 +21999,6 @@ save_volatiles
 
 
 ```
-460 Using the GNU Compiler Collection (GCC)
 ```
 break_handler
 使用此属性表示指定的函数是一个 break 处理程序。编译器生成函数的入口和
@@ -22334,7 +22101,6 @@ keep_interrupts_masked
 ```
 
 ```
-462 Using the GNU Compiler Collection (GCC)
 ```
 为整个函数设置中断。如果没有这个属性，GCC 将尽可能多地重
 
@@ -22453,7 +22219,6 @@ Reentrant 函数在进入时禁用中断，在退出时启用中断。可重入�
 ```
 
 ```
-464 Using the GNU Compiler Collection (GCC)
 ```
 ```
 能。但是，使用“- ffunc- sections”和“-fdata-sections”命令行选项可以帮助打包，
@@ -22566,7 +22331,6 @@ PowerPC 允许以下选项:
 令行中使用' -mabi= AltiVec '，否则不能启用 AltiVec 指令。
 ```
 
-466 Using the GNU Compiler Collection (GCC)
 
 ```
 “cmpb”
@@ -22676,7 +22440,6 @@ PowerPC V2.05 体系结构的处理器上实现的通用注册指令的代码。
 
 
 ```
-468 Using the GNU Compiler Collection (GCC)
 ```
 ```
 生成使用(不使用)成对的 simd 指令生成的代码。
@@ -22776,7 +22539,6 @@ hotpatch(halfwords-before-function-label halfwords-after-function-label)
 
 
 ```
-470 Using the GNU Compiler Collection (GCC)
 ```
 “调= '
 
@@ -22882,7 +22644,6 @@ V850 后端支持以下功能属性:
 
 
 ```
-472 Using the GNU Compiler Collection (GCC)
 ```
 使用这些属性表明指定的函数是一个中断处理程序。编译器生成的函数入口和
 
@@ -22990,7 +22751,6 @@ mgeneral-regs-only 应该被用来编译 no_caller_saved_register 属性的函�
 
 
 ```
-474 Using the GNU Compiler Collection (GCC)
 ```
 用于从中断处理程序返回。除由 IRET 指令恢复的 EFLAGS 寄存器外，所有寄
 
@@ -23108,7 +22868,6 @@ aes 的
 启用/禁用根据 IEEE 算法生成的浮点数。
 
 
-476 Using the GNU Compiler Collection (GCC)
 
 ```
 “inline-all-stringops”
@@ -23205,7 +22964,6 @@ Xstormy16 后端支持这些函数属性:
 ```
 
 ```
-478 Using the GNU Compiler Collection (GCC)
 ```
 性]，第 532 页)，枚举数(见第 6.35 节[枚举数属性]，第 533 页)，语句(见第 6.36 节[语句
 
@@ -23306,7 +23064,6 @@ nonstring
 
 
 ```
-480 Using the GNU Compiler Collection (GCC)
 ```
 ```
 有用的，并且在将此类数组或指针用作有界字符串操作函数(如 strncpy)的参
@@ -23409,7 +23166,6 @@ struct S __attribute__ (vector_size (16))) foo;
 
 
 ```
-482 Using the GNU Compiler Collection (GCC)
 ```
 可见性(“visibility_type”)
 此属性将影响它所连接的声明的链接。可见性属性在第 6.31.1 节[通用函数属
@@ -23503,7 +23259,6 @@ module.c:(。text + 0 x1c):警告:internalerror:ofrangeerror
 ```
 
 ```
-484 Using the GNU Compiler Collection (GCC)
 ```
 l1_data l1_data_A
 l1_data_B
@@ -23622,7 +23377,6 @@ selectany 属性使一个初始化的全局变量具有一次链接语义。当�
 
 
 ```
-486 Using the GNU Compiler Collection (GCC)
 ```
 每个转换中发出，但是对构造函数和析构函数的调用由一个一旦链接的保护变
 
@@ -23734,7 +23488,6 @@ below100
 
 
 ```
-488 Using the GNU Compiler Collection (GCC)
 ```
 ```
 如果一个变量具有 below100 属性(也允许 below100)， GCC 将变量放置在第
@@ -23835,7 +23588,6 @@ __u64 x;
 
 
 ```
-490 Using the GNU Compiler Collection (GCC)
 ```
 ```
 } __attribute__((对齐(8)));
@@ -23934,7 +23686,6 @@ endianness)，以及组件为标量的数组字段。受支持的机缘巧合是
 
 
 ```
-492 Using the GNU Compiler Collection (GCC)
 ```
 属性对本身为联合、结构体或组件为联合或结构体的数组的字段没有影响，而
 
@@ -24035,7 +23786,6 @@ __declspec。)
 ```
 
 ```
-494 Using the GNU Compiler Collection (GCC)
 ```
 #### 6.33.4 议员类型属性
 
@@ -24147,7 +23897,6 @@ GCC 允许在空语句上设置属性。有关使用属性的确切语法，请�
 
 
 ```
-496 Using the GNU Compiler Collection (GCC)
 ```
 这个示例使用 fallthrough 语句属性来指示不应该发出“- wimplex -fallthrough”警告:
 开关(cond){案
@@ -24259,7 +24008,6 @@ before =(如果存在)。枚举器中的可选属性属于枚举常数。如果�
 int 的单个参数，但这可能会发生变化。
 ```
 
-498 Using the GNU Compiler Collection (GCC)
 
 属性说明符列表可以在声明多个标识符的声明中，使用一个说明符和限定符列表，在以
 
@@ -24369,7 +24117,6 @@ GNU c++不支持老式的函数定义，所以这个扩展无关紧要。
 ```
 
 ```
-500 Using the GNU Compiler Collection (GCC)
 ```
 ### 6.40 美元标识符名称
 
@@ -24472,7 +24219,6 @@ __builtin_apply_ args。当不能替换标记为内联的函数时，使用“-W
 
 
 ```
-502 Using the GNU Compiler Collection (GCC)
 ```
 ### 6.44 何时访问易失性对象?
 
@@ -24575,7 +24321,6 @@ asm 语句可能不会跳转到其他 asm 语句中。GCC 不知道这些跳转�
 ```
 
 ```
-504 Using the GNU Compiler Collection (GCC)
 ```
 ```
 警告:C 标准没有为 asm 指定语义，这使它成为编译器之间不兼容的潜在来源。这些不兼
@@ -24677,7 +24422,6 @@ asm(“mov % 1,% 0 \ n \ t”
 ```
 
 ```
-506 Using the GNU Compiler Collection (GCC)
 ```
 ```
 printf(" % d \ n”,dst);
@@ -24778,7 +24522,6 @@ ertemplate]，第 547 页)可能有助于解决这个问题。
 ```
 
 ```
-508 Using the GNU Compiler Collection (GCC)
 ```
 ```
 您可以将多个汇编指令放在一个 asm 字符串中，由系统的汇编代码中通常使用的字符分
@@ -24878,7 +24621,6 @@ asmSymbolicName
 案(参见第 6.45.5.2 节[本地寄存器变量]，第 594 页)。
 ```
 
-510 Using the GNU Compiler Collection (GCC)
 
 _cvariablename_
 指定一个 C lvalue 表达式来保存输出，通常是一个变量名。括号是语法中必需
@@ -24977,7 +24719,6 @@ z “相等”或零标志设置为 g 大于通用电
 ```
 
 ```
-512 Using the GNU Compiler Collection (GCC)
 ```
 不，不，不，不，不，不，不，不 “不是”标志，或者上
 
@@ -25074,7 +24815,6 @@ asm volatile(“movc3 %0， %1， %2”
 内存读或写(例如，访问输入参数之一指向的内存)。为了确保内存包含正确的
 ```
 
-514 Using the GNU Compiler Collection (GCC)
 
 值，GCC 可能需要在执行 asm 之前将特定的寄存器值刷新到内存中。此外，
 编译器不会假设在 asm 之前从内存中读取的任何值在 asm 之后保持不变;它根
@@ -25171,7 +24911,6 @@ __asm__
 ```
 
 ```
-516 Using the GNU Compiler Collection (GCC)
 ```
 #### 6.45.2.7 Goto 标签
 
@@ -25270,7 +25009,6 @@ l (^) 打印 的 标签 的名字 与 没有标
 
 
 ```
-518 Using the GNU Compiler Collection (GCC)
 ```
 c (^) 需要一个常量操作数并打印不带标点的常
 量表达式。
@@ -25366,7 +25104,6 @@ asm(“fyl2xp1”:“= t”(结果):“0”(x)“u”(y):“圣(1)”);
 西。
 
 
-520 Using the GNU Compiler Collection (GCC)
 
 “<” (^) 允许具有自动减量寻址(预减量或后减量)的内存操作数。在内联 asm 中，只有
 在能够处理副作用的指令中只使用一次操作数时，才允许使用这个约束。在内
@@ -25469,7 +25206,6 @@ addl # 35,r12
 
 
 ```
-522 Using the GNU Compiler Collection (GCC)
 ```
 当编译器修复操作数以满足约束时，它需要知道哪些操作数由指令读取，哪些
 
@@ -25581,7 +25317,6 @@ L 一个 6 位无符号整数常数。
 
 
 ```
-524 Using the GNU Compiler Collection (GCC)
 ```
 ```
 CmL 一个 6 位无符号整数常数的 2 的补码。
@@ -25669,7 +25404,6 @@ t LT0 或 LT1。k LC0
 x 任何 D P B M I 或 L 寄存器。
 ```
 
-526 Using the GNU Compiler Collection (GCC)
 
 ```
 y 其他寄存器通常只用于序言和 epilogues: RETS、RETN、RETI、
@@ -25775,7 +25509,6 @@ f 在 FPR_REGS 类中注册(fr0 到 fr63)。
 ```
 
 ```
-528 Using the GNU Compiler Collection (GCC)
 ```
 ```
 h 在 FEVEN_REGS 类中注册(fr0 到 fr63)。奇数寄存器不被排除在类中，而是通
@@ -25892,7 +25625,6 @@ W 寄存器间接内存操作数
 
 
 ```
-530 Using the GNU Compiler Collection (GCC)
 ```
 ```
 b 分支机构登记
@@ -25994,7 +25726,6 @@ Sd 通用的 src/dest 内存寻址模式。
 
 
 ```
-532 Using the GNU Compiler Collection (GCC)
 ```
 ```
 Sa 内存使用$a0 或$a1 寻址。
@@ -26089,7 +25820,6 @@ Cmvz 整数 mvz 有效
 ```
 
 ```
-534 Using the GNU Compiler Collection (GCC)
 ```
 美联社 把操作数
 
@@ -26185,7 +25915,6 @@ I 具有 16 位数字的指令中的一个直接操作数的整数。− 32768 �
 32767 之间。
 
 
-536 Using the GNU Compiler Collection (GCC)
 
 J 取无符号 16 位数字的指令中的立即操作数有效的整数。 0 到
 
@@ -26300,7 +26029,6 @@ FP wi 或 VSX 寄存器用于保存 VSX insns 或无 REGS 的 64 位整数。wj 
 寄存器用于保存 64 位整数，用于直接移动或无 REGS。wk FP 或 VSX 寄存器保
 ```
 
-538 Using the GNU Compiler Collection (GCC)
 
 存 64 位双精度，用于直接移动或无 REGS。如果启用了 LFIWAX 指令或没有
 
@@ -26391,7 +26119,6 @@ Z 内存操作数，它是一个索引或寄存器的间接操作数(通常最�
 
 
 ```
-540 Using the GNU Compiler Collection (GCC)
 ```
 R AIX TOC 条目
 
@@ -26492,7 +26219,6 @@ Sint08 (^) 一个常数范围内− 128 年到 127 年,包容性。
 Sint16 一个常数范围内− 32768 年到 32767 年,包容性。
 
 
-542 Using the GNU Compiler Collection (GCC)
 
 Sint24 (^) 一个常数范围内− 8388608 到 8388607,包容性。
 Uint04 范围为^0 到^15 的常数，包括在内。^
@@ -26583,7 +26309,6 @@ Y 矢量为零
 
 
 ```
-544 Using the GNU Compiler Collection (GCC)
 ```
 SPU - config / SPU / SPU 。可以用 il/ila/ilh/ilhu 指令装载的紧急物品。const int 被视为 64 位
 
@@ -26694,7 +26419,6 @@ R10 每一个都表示一个寄存器的寄存器约束，从 r0 到 R10。
 ```
 
 ```
-546 Using the GNU Compiler Collection (GCC)
 ```
 I 签署了 8 位整数常数。
 
@@ -26812,7 +26536,6 @@ P 整数常数 32
 ```
 
 ```
-548 Using the GNU Compiler Collection (GCC)
 ```
 x86 家族 ——“ 配置 / i386 / constraints.md”
 
@@ -26928,7 +26651,6 @@ N 一个常数− 3 和 0 之间的包容性。
 ```
 
 ```
-550 Using the GNU Compiler Collection (GCC)
 ```
 O 1 到 4 之间的常数。
 
@@ -27045,7 +26767,6 @@ GNU C 允许您将特定的硬件寄存器与 C 变量关联起来。在几乎�
 
 
 ```
-552 Using the GNU Compiler Collection (GCC)
 ```
 在选择寄存器时，选择一个通常由机器上的函数调用保存和恢复的寄存器。这可以确保
 
@@ -27150,7 +26871,6 @@ asm，使用__inline__代替内联。
 ```
 
 ```
-554 Using the GNU Compiler Collection (GCC)
 ```
 ```
 “-pedantic”和其他选项会引起许多 GNU C 扩展的警告。通过在表达式之前编写
@@ -27260,7 +26980,6 @@ Wframe-address”选项生效时，认为不安全的调用就会被诊断出来
 使用这些扩展的第一步是提供必要的数据类型。这应该使用合适的定义:
 ```
 
-556 Using the GNU Compiler Collection (GCC)
 
 ```
 typedef int v4si __attribute__ (vector_size (16)));
@@ -27369,7 +27088,6 @@ GCC 实现了 C 和 c++的语法扩展，以实现宏的 offsetof。
 ```
 
 ```
-558 Using the GNU Compiler Collection (GCC)
 ```
 ```
 主:
@@ -27480,7 +27198,6 @@ void__sync_lock_release(类型* ptr,...)
 
 
 ```
-560 Using the GNU Compiler Collection (GCC)
 ```
 ### 6.53 内置函数，用于内存模型感知原子操作
 
@@ -27587,7 +27304,6 @@ void __atomic_exchange(类型*ptr，类型*val，类型*ret, int) (内置函数)
 ```
 
 ```
-562 Using the GNU Compiler Collection (GCC)
 ```
 #### bool __atomic_compare_exchange_n(类型*ptr，类型 (内置函数)
 
@@ -27725,7 +27441,6 @@ bool __builtin_add_overflow (type1 a, type2 b, type3) (内置函数)
 
 
 ```
-564 Using the GNU Compiler Collection (GCC)
 ```
 ```
 * res)
@@ -27881,7 +27596,6 @@ __ATOMIC_HLE_ACQUIRE
 
 
 ```
-566 Using the GNU Compiler Collection (GCC)
 ```
 在锁变量上启动锁省略。内存顺序必须为__ATOMIC_ACQUIRE 或更强。
 
@@ -27990,7 +27704,6 @@ _builtin___vprintf_chk,__builtin___fprintf_chk __builtin___vfprintf_chk。它们
 ```
 
 ```
-568 Using the GNU Compiler Collection (GCC)
 ```
 ### 6.57 指针边界检查器内置函数
 
@@ -28119,7 +27832,6 @@ __builtin___bnd_get_ptr_ubound (q);printf(" q = % p 磅(q)= % p 乌
 
 
 ```
-570 Using the GNU Compiler Collection (GCC)
 ```
 GCC 包含标准 C 库中许多函数的内置版本。这些函数有两种形式:一种名称以__builtin_前
 缀开头，另一种没有。这两种表单都具有相同的类型(包括原型)、相同的地址(当使用它们
@@ -28219,7 +27931,6 @@ __builtin_alloca_with_align 分配的空间可能在调用它的 if 语句末尾
 空 f (unsigned n, bool overalign)
 ```
 
-572 Using the GNU Compiler Collection (GCC)
 
 ```
 { void * p;如果
@@ -28331,7 +28042,6 @@ __builtin_tgmath 的参数至少是两个指向函数的指针，然后是类型
 ```
 
 ```
-574 Using the GNU Compiler Collection (GCC)
 ```
 ```
 指定函数的类型必须都是不同的，但是它们之间的关系与在<tgmath.h>中的宏可以
@@ -28439,7 +28149,6 @@ __attribute__(noreturn)的函数之后，如本例所示:
 ```
 
 ```
-576 Using the GNU Compiler Collection (GCC)
 ```
 ```
 int g(int c)
@@ -28670,7 +28379,6 @@ _Decimal128 __builtin_nand128 (const char *str)[内置函数]与__builtin_nan �
 
 
 ```
-580 Using the GNU Compiler Collection (GCC)
 ```
 ```
 [Built-in Function]
@@ -28801,7 +28509,6 @@ __builtin_clz，除了参数类型为 unsignedlonglong。
 ```
 
 ```
-582 Using the GNU Compiler Collection (GCC)
 ```
 ```
 [Built-in Function]
@@ -28932,7 +28639,6 @@ __builtin_rdprs(int,int)空白__builtin_wrctl(int,int) void
 ```
 
 ```
-584 Using the GNU Compiler Collection (GCC)
 ```
 ```
 __builtin_flushd (volatile void *) void __builtin_flushda
@@ -29059,7 +28765,6 @@ int __builtin_arc_norm(int src) (内置函数)
 ```
 
 ```
-586 Using the GNU Compiler Collection (GCC)
 ```
 短 int __builtin_arc_normw (short int src) (内置函数)
 
@@ -29179,7 +28884,6 @@ __builtin_arc_vmaxw (__v8hi， __v8hi)
 2)表示“建造”的意思。
 ```
 
-588 Using the GNU Compiler Collection (GCC)
 
 2 .在这里输入译文 1:我的翻译是:
 
@@ -29274,7 +28978,6 @@ __builtin_arc_vrecrun (int)
 
 
 ```
-590 Using the GNU Compiler Collection (GCC)
 ```
 注意 : 虽然等效的硬件指令不将 SIMD 寄存器作为操作数，但是这些构建程序覆盖 __v8hi
 
@@ -29383,7 +29086,6 @@ void__builtin_avr_avr_nop (void)
 
 
 ```
-592 Using the GNU Compiler Collection (GCC)
 ```
 ```
 这些内置函数映射到相应的机器指令，即 nop、sei、cli、sleep、wdr、swap、
@@ -29486,7 +29188,6 @@ iacc 参数类似于 acc 参数，但指定 iacc 寄存器的数量。
 sw1__ADDSS(sw1 sw1) c = __ADDSS(a,b) ADDSSa,b,c
 ```
 
-594 Using the GNU Compiler Collection (GCC)
 
 sw1__SCAN(sw1 sw1) _c = __SCAN(a,b)_ (^) 斯堪,b,c
 sw1__SCUTSS(sw1) _b = __SCUTSS(a)_ SCUTSSa b
@@ -29581,7 +29282,6 @@ sw2__MQSUBHSS(sw2 sw2) _c = __MQSUBHSS(a,b)_ MQSUBHSSa,b,c
 
 
 ```
-596 Using the GNU Compiler Collection (GCC)
 ```
 ```
 uw2__MQSUBHUS(uw2 uw2) c = __MQSUBHUS(a,b) MQSUBHUSa,b,c
@@ -29688,7 +29388,6 @@ C 代码 MIPS 指令
 ```
 
 ```
-598 Using the GNU Compiler Collection (GCC)
 ```
 a + b addu。qb c + d addq。ph 值 a - b subu。qb c - d
 subq.ph
@@ -29792,7 +29491,6 @@ __builtin_mips_addqh_r_ph(v2q15 v2q15);
 
 
 ```
-600 Using the GNU Compiler Collection (GCC)
 ```
 ```
 __builtin_mips_subqh_r_ph(v2q15 v2q15);问
@@ -29903,7 +29601,6 @@ psrah_u (uint16x4_t s, uint8_t);int16x4_t psrah_s (int16x4_t s,
 ```
 
 ```
-602 Using the GNU Compiler Collection (GCC)
 ```
 ```
 uint8_t 金额);uint32x2_t psraw_u (uint32x2_t s, uint8_t 金
@@ -30012,7 +29709,6 @@ MIPS-3D 应用程序特定扩展(ASE)包括额外的付费单指令，用于提�
 ```
 
 ```
-604 Using the GNU Compiler Collection (GCC)
 ```
 下面列出的函数直接映射到特定的 MIPS-3D 指令。请参阅体系结构规范以了解关于每个指
 
@@ -30122,7 +29818,6 @@ all_are_false();
 
 
 ```
-606 Using the GNU Compiler Collection (GCC)
 ```
 ```
 if (__builtin_mips_all_c_eq_4s (a、b、c、d))
@@ -30215,7 +29910,6 @@ v16i8 __builtin_msa_addvi_b(v16i8 imm0_31);v8i16
 __builtin_msa_addvi_h(v8i16 imm0_31);v4i32
 ```
 
-608 Using the GNU Compiler Collection (GCC)
 
 ```
 __builtin_msa_addvi_w(v4i32 imm0_31);v2i64
@@ -30306,7 +30000,6 @@ __builtin_msa_bz_d(v2u64);等
 __builtin_msa_bz_v(v16u8);
 ```
 
-610 Using the GNU Compiler Collection (GCC)
 
 ```
 v16i8 __builtin_msa_ceq_b(v16i8 v16i8);v8i16
@@ -30401,7 +30094,6 @@ v4i32 __builtin_msa_fclass_w(v4f32);v2i64
 __builtin_msa_fclass_d(v2f64);
 ```
 
-612 Using the GNU Compiler Collection (GCC)
 
 ```
 v4i32 __builtin_msa_fcle_w(v4f32 v4f32);v2i64
@@ -30486,7 +30178,6 @@ __builtin_msa_fsor_w(v4f32 v4f32);v2i64
 __builtin_msa_fsor_d(v2f64 v2f64);
 ```
 
-614 Using the GNU Compiler Collection (GCC)
 
 ```
 v4f32 __builtin_msa_fsqrt_w(v4f32);v2f64
@@ -30575,7 +30266,6 @@ __builtin_msa_max_a_w(v4i32 v4i32);v2i64
 __builtin_msa_max_a_d(v2i64 v2i64);
 ```
 
-616 Using the GNU Compiler Collection (GCC)
 
 ```
 v16i8 __builtin_msa_max_s_b(v16i8 v16i8);v8i16
@@ -30667,7 +30357,6 @@ v16i8 __builtin_msa_pcnt_b(v16i8);v8i16
 __builtin_msa_pcnt_h(v8i16);v4i32
 ```
 
-618 Using the GNU Compiler Collection (GCC)
 
 ```
 __builtin_msa_pcnt_w(v4i32);v2i64
@@ -30762,7 +30451,6 @@ __builtin_msa_subsus_u_d(v2u64 v2i64);
 ```
 
 ```
-620 Using the GNU Compiler Collection (GCC)
 ```
 ```
 v16i8 __builtin_msa_subsuu_s_b(v16u8 v16u8);v8i16
@@ -30885,7 +30573,6 @@ int__builtin_subs(intx inty)
 
 
 ```
-622 Using the GNU Compiler Collection (GCC)
 ```
 ```
 饱和减法。返回的结果减去从 x,y 存储值− 32768 如果结果溢出。
@@ -30981,7 +30668,6 @@ CPU 有 SPE 单精度浮点单元。
 fpu 的 CPU 有一个浮点单元。
 
 
-624 Using the GNU Compiler Collection (GCC)
 
 “htm” CPU 有硬件事务内存指令。
 
@@ -31073,7 +30759,6 @@ __float128__builtin_sqrtf128_round_to_odd(__float128)
 
 
 ```
-626 Using the GNU Compiler Collection (GCC)
 ```
 __float128__builtin_fmaf128(__float128 __float128 __float128)
 执行一个 128 位的 IEEE 浮点融合乘法和添加操作，使用圆到奇数作为四舍五入
@@ -31167,7 +30852,6 @@ scalar_cmp_exp_gt、scalar_cmp_exp_lt、scalar_cmp_exp_eq 和
 scalar_cmp_cmp_exp_unordered 内置函数如果 arg1 分别大于、小于、等于或不可与 arg2
 
 
-628 Using the GNU Compiler Collection (GCC)
 
 比较，则返回一个非零值。如果一个或另一个等于 NaN(不是一个数字)，那么这些参数是
 不可比较的。
@@ -31258,7 +30942,6 @@ vector unsigned char);
 向量无符号短 vec_pack_to_short_fp32(向量 float，向量 float);
 ```
 
-630 Using the GNU Compiler Collection (GCC)
 
 向量符号 char vec_xl_be(带符号长，带符号 char *);向量无符号 char vec_xl_be(带符号长，无
 符号 char *);向量签名 int vec_xl_be(签名 long，签名 int *);vector unsigned int vec_xl_be(签名
@@ -31352,7 +31035,6 @@ GCC 为 PowerPC 系列的处理器提供了一个接口，用于访问摩托罗�
 mabi=altivec”。接口支持以下矢量类型。
 ```
 
-632 Using the GNU Compiler Collection (GCC)
 
 ```
 向量无符号 char 向量有符号
@@ -31451,7 +31133,6 @@ vec_add(向量有符号的短，向量 bool 短);矢量签名的短矢量(矢量
 签名 int vec_add(向量签名 int，向量签名 int);
 ```
 
-634 Using the GNU Compiler Collection (GCC)
 
 ```
 向量符号 int(向量 bool int，向量符号 int);向量符号 int(向量符号 int，向量 bool int);向量
@@ -31543,7 +31224,6 @@ vec_vcmpequb (vector unsigned char, vector unsigned char);
 向量 bool int vec_cmpge(向量 float，向量 float);
 ```
 
-636 Using the GNU Compiler Collection (GCC)
 
 ```
 向量 bool char vec_cmpgt(向量无符号，向量无符号字符);向量 bool char vec_cmpgt(向量
@@ -31638,7 +31318,6 @@ int, const int);void vec_dstt (const 向量 unsigned short *， int, const int);
 vec_dstt (const vector 符号 short *， int, const int);空 vec_dstt (const vector
 ```
 
-638 Using the GNU Compiler Collection (GCC)
 
 ```
 bool short *， int, const int);void vec_dstt (const vector pixel *， int, const
@@ -31734,7 +31413,6 @@ int);向量无符号 int vec_max(向量无符号 int，向量无符号 int);向�
 int，向量符号 int);矢量符号 int vec_max(矢量符号 int，矢量 bool int);向量有符号整数
 ```
 
-640 Using the GNU Compiler Collection (GCC)
 
 ```
 (向量有符号整数，向量有符号整数);向量 float vec_max(向量 float，向量 float);向量
@@ -31821,7 +31499,6 @@ bool int);向量无符号 int(向量无符号 int，向量无符号 int);
 向量 unsigned short vec_vminuh(矢量 unsigned short, vector unsigned short);
 ```
 
-642 Using the GNU Compiler Collection (GCC)
 
 ```
 向量符号 char;矢量符号 char vec_vminsb(矢量符号 char，矢量 bool char);向量有符号的
@@ -31908,7 +31585,6 @@ vec_neg(矢量符号 int);向量有符号的长矢量(向量有符号的长矢�
 短矢量(矢量无符号短，矢量无符号短);
 ```
 
-644 Using the GNU Compiler Collection (GCC)
 
 ```
 矢量 bool short vec_nor(矢量 bool short, vector bool short);矢量带符号的字符(矢量
@@ -32003,7 +31679,6 @@ vec_reve(向量有符号的短);向量无符号短 vec_reve(向量无符号短);
 向量无符号字符 vec_rl(向量无符号字符，向量无符号字符);
 ```
 
-646 Using the GNU Compiler Collection (GCC)
 
 ```
 矢量签名短矢量 rl(矢量签名短，矢量无符号短);向量无符号短 vec_rl(向量无符号短，
@@ -32098,7 +31773,6 @@ vec_vslb (vector unsigned char, vector unsigned char);
 向量像素 vec_sld(向量像素，
 ```
 
-648 Using the GNU Compiler Collection (GCC)
 
 ```
 矢量的像素,const int);
@@ -32195,7 +31869,6 @@ vec_splats(浮动);
 int, const int);
 ```
 
-650 Using the GNU Compiler Collection (GCC)
 
 ```
 向量 bool short vec_vsplth(向量 bool short, const int);向量有符号的短 vec_vsplth(向
@@ -32289,7 +31962,6 @@ int, int, unsigned int *);虚向量(向量 bool int, int, vector bool int *);空
 bool int, int, unsigned int *);void vec_st (vector bool int, int, int *);void vec_st(向量
 ```
 
-652 Using the GNU Compiler Collection (GCC)
 
 ```
 签名短，int, vector 签名短*);void vec_st (vector signed short, int, short *);void
@@ -32388,7 +32060,6 @@ unsigned __int128);
 向量符号 int vec_subec(向量符号整数，矢量符号整数，向量符号整数);
 ```
 
-654 Using the GNU Compiler Collection (GCC)
 
 ```
 向量无符号 int(向量无符号 int，向量无符号 int，向量无符号 int);
@@ -32481,7 +32152,6 @@ int vec_all_eq (vector 带符号 char, vector bool char);int vec_all_eq(向量�
 向量符号);int vec_all_eq (vector unsigned char, vector bool char);int vec_all_eq
 ```
 
-656 Using the GNU Compiler Collection (GCC)
 
 ```
 (vector unsigned char, vector unsigned char);int vec_all_eq (vector bool char,
@@ -32583,7 +32253,6 @@ vec_any_eq(向量无符号短，向量无符号短);int vec_any_eq(向量 bool
 short，向量 bool short);int vec_any_eq(向量 bool short，向量 unsigned
 ```
 
-658 Using the GNU Compiler Collection (GCC)
 
 ```
 short);int vec_any_eq (vector bool short, vector signed short);int
@@ -32685,7 +32354,6 @@ bool 长);矢量双矢量和(矢量 bool 长，矢量双);向量长 vec_and(向�
 量双向量(向量双);
 ```
 
-660 Using the GNU Compiler Collection (GCC)
 
 ```
 向量 bool long vec_cmpeq(向量双，向量双);向量 bool long vec_cmpge (vector
@@ -32789,7 +32457,6 @@ vec_vsx_ld (int, const vector bool char *);向量签名 char vec_vsx_ld (int, co
 char *);向量签名 char vec_vsx_ld (int, const 签名 char *);向量无符号 char vec_vsx_ld
 ```
 
-662 Using the GNU Compiler Collection (GCC)
 
 (int, const vector unsigned char *);向量 unsigned char vec_vsx_ld (int, const unsigned
 char *);void vec_vsx_st (vector double, int, vector double *);
@@ -32882,7 +32549,6 @@ vec_min (vector unsigned long long, vector unsigned long long);
 向量有符号的长向量(向量有符号的长向量);
 ```
 
-664 Using the GNU Compiler Collection (GCC)
 
 ```
 矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量
@@ -32974,7 +32640,6 @@ vec_cntlz(无符号长矢量);向量 int vec_cntlz(向量 int);向量 unsigned i
 向量符号 char 向量无符号 char vec_cntlz(向量无符号 char);
 ```
 
-666 Using the GNU Compiler Collection (GCC)
 
 ```
 向量长 vec_vclz(向量长);向量无符号长 vec_vclz(向量无符号长);矢量 int
@@ -33059,7 +32724,6 @@ __int128_t bcdsub(载体__int128_t，载体__int128_t);(向量__int128_t，向�
 __int128_t, vector __int128_t);int __builtin_bcdsub_ov (vector __int128_t, vector __int128_t);
 ```
 
-668 Using the GNU Compiler Collection (GCC)
 
 ```
 如果 ISA 3.0 指令集增加(' -mcpu=power9 ')可用:
@@ -33145,7 +32809,6 @@ PowerPC 系列的处理器可以使用以下内置函数，从 ISA 3.0 或更高
 mcpu=power9 '):
 ```
 
-670 Using the GNU Compiler Collection (GCC)
 
 __vector 无符号 int vec_extract_exp (__vector 浮
 点源);__vector 无符号长 int vec_extract_exp
@@ -33244,7 +32907,6 @@ vectorsignedchar 的向量会反转整个单词中的字节。
 ```
 
 ```
-672 Using the GNU Compiler Collection (GCC)
 ```
 ```
 向量无符号长__builtin_crypto_vcipherlast(向量无符号长，向量无符号长);
@@ -33331,7 +32993,6 @@ __builtin_get_tfhar (void)无符号 long __builtin_get_tfiar
 (void)
 ```
 
-674 Using the GNU Compiler Collection (GCC)
 
 空白__builtin_set_texasr(无符号长);空白
 __builtin_set_texasru(无符号长);空白
@@ -33429,7 +33090,6 @@ uint32_t);uint32_t (uint32_t *， uint32_t);uint32_t amo_lwat_umin
 ```
 
 ```
-676 Using the GNU Compiler Collection (GCC)
 ```
 ```
 (uint32_t *， uint32_t);uint32_t amo_lwat_swap (uint32_t *，
@@ -33553,7 +33213,6 @@ void __builtin_rx_mvtc (int reg, int val) (内置函数)
 ```
 
 ```
-678 Using the GNU Compiler Collection (GCC)
 ```
 int __builtin_rx_revw(int) (内置函数)
 
@@ -33689,7 +33348,6 @@ SH1、SH2、SH3 和 SH4 处理器系列支持以下内置功能:
 
 
 ```
-680 Using the GNU Compiler Collection (GCC)
 ```
 void __builtin_set_thread_pointer (void *ptr)[内置函数]将“GBR”寄存器设置为指定的
 
@@ -33797,7 +33455,6 @@ __builtin_vis_edge32n (void *， void *);长
 __builtin_vis_edge32ln (void *， void *);
 ```
 
-682 Using the GNU Compiler Collection (GCC)
 
 ```
 当你使用“-mvis3”开关时，VIS 3.0 版内置功能也会随之出现:
@@ -33893,7 +33550,6 @@ __builtin_vis_fpcmpugt16shl (v4hi, v4hi, int);长
 ```
 
 ```
-684 Using the GNU Compiler Collection (GCC)
 ```
 ```
 __builtin_vis_fpcmpule32shl (v2si, v2si, int);长
@@ -34007,7 +33663,6 @@ __tile_udn1_receive (void)
 ```
 
 ```
-686 Using the GNU Compiler Collection (GCC)
 ```
 每个受支持的体系结构编译单独的文件。特别地，应该在没有这些选项的情况下编译包含
 
@@ -34107,7 +33762,6 @@ AMD 家庭 15 h CPU。
 “bdver 1 ” AMD 系列 15h 推土机版本 1 。
 
 
-688 Using the GNU Compiler Collection (GCC)
 
 “bdver 2 ” AMD 系列 15h 推土机版本 2 。
 
@@ -34212,7 +33866,6 @@ v4si 搭建_ia32_pshufd (v4si, int) v8hi __builtin_ia32_pshuflw
 ```
 
 ```
-690 Using the GNU Compiler Collection (GCC)
 ```
 ```
 v2f_builtin_s_32f_unia_32f_builtin_32vs_32f_builtin_32v
@@ -34317,7 +33970,6 @@ __builtin_ia32_ia32_rdrand64_step (unsigned long *)
 当使用“-msse4a”时，可以使用以下内置函数。它们都生成作为名称一部分的机器指令。
 ```
 
-692 Using the GNU Compiler Collection (GCC)
 
 ```
 void __builtin_ia32_movntsd (double *， v2df) void
@@ -34414,7 +34066,6 @@ __builtin_ia32_wrussd(无符号 int, void *);无效
 
 
 ```
-694 Using the GNU Compiler Collection (GCC)
 ```
 ```
 __builtin_ia32_wrussq(无签名的 long, void *);空白
@@ -34526,7 +34177,6 @@ _Unwind_Word tmp =(x); \
 ```
 
 ```
-696 Using the GNU Compiler Collection (GCC)
 ```
 { \
 
@@ -34650,7 +34300,6 @@ asm(“cpfoo %0”:“=B”(x));
 ```
 
 ```
-698 Using the GNU Compiler Collection (GCC)
 ```
 GCCdisinterruptname,名字......
 对于已命名的函数，编译器添加代码以在这些函数的持续时间内禁用中断。如
@@ -34762,7 +34411,6 @@ __PRAGMA_REDEFINE_EXTNAME。
 
 
 ```
-700 Using the GNU Compiler Collection (GCC)
 ```
 3. 如果改变组装的方法声明的名称用于 adeclaration 组装的名字已经确定(通过先前的使用
 这些特性之一,或因为编译器需要组装名称以便生成代码),和新名称是不同的,一个警告的
@@ -34865,7 +34513,6 @@ GCC 还提供了在编译期间打印消息的简单机制。
 
 
 ```
-702 Using the GNU Compiler Collection (GCC)
 ```
 待办事项(记得要解决这个问题)
 
@@ -34969,7 +34616,6 @@ while 或 do 循环或#pragma GCCivdep 之前，并且只应用于后面的循�
 
 
 ```
-704 Using the GNU Compiler Collection (GCC)
 ```
 ```
 结构体{ int;
@@ -35063,7 +34709,6 @@ __thread specifier 应使用只包含变量。
 下面是对 ISO/IEC 1488:1998(即 c++ 98)的一组更改，这些更改记录了语言扩展的确切语义。
 ```
 
-706 Using the GNU Compiler Collection (GCC)
 
 • (介绍。(执行)第 4 段后的新案文。
 
@@ -35181,7 +34826,6 @@ volatile int &vref = vobj = something;
 ```
 
 ```
-710 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在 fn 的主体中，rptr 指向一个无别名整数，rref 指向一个(不同的)无别名整数。
@@ -35281,7 +34925,6 @@ catch 子句或异常规范中的类型时。
 
 
 ```
-712 Using the GNU Compiler Collection (GCC)
 ```
 ```
 如果您使用“#pragmaimplementation”而不带参数，则它适用于具有相同
@@ -35374,7 +35017,6 @@ rpo 的文件告诉编译器在哪里放置这些实例化并重新构建任何�
 
 
 ```
-714 Using the GNU Compiler Collection (GCC)
 ```
 库试图提供相同的实例化，这可能会导致冲突。要进行更大的控制，请使用下一个选
 
@@ -35470,7 +35112,6 @@ warn_unused
 
 
 ```
-716 Using the GNU Compiler Collection (GCC)
 ```
 ### 7.8 函数多版本
 
@@ -35572,7 +35213,6 @@ __is_base_of(base_type derived_type)
 
 
 ```
-718 Using the GNU Compiler Collection (GCC)
 ```
 ```
 如果 base_type 是 derived_type ([class.派生])的基类，则该特征为 true，否则
@@ -35679,7 +35319,6 @@ __is_same(类型 1,类型 2)
 
 
 ```
-720 Using the GNU Compiler Collection (GCC)
 ```
 ```
 g++允许返回' void* '的虚拟函数被返回不同指针类型的函数覆盖。对协变返回类型规则
@@ -35728,7 +35367,6 @@ ImplicitClanguage
 
 
 ```
-722 Using the GNU Compiler Collection (GCC)
 ```
 ## 8 GNU objective - c 的特性
 
@@ -35825,7 +35463,6 @@ Stdout = [FileStream new] initWithFd:1];
 ```
 
 ```
-724 Using the GNU Compiler Collection (GCC)
 ```
 ```
 Stderr = [FileStream new] initWithFd:2];
@@ -35918,7 +35555,6 @@ char * *
 
 
 ```
-726 Using the GNU Compiler Collection (GCC)
 ```
 结构 “{”后面跟着结构的名称(或?'如果结构未命名)，' = '符号，成员的类型
 
@@ -36019,7 +35655,6 @@ GNU Objective-C 支持@encode 语法，允许您从 C/Objective-C 类型创建�
 
 
 ```
-728 Using the GNU Compiler Collection (GCC)
 ```
 ```
 例如，如果一个指针的大小是 4 ，那么没有参数和返回 int 的方法将有签名 i8@0:4。签
@@ -36123,7 +35758,6 @@ GNU objective - c 运行时库指的类“-fconstant-string-class”选项,当�
 ```
 
 ```
-730 Using the GNU Compiler Collection (GCC)
 ```
 ```
 告诉编译器每次遇到 WOApplication 作为类名时，它应该用 GSWApplication 替换它(也
@@ -36219,7 +35853,6 @@ NSLog(@“迭代%@”，对象);
 ```
 
 ```
-732 Using the GNU Compiler Collection (GCC)
 ```
 #### 8.9.2 类似 c99 的快速枚举语法
 
@@ -36322,7 +35955,6 @@ GNU Objective-C 运行时中的消息传递的实现被设计为可移植的，�
 ```
 
 ```
-734 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在 GNU Objective-C 运行时中发送消息由两个独立的步骤组成。首先，有一个对查找函
@@ -36567,7 +36199,6 @@ a
 
 
 ```
-742 Using the GNU Compiler Collection (GCC)
 ```
 ```
 为每个基本块编写单独的执行计数。通常，gcov 输出的执行只对一行的主要
@@ -36660,7 +36291,6 @@ gcda 的数据文件。如果指定了一个目录，则数据文件位于该目
 
 
 ```
-744 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在生成的名称中保存完整的路径信息。gcov”文件。没有此选项，只使用文件
@@ -36757,7 +36387,6 @@ stdio. h >
 - - - : 3:模板<类 T >
 
 
-746 Using the GNU Compiler Collection (GCC)
 
 - - - : 4:类 Foo -: 5:{
 - - - : 6:公众:
@@ -36880,7 +36509,6 @@ stdio. h >
 1: 30 - block 0
 
 
-748 Using the GNU Compiler Collection (GCC)
 
 ```
 % % % % %: 30 - block 1
@@ -36991,7 +36619,6 @@ stdio. h >
 
 
 ```
-750 Using the GNU Compiler Collection (GCC)
 ```
 ```
 执行计数是累积的。如果示例程序再次执行而不删除'。gcda 的文件，源中每一行执行
@@ -37092,7 +36719,6 @@ fprofile-use ')，或使用 gcov 工具。
 ```
 
 ```
-752 Using the GNU Compiler Collection (GCC)
 第 11 章:gcov 工具——一个离线的 Gcda 概要处理工具
 ```
 ## 11 gcov 工具 - 离线 Gcda 概要文件处理。
@@ -37188,7 +36814,6 @@ gcov-tool 接受以下选项:
 只打印热对象/函数的信息。
 
 
-754 Using the GNU Compiler Collection (GCC)
 第 11 章:gcov 工具——一个离线的 Gcda 概要处理工具
 
 - o
@@ -37239,7 +36864,6 @@ gcov-dump 是一个可以与 GCC 一起使用的工具，可以将 gcda 和 gcno
 
 
 ```
-758 Using the GNU Compiler Collection (GCC)
 ```
 ## 已知的 GCC 故障原因
 
@@ -37331,7 +36955,6 @@ u。我[1]= p - >[1];
 
 
 ```
-760 Using the GNU Compiler Collection (GCC)
 ```
 • RS/6000 上的 AIX 为美国以外的环境提供支持(NLS)。编译器和汇编程序使用 NLS 来
 
@@ -37424,7 +37047,6 @@ foo;
 
 
 ```
-762 Using the GNU Compiler Collection (GCC)
 ```
 - 在编译返回结构或联合的函数时，GCC 输出代码通常使用与 Unix 大多数版本不同的
 方法。因此，使用 GCC 编译的代码不能调用使用 PCC 编译的返回结构的函数，反之
@@ -37527,7 +37149,6 @@ structmumble 的定义，使代码工作起来非常容易。为了避免上面�
 ```
 
 ```
-764 Using the GNU Compiler Collection (GCC)
 ```
 • 即使是在易失性对象中，对位域的访问也是通过访问较大的对象(如字节或单词)来实
 
@@ -37633,7 +37254,6 @@ parameters. This shorter term will also be used in the rest of this section.
 
 
 ```
-766 Using the GNU Compiler Collection (GCC)
 ```
 ```
 在 get_i()中，在依赖上下文中不使用 i，因此编译器将查找在封闭的名称空间范围(这里
@@ -37735,7 +37355,6 @@ g++实现了“直观”的复制分配算法:分配所有的直接基，然后�
 ```
 
 ```
-768 Using the GNU Compiler Collection (GCC)
 ```
 ### 13.8 我们不想做的某些改变
 
@@ -37842,7 +37461,6 @@ C 方式还是传统方式连接令牌。
 
 
 ```
-770 Using the GNU Compiler Collection (GCC)
 ```
 然而，这里的基本原理是对非空循环的优化不能生成空循环。这适用于使用功能不太
 
@@ -38121,7 +37739,6 @@ GPL 来禁止这些产品的实践。如果此类问题在其他领域中大量�
 
 
 ```
-784 Using the GNU Compiler Collection (GCC)
 ```
 ### 条款和条件
 
@@ -38241,7 +37858,6 @@ c. 你必须把整个作品，作为一个整体，在这个许可下，授权�
 如果您已分别收到该许可，则该许可并不无效。
 ```
 
-786 Using the GNU Compiler Collection (GCC)
 
 ```
 d. 如果工作具有交互的用户界面，每个必须显示适当的法律通知;但是，如果程序具
@@ -38351,7 +37967,6 @@ f. 要求任何将材料(或修改后的版本)以合同方式向接受方承担
 限制在该许可或传送之后无效。
 ```
 
-788 Using the GNU Compiler Collection (GCC)
 
 如果您在与本部分一致的覆盖工作中添加术语，您必须在相关的源文件中放置对这些
 
@@ -38467,7 +38082,6 @@ GNU General Public License 789
 
 
 ```
-790 Using the GNU Compiler Collection (GCC)
 ```
 自由软件基金会可以不时发布经过修订的和/或 GNU 通用公共许可证的新版本。这样
 
@@ -38613,7 +38227,6 @@ http://fsf.org/
 与通用文本编辑器或(图像由像素)通用的油漆程序或(图纸)一些广泛使用的绘图编辑
 
 
-794 Using the GNU Compiler Collection (GCC)
 
 器,这是适合输入文本格式器或自动翻译为各种格式适用于输入文本格式器。以其他透
 
@@ -38719,7 +38332,6 @@ L. 保留文档中所有不变的部分，在文本和标题中保持不变。�
 M. 删除任何标题为“背书”的部分。这样的一节可能不包括修改后的版本。
 ```
 
-796 Using the GNU Compiler Collection (GCC)
 
 N. 不要将任何现有章节的标题重新命名为“背书”或与任何不变章节的标题冲突。
 
@@ -38855,7 +38467,6 @@ GNU Free Documentation License 797
 
 
 ```
-798 Using the GNU Compiler Collection (GCC)
 ```
 “大型多作者协作网站”(或“MMC 网站”)是指任何发布可版权作品的万维网服务器，并
 
@@ -38939,7 +38550,6 @@ Contributors to GCC 799
 寒意前端实现。
 
 
-800 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39021,7 +38631,6 @@ the numerics library(包括烦人的<limit >:-)，随时更新与数字有关的
 在 AIX 上正常工作。
 
 
-802 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39041,7 +38650,6 @@ Ben Elliston 的工作是将 Objective-C 运行时移动到它自己的子目录
 autoconf。
 
 
-803 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39081,7 +38689,6 @@ autoconf。
 - 凯特·黑斯特罗姆(Kate Hedstrom)为 G77 的成员们准备了一个最初的测试套件。
 
 
-804 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39163,7 +38770,6 @@ Kumbera。
 - Victor Leikehman 为 GNU Fortran 工作。
 
 
-806 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39234,7 +38840,6 @@ alias 分析改进，ISO C 限制支持，并在 2000 年到 2011 年担任发�
 务等方面提供了大量帮助。困难。
 
 
-808 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39321,7 +38926,6 @@ FreeBSD 和持续测试中的正常工作。
 - Paul Rubin 写了大部分的预处理器。
 
 
-810 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39474,7 +39078,6 @@ Jonathan Wakely 提供了 libstdc++ Doxygen 注释和 XHTML 指南并维护 libs
 - 使用 Swing 模块调度(SMS)。
 
 
-814 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39554,7 +39157,6 @@ Swing 工作包括 JTable 编辑。
 - 用于序列化修复的 Daniel Bonniot。
 
 
-816 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39629,7 +39231,6 @@ SHA1PRNG 和 gdkpixbugbugbugbugbugderupdates。
 合并。
 
 
-818 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39709,7 +39310,6 @@ Contributors to GCC 819
 - 保罗·赖利
 
 
-820 Using the GNU Compiler Collection (GCC)
 
 •
 
@@ -39739,7 +39339,6 @@ Option Index 821
 这项工作。
 ```
 
-822 Using the GNU Compiler Collection (GCC)
 
 ## 选择指数
 
@@ -39948,7 +39547,6 @@ bbpart ............................213 年 fdump-rtl-
 ```
 
 ```
-824 Using the GNU Compiler Collection (GCC)
 ```
 bbro ..............................213 年 fdump-rtl-
 btl2 ..............................213 年 fdump-rtl-
@@ -40150,7 +39748,6 @@ optimize ..........................181 年 fno-chkp-store-
 ```
 
 ```
-826 Using the GNU Compiler Collection (GCC)
 ```
 bounds ......................182 fno-chkp-treat-zero-dynamic-
 size-as -
@@ -40354,7 +39951,6 @@ types ..........................121 年 fssa-
 ```
 
 ```
-828 Using the GNU Compiler Collection (GCC)
 ```
 backprop ...............................132 年 fssa-
 phiopt .................................132 年 fsso-
@@ -40560,7 +40156,6 @@ m32rx ........................................293 年
 m340 .........................................301 年
 
 
-830 Using the GNU Compiler Collection (GCC)
 
 m3dnow .......................................401 年
 m3dnowa ......................................401 年
@@ -40761,7 +40356,6 @@ netbsd ...........................337 年、 355 年 mcall-
 ```
 
 ```
-832 Using the GNU Compiler Collection (GCC)
 ```
 prologues .............................261 年 mcall-
 sysv ..............................336 年、 355 年 mcall-sysv-
@@ -40962,7 +40556,6 @@ mfsgsbase ....................................401 年
 ```
 
 ```
-834 Using the GNU Compiler Collection (GCC)
 ```
 mfsmuld ......................................380 年
 mfsrra .......................................375 年
@@ -41163,7 +40756,6 @@ mmovdir64b ..................................402 年
 mmovdiri .....................................402 年
 ```
 
-836 Using the GNU Compiler Collection (GCC)
 
 mmpx .........................................402 年 mmpy-
 option .................................238 年 mms-
@@ -41362,7 +40954,6 @@ membar ........................284 年 mno-
 ```
 
 ```
-838 Using the GNU Compiler Collection (GCC)
 ```
 opts .....................................302 年 mno-
 pack .....................................283 年 mno-packed-
@@ -41562,7 +41153,6 @@ mregparm .....................................399 年
 ```
 
 ```
-840 Using the GNU Compiler Collection (GCC)
 ```
 mrelax......261,285,320,321,323,363,371,386 mrelax-
 immediate ............................300 年 mrelax-pic-
@@ -41764,7 +41354,6 @@ prob-threshold ...................244 年 munaligned-
 ```
 
 ```
-842 Using the GNU Compiler Collection (GCC)
 ```
 access .......................... 257 年 munaligned-
 doubles .........................376 年
@@ -41970,7 +41559,6 @@ sub_umbrella ................................276 年象
 ```
 
 ```
-844 Using the GNU Compiler Collection (GCC)
 ```
 ```
 sysroot ......................................202 年
@@ -42169,7 +41757,6 @@ align ...............................96 年
 ```
 
 ```
-846 Using the GNU Compiler Collection (GCC)
 ```
 Wno-cast-function-type ...................... 96 年 Wno-cast-
 qual ................................96 年
@@ -42370,7 +41957,6 @@ Wno-unused-result ............................ 79 年
 ```
 
 ```
-848 Using the GNU Compiler Collection (GCC)
 ```
 Wno-unused-value ............................. 79 年
 Wno-unused-variable ......................... 79 年
@@ -42543,7 +42129,6 @@ z ............................................. 199 年
 ```
 
 ```
-850 Using the GNU Compiler Collection (GCC)
 ```
 ## 关键字索引
 
@@ -42749,7 +42334,6 @@ __builtin_frame_address ................... 597 年
 ```
 
 ```
-852 Using the GNU Compiler Collection (GCC)
 ```
 __builtin_frob_return_address ............. 597 年
 __builtin_FUNCTION ......................... 621 年
@@ -42949,7 +42533,6 @@ _exit ........................................ 613 年
 ```
 
 ```
-854 Using the GNU Compiler Collection (GCC)
 ```
 ............................. _Fract 数据类型 452 年
 _get_ssp .....................................772 年
@@ -43126,7 +42709,6 @@ cargl ........................................613 年初始化..................
 ```
 
 ```
-856 Using the GNU Compiler Collection (GCC)
 ```
 613
 
@@ -43330,7 +42912,6 @@ dreml ........................................613 年转储选
 
 
 ```
-858 Using the GNU Compiler Collection (GCC)
 ```
 613
 
@@ -43515,7 +43096,6 @@ gettext ......................................613 年全球表..................
 ```
 
 ```
-860 Using the GNU Compiler Collection (GCC)
 ```
 抵消 208 年全球 longjmp ..................后注册 593 年全
 球.......................寄存器变量 593 蚊..........................................3
@@ -43720,7 +43300,6 @@ llroundl .....................................613 年 LM32 选
 ```
 
 ```
-862 Using the GNU Compiler Collection (GCC)
 ```
 log10 ........................................ 613 年
 log10f .......................................613 年
@@ -43923,7 +43502,6 @@ MSP430......523 年 picoChip 选项.............................330 年
 ```
 
 ```
-864 Using the GNU Compiler Collection (GCC)
 ```
 ```
 pow10 ........................................613 年
@@ -44126,7 +43704,6 @@ strchr .......................................613 年 比 较 字 符
 ```
 
 ```
-866 Using the GNU Compiler Collection (GCC)
 ```
 串.......................................613 年
 strcspn ......................................613 年第 6 行
@@ -44330,7 +43907,6 @@ MIPS .................................... 495 年使用.......................�
 ```
 
 ```
-868 Using the GNU Compiler Collection (GCC)
 ```
 ```
 力 M32R/D521 年变量对齐............................538 年变量
