@@ -3222,7 +3222,7 @@ cxx_construct 和-(void)。cxx_destruct 方法。
 选项需要使用 Objective-C 关键字@try， @throw， @catch， @finally 和
 @synchronized。此选项可与 GNU 运行时和下一个运行时一起使用(但不能与
 Mac OS X 10.2 和更早版本上的下一个运行时一起使用)。-fobjc-gc
-在 Objective-C 和 objective - C++程序中启用垃圾收集(GC)。此选项仅适用于下
+在 Objective-C 和 objective - C++程序中启用垃圾收集(GC)。此选项仅限下
 一个运行时;GNU 运行时具有不同的垃圾收集实现，不需要特殊的编译器标志。
 
 
@@ -3603,11 +3603,11 @@ color` )。
 
 -Wno-cpp
 
-(仅适用于 C, Objective-C, C++， objective - C++， Fortran)
+(仅限 C, Objective-C, C++， objective - C++， Fortran)
 
 抑制 `#warning` 指令发出的警告消息。
 
--Wdouble-promotion (仅适用于 C, C++， Objective-C, Objective-C+)
+-Wdouble-promotion (仅限 C, C++， Objective-C, Objective-C+)
 
 当类型 float 的值隐式提升为 double 时，给出警告。具有 32 位 `单精度` 浮
 点单元的 CPU 在硬件上实现浮点，但在软件上模拟双精度。在这样的机器上，
@@ -3625,7 +3625,7 @@ float area(float radius)
 
 编译器使用 double 执行整个计算，因为浮点字面值是 double。
 
--Wduplicate-decl-specifier (仅适用于 C 和 Objective-C)
+-Wduplicate-decl-specifier (仅限 C 和 Objective-C)
 
 警告声明是否具有重复的 `const`、`volatile`、`limit` 或 `_Atomic`  修饰符。此警告是由 `-Wall` 启用的。
 
@@ -3741,7 +3741,7 @@ void f (int a, int b)
 
 如果编译器检测到由于解引用空指针而触发错误或未定义行为的路径，则发出警告。此选项仅在 `-fdelete-null-pointer-check` 是活动时才激活，这是通过在大多数目标中进行优化而启用的。警告的精度取决于所使用的优化选项。
 
--Winit-self (仅适用于 C, C++， Objective-C 和 objective - C++)
+-Winit-self (仅限 C, C++， Objective-C 和 objective - C++)
 
 警告使用自身初始化的未初始化变量。注意，此选项只能与 `-Wuninitialized` 选项一起使用。
 
@@ -3757,15 +3757,15 @@ int f()
 
 此警告由 C++中的 `-Wall` 启用。
 
--Wimplicit-int (仅适用于 C 和 Objective-C)
+-Wimplicit-int (仅限 C 和 Objective-C)
 
 当声明没有指定类型时发出警告。这个警告是由`-wall` 启用的。
  
--Wimplex-function-declaration (仅适用于 C 和 Objective-C)
+-Wimplex-function-declaration (仅限 C 和 Objective-C)
 
 在声明函数之前，无论何时使用函数，都要给出一个警告。在 C99 模式 ( `-std=c99` 或 `-std=gnu99` ) 中，这个警告是默认启用的，通过 `-pedantic-errors` 将其变为错误。这个警告也可以通过 `-Wall` 实现。
 
--Wimplicit (仅适用于 C and Objective-C)
+-Wimplicit (仅限 C and Objective-C)
 
 与 `-Wimplicit-int` 和 `-Wimplicit-function-declaration` 相同。此警告是由 `-Wall` 启用的。
 
@@ -3861,7 +3861,7 @@ switch (cond)
 
 `-Wimplex -fallthrough=3` 的警告是由 `-Wextra` 启用的。
 
--Wif-not-aligned (仅适用于 C, C++, Objective-C, Objective-C++)
+-Wif-not-aligned (仅限 C, C++, Objective-C, Objective-C++)
 
 控制是否应该发出由 `warn_if_not_aligned` 属性触发的警告。这是默认启用的。使用 `-Wno-if-not-aligned` 来禁用它。
 
@@ -3874,38 +3874,51 @@ switch (cond)
 类型或 void 发出。ISO C 禁止函数定义上的限定 void 返回类型，因此即使没
 有此选项，此类返回类型也总是会收到警告。
 这个警告也是由 `-Wextra` 启用的。
+
 -Wignored-attributes(仅限 C 和 C++)
+
 当属性被忽略时发出警告。这与 `-Wattributes` 选项不同，因为它在编译器决
 定删除属性时发出警告，而不是属性不是未知的，而是在错误的位置使用的，
 等等。
--Wmain 警告如果主要的类型是可疑的。main 应该是一个具有外部链接的函数，返回 int，
+
+-Wmain
+
+警告如果主要的类型是可疑的。main 应该是一个具有外部链接的函数，返回 int，
 要么是 0 参数，要么是 2 ，要么是 3 个合适类型的参数。此警告在 C++中默认
 启用，通过 `-Wall` 或 `-Wpedantic` 启用。
--Wmisleading-indentation(仅限 C 和 C++)
+
+-Wmisleading-indentation (仅限 C 和 C++)
+
 当代码的缩进不反映块结构时发出警告。特别地，对于 if、else、while 和带有
 不使用大括号的保护语句的子句发出警告，然后是带有相同缩进的未保护语句。
 在下面的示例中，对 `bar` 的调用被错误地缩进，就好像它是由 `if` 条件句保护的一
 样。
 
 ```
-如果(some_condition())
-foo();
-酒吧();/* Gotcha:这不是 `如果` 。* /
+  if (some_condition ())
+    foo ();
+    bar ();  /* Gotcha: this is not guarded by the "if".  */
+```
+
 在选项卡和空格混合的情况下，警告使用 `-ftabstop=` 选项来确定语句是否一致
 (默认为 8)。
 对于涉及多行预处理器逻辑的代码，例如下面的示例，没有发出警告。
-如果
-(flagA)foo(0);
-#如果
-SOME_CONDITION_THAT_DOES_NOT_HOLD(fl
-agB)
-# endif foo(1);
+
+```
+  if (flagA)
+    foo (0);
+#if SOME_CONDITION_THAT_DOES_NOT_HOLD
+  if (flagB)
+#endif
+    foo (1);
 ```
 
 警告不会在#line 指令之后发出，因为这通常表示自动生成的代码，并且不能
 对该指令引用的文件的布局做出任何假设。
 C 和 C++中的 `-Wall` 启用了此警告。
+
 -Wmissing-attributes
+
 当一个函数的声明缺少一个或多个相关函数被声明的属性时发出警告，其缺失
 可能会对生成代码的正确性或效率产生不利影响。例如，在 C++中，当使用属
 性 alloc_align、alloc_size、assume_aligned、format、format_arg、malloc 或
@@ -3913,30 +3926,47 @@ nonnull 声明主模板的显式专门化时，会发出警告。属性弃用、
 制警告。(见第 6.31 节[功能属性]，第 464 页)。
  `-Wmis- attributes` 由 `-Wall` 启用。
 
-
 例如，由于下面的主函数模板声明同时使用了属性 malloc 和 alloc_size，因此
 诊断了模板的显式专门化声明，因为它缺少一个属性。
-模板<类 T >
-T* __attribute__ ((malloc, alloc_size(1))))分配(size_t);
-模板<> void* __attribute__ (malloc) //缺失 alloc_size 分配<void>
-(size_t);
+
+```
+template <class T>
+T* __attribute__ ((malloc, alloc_size (1)))
+allocate (size_t);
+
+template <>
+void* __attribute__ ((malloc))   // missing alloc_size
+allocate<void> (size_t);
+```
+
 -Wmissing-braces
+
 如果聚合或联合初始化器没有完全括起来，则发出警告。在下面的示例中，a
 的初始化器没有完全括号括起来，但是 b 的初始化器是完全括号括起来的。此
 警告由 C 中的 `-Wall` 启用。
-int a[2][2] = {0,1,2,3};[2][2] = {{0, 1}， {2, 3};此
-警告是由 `-Wall` 启用的。
--Wmis- include-dirs (C、c++、Objective-C 和 objective - C++)警告用户提供的 include
-目录不存在。
+
+```
+int a[2][2] = { 0, 1, 2, 3 };
+int b[2][2] = { { 0, 1 }, { 2, 3 } };
+```
+
+此警告是由 `-Wall` 启用的。
+
+-Wmis- include-dirs (C、c++、Objective-C 和 objective - C++)
+
+警告用户提供的 include 目录不存在。
+
 -Wmultistatement-macros
+
 警告不安全的多个语句宏，它们似乎由一个子句保护，例如 if、else、for、
 switch 或 while，其中只有第一个语句在宏展开之后才被实际保护。
+
 例如:
 
 ```
-#定义 DOIT x + +;y + +如果
-(c)
-DOIT;
+#define DOIT x++; y++
+if (c)
+  DOIT;
 ```
 
 将无条件地增加 y，而不仅仅是 c 保持不变。通常可以通过将宏封装在 do-while 循
@@ -5357,14 +5387,14 @@ ginline-points
 这个选项大大减少了调试信息的大小，但是对调试器来说，类型信息有很大的
 潜在损失。参见 `-femit-struct-debug-reduce` 以获得一个不那么激进的选项。
 有关更详细的控制，请参见 `-femit-struct-debug- details` 。
-此选项仅适用于 DWARF 调试输出。
+此选项仅限 DWARF 调试输出。
 - femit-struct-debug-reduced
 只有当编译源文件的基本名称与定义类型的文件的基本名称相匹配时，才为类
 结构类型发出调试信息，除非结构是模板或在系统头中定义。
 这个选项显著减少了调试信息的大小，并且可能会给调试器带来一些类型信息
 的损失。请参阅 `-femit-struct-debug-baseonly` ，以获得更具侵略性的选项。
 有关更详细的控制，请参见 `-femit-struct-debug- details` 。
-此选项仅适用于 DWARF 调试输出。
+此选项仅限 DWARF 调试输出。
 - femit-struct-debug-detailed(=规格清单)
 指定编译器生成调试信息的类结构类型。目的是减少相同程序中不同对象文件
 之间的重复结构调试信息。
@@ -5389,7 +5419,7 @@ ginline-points
 味着这些类型满足 `base` 或在系统或编译器头中声明。
 您可能需要进行实验，以确定应用程序的最佳设置。
 默认值是 `-femit-struct-debug-detailed =所有` 。
-此选项仅适用于 DWARF 调试输出。
+此选项仅限 DWARF 调试输出。
 - fno-dwarf2-cfi-asm
 作为编译器生成的.eh_frame 部分而不是使用 GAS. xen_ *指令生成矮人展开信息。
 - fno-eliminate-unused-debug-types
@@ -7375,7 +7405,7 @@ sra-max-scalarization-size-Ospeed sra-max-scalarization-size-Osize
 tm-max-aggregate-size
 当在事务中复制线程本地变量时，此参数指定以字节为单位的大
 小，然后使用日志函数保存变量，而不是保存/恢复代码序列对。
-此选项仅适用于使用 `-fgnu-tm` 时。
+此选项仅限使用 `-fgnu-tm` 时。
 graphite-max-nb-scop-params
 为了避免在石墨环变换中出现指数效应，静态控制部分(SCoP)的
 参数个数是有界的。默认值是 10 个参数，一个 0 的值可以用来提
@@ -9242,10 +9272,10 @@ dp 在汇编程序输出中转储 RTL 作为每个指令之前的注释。还打
  `所有`
 让所有特定于语言的转储。
  `类`  转储类层次结构的信息。除非指定 `slim` ，否则将发送虚拟表信
-息。此选项仅适用于 C++。
+息。此选项仅限 C++。
 
 
- `生`  转储原始内部树数据。此选项仅适用于 C++。
+ `生`  转储原始内部树数据。此选项仅限 C++。
 - fdump-passes
 在 `stderr` 上打印当前命令行选项打开和关闭的优化传递列表。
 - fdump-statistics-option
@@ -10069,7 +10099,7 @@ ARC  HS SIMD 支持。
  `9`
  `plus_qmacw`
 ARC  HS SIMD 支持。
-此选项仅适用于 ARCv2 内核。
+此选项仅限 ARCv2 内核。
 
 - mfpu = fpu
 支持 ARCv2 核心的特定浮点硬件扩展。fpu 支持的值为:
@@ -10078,19 +10108,19 @@ ARC  HS SIMD 支持。
  `fpud`  (^) 支持双精度浮点硬件扩展。还启用了单精度浮点扩展。
 不适用于电ARC 电磁。
 fpuda 支持双精度浮点硬件扩展，使用双精度辅助指令。还启用了单精度浮点
-扩展。此选项仅适用于 ARC EM。
+扩展。此选项仅限 ARC EM。
  `fpuda_div`
 使用双精度辅助指令支持双精度浮点硬件扩展。还启用了单精度
-浮点、平方根和划分扩展。此选项仅适用于 ARC EM。
+浮点、平方根和划分扩展。此选项仅限 ARC EM。
  `fpuda_fma`
 使用双精度辅助指令支持双精度浮点硬件扩展。还支持单精度浮
-点和融合乘加硬件扩展。此选项仅适用于 ARC EM。
+点和融合乘加硬件扩展。此选项仅限 ARC EM。
  `fpuda_all`
 
 
 使用双精度辅助指令支持双精度浮点硬件扩展。还支持所有单精
 
-度浮点硬件扩展。此选项仅适用于 ARC EM。
+度浮点硬件扩展。此选项仅限 ARC EM。
 
  `fpus_div`
 支持单精度浮点，平方根和分硬件扩展。
@@ -10111,7 +10141,7 @@ lp_count -mirq-ctrl-saved =寄存器范围,眨眼
 指定处理器在中断输入和退出时自动保存/恢复的通用目的寄存器。 register-range
 被指定为由破折号分隔的两个寄存器。寄存器范围总是从 r0 开始，上限是 fp 寄存
 
-器。闪烁和 lp 计数是可选的。此选项仅适用于电ARC  EM 和电ARC  HS 核。
+器。闪烁和 lp 计数是可选的。此选项仅限电ARC  EM 和电ARC  HS 核。
 
 - mrgf-banked-regs =号
 指定在进入快速中断时在第二个注册银行中复制的寄存器的数量。快速中断是
@@ -15275,11 +15305,11 @@ sh**-linux*，这是默认设置。
 在使用此模型时，还必须指定 `gbr-offset=` 参数。
  `soft-imask`
 通过设置 SR.IMASK=1111 生成暂时禁用中断的软件原子序列。此
-模型仅在程序以特权模式运行时有效，且仅适用于单内核系统。
+模型仅在程序以特权模式运行时有效，且仅限单内核系统。
 不需要来自系统的中断/异常处理代码的额外支持。当目标是 sh*-
 *-linux*和 SH1*或 SH2*时，这个模型是默认启用的。
  `hard-llcs`
-使用 movli 生成硬件原子序列。l 和 movco。l 指令。这仅适用于
+使用 movli 生成硬件原子序列。l 和 movco。l 指令。这仅限
 SH4A，适用于多核系统。由于硬件指令只支持 32 位原子变量对 8
 位或 16 位变量的访问，所以用 32 位访问来模拟。如果在 SH4A
 系统上执行，使用此选项编译的代码也与其他软件原子模型中断/
@@ -17893,7 +17923,7 @@ GNU C 提供了一些 ISO 标准 C 中没有的语言特性( `-pedantic` 选项�
 性时打印一条警告消息)。要在条件编译中测试这些特性的可用性，请检查预定义的宏
 __GNUC__，它总是在 GCC 下定义。
 这些扩展可以在 C 和 Objective-C 中使用。大多数都可以在 C++中使用。参见第 7 章[c++
-语言的扩展]，第 787 页，获得仅适用于 C++的扩展。
+语言的扩展]，第 787 页，获得仅限 C++的扩展。
 一些在 ISO C99 中而不是 C90 或 C++中的特性也作为扩展被 GCC 以 C90 模式和 C++接
 受。
 ### 6.1 表达式中的语句和声明
@@ -19549,7 +19579,7 @@ int i __attribute__(能见度( `隐藏` ));
 名称空间 nspace1 __attribute__(可见性( `protected` ))
 { / *做点什么。* /;}
 
-此属性仅适用于特定的名称空间主体，而不适用于相同名称空间的其他定义;
+此属性仅限特定的名称空间主体，而不适用于相同名称空间的其他定义;
 
 它相当于在命名空间定义前后使用 `#pragmaGCC visibility` (参见第 6.61.13 节
 [visibility Pragmas]，第 779 页)。
@@ -20236,7 +20266,7 @@ Reentrant 函数在进入时禁用中断，在退出时启用中断。可重入�
 
 低上
 
-此属性仅适用于中断函数。如果应用于非中断函数，它将被静默地忽略。唤醒
+此属性仅限中断函数。如果应用于非中断函数，它将被静默地忽略。唤醒
 
 中断函数将把处理器从函数退出时可能处于的任何低功耗状态中唤醒。
 
@@ -21049,7 +21079,7 @@ vector_size(字节)
 int foo __attribute__ (vector_size (16));
 使编译器将 foo 的模式设置为 16 字节，分为 int 大小的单元。假设是一个 32
 位的 int(4 个字节的向量)，对应的 foo 模式是 V4SI。
-此属性仅适用于整数和浮点标量，尽管数组、指针和函数返回值与此构造一起
+此属性仅限整数和浮点标量，尽管数组、指针和函数返回值与此构造一起
 被允许。
 具有此属性的聚合无效，即使它们的大小与相应的标量相同。例如,声明:
 struct S {int a;};
@@ -25093,7 +25123,7 @@ foo_float (tmp); 其他\ \ abort(); \ tmp; \
 })
 ```
 
-注意 : 此结构仅适用于 C 。
+注意 : 此结构仅限 C 。
 
 
 类型 __builtin_call_with_static_chain(call_exp, (内置函数)pointer_exp)
@@ -30979,7 +31009,7 @@ push_macro(macro_name)` 和 `# pragmapop_macro( `macro_name` )。
 一个或多个字符串。在这一点之后定义的每个函数都好像为该函数指定了属性
 ((目标( `STRING` ))。选项的圆括号是可选的。有关目标属性和属性语法的更多
 信息，请参见第 6.31 节[函数属性]第 464 页。
-目前，`#pragmaGCCtarget pragma` 仅适用于 x86、ARM、AArch64、PowerPC、
+目前，`#pragmaGCCtarget pragma` 仅限 x86、ARM、AArch64、PowerPC、
 S/390 和 Nios II。# pragmaGCCoptimize( `字符串` ...)
 这个实用程序允许您为源文件后面定义的函数设置全局优化选项。可以指定一
 个或多个字符串。在这一点之后定义的每个函数都好像为该函数指定了属性
