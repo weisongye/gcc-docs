@@ -110,7 +110,7 @@ iii
 程序 34
 3.4 C 方言.................................选项控制 35
 3.5 选择控制............................. C++方言 42
-3.6 控制 Objective-C 和 objective - C++方言的选项。3.7 控制诊断信息
+3.6 控制 Objective-C 和 Objective-C++方言的选项。3.7 控制诊断信息
 的选项，格式化......请求或抑制警告..................... 59 3.8 选项 62 年 3.
 选项........................调试程序 108 年
 3.10 控制优化.........................选项 114 年
@@ -280,7 +280,7 @@ vii
 
 6.28 案件范围................................................ 463 年
 
-6.29 演员工会.......................................类型 463 年 6.30 混合...............................声
+6.29 演员联合.......................................类型 463 年 6.30 混合...............................声
 
 明和代码 463 年
 
@@ -681,7 +681,7 @@ GCC 的独立于语言的组件包括大多数优化器，以及为各种处理�
 为 GCC。要么是正确的。
 历史上，许多语言的编译器，包括 C++和 Fortran，都被实现为 `预处理器` ，它发出另一
 种高级语言，比如 C。它们都直接生成机器码。这种预处理器不应该与 C 预处理器混淆，
-后者是 C、c++、Objective-C 和 objective - C++语言的一个完整特性。
+后者是 C、c++、Objective-C 和 Objective-C++语言的一个完整特性。
 
 
 5
@@ -732,7 +732,7 @@ std=gnu11` (对于带有 GNU 扩展的 C11)。
 如果不提供 C 语言方言选项，默认值是 `-std=gnu11` 。
 
 ISO C 标准(第 4 条)定义了两类符合标准的实现。符合标准的托管实现支持整个标准，包
-括所有图书馆设施;一个独立的实现只需要提供特定的库设施:<float >中的那些。h >、<限
+括所有库设施;一个独立的实现只需要提供特定的库设施:<float >中的那些。h >、<限
 制。h >,< stdarg。h >和< stddef.h >;由于 AMD1，也属于<iso646.h>;C99 以后，也在<stdbool >
 中。h >和< stdint.h >;因为 C11，也在<stdalign。h >和< stdnoreturn.h >。此外，C99 中添加
 的复杂类型并不需要独立实现。
@@ -749,7 +749,7 @@ ISO C 函数的名称时，它们具有标准中定义的语义。要使其作�
 动做出自己的安排。参见第 3.4 节[控制 C 方言的选项]，第 35 页。
 GCC 不提供只需要托管实现的库设施，也不提供所有平台上 C99 独立实现所需的所有设
 施。要使用托管环境的工具，您需要在其他地方找到它们(例如，在 GNU C 库中)。见第
-13.5 节[标准图书馆]，第 844 页。
+13.5 节[标准库]，第 844 页。
 GCC 使用的大多数编译器支持例程都出现在 `libgcc` 中，但也有一些例外。GCC 要求独立
 的环境提供 memcpy、memmove、memset 和 memcmp。最后，如果使用了__builtin_trap，
 而目标没有实现该陷阱模式，那么 GCC 将发出调用来中止。
@@ -792,17 +792,17 @@ c++标准发生冲突。参见第 3.5 节[c++方言选项]，第 42 页。使用
 std=gnu+ 14`
 如果没有提供 C++语言方言选项，默认值是 `-std=gnu+ 14` 。
 
-### 2.3 Objective-C 和 objective - C++ 语言
+### 2.3 Objective-C 和 Objective-C++ 语言
 
 GCC 支持 `传统的` Objective-C(也称为 `Objective-C 1.0` )，并包含对 Objective-C 异常和同步
 语法的支持。它还支持一些 `Objective-C 2.0` 语言扩展，包括属性、快速枚举(仅用于
 Objective-C)、方法属性和协议中的@optional 和@required 关键字。GCC 支持 Objective-
-C+， Objective-C 中可用的特性也可以在 objective - C++中使用。
+C+， Objective-C 中可用的特性也可以在 Objective-C++中使用。
 默认情况下，GCC 使用的是 GNU Objective-C 运行时库，它是 GCC 的一部分，与苹果系
 统上使用的 Apple/NeXT Objective-C 运行时库不一样。本手册中有许多不同之处。选项 `-
 fgnu-runtime` 和 `-fnext-runtime` 允许您在生成与 GNU Objective-C 运行时库和与
 Apple/NeXT ObjectiveC 运行时库工作的输出之间切换。
-没有针对 Objective-C 或 objective - C++的正式书面标准。关于传统 Objective-C(1.0)的权
+没有针对 Objective-C 或 Objective-C++的正式书面标准。关于传统 Objective-C(1.0)的权
 威手册是 `面向对象编程和 Objective-C 语
 言` :http://www.gnustep.org/resources/documentation/objectivcbook。pdf 是最初的
 NeXTstep 文档。
@@ -810,7 +810,7 @@ GCC 支持 Objective-C 异常和同步语法(即关键字@try、@throw、@catch�
 @synchronized)，并通过选项 `-fobjc-exception` 启用。语法在本手册和苹果的 Objective-C
 2.0 手册中有简要的记录。
 Objective-C 2.0 语言扩展和特性自动启用;它们包括属性(通过@property、@synthesize
-和@dynamickeywords)、快速枚举(在 objective - C++中不可用)、方法属性(如废弃、
+和@dynamickeywords)、快速枚举(在 Objective-C++中不可用)、方法属性(如废弃、
 noreturn、sentinel、format)、方法参数的未使用属性、实例变量的@package 关键字和协
 议中的@optional 和@required 关键字。您可以使用选项 `-fobjc-std=objc1` 禁用所有这些
 
@@ -932,9 +932,9 @@ GCC 可以编译 HSAIL 文本格式的二进制表示(BRIG)，如 HSA 程序员�
 -Wsign-promo -Wvirtual-inheritance
 ```
 
-* Objective-C 和 objective - C++ 语言选项
+* Objective-C 和 Objective-C++ 语言选项
 
-参见第 3.6 节[控制 Objective-C 和 objective - C++方言的选项]，第 55 页。
+参见第 3.6 节[控制 Objective-C 和 Objective-C++方言的选项]，第 55 页。
 
 ```
 -fconstant-string-class=class-name
@@ -2153,7 +2153,7 @@ file.mm
 Objective-C 源代码不应该被预处理。
 _file.M_ (^) objective - c + +源代码。注意，您必须与 `libobjc` 库链接，才能使 objective -
 c++程序工作。注意` 。M` 指的是字面上的大写 M。
-_file.mii_ (^) objective - C++不应该被预处理的源代码。
+_file.mii_ (^) Objective-C++不应该被预处理的源代码。
 _file.h_
 
 文件。cc 文
@@ -2163,13 +2163,13 @@ _file.h_
 件。cpp 文
 件。CPP
 file.c + +
-C、c++、Objective-C 或 objective - C++头文件要转换成预编译头文件(默认)，
+C、c++、Objective-C 或 Objective-C++头文件要转换成预编译头文件(默认)，
 或者 C、c++头文件要转换成 Ada 规范(通过 `-fdump-ada-spec` 开关)。
 file.C
 file.mm
 必须预先处理的 C++源代码。注意,在` 。cxx` ，最后两个字母都必须是 `x` 。同
 样,` 。C` 指的是大写的 C。
-_file.M_ (^) objective - C++源代码，必须预先处理。
+_file.M_ (^) Objective-C++源代码，必须预先处理。
 _file.mii_
 
 文件。hh
@@ -2182,7 +2182,7 @@ _file.mii_
 件。进行文
 件。HPP
 file.h + +
-objective - C++不应该被预处理的源代码。
+Objective-C++不应该被预处理的源代码。
 
 _file.tcc_ (^) 将 C++头文件转换为预编译头文件或 Ada 规范。
 
@@ -2411,7 +2411,7 @@ c++源文件通常使用其中一个后缀`。C` ,`。cc` ,`。cpp` ,`。CPP` ,`
 言]，第 42 页，解释仅对 C++程序有意义的选项。
 ### 3.4 C 方言控制选项
 
-以下选项控制编译器接受的 C 语言(或源自 C 的语言，如 C++、Objective-C 和 objective - C++)
+以下选项控制编译器接受的 C 语言(或源自 C 的语言，如 C++、Objective-C 和 Objective-C++)
 的方言:
 
 
@@ -2625,7 +2625,7 @@ GCC 通常生成特殊的代码来更有效地处理某些内置函数;例如，
  `-fno-hosted` 。
 参见第 2 章[GCC 支持的语言标准]第 5 页，了解独立和托管环境的详细信息。
 -fopenacc
-允许处理 OpenACC 指令#pragmaacc in C/ C++和!$acc in Fortran。当 `-fopenacc`
+允许处理 OpenACC 指令#pragmaacc in C/C++和!$acc in Fortran。当 `-fopenacc`
 被指定时，编译器会根据 OpenACC 应 用 程 序 编 程 接 口 v2.0
 https://www.openacc.org 生成加速代码。此选项表示 `-pthread` ，因此只支持
 支持 `-pthread` 的目标。
@@ -2633,14 +2633,14 @@ https://www.openacc.org 生成加速代码。此选项表示 `-pthread` ，因�
 为未显式指定的并行卸载区域指定默认计算维度。geom 值由 `:` 和 `vector` 三部
 分组成，按 `gang` 、 `worker` 和 `vector` 的顺序排列。可以省略大小，以使用
 目标特定的默认值。
--fopenmp 支持处理 C/ C++中的 OpenMP 指令#pragmaomp, Fortran 中的!$omp。当 `-fopenmp`
+-fopenmp 支持处理 C/C++中的 OpenMP 指令#pragmaomp, Fortran 中的!$omp。当 `-fopenmp`
 被 指 定 时 ， 编 译 器 会 根 据 OpenMP 应 用 程 序 接 口 v4.5
 [http://www.openmp.org/来生成并行代码。这个选项意味着`](http://www.openmp.org/来生成并行代码。这个选项意味着`) -pthread` ，因此
 只支持支持 `-pthread` 的目标。 `-fopenmp` 意味着 `-fopenmp-simd` 。
 -fopenmp-simd
 
 
-启用使用 C/ C++中的#pragmaomp 和 Fortran 中的!$omp 处理 OpenMP 的 SIMD 指
+启用使用 C/C++中的#pragmaomp 和 Fortran 中的!$omp 处理 OpenMP 的 SIMD 指
 令。其他 OpenMP 指令被忽略。
 -fgnu-tm 当选项 `-fgnu-tm` 被指定时，编译器将为 Intel 当前事务内存 ABI 规范文档的 Linux
 变体生成代码(修订 1.1,2009 年 5 月 6 日)。这是一个实验特性，其接口可能会
@@ -2649,7 +2649,7 @@ https://www.openacc.org 生成加速代码。此选项表示 `-pthread` ，因�
 有关 GCC 对事务性内存的支持的更多信息，请参见 GNU 事务性内存中的 `GNU 事
 务性内存库` 一节
 
-图书馆。
+库。
 
 注意，事务内存特性不支持非调用异常( `-fnon-call-exception` )。
 -fms-extensions
@@ -2953,7 +2953,7 @@ G++使用弱符号。此选项仅用于测试，不应被最终用户使用;它�
 不要在特定于 C++的标准目录中搜索头文件，但是仍然要搜索其他标准目录。
 (在构建 C++库时使用此选项)
 此外，这些优化、警告和代码生成选项仅对 C++程序有意义:
--Wabi (C, Objective-C, C++， objective - C++)
+-Wabi (C, Objective-C, C++， Objective-C++)
 警告，当 g++生成的代码可能与供应商中立的 C++ ABI 不兼容时。由于 G+现在
 默认在每个主要版本中更新 ABI，通常只有当在最初版本之后发现的 ABI 问题
 的发布系列中有一个检查时， `-Wabi` 才会发出警告。如果选择了较旧的 ABI
@@ -3004,18 +3004,18 @@ va_arg 抱怨。对于大多数目标，这实际上不会影响传递 ABI 的�
 长双联;int 我;
 };
 unionU 总是在内存中传递。
--Wabi-tag (c++和 objective - C++ only)
+-Wabi-tag (c++和 Objective-C++ only)
 当在没有 ABI 标记的上下文中使用带有 ABI 标记的类型时发出警告。有关 ABI
 标记的更多信息，请参见第 7.7 节[c++属性]，第 793 页。
--Wctor -dtor-隐私(c++和 objective - C++)
+-Wctor -dtor-隐私(c++和 Objective-C++)
 当类看起来不可用时发出警告，因为该类中的所有构造函数或析构函数都是私
 有的，并且它既没有友函数也没有公共静态成员函数。如果没有非私有方法，
 并且至少有一个非构造函数或析构函数的私有成员函数，也要发出警告。
--Wdelete -non- virtualdtor (c++和 objective - C++ only)
+-Wdelete -non- virtualdtor (c++和 Objective-C++ only)
 delete 用于销毁具有虚函数和非虚析构函数的类的实例。如果基类没有虚拟析
 构函数，那么通过基类指针删除派生类的实例是不安全的。此警告是由 `-Wall`
 启用的。
--Wliteral-suffix (c++和 objective - C++)
+-Wliteral-suffix (c++和 Objective-C++)
 当字符串或字符文字后面跟着一个不以下划线开头的 ud 后缀时发出警告。作
 为一个符合标准的扩展，GCC 将这些后缀作为独立的预处理令牌来处理，以便
 与使用<inttypes.h>格式宏的代码保持向后兼容性。例如:
@@ -3039,7 +3039,7 @@ printf( `My int64: %` PRId64 `\n` ，i 64 );
 -Wlto-type-mismatch
 在 link-time 优化期间，对来自不同编译单元的全局声明中的类型不匹配发出
 警告。需要启用 `-flto` 。默认启用。
--Wno - (c++和 objective - C++)
+-Wno - (c++和 Objective-C++)
 对于 C++ 11 和以后的标准，按照标准的要求，在默认情况下诊断收缩转换。
 不断缩小的转换会产生一个错误，而从一个非常量转换成一个缩小的转换会产
 生一个警告，但是 `-Wno -收缩` 抑制了诊断。注意，这不会影响格式良好的代
@@ -3050,7 +3050,7 @@ compat` 中。
 -Wnoexcept (c++和 Objective-C+ only)
 当 noexcept 表达式由于调用了一个没有非抛出异常规范(例如 throw()或
 noexcept)但编译器知道永远不会抛出异常的函数而计算为 false 时发出警告。
--Wnoexception -type (c++和 objective - C++)
+-Wnoexception -type (c++和 Objective-C++)
 如果一个函数类型的 noexcept 部分的 C++ 17 特性更改了与 C++ 14 相关的符号
 的名称，则发出警告。启用了 `-Wabi` 和 `-Wc+ 17-compat` 。
 作为一个例子:
@@ -3058,7 +3058,7 @@ noexcept)但编译器知道永远不会抛出异常的函数而计算为 false �
 效的 h(){ f(g);}
 在 C++ 14 f 调用 调用 f <无效(*)()>, 但 在 C++ 17 它 调用 f <无效
 (*)()noexcept >。
--Wclass-memaccess (c++和 objective - C++)
+-Wclass-memaccess (c++和 Objective-C++)
 当对原始内存函数(如 memset 或 memcpy)调用的目的地是类类型的对象时，
 要发出警告，当写入此类对象时，可能会绕过类的非琐碎或删除构造函数或复
 制赋值，违反了 const-或封装，或损坏的虚表指针。修改此类对象的表示形式
@@ -3073,15 +3073,15 @@ std::string str = `abc` ;memset (&str, 0,
 sizeof str);
  `-Wclass-memaccess` 选项由 `-Wall` 启用。显式地将指向类对象的指针转换为
 void*或可以被原始内存函数安全地访问的类型，会抑制警告。
--Wnon - virtualdtor (c++和 objective - C++)
+-Wnon - virtualdtor (c++和 Objective-C++)
 当一个类具有虚函数和可访问的非虚析构函数本身或在可访问的多态基类中时
 发出警告，在这种情况下，通过指向类本身或基类的指针删除派生类的实例是
 可能的，但不安全的。如果指定 `-Weffc++` ，则自动启用此警告。-Wregister
-(c++和 objective - C++)
+(c++和 Objective-C++)
 警告寄存器存储类说明符的使用，除非它是 GNU 第 6.45.5 节[显式寄存器变量]的
 一部分，第 592 页扩展。使用 register 关键字作为存储类说明符在 C++ 11 中被
 废弃，在 C++ 17 中被删除。默认启用 `-std=c++17` 。
--Wreorder(仅 C++和 objective - C++)
+-Wreorder(仅 C++和 Objective-C++)
 当代码中提供的成员初始化器的顺序与必须执行的顺序不匹配时发出警告。例如:
 构造一个{int
 i;int j;
@@ -3089,14 +3089,14 @@ A(): j (0)， i (1) {}
 };
 编译器为 i 和 j 重新安排成员初始化器，以匹配成员的声明顺序，并向该结果
 发出警告。此警告是由 `-Wall` 启用的。
--fext-numeric-literals (c++和 objective - C++)
+-fext-numeric-literals (c++和 Objective-C++)
 接受虚构的、定点的或机器定义的文字数字后缀作为 GNU 扩展。当关闭此选
 项时，这些后缀将被视为 C++ 11 用户定义的文字数字后缀。这是默认为所有
 前 C++ 11 方言和所有 GNU 方言: `-std=c++98` ，  `-std= GNU ++98` ，  `-std=
 GNU ++11` ，  `-std= GNU ++14` 。这个选项在 ISO C++11 上默认是关闭的( `-
 std=c++11` ，...)。
 以下 `-W...选项不受 `-Wall` 的影响。
--Weffc++ (c++和 objective - C++)
+-Weffc++ (c++和 Objective-C++)
 警告有关违反下列风格指南，从 Scott Meyers 的有效 C++系列书籍:
 - 为具有动态分配内存的类定义复制构造函数和赋值操作符。
 - 在构造函数中更喜欢初始化而不是赋值。
@@ -3110,20 +3110,20 @@ std=c++11` ，...)。
 展为警告在可访问的非多态性基类中缺少虚拟析构函数。
 在选择此选项时，请注意标准库头不遵循所有这些指导原则;使用 `grep-v` 过滤掉
 这些警告。
--Wstrict-null-sentinel (c++和 objective - C++)
+-Wstrict-null-sentinel (c++和 Objective-C++)
 警告使用未使用的空值作为哨兵。当只使用 GCC 编译时，这是一个有效的前哨，
 因为 NULL 被定义为__null。虽然它是一个空指针常量，而不是空指针，但它保证
 与指针一样大小。但是这种用法不能在不同的编译器之间移植。
--Wno-non-template-friend (c++和 objective - C++)
+-Wno-non-template-friend (c++和 Objective-C++)
 在模板中声明非模板好友函数时禁用警告。在非常旧的版本中，在 ISO 标准的
 实现之前，如 `friendintfoo(int)` 这样的声明，其中好友的名称是不限定的 id，
 可以被解释为模板函数的特定专门化;该警告用于诊断兼容性问题，并在默认
 情况下启用。
--Wold-style-cast (c++和 objective - C++)
+-Wold-style-cast (c++和 Objective-C++)
 如果在 C++程序中使用了转换为非空类型的旧式(C 型)类型，则发出警告。新
 样式的类型强制转换(dynamic_cast、static_cast、reinterpretation t_cast 和
 const_cast)不太容易受到意外效果的影响，更容易搜索。
--Woverloaded-virtual (c++和 objective - C++)
+-Woverloaded-virtual (c++和 Objective-C++)
 当函数声明将虚函数隐藏到基类时发出警告。例如,在:
 结构一个{
 虚拟空间 f();
@@ -3134,13 +3134,13 @@ const_cast)不太容易受到意外效果的影响，更容易搜索。
 B * B;
 b - > f();
 无法编译。
--Wno -pmf-转换(c++和 objective - C++)
+-Wno -pmf-转换(c++和 Objective-C++)
 禁用诊断，将绑定指针转换为成员函数到纯指针。
--Wsign-promo (c++和 objective - C++)
+-Wsign-promo (c++和 Objective-C++)
 当重载解析选择从无符号类型或枚举类型升级到有符号类型时发出警告，而不
 是转换为相同大小的无符号类型。以前版本的 G+试图保持不签名，但是标准
 规定了当前的行为。
--Wtemplates (c++和 objective - C++)
+-Wtemplates (c++和 Objective-C++)
 
 
 在遇到主模板声明时发出警告。有些编码规则不允许模板，这可以用来执行该
@@ -3149,7 +3149,7 @@ b - > f();
 
 可以实例化或专门化模板。
 
-- 多重继承(c++和 objective - C++)
+- 多重继承(c++和 Objective-C++)
 当用多个直接基类定义类时发出警告。有些编码规则不允许多重继承，这可以
 用来执行该规则。警告在系统头文件(如 STL)中是不活动的，因此仍然可以使
 用 STL。还可以定义间接使用多重继承的类。
@@ -3161,14 +3161,14 @@ b - > f();
 打开名称空间定义时发出警告。一些编码规则不允许命名空间，这可以用来执
 行该规则。警告在系统头文件(如 STL)中是不活动的，因此仍然可以使用 STL。
 还可以使用指令和限定名。
--Wno-terminate (c++ and objective - C++ only)
+-Wno-terminate (c++ and Objective-C++ only)
 禁用有关抛出表达式的警告，该警告将立即导致调用终止。
 
-### 3.6 控制 Objective-C 和 objective - C++ 方言的选项
+### 3.6 控制 Objective-C 和 Objective-C++ 方言的选项
 
-(注意:本手册并没有描述 Objective-C 和 objective - C++语言本身。参见第 2 章[GCC 支持的语言
+(注意:本手册并没有描述 Objective-C 和 Objective-C++语言本身。参见第 2 章[GCC 支持的语言
 标准]第 5 页的参考文献。
-本节描述仅对 ObjectiveC 和 objective - C++程序有意义的命令行选项。您还可以使用大多
+本节描述仅对 ObjectiveC 和 Objective-C++程序有意义的命令行选项。您还可以使用大多
 数独立于语言的 GNU 编译器选项。例如，您可以编译一个文件 `some_class` 。m` 是这样的:
 gcc -g -fgnu-runtime -O -c some - class.m
 在本例中， `-fgnu-runtime` 是一个仅用于 Objective-C 和 Objective-C +程序的选项;您可以对 GCC
@@ -3176,7 +3176,7 @@ gcc -g -fgnu-runtime -O -c some - class.m
 注意，由于 Objective-C 是 C 语言的扩展，Objective-C 编译也可以使用特定于 C 前端的
 选项(例如， `-Wtraditional` )。类似地，Objective-C+编译可能使用特定于 C++的选项(例如，
  `-Wabi` )。
-以下列出了一些只用于编译 Objective-C 和 objective - C++程序的选项:
+以下列出了一些只用于编译 Objective-C 和 Objective-C++程序的选项:
 -fconstant-string-class =类名称
 使用类名作为类的名称来实例化使用语法@ `...` 指定的每个字串。如果使用
 GNU 运行时，默认的类名是 NXConstantString，如果使用下一个运行时，则
@@ -3222,7 +3222,7 @@ cxx_construct 和-(void)。cxx_destruct 方法。
 选项需要使用 Objective-C 关键字@try， @throw， @catch， @finally 和
 @synchronized。此选项可与 GNU 运行时和下一个运行时一起使用(但不能与
 Mac OS X 10.2 和更早版本上的下一个运行时一起使用)。-fobjc-gc
-在 Objective-C 和 objective - C++程序中启用垃圾收集(GC)。此选项仅限下
+在 Objective-C 和 Objective-C++程序中启用垃圾收集(GC)。此选项仅限下
 一个运行时;GNU 运行时具有不同的垃圾收集实现，不需要特殊的编译器标志。
 
 
@@ -3233,8 +3233,8 @@ Mac OS X 10.2 和更早版本上的下一个运行时一起使用)。-fobjc-gc
 当使用 GNU 运行时或下一个运行时 ABI 的旧版本时，此标志不起作用。
 -fobjc-std = objc1
 遵循 Objective-C 1.0 的语言语法，这是 GCC 4.0 承认的语言。这只影响对 C/
-c++语言的 Objective-C 添加;它不影响对 C/ C++标准的一致性，该标准由独立的
-C/ C++方言选项标志控制。当此选项与 Objective-C 或 objective - C++编译器一
+c++语言的 Objective-C 添加;它不影响对 C/C++标准的一致性，该标准由独立的
+C/C++方言选项标志控制。当此选项与 Objective-C 或 Objective-C++编译器一
 起使用时，任何 GCC 4.0 不能识别的 Objective-C 语法都将被拒绝。如果您需要
 确保您的 Objective-C 代码可以与旧版本的 GCC 一起编译，那么这是非常有用
 的。
@@ -3261,11 +3261,11 @@ local-ivars` 标志将禁用此行为，从而避免变量隐藏问题。-fivar-
 外声明的实例变量默认为指定的可见性。
 - gen-decls
 将源文件中看到的所有类的接口声明转储到名为 `sourcename.decl` 的文件中。
--Wassign-intercept (Objective-C 和 objective - C++)
+-Wassign-intercept (Objective-C 和 Objective-C++)
 当目标 c 赋值被垃圾收集器拦截时发出警告。
 
 
--Wno-protocol (Objective-C 和 objective - C++)
+-Wno-protocol (Objective-C 和 Objective-C++)
 如果一个类被声明为实现一个协议，则会对协议中没有被类实现的每个方法发
 出警告。默认行为是对类中未显式实现的每个方法发出警告，即使方法实现是
 从超类继承的。如果您使用 `-Wno-protocol` 选项，则会认为继承自超类的方法
@@ -3281,7 +3281,7 @@ local-ivars` 标志将禁用此行为，从而避免变量隐藏问题。-fivar-
 器找到具有不同参数和/或返回类型的多个方法，则发出警告。当此标志关闭
 时(这是默认行为)，如果发现的任何差异仅限于共享相同大小和对齐的类型，
 编译器就会忽略此类警告。
--Wundeclare -selector (Objective-C 和 objective - C++)
+-Wundeclare -selector (Objective-C 和 Objective-C++)
 如果找到指向未声明选择器的@selector(...)表达式，则发出警告。如果在
 @selector(...)表达式之前声明了没有使用该名称的方法，那么选择器就会被认
 为是未声明的，或者在@interface 或@protocol 声明中显式地声明，或者在
@@ -3456,7 +3456,7 @@ color` )。
 
 此选项将导致编译器在发生第一个错误时终止编译，而不是继续执行并打印进一步的错误消息。
 
-您可以使用 `-W` 开头的选项请求许多特定的警告，例如 `-Wimit` ，以在隐式声明中请求警告。每一个特定的警告选项也有一个消极的形式开始 `-Wno -` 关闭警告;例如, `-Wno-implicit` 。本手册只列出了两种形式中的一种，以非默认形式。进一步的特定于语言的选项还参考第 3.5 节[c++方言选项]，第 42 页和第 3.6 节[Objective-C 和 objective - C++方言选项]，第 55 页。
+您可以使用 `-W` 开头的选项请求许多特定的警告，例如 `-Wimit` ，以在隐式声明中请求警告。每一个特定的警告选项也有一个消极的形式开始 `-Wno -` 关闭警告;例如, `-Wno-implicit` 。本手册只列出了两种形式中的一种，以非默认形式。进一步的特定于语言的选项还参考第 3.5 节[c++方言选项]，第 42 页和第 3.6 节[Objective-C 和 Objective-C++方言选项]，第 55 页。
 
 有些选项，如 `-Wall` 和 `-Wextra` ，会打开其他选项，比如 `-wused` ，可能会打开更多选项，比如 `-Wunuse -value` 。积极表单和消极表单的联合作用是，更特定的选项比不那么特定的选项具有优先级，独立于它们在命令行中的位置。对于同样特异性的选项，最后一个会起作用。通过实用程序启用或禁用的选项(参见第 6.61.12 节[诊断实用程序]第 778 页)生效，就像它们出现在命令行末尾一样。
 
@@ -3497,7 +3497,7 @@ color` )。
 
 这使得所有用户认为有问题的结构的警告成为可能，并且很容易避免(或修改以防止
 警告)，即使是与宏一起使用。这也允许在第 3.5 节[c++方言选项]、第 42 页和
-第 3.6 节[Objective-C 和 objective - C++方言选项]中描述一些特定于语言的警
+第 3.6 节[Objective-C 和 Objective-C++方言选项]中描述一些特定于语言的警
 告，第 55 页。
 
 `-Wall` 打开下面的警告标志:
@@ -3603,7 +3603,7 @@ color` )。
 
 -Wno-cpp
 
-(仅限 C, Objective-C, C++， objective - C++， Fortran)
+(仅限 C, Objective-C, C++， Objective-C++， Fortran)
 
 抑制 `#warning` 指令发出的警告消息。
 
@@ -3741,7 +3741,7 @@ void f (int a, int b)
 
 如果编译器检测到由于解引用空指针而触发错误或未定义行为的路径，则发出警告。此选项仅在 `-fdelete-null-pointer-check` 是活动时才激活，这是通过在大多数目标中进行优化而启用的。警告的精度取决于所使用的优化选项。
 
--Winit-self (仅限 C, C++， Objective-C 和 objective - C++)
+-Winit-self (仅限 C, C++， Objective-C 和 Objective-C++)
 
 警告使用自身初始化的未初始化变量。注意，此选项只能与 `-Wuninitialized` 选项一起使用。
 
@@ -3952,7 +3952,7 @@ int b[2][2] = { { 0, 1 }, { 2, 3 } };
 
 此警告是由 `-Wall` 启用的。
 
--Wmis- include-dirs (C、c++、Objective-C 和 objective - C++)
+-Wmis- include-dirs (C、c++、Objective-C 和 Objective-C++)
 
 警告用户提供的 include 目录不存在。
 
@@ -4004,7 +4004,7 @@ C 和 C++中的 `-Wall` 启用了此警告。
 -Wsequence-point
 
 警告由于违反了 C 和 C++标准中的序列点规则而可能具有未定义语义的代码。
-C 和 C++标准定义了在 C/ C++程序中表达式以序列点计算的顺序，序列点表示
+C 和 C++标准定义了在 C/C++程序中表达式以序列点计算的顺序，序列点表示
 程序部分执行之间的部分排序:在序列点之前执行的表达式，以及在序列点之
 后执行的表达式。这些评估后出现一个完整的表达式(不表达的一部分),评估后
 的第一个操作数& &,| |,吗?或者,(逗号)算子,函数被调用之前(但之后的评价参数
@@ -4063,35 +4063,46 @@ return-type` 。唯一的例外是在系统头中定义的主函数和函数。
 -Wshift-overflow=n
 
 警告左移位溢出。此警告在 C99 和 C++ 11 模式(以及更新的模式)中默认启用。
+
 -Wshift-overflow = 1
+
 这是 `-Wshift-overflow` 的警告级别，在 C99 和 C++ 11 模式(以及更
 新的模式)中默认启用。此警告级别不警告左移 1 进入符号位。(但
 是，在 C 中，在需要整数常量表达式的上下文中，仍然拒绝这种
 溢出。)
+
 -Wshift-overflow = 2
+
 这个警告级别还警告左移 1 进入符号位，除非 C++ 14 模式是活动的。
 -Wswitch 警告，每当 switch 语句具有枚举类型的索引，并且缺少该枚举的一个或多个命名
 代码的情况时。(默认标签的存在可以防止此警告)在枚举范围之外的 case 标签
 也会在使用该选项时引起警告(即使有默认标签)。此警告是由 `-Wall` 启用的。
+
 -Wswitch-default
+
 当 switch 语句没有默认情况时发出警告。
+
 -Wswitch-enum
+
 当 switch 语句具有枚举类型的索引，并且缺少该枚举的一个或多个命名代码
 的情况时发出警告。当使用此选项时，枚举范围外的 case 标签也会引起警告。
  `-Wswitch` 和这个选项的唯一区别是，即使有默认的标签，该选项也会对省略
 的枚举代码发出警告。
+
 -Wswitch-bool
+
 当一个 switch 语句具有布尔类型的索引，且大小写值超出布尔类型的范围时
 发出警告。可以通过将控制表达式转换为非 bool 类型来抑制此警告。例如:
 开关(int) (a = 4)
 {...
 }
 C 和 C++程序默认启用此警告。
--Wswitch-unreachable
 
+-Wswitch-unreachable
 
 当一个 switch 语句包含控制表达式和第一个 case 标签之间的语句时发出警告，该
 语句将永远不会被执行。例如:
+
 开关(电导率)
 {
 我= 15;
@@ -4106,58 +4117,86 @@ C 和 C++程序默认启用此警告。
 5;
 ...
 }
+
 C 和 C++程序默认启用此警告。
+
 -Wsync-nand (C 和 C++)
+
 当使用__sync_fetch_and_nand 和__sync_nand_and_fetch 内置函数时发出警告。这些
 函数在 GCC 4.4 中改变了语义。
+
 -Wunused-but-set-parameter
+
 当函数参数被赋值时发出警告，但在其他情况下未使用(除了声明之外)。
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
 这个警告也可以通过 `-Wused` 和 `-Wextra` 一起启用。
+
 -Wunused-but-set-variable
+
 当分配给局部变量时发出警告，但在其他情况下未使用(除了声明之外)。此警告
 是由 `-Wall` 启用的。
+
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
 这个警告也被 `-Wuse` 启用，它是由 `-Wall` 启用的。
+
 -Wunused-function
+
 当声明了静态函数但未定义或未使用非内联静态函数时发出警告。此警告是由 `-
 Wall` 启用的。
--Wunused-label
-当一个标签被声明但没有被使用时发出警告。这个警告是由
- `-Wall` 。
-要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
--Wunused -local-typedef (C, Objective-C, C++， Objective-C+ only)
 
+-Wunused-label
+
+当一个标签被声明但没有被使用时发出警告。这个警告是由 `-Wall` 。
+
+要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
+
+-Wunused-local-typedef (C, Objective-C, C++， Objective-C+ only)
 
 当函数中定义的类型定义未被使用时发出警告。此警告是由 `-Wall` 启用的。
+
 -Wunused-parameter
+
 当函数参数除了声明之外没有使用时发出警告。
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
+
 -Wno-unused-result
+
 如果一个函数的调用者带有属性 warn_unused_结果(参见第 6.31 节[函数属性]，
 第 464 页)不使用它的返回值。默认值是 `-Wunused-result` 。
+
 -Wunused-variable
+
 当一个本地或静态变量除了声明之外没有使用时发出警告。
 这个选项意味着 `-Wunused-const-variable=1` 表示 C，而不是 C++。此警告是由 `-
 Wall` 启用的。
+
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
+
 -Wunused-const-variable
 -Wunused-const-variable=n
+
 当一个常量静态变量在其声明之外未使用时警告。
+
  `-Wunused-const-variable=1` 是由 C 的 `-Wunused-variable` 而不是 C++启用的。
-在 C 中，这声明了变量存储，但是在 C++中，这不是一个错误，因为 const 变
-量代替了`#define`。
+在 C 中，这声明了变量存储，但是在 C++中，这不是一个错误，因为 const 变量代替了`#define`。
+
 要抑制此警告，请使用未使用的属性(参见第 6.32 节[变量属性]，第 513 页)。
--Wunused-const-variable = 1
+
+-Wunused-const-variable=1
+
 这是 c 的 `-Wunuse -variable` 启用的警告级别，它只警告主编译单
 元中定义的未使用的静态 const 变量，而不警告包含在任何 header
 中的静态 const 变量。
--Wunused-const-variable = 2
+
+-Wunused-const-variable=2
+
 此警告级别还警告头部中未使用的常量静态变量(不包括系统头部)。
 这是 `-Wunuse -const-variable` 的警告级别，必须显式地请求，因
 为在 C++中这不是一个错误，在 C 中，清理包含的所有标头可能更
 困难。
+
 -Wunused-value
+
 当语句计算显式不使用的结果时发出警告。为了抑制这个警告，将未使用的表
 达式转换为 void。这包括一个表达式语句或一个不包含副作用的逗号表达式的
 左边。例如，x[i,j]这样的表达式会引起警告，而 x[(void)i,j]则不会。
@@ -4166,20 +4205,25 @@ Wall` 启用的。
 为了得到关于未使用函数参数的警告，您必须指定 `-Wextra -Wused` (注意 `-
 Wall` 意味着 `-Wused -parameter` )，或者单独指定 `-Wunused-parameter` 。
 
-
 -Wuninitialized
+
 警告，如果一个自动变量在没有初始化的情况下使用，或者一个变量可能被
 setjmp 调用阻塞。在 C++中，如果在没有构造函数的类中出现非静态引用或非
 静态 const 成员，则发出警告。
+
 如果您想要警告使用该变量在其初始化器中未初始化值的代码，请使用 `-Winit-
 self` 选项。
+
 这些警告是针对单个未初始化的或被破坏的结构、联合或数组变量的元素，以
 及未初始化或被破坏的变量。它们不会出现在声明不稳定的变量或元素中。因
 为这些警告依赖于优化，所以有警告的确切变量或元素依赖于使用的精确优化
 选项和 GCC 版本。
+
 注意，对于仅用于计算本身从未使用过的值的变量，可能没有任何警告，因为
 在输出警告之前，数据流分析可能会删除此类计算。
+
 -Winvalid-memory-model
+
 警告调用第 6.53 节[原子构建项]、第 603 页、第 6.52 节[同步构建项]、第 601
 页和具有内存一致性参数的 C11 原子泛型函数，该参数对操作无效或超出
 memory_order 枚 举 值 的 范 围 。 例如，由于__atomic_store 和
@@ -4190,13 +4234,16 @@ __atomic_store_n 内置仅为放松、发布和顺序一致的内存订单定义
 __atomic_store_n(0,我 memory_order_consume);}
 
  `-Winvalid-memory-model` 在默认情况下是启用的。
+
 -Wmaybe-uninitialized
+
 自动(即当地)变量,如果存在一个路径的函数入口使用变量初始化,但是存在一
 些其他的路径没有初始化的变量,编译器发出警告,如果不能证明未初始化路径
 并不在运行时执行。
 这些警告只能在优化编译时使用，否则 GCC 就不会跟踪变量的状态。
 这些警告是可选的，因为 GCC 可能无法确定代码何时是正确的，尽管看起来有
 错误。这里有一个例子说明这是如何发生的:
+
 { int x;开关(y)
 {
 情形 1:x = 1;打破;
@@ -4205,7 +4252,6 @@ __atomic_store_n(0,我 memory_order_consume);}
 }
 foo(x);
 }
-
 
 如果 y 的值总是 1 2 或 3 ，那么 x 总是初始化的，但是 GCC 不知道这个。为了
 抑制警告，您需要提供一个 assert(0)或类似代码的默认情况。
@@ -4216,72 +4262,83 @@ foo(x);
 如果您声明使用的所有函数都不会返回为 noreturn，则可以避免一些虚假警告。
 参见第 6.31 节[功能属性]，第 464 页。
 此警告由 `-Wall` 或 `-Wextra` 启用。
+
 -Wunknown-pragmas
+
 当遇到 GCC 不理解的#pragma 指令时发出警告。如果使用这个命令行选项，
 甚至会对系统头文件中的未知实用程序发出警告。如果警告仅由 `-Wall` 命令行
 选项启用，情况就不是这样了。
+
 -Wno-pragmas
+
 不要对实用程序的误用发出警告，例如不正确的参数、无效的语法或实用程序之
 间的冲突。参见 `-Wunknown-pragmas` 。
+
 -Wstrict-aliasing
+
 此选项仅在 `-fstrict- alialize` 激活时才有效。它警告说，代码可能会打破编译
 器用于优化的严格混叠规则。这个警告并没有捕捉到所有的情况，而是试图捕
 捉更常见的陷阱。它包含在 `-Wall` 中。它等于 `-Wstrict - alialize = 3`
+
 -Wstrict-aliasing=n
+
 此选项仅在 `-fstrict- alialize` 激活时才有效。它警告说，代码可能会打破编译
 器用于优化的严格混叠规则。更高的水平对应更高的准确度(更少的假阳性)。
 更高的层次也意味着更多的努力，类似于 `o` 的工作方式。 `-Wstrict - alialize`
 等于 `-Wstrict - alialize =3` 。
+
 一级:最具攻击性，快速，最不准确。当更高的级别没有警告但 `-fstrict- alialize` 仍
 然会破坏代码，因为它几乎没有错误的否定。然而，它有许多误报。警告可能不
 兼容的类型之间的所有指针转换，即使从来没有取消引用。只在前端运行。
+
 二级:积极，快速，不太精确。可能仍然有很多假阳性(虽然不是 1 级)，也有很
 少的假阴性(但可能超过 1 级)。与第 1 级不同，它只是在一个地址被取时发出
 警告。警告说对不完整的类型。只在前端运行。
+
 第 3 级(默认为 `-Wstrict-aliasing` ):应该只有很少的假阳性和假阴性。当启用优
 化时，比级别 1 或 2 稍微慢一些。在前端处理常见的 pun+dereference 模
 式:*(int*)&some_float。如果启用了优化，它也会在后端运行，在那里它处理
 使用流敏感的点-到信息的多个 case 语句。只有当转换后的指针被取消引用时
 才发出警告。不警告不完整类型。
+
 -Wstrict-overflow
 -Wstrict-overflow=n
 
+此选项仅在未定义带符号溢出时才激活。它警告编译器基于无符号溢出假设进行优化的情况。注意，它没有警告所有代码可能溢出的情况:它只警告编译器实现某些优化的情况。因此，这个警告依赖于优化级别。
 
-此选项仅在未定义带符号溢出时才激活。它警告编译器基于无符号溢出假设进
-
-行优化的情况。注意，它没有警告所有代码可能溢出的情况:它只警告编译器
-
-实现某些优化的情况。因此，这个警告依赖于优化级别。
-
-假设没有发生有符号溢出的优化是完全安全的，如果所涉及的变量的值是这样
-
-的，实际上不会发生溢出。因此，这个警告很容易给出一个错误的肯定:关于代码
-
-的警告实际上不是问题。为了帮助关注重要问题，我们定义了几个警告级别。在
-
-估计循环需要多少次迭代时，特别是在确定循环是否会被执行时，没有发出任何
-
-警告，用于使用未定义的签名溢出。
+假设没有发生有符号溢出的优化是完全安全的，如果所涉及的变量的值是这样的，实际上不会发生溢出。因此，这个警告很容易给出一个错误的肯定:关于代码的警告实际上不是问题。为了帮助关注重要问题，我们定义了几个警告级别。在估计循环需要多少次迭代时，特别是在确定循环是否会被执行时，没有发出任何警告，用于使用未定义的签名溢出。
 
 -Wstrict-overflow = 1
+
 对可疑且容易避免的案件提出警告。例如，编译器将 x+1>x 简化
 为 1 。 `-Wstrict-overflow` 的级别由 `-Wall` 启用;更高的级别不是，
 而且必须显式地请求。
+
 -Wstrict-overflow = 2
+
 也要注意其他的例子，比较被简化为常数。例如:abs(x)> = 0。这
 只能在没有定义带符号整数溢出时进行简化，因为 abs(INT_MIN)
 溢出到 INT_MIN，而 INT_MIN 小于零。 `-Wstrict-overflow` (无级)
 与 `-Wstrict-overflow=2` 相同。
+
 -Wstrict-overflow = 3
+
 也要对其他简化比较的情况提出警告。例如:x+1>1 被简化为 x>0。
+
 -Wstrict-overflow = 4
+
 也要提醒您注意上述案例中没有涉及的其他简化。例如:(x*10)/5 被简
-化为 x*2。-Wstrict-overflow = 5
+化为 x*2。
+
+-Wstrict-overflow = 5
+
 也要注意编译器减少比较中涉及的常数的大小的情况。例
 如:x+2>y 被简化为 x+1>=y。这只在最高的警告级别报告，因为这
 种简化适用于许多比较，所以这个警告级别提供了大量的假阳性。
+
 -Wstringop-overflow
--Wstringop-overflow =类型
+-Wstringop-overflow=type
+
 警告对字符串操作函数(如 memcpy 和 strcpy)的调用，这些函数被确定为溢出
 目标缓冲区。可选参数比要执行的确定目标大小的对象大小检查类型大一个。
 参见第 6.56 节[对象大小检查]，第 609 页。这个参数只对操作字符数组的函
@@ -4292,20 +4349,29 @@ foo(x);
 小部分。无论如何，该选项只警告由相应的溢出检查内置项检测到的缓冲区溢
 出的一个子集。例如，该选项将对下面的 strcpy 调用发出警告，因为它将至少
 5 个字符(包括终止 NUL 的字符串 `blue` )复制到大小为 4 的缓冲区中。
-enum 颜色{蓝色，紫色，黄色};const char* f
-(enum Color clr)
 
+```
+enum Color { blue, purple, yellow };
+const char* f (enum Color clr)
+{
+  static char buf [4];
+  const char *str;
+  switch (clr)
+    {
+      case blue: str = "blue"; break;
+      case purple: str = "purple"; break;
+      case yellow: str = "yellow"; break;
+    }
 
-{静态 char buf [4];const
-char * str;开关(clr)
-{case blue: str = "blue";打破;case purple: str =
-"purple";打破;大小写黄色:str = "yellow";打
-破;
+  return strcpy (buf, str);   // warning here
 }
-返回拷贝字符串(buf,str); / /在这里警告}
+```
+
 选项 `-Wstringop-overflow=2` 默认启用。
+
 -Wstringop-overflow
--Wstringop-overflow = 1
+-Wstringop-overflow=1
+
  `-Wstringop-overflow=1` 选项使用类型为零的对象大小检查来确定
 目标对象的大小。这是该选项的默认设置。在此设置中，该选项
 将不会警告在指针访问的较大对象的子对象对象结束后进行写入，
@@ -4313,697 +4379,831 @@ char * str;开关(clr)
 个时，它被认为是其中最大的一个。在 Linux 系统上，当在此设置
 中启用优化时，该选项会对与_FORTIFY_SOURCE 宏被定义为非零
 值时相同的代码发出警告。
--Wstringop-overflow = 2
+
+-Wstringop-overflow=2
+
  `-Wstringop-overflow=2` 选项使用类型一的对象大小检查来确定目
 标对象的大小。在这个设置中，选项将在给最大的完整对象(确切
 的大小是已知的)写入时警告溢出。但是，它不会警告指针引用的
 未知对象的相同成员的过度写入，因为它们可能指向包含未知元
 素数量的数组。
--Wstringop-overflow = 3
+
+-Wstringop-overflow=3
  `-Wstringop-overflow=3` 选项使用 type-two 对象大小检查来确定
 目标对象的大小。在此设置中，该选项警告要溢出最小的对象或
 数据成员。这是对可能导致安全代码警告的选项的最严格设置。
--Wstringop-overflow = 4
+
+-Wstringop-overflow=4
  `-Wstringop-overflow=4` 选项使用类型 3 的对象大小检查来确定目
 标对象的大小。在此设置中，该选项将警告是否溢出任何数据成
 员，当目标是多个对象之一时，它将使用其中最大的对象的大小
 来决定是否发出警告。与 `-Wstringop-overflow=3` 类似，此选项
 设置可能导致对良性代码的警告。
+
 -Wstringop-truncation
-警告对有界字符串操作函数(如 strncat、strncpy 和 stpncpy)的调用，可能会截
-断复制的字符串或保持目标不变。
 
+警告对有界字符串操作函数(如 strncat、strncpy 和 stpncpy)的调用，可能会截断复制的字符串或保持目标不变。
 
-在下面的示例中，对 strncat 的调用指定了一个小于源字符串长度的绑定。因
-此，源的副本将被截断，从而诊断调用。为了避免警告，使用
-bufsizestrlen(buf)- 1 作为界。
+在下面的示例中，对 strncat 的调用指定了一个小于源字符串长度的绑定。因此，源的副本将被截断，从而诊断调用。为了避免警告，使用 `bufsize - strlen (buf) - 1)` 作为边界。
+
+```
 void append (char *buf, size_t bufsize)
-{ strncat(buf` 。txt` ,3);
+{
+  strncat (buf, ".txt", 3);
 }
-另一个例子是，下面对 strncpy 的调用只会将终止 NUL 之前的字符复制到 d，
-而不会将 NUL 附加到末尾。假设 strncpy 的结果一定是一个空终止字符串，这
-是一个常见的错误，因此可以诊断调用。为了避免在预期结果不以 null 结尾时
-发出警告，请改为调用 memcpy。
-无效副本(char *d, const char *s)
-{strncpy (d, s, strlen (s)));}
-在下面的示例中，调用 strncpy 指定目标缓冲区的大小作为绑定。如果源字符
-串的长度等于或大于此大小，则复制的结果将不会以 null 结尾。因此，电话也
-被诊断出来了。为了避免警告，请指定 sizeofbuf- 1 为界，并将缓冲区的最后
-一个元素设置为 NUL。
+```
+
+另一个例子是，下面对 strncpy 的调用只会将终止 NUL 之前的字符复制到 d，而不会将 NUL 附加到末尾。假设 strncpy 的结果一定是一个空终止字符串，这是一个常见的错误，因此可以诊断调用。为了避免在预期结果不以 null 结尾时发出警告，请改为调用 `memcpy`。
+
+```
+void copy (char *d, const char *s)
+{
+  strncpy (d, s, strlen (s));
+}
+```
+
+在下面的示例中，调用 strncpy 指定目标缓冲区的大小作为绑定。如果源字符串的长度等于或大于此大小，则复制的结果将不会以 null 结尾。因此，调用也被诊断出来了。为了避免警告，请指定 `sizeofbuf - 1` 为界，并将缓冲区的最后一个元素设置为 NUL。
 空白副本(const char *s)
-{ char buf[80];strncpy (buf, s, sizeof
-buf);...
+
+```
+void copy (const char *s)
+{
+  char buf[80];
+  strncpy (buf, s, sizeof buf);
+  …
 }
+```
+
 如果一个字符数组打算存储一个没有终止 NUL 的字节序列，那么可以使用属
 性 nonstring 对该数组进行注释，以避免此警告。但是，对于期望使用以 null
 结尾的字符串的函数来说，这些数组不是合适的参数。为了帮助检测这些阵列
 的意外误用，GCC 会发出警告，除非它能证明使用是安全的。参见第 6.32.1 节
 [常用变量属性]，第 513 页。
--Wsuggest-attribute =[纯| const | noreturn |格式| |冷 malloc]
+
+-Wsuggest-attribute=[pure|const|noreturn|format|cold|malloc]
+
 警告添加属性可能有益的情况。下面列出了当前支持的属性。
--Wsuggest-attribute =纯
--Wsuggest-attribute =常量
+
+-Wsuggest-attribute=pure
+-Wsuggest-attribute=const
 -Wsuggest-attribute=noreturn
--Wsuggest-attribute = malloc
-警告可能属于纯属性、const 或 noreturn 或 malloc 的函数。编译
-器只对其他编译单元中可见的函数发出警告，如果不能证明函数
-返回正常，则发出警告(对于纯粹的和 const)。如果函数不包含无
-限循环或通过抛出、调用 abort 或捕获异常返回，则函数将正常返
-回。此分析需要选项 `-fipa-pure-const` ，默认为 `-O` 或更高。更高
-的优化水平提高了分析的准确性。
--Wsuggest-attribute =格式
+-Wsuggest-attribute=malloc
+
+警告可能属于纯属性、const 或 noreturn 或 malloc 的函数。编译器只对其他编译单元中可见的函数发出警告，如果不能证明函数返回正常，则发出警告(对于纯粹的和 const)。如果函数不包含无
+限循环或通过抛出、调用 abort 或捕获异常返回，则函数将正常返回。此分析需要选项 `-fipa-pure-const` ，默认为 `-O` 或更高。更高的优化水平提高了分析的准确性。
+
+-Wsuggest-attribute=format
 -Wmissing-format-attribute
 
+警告可能是格式属性候选的函数指针。注意这些只是可能的候选者，而不是绝对的候选者。GCC 猜测具有格式属性的函数指针在赋值、初始化、参数传递或返回语句中应该具有相应的格式属性。也就是说，赋值或初始化的左边、参数变量的类型或包含函数的返回类型都应该有一个 format 属性，以避免出现警告。
 
-警告可能是格式属性候选的函数指针。注意这些只是可能的候选
+GCC 还警告说，函数定义可能是格式属性的候选。同样，这些只是可能的候选者。GCC 猜测格式属性可能适合于任何调用 `vprintf` 或 `vscanf` 之类函数的函数，但这可能并不总是正确的，一些格式属性合适的函数可能不会被检测到。
 
-者，而不是绝对的候选者。GCC 猜测具有格式属性的函数指针在
+-Wsuggest-attribute=cold
 
-赋值、初始化、参数传递或返回语句中应该具有相应的格式属性。
+警告可能属于 cold 属性的函数。这是基于静态检测的，通常只会警告那些总是导致调用另一个冷函数的函数，比如 C++ 抛出的包装器或导致终止的致命错误报告函数。
 
-也就是说，赋值或初始化的左边、参数变量的类型或包含函数的
-
-返回类型都应该有一个 format 属性，以避免出现警告。
-GCC 还警告说，函数定义可能是格式属性的候选。同样，这些只是可
-能的候选者。GCC 猜测格式属性可能适合于任何调用 vprintf 或 vscanf
-之类函数的函数，但这可能并不总是正确的，一些格式属性合适的函
-数可能不会被检测到。
--Wsuggest-attribute =冷
-警告可能属于 cold 属性的函数。这是基于静态检测的，通常只会
-警告那些总是导致调用另一个冷函数的函数，比如 C++抛出的包装
-器或导致终止的致命错误报告函数。
 -Wsuggest-final-types
-警告使用虚拟方法的类型，如果使用 C++ +11 最后指定符声明类型，或者如果
-可能的话，在匿名名称空间中声明类型，则可以改进代码质量。这允许 GCC 更
-积极地去虚拟化多态调用。这个警告在链接时间优化方面更有效，因为类层次
-图的信息更完整。
--Wsuggest-final-methods
-警告虚拟方法，如果使用 C++ 11 最终说明符声明该方法，或者如果可能的话，
-在匿名名称空间或最终说明符中声明该方法的类型，那么该方法的代码质量将
-得到改进。在链接时间优化中，这个警告更有效，其中关于类层次图的信息更
-完整。建议首先考虑 `-Wsuggest -final 类型` 的建议，然后使用新的注解重新构
-建。
--Wsuggest-override
-警告未使用 override 关键字标记的重写虚拟函数。
--Walloc-zero
-警告使用属性 alloc_size 修饰的分配函数的调用，这些函数指定零字节，包括
-对 align ned_alloc、alloca、calloc、malloc 和 realloc 的内置形式的调用。因为
-这些函数在调用时的行为在不同的实现中是不同的(在 realloc 的情况下已经被
-弃用)，依赖它可能会导致微妙的可移植性错误，应该避免这种错误。
--Walloc-size-larger-than=n
-警告使用属性 alloc_size 修饰的函数调用，这些函数试图分配大于指定字节数
-的对象，或者在具有无限精度的整数类型中，大小计算的结果将超过
-SIZE_MAX/2。选项参数 n 可以在一个标准后缀中结束，它指定了 kB 和 KiB 的
-倍数，分别为 kB 和 kibibyte, MB 和 MiB 为 MB 和 mebibyte，等等。参见第
-6.31 节[功能属性]，第 464 页。
--Walloca 这个选项警告所有使用 alloca 的来源。-Walloca-larger-than=n
 
+警告使用虚拟方法的类型，如果使用 C++ +11 最后指定符声明类型，或者如果可能的话，在匿名名称空间中声明类型，则可以改进代码质量。这允许 GCC 更积极地去虚拟化多态调用。这个警告在链接时间优化方面更有效，因为类层次图的信息更完整。
+
+-Wsuggest-final-methods
+
+警告虚拟方法，如果使用 C++ 11 最终说明符声明该方法，或者如果可能的话，在匿名名称空间或最终说明符中声明该方法的类型，那么该方法的代码质量将得到改进。在链接时间优化中，这个警告更有效，其中关于类层次图的信息更完整。建议首先考虑 `-Wsuggest -final 类型` 的建议，然后使用新的注解重新构建。
+
+-Wsuggest-override
+
+警告未使用 override 关键字标记的重写虚拟函数。
+
+-Walloc-zero
+
+警告使用属性 `alloc_size` 修饰的分配函数的调用，这些函数指定零字节，包括对 `aligned_alloc`, `alloca`, `calloc`, `malloc`, 和 `realloc` 的内置形式的调用。因为这些函数在调用时的行为在不同的实现中是不同的(在 `realloc` 的情况下已经被弃用)，依赖它可能会导致微妙的可移植性错误，应该避免这种错误。
+
+-Walloc-size-larger-than=n
+
+警告使用属性 `alloc_size` 修饰的函数调用，这些函数试图分配大于指定字节数的对象，或者在具有无限精度的整数类型中，大小计算的结果将超过 `SIZE_MAX / 2`。选项参数 `n` 可以在一个标准后缀中结束，它指定了 `kB` 和 `KiB` 的倍数，分别为 kB 和 kibibyte, `MB` 和 `MiB` 为 MB 和 mebibyte，等等。参见第6.31 节[功能属性]，第 464 页。
+
+-Walloca
+
+这个选项警告所有使用 alloca 的来源。
+
+-Walloca-larger-than=n
 
 此选项警告对不受控制谓词限制的对 alloca 的调用，该控制谓词将其整型类型
 的参数限制为最多 n 个字节，或者调用不知道绑定的 alloca。非整数类型的参
 数被认为是无界的，即使它们似乎被限制在预期范围内。
+
 例如，有界的 alloca 的情况可以是:
-空白 func(size_t n)
-{ void * p;如果(n < =
-1000)
-p = alloca(n);else p
-= malloc (n);
-f(p);
-}
-在上面的示例中，传递-Walloca-larger-than=1000 不会发出警告，因为对
-alloca 的调用最多为 1000 字节。但是，如果传递-Walloca-larger-than=500，
-编译器将发出警告。
-另一方面，无界使用是 alloca 的使用，没有控制谓词限制其整型参数。例如:
-void 函数()
-{void *p = alloca (n);f(p);
-}
-如果-Walloca -large -than=500 被通过，上面的代码将触发一个警告，但是这一次
-由于缺乏边界检查。
-注意，即使是包含有符号整数的看似正确的代码也可能导致一个警告:void
-func(有符号 int n)
+
+```
+void func (size_t n)
 {
-如果(n < 500)
-{p = alloca (n);f(p);
+  void *p;
+  if (n <= 1000)
+    p = alloca (n);
+  else
+    p = malloc (n);
+  f (p);
 }
+```
+
+在上面的示例中，传递 `-Walloca-larger-than=1000` 不会发出警告，因为对 alloca 的调用最多为 1000 字节。但是，如果传递 `-Walloca-larger-than=500`，编译器将发出警告。
+
+另一方面，无界使用是 alloca 的使用，没有控制谓词限制其整型参数。例如:
+
+```
+void func ()
+{
+  void *p = alloca (n);
+  f (p);
 }
-在上面的示例中，n 可能是负数，这将导致在 alloca 调用中隐式地抛出一个大
-于预期的参数。该选项还会在循环中使用 alloca 时发出警告。
-这个警告不是由 `-Wall` 启用的，只有在 `-ftree-vrp` 是活动的时候才会激活(默认
-值为 `-O2` 及以上)。
+```
+
+如果 `-Walloca -large -than=500` 被通过，上面的代码将触发一个警告，但是这一次
+由于缺乏边界检查。
+
+注意，即使是包含有符号整数的看似正确的代码也可能导致一个警告:
+
+```
+void func (signed int n)
+{
+  if (n < 500)
+    {
+      p = alloca (n);
+      f (p);
+    }
+}
+```
+
+在上面的示例中，`n` 可能是负数，这将导致在 `alloca` 调用中隐式地抛出一个大于预期的参数。该选项还会在循环中使用 `alloca` 时发出警告。
+
+这个警告不是由 `-Wall` 启用的，只有在 `-ftree-vrp` 是活动的时候才会激活(默认值为 `-O2` 及以上)。
+
 参见 `-Wvla-larger-than=n` 。
+
 -Warray-bounds
 -Warray-bounds=n
+
 此选项仅在 `-ftree-vrp` 处于活动状态时才有效( `-O2` 及以上的默认值)。它警告
 说数组的下标总是超出界限。此警告是由 `-Wall` 启用的。
--Warray-bounds = 1
-这是 `-Warray-bounds -bounds -bounds -bounds` 级别，由 `-Wall` 启用;
-更高的级别不是，而且必须显式地请求。
--Warray-bounds = 2
 
+-Warray-bounds=1
 
-这个警告级别还警告说，对于结构体末端的数组和通过指针访问
+这是 `-Warray-bounds -bounds -bounds -bounds` 级别，由 `-Wall` 启用; 更高的级别不是，而且必须显式地请求。
 
-的数组，访问权限超出范围。这个警告级别可能会产生大量的误
+-Warray-bounds=2
 
-报，并在默认情况下被禁用。
+这个警告级别还警告说，对于结构体末端的数组和通过指针访问的数组，访问权限超出范围。这个警告级别可能会产生大量的误报，并在默认情况下被禁用。
 
 -Wattribute-alias
+
 警告使用别名和类似属性的声明，这些属性的目标与别名的类型不兼容。参见
 第 6.31 节[声明函数的属性]，第 464 页。
+
 -Wbool-compare
+
 警告布尔表达式与不同于真/假的整数值的比较。例如，下面的比较总是错误的:
-int(n = 5;
-...
-如果(n > 1) = 2){...}
+
+```
+int n = 5;
+…
+if ((n > 1) == 2) { … }
+```
+
 此警告是由 `-Wall` 启用的。
+
 -Wbool-operation
+
 警告对布尔类型的表达式的可疑操作。例如，对布尔值的位否定很可能是程序
 中的一个错误。对于 C，这个警告还警告增加或减少布尔值，这很少有意义。
 (在 C++中，去除布尔值总是无效的。在 C++ 17 中，增加一个布尔值是无效的，
 否则不赞成。此警告是由 `-Wall` 启用的。
+
 -Wduplicated-branches
+
 警告，当一个 if-else 有相同的分支。此警告检测类似的情况
-如果(p! = NULL)
-返回 0;
-其他的
-返回 0;
+
+```
+if (p != NULL)
+  return 0;
+else
+  return 0;
+```
+  
 当两个分支只包含一个空语句时，它不会发出警告。此警告也警告有条件操作符:
-int i = x ?* p:* p;
+
+```
+int i = x ? *p : *p;
+```
+
 -Wduplicated-cond
+
 在 if-else-if 链中警告重复的条件。例如，警告下列代码:
-如果(p->q != NULL)} else if (p->q !=
-NULL)}
+
+```
+if (p->q != NULL) { … }
+else if (p->q != NULL) { … }
+```
+
 -Wframe-address
+
 当以大于 0 的参数调用 `__builtin_frame_address` 或 `__builtin_return_address` 时
-发出警告。这样的调用可能返回不确定的值，或者使程序崩溃。警告包含在 `-
-Wall` 中。-Wno - lose -qualifier (C 和 Objective-C)
-如果指针上的类型限定符被丢弃，不要发出警告。通常，如果将 constchar*变
-量传递给接受 char*参数的函数，编译器会发出警告。此选项可用于抑制此类
-警告。
--Wno -丢弃-array-qualifier (C 和 Objective-C)
+发出警告。这样的调用可能返回不确定的值，或者使程序崩溃。警告包含在 `-Wall` 中。
 
+-Wno-discarded-qualifiers  (C 和 Objective-C)
 
-如果数组中的指针目标类型限定符被丢弃，不要发出警告。通常，编译器会发
+如果指针上的类型限定符被丢弃，不要发出警告。通常，如果将 `const char *` 变量传递给接受 `char*` 参数的函数，编译器会发出警告。此选项可用于抑制此类警告。
 
-出警告，如果一个 constance(*)[]变量被传递给一个接受 int(*)[]参数的函数。
-此选项可用于抑制此类警告。
--Wno -不兼容-pointer-type (C 和 Objective-C)
-当具有不兼容类型的指针之间存在转换时，不要发出警告。此警告适用于 `-
-Wno-pointer-sign` 未涵盖的情况，该警告警告指针参数传递或赋值不同。
--Wno -in -conversion(仅 C 和 Objective-C)
-不要警告指针和指针之间不兼容的整数转换。这个警告是关于隐式转换的;对
-于显式转换，可以使用 `-Wno - intto -pointer-cast` 和 `-Wno -point -int-cast` 警
-告。
+-Wno-discarded-array-qualifiers (C 和 Objective-C)
+
+如果数组中的指针目标类型限定符被丢弃，不要发出警告。通常，编译器会发出警告，如果一个 `const int (*)[]` 变量被传递给一个接受 `int (*)[]` 参数的函数。此选项可用于抑制此类警告。
+
+-Wno-incompatible-pointer-types  (C 和 Objective-C)
+
+当具有不兼容类型的指针之间存在转换时，不要发出警告。此警告适用于 `-Wno-pointer-sign` 未涵盖的情况，该警告警告指针参数传递或赋值不同。
+
+-Wno-int-conversion  (仅 C 和 Objective-C)
+
+不要警告指针和指针之间不兼容的整数转换。这个警告是关于隐式转换的;对于显式转换，可以使用 `-Wno-int-to-pointer-cast` 和 `-Wno-pointer-to-int-cast ` 警告。
+
 -Wno-div-by-zero
+
 不要警告编译时整数除法为零。 0 的浮点除法是不被警告的，因为它是获得不
 定式和非整数的合法方法。
+
 -Wsystem-headers
+
 为系统头文件中找到的结构打印警告消息。通常会抑制来自系统头的警告，假
 设它们通常不会指出真正的问题，只会使编译器输出更难读取。使用这个命令
 行选项可以告诉 GCC 从系统头发出警告，就像它们在用户代码中发生一样。
 但是，请注意，与此选项一起使用 `-Wall` 并不会对系统头中的未知实用程序发
 出警告——为此，还必须使用 `-Wunknown-pragmas` 。
+
 -Wtautological-compare
+
 如果自我比较的结果总是为真或假，要发出警告。此警告检测各种错误，如:
+
+```
 int i = 1;
-...
-如果(i > i){...}
+…
+if (i > i) { … }
+```
+
 这个警告也警告了那些总是评估为真或假的位比较，例如:
-如果(a & 16) = 10){...永远都是错误
-的。
+
+
+```
+if ((a & 16) == 10) { … }
+```
+
+永远都是错误的。
+
 此警告是由 `-Wall` 启用的。
+
 -Wtrampolines
-警告为指向嵌套函数的指针生成的蹦床。蹦床是在堆栈上运行时获取嵌套函数的
-地址时创建的一小段数据或代码，用于间接调用嵌套函数。对于某些目标，它仅
-由数据组成，因此不需要特殊处理。但是，对于大多数目标，它是由代码组成的，
-因此需要使堆栈成为可执行的，以便程序能够正常工作。
+
+警告为指向嵌套函数的指针生成的蹦床。蹦床是在堆栈上运行时获取嵌套函数的地址时创建的一小段数据或代码，用于间接调用嵌套函数。对于某些目标，它仅由数据组成，因此不需要特殊处理。但是，对于大多数目标，它是由代码组成的，因此需要使堆栈成为可执行的，以便程序能够正常工作。
+
 -Wfloat-equal
+
 警告是否使用浮点值进行相等比较。
-这背后的想法是，有时(对程序员来说)考虑浮点值作为无限精确实数的近似是
-很方便的。如果您正在这样做，那么您需要计算(通过分析代码或其他方式)计
-算计算引入的最大或可能的最大错误，并在执行比较时(以及在生成输出时，
 
-
-
-这是另一个问题)允许它。特别是，与其测试相等性，不如检查这两个值是否
-
-有重叠的范围;这是由关系运算符完成的，所以等式比较可能是错误的。
+这背后的想法是，有时(对程序员来说)考虑浮点值作为无限精确实数的近似是很方便的。如果您正在这样做，那么您需要计算 (通过分析代码或其他方式) 计算计算引入的最大或可能的最大错误，并在执行比较时(以及在生成输出时，这是另一个问题)允许它。特别是，与其测试相等性，不如检查这两个值是否有重叠的范围;这是由关系运算符完成的，所以等式比较可能是错误的。
 
 -Wtraditional (C, Objective-C)
-警告某些在传统和 ISO C 中表现不同的结构，也警告那些没有传统 C 等价的
-ISO C 结构，以及/或应该避免的有问题的结构。
-- 出现在宏体字符串文本中的宏参数。在传统的 C 宏替换中，在字符串字面
-量中发生，但是在 ISO C 中它没有。
-- 在传统的 C 语言中，一些预处理器指令并不存在。传统的预处理器只在行
-第 1 列中出现 `#` 时才认为行是指令。因此， `-Wtraditional` 警告传统 C 理
-解但忽略的指令，因为 `#` 并不是第一个出现在行的字符。它还建议通过缩
-进来隐藏像#pragma 这样传统 C 无法理解的指令。一些传统的实现不承认
-`#elif`，所以这个选项建议完全避免它。
+
+警告某些在传统和 ISO C 中表现不同的结构，也警告那些没有传统 C 等价的ISO C 结构，以及/或应该避免的有问题的结构。
+- 出现在宏体字符串文本中的宏参数。在传统的 C 宏替换中，在字符串字面量中发生，但是在 ISO C 中它没有。
+- 在传统的 C 语言中，一些预处理器指令并不存在。传统的预处理器只在行第 1 列中出现 `#` 时才认为行是指令。因此， `-Wtraditional` 警告传统 C 理解但忽略的指令，因为 `#` 并不是第一个出现在行的字符。它还建议通过缩进来隐藏像#pragma 这样传统 C 无法理解的指令。一些传统的实现不承认`#elif`，所以这个选项建议完全避免它。
 - 一个没有参数的函数式宏。
-- 一元+操作符。
--  `U` 整型常量后缀，或 `F` 或 `L` 浮点常量后缀。(传统 C 确实支持整数常量的
- `L` 后缀。)注意，这些后缀出现在大多数现代系统的系统头中定义的宏中，
-例如<limits.h>中的 `_MIN  `/  `_MAX` 宏。在用户代码中使用这些宏通常会导
-致错误的警告，但是 GCC 的集成预处理器有足够的上下文来避免这些情况
-下的警告。
+- 一元加操作符。
+-  `U` 整型常量后缀，或 `F` 或 `L` 浮点常量后缀。(传统 C 确实支持整数常量的 `L` 后缀。) 注意，这些后缀出现在大多数现代系统的系统头中定义的宏中，例如<limits.h>中的 `_MIN `/ `_MAX` 宏。在用户代码中使用这些宏通常会导致错误的警告，但是 GCC 的集成预处理器有足够的上下文来避免这些情况下的警告。
 - 在一个块中声明外部的函数，然后在块的末尾使用。
 - switch 语句具有类型为 long 的操作数。
 - 非静态函数声明遵循静态函数声明。一些传统的 C 编译器不接受这个构造。
-- 整数常量的 ISO 类型与其传统类型有不同的宽度或签名。此警告仅在常数
-基数为 10 时发出。例如，通常表示位模式的十六进制或八进制值不会被警
-告。
+- 整数常量的 ISO 类型与其传统类型有不同的宽度或签名。此警告仅在常数基数为 10 时发出。例如，通常表示位模式的十六进制或八进制值不会被警告。
 - 检测到 ISO 字符串连接的用法。
 - 初始化自动聚合。
 - 标识符与标签冲突。传统的 C 没有一个单独的标签命名空间。
-- 初始化的工会。如果初始化器为零，则忽略警告。这是在假设用户代码中
-的零初始值设定项出现在__STDC__上的条件下完成的，以避免丢失初始值
-设定项警告，并且在传统的 C 情况下依赖于默认的初始化为零。
-- 原型在固定/浮点值之间进行转换，反之亦然。在使用传统 C 编译时缺少这
-些原型会导致严重的问题。这是可能的转换警告的子集;对于完整的集合使
-用 `-W 传输型转换` 。
-- 使用 ISO C 风格的函数定义。这个警告不是针对原型声明或变量函数发出的，
-因为当使用 libiberty 的传统 C 兼容宏、PARAMS 和 VPARAMS 时，这些 ISO
+- 初始化的联合。如果初始化器为零，则忽略警告。这是在假设用户代码中的零初始值设定项出现在 `__STDC__` 上的条件下完成的，以避免丢失初始值设定项警告，并且在传统的 C 情况下依赖于默认的初始化为零。
+- 原型在固定/浮点值之间进行转换，反之亦然。在使用传统 C 编译时缺少这些原型会导致严重的问题。这是可能的转换警告的子集;对于完整的集合使用 `-W 传输型转换` 。
+- 使用 ISO C 风格的函数定义。这个警告不是针对原型声明或变量函数发出的，因为当使用 libiberty 的传统 C 兼容宏、PARAMS 和 VPARAMS 时，这些 ISO C 特性会出现在代码中。这个警告对于嵌套函数也被忽略，因为该特性已经是 GCC 扩展，因此与传统的 C 兼容性无关。
 
+-Wtraditional-conversion (仅 C 和 Objective-C)
 
-C 特性会出现在代码中。这个警告对于嵌套函数也被忽略，因为该特性已经
+警告，如果原型导致了类型转换，这与没有原型的情况下会发生什么不同。这包括固定的指向浮动的转换，反之亦然，而转换则改变定点参数的宽度或标志，除非与默认的提升相同。
 
-是 GCC 扩展，因此与传统的 C 兼容性无关。
+-Wdeclaration-after-statement (仅 C 和 Objective-C)
 
--Wtraditional-conversion(仅 C 和 Objective-C)
-警告，如果原型导致了类型转换，这与没有原型的情况下会发生什么不同。这
-包括固定的指向浮动的转换，反之亦然，而转换则改变定点参数的宽度或标志，
-除非与默认的提升相同。
-- 声明后声明(仅 C 和 Objective-C)
-在块中的语句之后找到声明时发出警告。这个结构，从 C++中知道，是在 ISO
-C99 中引入的，默认情况下在 GCC 中是允许的。ISO C90 不支持它。见第 6.30
-节[混合声明]，第 463 页。
-当局部变量或类型声明阴影另一个变量、参数、类型、类成员(在 C++中)或实例变量(在
-Objective-C 中)或内建函数被阴影时，wshadow 会发出警告。注意，在 C++中，
-如果局部变量阴影显式类型定义，编译器会发出警告，但如果它阴影结构/类/
-枚举，则不会发出警告。 `-Wshadow =全球` 一样。
--Wno-shadow-ivar(仅 objective - c)
+在块中的语句之后找到声明时发出警告。这个结构，从 C++中知道，是在 ISO C99 中引入的，默认情况下在 GCC 中是允许的。ISO C90 不支持它。见第 6.30 节[混合声明]，第 463 页。
+
+-Wshadow
+
+当局部变量或类型声明阴影另一个变量、参数、类型、类成员(在 C++中)或实例变量(在 Objective-C 中)或内建函数被阴影时，wshadow 会发出警告。注意，在 C++中，如果局部变量阴影显式类型定义，编译器会发出警告，但如果它阴影结构/类/枚举，则不会发出警告。和`-Wshadow=global` 一样。
+
+-Wno-shadow-ivar (仅 objective - c)
+
 当局部变量在 Objective-C 方法中阴影实例变量时，不要发出警告。
--Wshadow =全球
-默认为 `-Wshadow` 。警告任何(全球)阴影。
--Wshadow =当地
-当局部变量阴影另一个局部变量或参数时发出警告。此警告由 `-Wshadow=global`
-启用。
--Wshadow = compatible-local
-当局部变量阴影另一局部变量或参数的类型与阴影变量的类型一致时发出警告。
-在 C++中，这里的类型兼容性意味着阴影变量的类型可以转换为阴影变量的类
-型。这个标志的创建(除了 `-Wshadow=local` )是基于这样一种想法:当一个局部
-变量将另一个不兼容类型的影子投射到另一个时，它很可能是有意的，而不是
-一个错误或错误，如下面的例子所示:
-for (SomeIterator i = someobject .begin();我! = SomeObj.end();+ + i)
-{
-for (int i = 0;我< N;+ + i)
-{...
-}......
-}
-由于上面示例中的两个变量 i 具有不兼容的类型，所以只启用 `-Wshadow=
-compatiblelocal` 不会发出警告。因为它们的类型是不兼容的，如果一个程序
-员不小心使用了另一个，那么类型检查就会捕获并发出错误或警告。因此，在
-这种情况下，不发出警告(关于阴影)不会导致未检测到的错误。使用这个标志
-而不是 `-Wshadow=local` 可能会减少故意阴影触发的警告数量。
 
+-Wshadow=global
+
+默认为 `-Wshadow` 。警告任何(全局)阴影。
+
+-Wshadow=local
+
+当局部变量阴影另一个局部变量或参数时发出警告。此警告由 `-Wshadow=global` 启用。
+
+-Wshadow = compatible-local
+
+当局部变量阴影另一局部变量或参数的类型与阴影变量的类型一致时发出警告。在 C++中，这里的类型兼容性意味着阴影变量的类型可以转换为阴影变量的类型。这个标志的创建 (除了 `-Wshadow=local` ) 是基于这样一种想法:当一个局部变量将另一个不兼容类型的影子强制类型转换到另一个时，它很可能是有意的，而不是一个错误或错误，如下面的例子所示:
+
+```
+for (SomeIterator i = SomeObj.begin(); i != SomeObj.end(); ++i)
+{
+  for (int i = 0; i < N; ++i)
+  {
+    ...
+  }
+  ...
+}
+```
+
+由于上面示例中的两个变量 i 具有不兼容的类型，所以只启用 `-Wshadow=compatible-local` 不会发出警告。因为它们的类型是不兼容的，如果一个程序员不小心使用了另一个，那么类型检查就会捕获并发出错误或警告。因此，在这种情况下，不发出警告(关于阴影)不会导致未检测到的错误。使用这个标志而不是 `-Wshadow=local` 可能会减少故意阴影触发的警告数量。
 
 此警告由 `-Wshadow=local` 启用。
--Wlarger-than =兰
+
+-Wlarger-than=len
+
 当定义大于 len 字节的对象时发出警告。
--Wframe-larger-than =兰
-如果函数帧的大小大于 len 字节，则发出警告。确定堆栈帧大小的计算是近似
-的而不是保守的。即使没有得到警告，实际需求也可能比 len 大一些。此外，
-在决定是否发出警告时，编译器不包含通过 alloca、可变长度数组或相关构造
-分配的任何空间。
+
+-Wframe-larger-than=len
+
+如果函数帧的大小大于 len 字节，则发出警告。确定堆栈帧大小的计算是近似的而不是保守的。即使没有得到警告，实际需求也可能比 len 大一些。此外，在决定是否发出警告时，编译器不包含通过 alloca、可变长度数组或相关构造分配的任何空间。
+
 -Wno-free-nonheap-object
+
 当尝试释放未分配到堆上的对象时，不要发出警告。
--Wstack-usage =兰
-如果函数的堆栈使用率可能大于 len 字节，则发出警告。确定堆栈使用情况的
-计算是保守的。在决定是否发出警告时，编译器将包含通过 alloca、可变长度
-数组或相关构造分配的任何空间。
+
+-Wstack-usage=len
+
+如果函数的堆栈使用率可能大于 len 字节，则发出警告。确定堆栈使用情况的计算是保守的。在决定是否发出警告时，编译器将包含通过 alloca、可变长度数组或相关构造分配的任何空间。
+
 此消息与 `-fstack-usage` 的输出一致。
+
 - 如果堆栈使用是完全静态的，但超过指定的数量，则为:
-警告:堆栈使用是 1120 字节
+
+```
+warning: stack usage is 1120 bytes
+```
+
 - 如果堆栈使用是(部分)动态但有界的，则为:
-警告:堆栈使用可能是 1648 字节
+
+```
+warning: stack usage might be 1648 bytes
+```
+
 - 如果堆栈使用是动态的(部分)且没有限制，则为:
-警告:堆栈使用可能是无限制的
+
+```
+warning: stack usage might be unbounded
+```
+
 -Wunsafe-loop-optimizations
+
 如果循环无法优化，则发出警告，因为编译器不能在循环索引的边界上假设任
 何内容。如果编译器做出这样的假设，使用 `-funsafe-loop-optimization` 可以
 发出警告。
--Wno-pedantic-ms-format(仅 MinGW 目标)
+
+-Wno-pedantic-ms-format (仅 MinGW 目标)
+
 当与没有 GNU 扩展的 `-Wformat` 和 `-pedantic` 结合使用时，此选项将禁用关
-于非 iso printf / scanf 格式宽度说明符 I32、I64 和我在 Windows 目标上使用
+于非 iso printf / scanf 格式宽度说明符 `I32`、`I64` 和 `I` 在 Windows 目标上使用
 的警告，这些警告依赖于 MS 运行时。
+
 -Waligned-new
-警告一种新表达式，它需要比 alignof(std::max_align_t)更大的对齐方式，但是
-使用了没有显式对齐参数的分配函数。此选项由 `-Wall` 启用。
-通常这只警告全局分配函数，但是 `-Walign -new - all` 也警告类成员分配函数。
+
+警告一种新表达式，它需要比 alignof(std::max_align_t)更大的对齐方式，但是使用了没有显式对齐参数的分配函数。此选项由 `-Wall` 启用。通常这只警告全局分配函数，但是 `-Walign -new - all` 也警告类成员分配函数。
+
 -Wplacement-new
 -Wplacement-new=n
 
+警告放置未定义行为的新表达式，例如在缓冲区中构造小于对象类型的对象。例如，下面的放置新表达式被诊断，因为它试图在一个只有 64 字节的缓冲区中构造一个 64 个整数的数组。
 
-警告放置未定义行为的新表达式，例如在缓冲区中构造小于对象类型的对象。
+```
+char buf [64];
+new (buf) int[64];
+```
 
-例如，下面的放置新表达式被诊断，因为它试图在一个只有 64 字节的缓冲区
-
-中构造一个 64 个整数的数组。
-
-char buf[64];新
-(buf)int[64];
 此警告默认启用。
--Wplacement-new = 1
-这是 `-Wplacation -new` 的默认警告级别。在这个级别上，没有对
-一些严格未定义的构造发出警告，GCC 允许这些构造作为与遗留
-代码兼容的扩展。例如，下面的新表达式在这个级别上没有被诊
-断，即使它根据 C++标准有未定义的行为，因为它写到一个元素数
-组的末尾。
-struct S {int n, a[1];};
-S * S = (S *)malloc (sizeof * S + 31 * sizeof S - >a[0]);新(s - >)int[32]();
--Wplacement-new = 2
-在这个层次上,除了在一级诊断同样的结构,诊断也发出了放置新的
-表达式,构造一个对象的最后成员结构类型是数组的一个元素,其大
-小小于被构造的对象的大小。虽然前面的示例将被诊断出来，但
-是下面的构造使用了灵活的成员数组扩展来避免第 2 级的警告。
-结构{int n, a[];};
-S * S = (S *)malloc (sizeof * S + 32 * sizeof S ->a[0]);新(s - >)int[32]();
+
+-Wplacement-new=1
+
+这是 `-Wplacation -new` 的默认警告级别。在这个级别上，没有对一些严格未定义的构造发出警告，GCC 允许这些构造作为与遗留代码兼容的扩展。例如，下面的新表达式在这个级别上没有被诊断，即使它根据 C++标准有未定义的行为，因为它写到一个元素数组的末尾。
+
+```
+struct S { int n, a[1]; };
+S *s = (S *)malloc (sizeof *s + 31 * sizeof s->a[0]);
+new (s->a)int [32]();
+```
+
+-Wplacement-new=2
+
+在这个层次上,除了在一级诊断同样的结构,诊断也发出了放置新的表达式,构造一个对象的最后成员结构类型是数组的一个元素,其大小小于被构造的对象的大小。虽然前面的示例将被诊断出来，但是下面的构造使用了灵活的成员数组扩展来避免第 2 级的警告。
+
+```
+struct S { int n, a[]; };
+S *s = (S *)malloc (sizeof *s + 32 * sizeof s->a[0]);
+new (s->a)int [32]();
+```
+
 -Wpointer-arith
-警告任何依赖于函数类型或 void 的 `大小` 的东西。GNU C 为便于使用 void *指
-针和指向函数的指针进行计算，将这些类型赋值为 1 。在 C++中，当算术运算
-涉及 NULL 时也要发出警告。 `-Wpedantic` 也支持此警告。
+
+警告任何依赖于函数类型或 `void` 的 **大小**的东西。GNU C 为便于使用 `void *` 指
+针和指向函数的指针进行计算，将这些类型赋值为 1 。在 C++中，当算术运算涉及 NULL 时也要发出警告。 `-Wpedantic` 也支持此警告。
+
 -Wpointer-compare
+
 警告指针是否与零字符常量比较。这通常意味着指针应该被取消引用。例如:
-const char *p = foo ();如果(p
-==  `\0` )返回 42;
+
+```
+const char *p = foo ();
+if (p == '\0')
+  return 42;
+```
+  
 请注意，上面的代码在 C++ 11 中是无效的。
+
 此警告默认启用。
+
 -Wtype-limits
-警告，如果比较总是正确的，或者总是错误的，因为数据类型的范围有限，但
-是不要警告常量表达式。例如，如果一个无符号变量与 0 和<或>=进行比较，
-则发出警告。这个警告也是由 `-Wextra` 启用的。
+
+警告，如果比较总是正确的，或者总是错误的，因为数据类型的范围有限，但是不要警告常量表达式。例如，如果一个无符号变量与 0 和<或>=进行比较，则发出警告。这个警告也是由 `-Wextra` 启用的。
+
 -Wcomment
 -Wcomments
-在 `/*` 注释中出现 `/*` 时警告，或者在 `//` 注释中出现反斜线。此警告是由 `-
-Wall` 启用的。
 
+在 `/*` 注释中出现 `/*` 时警告，或者在 `//` 注释中出现反斜线。此警告是由 `-Wall` 启用的。
 
 -Wtrigraphs
-如果遇到任何可能改变程序意义的三联图，请发出警告。注释中的三曲线图没
-有被警告，除了那些会形成转义的换行。
+
+如果遇到任何可能改变程序意义的三联图，请发出警告。注释中的三曲线图没有被警告，除了那些会形成转义的换行。
+
  `-Wall` 暗示了这个选项。如果没有给出 `-Wall` ，这个选项仍然是启用的，除非
 启用了 trigraphs。要获得无警告的三图转换，但是要获得其他的 `-Wall` 警告，
 请使用 `-trigraphs-Wall -Wno-trigraphs` 。
--Wundef 警告是否在#if 指令中计算未定义标识符。这样的标识符被替换为零。
+
+-Wundef
+
+警告是否在#if 指令中计算未定义标识符。这样的标识符被替换为零。
+
 -Wexpansion-to-defined
-在宏的扩展中遇到 `定义` 的警告(包括使用 `#if` 指令扩展宏的情况)。这种用法
-是不可移植的。这个警告也可以通过 `-Wpedantic` 和 `-Wextra` 实现。-
-Wunused-macros
-警告未使用的主文件中定义的宏。如果宏至少被展开或测试一次，则使用它。
-如果宏在重新定义或未定义时没有被使用，预处理器也会发出警告。
+
+在宏的扩展中遇到 `定义` 的警告(包括使用 `#if` 指令扩展宏的情况)。这种用法是不可移植的。这个警告也可以通过 `-Wpedantic` 和 `-Wextra` 实现。
+
+-Wunused-macros
+
+警告未使用的主文件中定义的宏。如果宏至少被展开或测试一次，则使用它。如果宏在重新定义或未定义时没有被使用，预处理器也会发出警告。
+
 内置的宏、在命令行上定义的宏以及包含文件中定义的宏都没有被警告。
 
-注意 : 如果实际上使用了一个宏，但只在跳过的条件块中使用，那么预处理器
-
-将它报告为未使用。为了避免在这种情况下出现警告，您可以通过将宏移动到
-
-第一个跳过的块来改进宏定义的范围。或者，您可以提供一个虚拟用途如下:
+**注意** : 如果实际上使用了一个宏，但只在跳过的条件块中使用，那么预处理器将它报告为未使用。为了避免在这种情况下出现警告，您可以通过将宏移动到第一个跳过的块来改进宏定义的范围。或者，您可以提供一个虚拟用途如下:
 
 ```
-#如果定义 the_macro_causing_the_warning
-# endif
+#if defined the_macro_causing_the_warning
+#endif
+```
+
 -Wno-endif-labels
-不要在#else 或#endif 后面跟着文本时发出警告。这种情况有时发生在具有窗体代
-码的旧程序中
-#如果
-FOO......#
-其他
-FOO......
-# endif FOO
+
+不要在 `#else` 或 `#endif` 后面跟着文本时发出警告。这种情况有时发生在具有窗体代码的旧程序中
+
+```
+#if FOO
+…
+#else FOO
+…
+#endif FOO
 ```
 
 第二个和第三个 FOO 应该在注释中。此警告默认为打开。
+
 -Wbad-function-cast (C 和 Objective-C)
-当函数调用被转换为非匹配类型时发出警告。例如，如果对返回整数类型的函
-数的调用被转换为指针类型，则发出警告。
+
+当函数调用被转换为非匹配类型时发出警告。例如，如果对返回整数类型的函数的调用被转换为指针类型，则发出警告。
+
 -Wc90-c99-compat (C 和 Objective-C)
-警告在 ISO C90 中不存在但在 ISO C99 中存在的特性。例如，警告使用可变长
-度数组、长长类型、bool 类型、复合文字、指定的初始化器等等。此选项与标
-准模式无关。在__extension__后的表达式中，警告被禁用。
+
+警告在 ISO C90 中不存在但在 ISO C99 中存在的特性。例如，警告使用可变长度数组、长长类型、bool 类型、复合文字、指定的初始化器等等。此选项与标准模式无关。在 `__extension__` 后的表达式中，警告被禁用。
+
 -Wc99-c11-compat (C 和 Objective-C)
-警告没有出现在 ISO C99 中，但是出现在 ISO C11 中的特性。例如，警告使用
-匿名结构和联合、_Atomic type qualifier、_Thread_local 存储类说明符、
 
+警告没有出现在 ISO C99 中，但是出现在 ISO C11 中的特性。例如，警告使用匿名结构和联合、`_Atomic`  type qualifier、`_Thread_local` 存储类说明符、`_Alignas` 说明符、`Alignof` 运算符、`_Generic` 关键字等等。此选项与标准模式无关。在 `__extension__` 后的表达式中，警告被禁用。
 
-_Alignas 说明符、Alignof 运算符、_Generic 关键字等等。此选项与标准模式无
-关。在__extension__后的表达式中，警告被禁用。
--Wc++-compat(仅限 C 和 Objective-C)
-警告在 ISO C 和 ISO C++的公共子集之外的 ISO C 构造，例如请求将 void*隐式
-转换为指向非 void 类型的指针。
--Wc++11-compat (c++和 objective - C++)
-警告 C++的结构，它的含义在 ISO C++ 1998 和 ISO C++ 2011 中是不同的，例如，
-ISO C++ 1998 中的标识符是 ISO C++ 2011 年的关键字。此警告打开 `-W` 并由 `-
-Wall` 启用。-Wc++14-compat (c++和 objective - C++)
-警告 C++的结构，它的含义在 ISO C++ 2011 和 ISO C++ 2014 中是不同的。此警告
-是由 `-Wall` 启用的。
--Wc+ 17-compat (c++和 objective - C++)
-警告 C++结构，它的含义在 ISO C++ 2014 和 ISO C++ 2017 之间是不同的。此警告
-是由 `-Wall` 启用的。
+-Wc++-compat (仅限 C 和 Objective-C)
+
+警告在 ISO C 和 ISO C++的公共子集之外的 ISO C 构造，例如请求将 `void *` 隐式转换为指向非 void 类型的指针。
+
+-Wc++11-compat (c++和 Objective-C++)
+
+警告 C++的结构，它的含义在 ISO C++ 1998 和 ISO C++ 2011 中是不同的，例如，ISO C++ 1998 中的标识符是 ISO C++ 2011 年的关键字。此警告打开 `-W` 并由 `-Wall` 启用。
+
+-Wc++14-compat (c++和 Objective-C++)
+
+警告 C++的结构，它的含义在 ISO C++ 2011 和 ISO C++ 2014 中是不同的。此警告是由 `-Wall` 启用的。
+
+-Wc+ 17-compat (c++和 Objective-C++)
+
+警告 C++结构，它的含义在 ISO C++ 2014 和 ISO C++ 2017 之间是不同的。此警告是由 `-Wall` 启用的。
+
 -Wcast-qual
-当一个指针被转换时发出警告，以便从目标类型中删除一个类型限定符。例如，
-如果将 constchar*转换为普通 char*，则要发出警告。
-在以不安全的方式引入类型限定符时也要发出警告。
-例如，将 char** *转换为 constchar**是不安全的，如本例所示:
-p 是 char * value。*/ const char **q =
-(const char *) p;
-/*将只读字符串赋值为 const char *是可以的。* /
-* q = `字符串` ;
-现在 char*指针指向只读内存。* /
-* * p =  `b` ;
+
+当一个指针被转换时发出警告，以便从目标类型中删除一个类型限定符。例如，如果将 `const char *` 转换为普通 `char *`，则要发出警告。
+
+在以不安全的方式引入类型限定符时也要发出警告。例如，将 `char**` 转换为`const char **` 是不安全的，如本例所示:
+
+```
+  /* p is char ** value.  */
+  const char **q = (const char **) p;
+  /* Assignment of readonly string to const char * is OK.  */
+  *q = "string";
+  /* Now char** pointer points to read-only memory.  */
+  **p = 'b';
+```
+
 -Wcast-align
-当一个指针被投射时发出警告，以增加目标的对齐。例如，如果一个 char*被
-强制转换到机器上的 int*上，在那里整数只能在两个或四个字节的边界上访问。
--Wcast-align =严格
-当一个指针被投射时发出警告，以增加目标的对齐。例如，如果一个 char*被
-转换为 int*，而不管目标机器是什么，则要发出警告。
+
+当一个指针被强制类型转换时发出警告，以增加目标的对齐。例如，如果一个 `char *` 被强制转换到机器上的 `int*` 上，在那里整数只能在两个或四个字节的边界上访问。
+
+-Wcast-align=strict
+
+当一个指针被强制类型转换时发出警告，以增加目标的对齐。例如，如果一个 `char*` 被转换为 `int*`，而不管目标机器是什么，则要发出警告。
+
 -Wcast-function-type
-当函数指针被转换为不兼容的函数指针时发出警告。在包含变量参数列表的函
-数类型的强制转换中，只考虑所提供的初始参数的类型。任何指针类型的参数
-都匹配任何其他指针类型。积分类型中的任何良性差异都被忽略，比如在
-ILP32 目标上的 int 和 long。同样，类型限定符被忽略。函数类型 void(*)(void)
-是特殊的，匹配所有的内容，可以用来抑制这个警告。在一个涉及指针到成员
 
+当函数指针被转换为不兼容的函数指针时发出警告。在包含变量参数列表的函数类型的强制转换中，只考虑所提供的初始参数的类型。任何指针类型的参数都匹配任何其他指针类型。积分类型中的任何良性差异都被忽略，比如在ILP32 目标上的 `int` 和 `long`。同样，类型限定符被忽略。函数类型 `void (*) (void)`是特殊的，匹配所有的内容，可以用来抑制这个警告。在一个涉及指针到成员类型的转换中，这个警告会在类型转换的指针变为成员类型时发出警告。此警告由 `-Wextra` 启用。
 
-类型的转换中，这个警告会在类型转换的指针变为成员类型时发出警告。此警
-
-告由 `-Wextra` 启用。
 -Wwrite-strings
-编译 C 时，为字符串常量指定 constchar[length]类型，以便将一个字符串的地
-址复制到非 constchar*指针中会产生一个警告。这些警告帮助您在编译时找到
-可以尝试将其写入字符串常量的代码，但前提是您非常小心地在声明和原型中
-使用 const。否则，它只是一个讨厌的东西。这就是为什么我们没有 `-Wall` 请
-求这些警告。
-在编译 C++时，请注意不赞成将字符串文字转换为 char*。此警告默认为 C++程序
-启用。-Wcatch-value
--Wcatch-value=n (c++和 objective - C++)
+
+编译 C 时，为字符串常量指定 `const char[length]` 类型，以便将一个字符串的地址复制到非 `const char *` 指针中会产生一个警告。这些警告帮助您在编译时找到可以尝试将其写入字符串常量的代码，但前提是您非常小心地在声明和原型中使用 const。否则，它只是一个讨厌的东西。这就是为什么我们没有 `-Wall` 请求这些警告。
+
+在编译 C++时，请注意不赞成将字符串文字转换为 `char *`。此警告默认为 C++程序启用。
+
+-Wcatch-value
+-Wcatch-value=n (c++和 Objective-C++)
+
 警告未通过引用捕获的 catch 处理程序。 与
- `-Wcatch-value=1` (或 `-Wcatch-value  `for short)警告关于被值捕获的多态类类
-型。使用 `-Wcatch-value=2` 警告所有被值捕获的类类型。使用 `-Wcatch-
-value=3` 警告所有未被引用捕获的类型。 `-Wcatch-value` 由 `-Wall` 启用。
+ `-Wcatch-value=1` (或 `-Wcatch-value` 为 short) 警告关于被值捕获的多态类类型。使用 `-Wcatch-value=2` 警告所有被值捕获的类类型。使用 `-Wcatch-value=3` 警告所有未被引用捕获的类型。 `-Wcatch-value` 由 `-Wall` 启用。
+ 
 -Wclobbered
-警告可能被 longjmp 或 vfork 更改的变量。这个警告也是由 `-Wextra` 启用的。
--Wconditionalsupport (c++和 objective - C++ only)
+
+警告可能被 `longjmp` 或 `vfork` 更改的变量。这个警告也是由 `-Wextra` 启用的。
+
+-Wconditionally-supported  (c++和 Objective-C++ only)
+
 警告受条件支持的(c++ 11 [intro.defs])构造。
+
 -Wconversion
-警告可能改变值的隐式转换。这包括实数和整数之间的转换，比如当 x 加倍时
-的 abs(x);有符号和无符号之间的转换，如 unsignedui=-1;并转换成更小的类型，
-比如 sqrtf(M_PI)。不要警告像 abs((int)x)和 ui =(unsigned)- 1 这样的显式类型
-转换，或者如果该值不像 abs(2.0)那样的转换而改变。使用 `-Wno-sign-
-conversion` 可以禁用有符号整数和无符号整数之间的转换警告。
-对于 C++，还警告用户定义的转换存在混淆的过载解析;而不使用类型转换操作
-符的转换:转换为 void、相同类型、基类或对它们的引用。在 C++中，关于有符
-号整数和无符号整数之间的转换的警告在默认情况下被禁用，除非显式地启用
-了 `-Wsign-conversion` 。
--Wno-conversion-null (c++和 objective - C++)
-做 不 警告 为 转换 在零和 非点源 类型。
- `-Wconversion-null` 默认启用。
+
+警告可能改变值的隐式转换。这包括实数和整数之间的转换，比如当 `x`  为 `double` 时的 `abs(x)`;有符号和无符号之间的转换，如 `unsigned ui =- 1`;并转换成更小的类型，
+比如 `sqrtf (M_PI)`。不要警告像 `abs ((int)x)`和 `ui  = (unsigned) -1` 这样的显式类型转换，或者如果该值不像 `abs (2.0)` 那样的转换而改变。使用 `-Wno-sign-conversion` 可以禁用有符号整数和无符号整数之间的转换警告。
+
+对于 C++，还警告用户定义的转换存在混淆的过载解析;而不使用类型转换操作符的转换:转换为 `void`、相同类型、基类或对它们的引用。在 C++中，关于有符号整数和无符号整数之间的转换的警告在默认情况下被禁用，除非显式地启用了 `-Wsign-conversion` 。
+
+-Wno-conversion-null (c++和 Objective-C++)
+
+做 不 警告 为 转换 在零和 非点源 类型。`-Wconversion-null` 默认启用。
+
 -Wzero-as-null-pointer-constant (c++和 Objective-C+ only)
-警告当一个文字 `0` 被用作空指针常量时。这有助于在 C++ 11 中转换为 nullptr。
--Wsubobject 连锁(c++和 objective - C++)
-如果一个类类型有一个基类或字段，其类型使用匿名名称空间或依赖于一个没
-有链接的类型，则发出警告。如果类型 a 依赖于没有或内部链接的类型 B，那
 
+警告当一个文字 `0` 被用作空指针常量时。这有助于在 C++ 11 中转换为 `nullptr`。
 
-么在多个翻译单元中定义它将违反 ODR，因为在每个翻译单元中 B 的含义是
+-Wsubobject 连锁(c++和 Objective-C++)
 
-不同的。如果 A 只出现在一个翻译单元中，最好的方法是将其放在一个匿名名
+如果一个类类型有一个基类或字段，其类型使用匿名名称空间或依赖于一个没有链接的类型，则发出警告。如果类型 a 依赖于没有或内部链接的类型 B，那么在多个翻译单元中定义它将违反 ODR，因为在每个翻译单元中 B 的含义是不同的。如果 A 只出现在一个翻译单元中，最好的方法是将其放在一个匿名名称空间中，从而使警告失效。编译器不会对主. c 文件中定义的类型发出警告，因为这些类型不太可能有多个定义。 `-Wsubobject-linkage` 是默认启用的。
 
-称空间中，从而使警告失效。编译器不会对主. c 文件中定义的类型发出警告，
-因为这些类型不太可能有多个定义。 `-Wsubobject-linkage 是默认启用的。
 -Wdangling-else
-警告那些可能存在混淆的结构，如果语句属于 else 分支。这里有这样一个例子:
-{如果(一
-个)
-如果(b)
-foo();
-其他的
-酒吧();
+
+警告那些可能存在混淆的结构，如果语句属于 `else` 分支。这里有这样一个例子:
+
+```
+{
+  if (a)
+    if (b)
+      foo ();
+  else
+    bar ();
 }
-在 C/ C++中，每个 else 分支都属于最内部的 if 语句，在本例中是 if(b)。这通
-常不是程序员所期望的，如上面的示例中程序员所选择的缩进所示。当可能出
-现这种混乱时，当指定此标志时，GCC 会发出警告。要消除警告，请在最内层
-的 if 语句周围添加显式的大括号，以便 else 不可能属于封闭的 if。生成的代码
-如下所示:
-{如果(一
-个)
-{if (b) foo ();
-其他的
-酒吧();
+```
+
+在 C/C++中，每个 else 分支都属于最内部的 if 语句，在本例中是 `if (b)`。这通常不是程序员所期望的，如上面的示例中程序员所选择的缩进所示。当可能出现这种混乱时，当指定此标志时，GCC 会发出警告。要消除警告，请在最内层的 if 语句周围添加显式的大括号，以便 else 不可能属于封闭的 if。生成的代码如下所示:
+
+```
+{
+  if (a)
+    {
+      if (b)
+        foo ();
+      else
+        bar ();
+    }
 }
-}
-此警告由 `-W 括号` 启用。
+```
+
+此警告由 `-Wparentheses` 启用。
+
 -Wdate-time
-当遇到宏__TIME__、__DATE__或__TIMESTAMP__时发出警告，因为它们可能会阻止
-与 bit-wise 相同的可重复编译。
--Wdelete-incomplete (c++和 objective - C++ only)
-当删除指向不完整类型的指针时发出警告，这可能在运行时导致未定义的行为。
-此警告默认启用。
--Wuseless-cast (c++和 objective - C++)
+
+当遇到宏`__TIME__`、`__DATE__` 或 `__TIMESTAMP__` 时发出警告，因为它们可能会阻止与 bit-wise 相同的可重复编译。
+
+-Wdelete-incomplete (c++和 Objective-C++ only)
+
+当删除指向不完整类型的指针时发出警告，这可能在运行时导致未定义的行为。此警告默认启用。
+
+-Wuseless-cast (c++和 Objective-C++)
+
 当表达式被强制为自己的类型时发出警告。
+
 -Wempty-body
-如果在 if、else 或 dowhile 语句中出现空体，则发出警告。这个警告也是由 `-
-Wextra` 启用的。
+
+如果在 if、else 或 dowhile 语句中出现空体，则发出警告。这个警告也是由 `-Wextra` 启用的。
+
 -Wenum-compare
-警告不同枚举类型的值之间的比较。在 C++中，条件表达式中的枚举类型不匹
-配也会被诊断出来，默认情况下会启用警告。在 C 中，这个警告由 `-Wall` 启用。
 
+警告不同枚举类型的值之间的比较。在 C++中，条件表达式中的枚举类型不匹配也会被诊断出来，默认情况下会启用警告。在 C 中，这个警告由 `-Wall` 启用。
 
--Wextra-semi(仅 C++,objective - C++)
+-Wextra-semi(仅 C++,Objective-C++)
+
 在类内函数定义之后警告多余的分号。
--Wjump-misses-init(C,objective - C)
-如果 goto 语句或 switch 语句跨变量的初始化向前跳转，或者在变量初始化后
-向后跳转到标签，则发出警告。这只警告在声明变量时初始化的变量。此警告
-仅支持 C 和 Objective-C;在 C++中，这种分支在任何情况下都是错误的。
- `-Wjump-misses-init` 包含在 `-Wc+ -compat` 中。可以使用 `-Wno -jump misses-init`
-选项禁用它。
+
+-Wjump-misses-init (C,Objective-C)
+
+如果 `goto` 语句或 `switch` 语句跨变量的初始化向前跳转，或者在变量初始化后向后跳转到标签，则发出警告。这只警告在声明变量时初始化的变量。此警告仅支持 C 和 Objective-C;在 C++中，这种分支在任何情况下都是错误的。
+
+ `-Wjump-misses-init` 包含在 `-Wc+ -compat` 中。可以使用 `-Wno -jump misses-init`选项禁用它。
+ 
 -Wsign-compare
-警告当已签名的值与未签名值之间的比较在转换为无符号值时可能产生错误的
-结果。在 C++中，这个警告也由 `-Wall` 启用。在 C 语言中，它也可以通过 `-
-Wextra` 来启用。
+
+警告当 signed  与 unsigned  值之间的比较在转换为无符号值时可能产生错误的
+结果。在 C++中，这个警告也由 `-Wall` 启用。在 C 语言中，它也可以通过 `-Wextra` 来启用。
+
 -Wsign-conversion
+
 警告可能更改整数值符号的隐式转换，如将带符号整型表达式分配给无符号整
 型变量。一种明确的暗示使警告归于沉默。在 C 语言中，这个选项也可以通过
  `-Wconversion` 来启用。
+
 -Wfloat-conversion
-警告隐式转换会降低真实值的精度。这包括从实值到整数的转换，以及从高精
-度实值到低精度实值的转换。这个选项也可以通过 `-Wconversion` 来启用。
+
+警告隐式转换会降低真实值的精度。这包括从实值到整数的转换，以及从高精度实值到低精度实值的转换。这个选项也可以通过 `-Wconversion` 来启用。
+
 -Wno-scalar-storage-order
+
 不要对涉及反向标量存储顺序的可疑构造发出警告。
--Wsized-deallocation (c++和 objective - C++)
+
+-Wsized-deallocation (c++和 Objective-C++)
+
 警告一个非大小的 deallocation 函数的定义。
-无效操作符删除(无效*)noexcept;void 运算符删除
-[](void *) noexcept;
+
+```
+void operator delete (void *) noexcept;
+void operator delete[] (void *) noexcept;
+```
+
 没有相应大小的释放函数的定义
-void 运算符删除(void *， std: size_t) noexcept;void 运算符删除[](void
-*， std: size_t) noexcept;
+
+```
+void operator delete (void *, std::size_t) noexcept;
+void operator delete[] (void *, std::size_t) noexcept;
+```
+
 反之亦然。通过 `-Wextra` 和 `-fsized-deallocation` 启用。
+
 -Wsizeof-pointer-div
-警告两个 sizeof 表达式的可疑划分，它们将指针大小除以元素大小，这是计算
-数组大小的通常方法，但是用指针不能正确地计算。如果 ptr 不是一个数组，
-而是一个指针，那么此警告将警告 sizeof(ptr)/sizeof(ptr[0])。此警告是由 `-
-Wall` 启用的。
+
+警告两个 sizeof 表达式的可疑划分，它们将指针大小除以元素大小，这是计算数组大小的通常方法，但是用指针不能正确地计算。如果 ptr 不是一个数组，而是一个指针，那么此警告将警告 `sizeof(ptr)/sizeof(ptr[0])`。此警告是由 `-Wall` 启用的。
+
 -Wsizeof-pointer-memaccess
-如果参数使用 sizeof，则警告某些字符串和内存构建函数的可疑长度参数。这
-个警告触发例如 memset(ptr,0,sizeof(ptr));如果 ptr 不是一个数组，而是一个指
 
 
-针，并且建议一个可能的修正，或者关于 memcpy(&foo,ptr,sizeof(&foo)); `-
-Wsizeof-pointer-memaccess` 还警告调用有界字符串拷贝函数，如 strncat 或
-strncpy，它们指定为源数组的 sizeof 表达式的绑定。例如，在下面的函数中，
-对 strncat 的调用指定源字符串的大小作为绑定。这几乎肯定是一个错误，所
-以电话被诊断出来了。
+如果参数使用 sizeof，则警告某些字符串和内存构建函数的可疑长度参数。这个警告触发例如 `memset(ptr,0,sizeof(ptr))`;如果 ptr 不是一个数组，而是一个指针，并且建议一个可能的修正，或者关于 `memcpy (&foo, ptr, sizeof (&foo))`; `-Wsizeof-pointer-memaccess` 还警告调用有界字符串拷贝函数，如 `strncat` 或 `strncpy`，它们指定为源数组的 sizeof 表达式的绑定。例如，在下面的函数中，对 `strncat` 的调用指定源字符串的大小作为绑定。这几乎肯定是一个错误，所以调用被诊断出来了。
+
+```
 void make_file (const char *name)
-{ char 路径(PATH_MAX);strncpy (path, name, sizeof
-path - 1);strncat(路径,` 。文本` ,运算符 `。` );...
+{
+  char path[PATH_MAX];
+  strncpy (path, name, sizeof path - 1);
+  strncat (path, ".text", sizeof ".text");
+  …
 }
- `-Wsizeof-pointer-memaccess` 选项由 `-Wall` 启用。
+```
+
+`-Wsizeof-pointer-memaccess` 选项由 `-Wall` 启用。
+ 
 -Wsizeof-array-argument
-当将 sizeof 运算符应用于函数定义中声明为数组的参数时发出警告。C 和 C++
-程序默认启用此警告。
+
+当将 sizeof 运算符应用于函数定义中声明为数组的参数时发出警告。C 和 C++ 程序默认启用此警告。
+
 -Wmemset-elt-size
-警告对 memset 内置函数的可疑调用，如果第一个参数引用一个数组，而第三
-个参数是一个等于元素数量的数字，但不等于内存中数组的大小。这表明用户
-忽略了元素大小的乘法运算。此警告是由 `-Wall` 启用的。
+
+警告对 memset 内置函数的可疑调用，如果第一个参数引用一个数组，而第三个参数是一个等于元素数量的数字，但不等于内存中数组的大小。这表明用户忽略了元素大小的乘法运算。此警告是由 `-Wall` 启用的。
+
 -Wmemset-transposed-args
-警告对 memset 内置函数的可疑调用，如果第二个参数不是零，第三个参数是
-零。这就警告了 memset(buf,sizeofbuf,0)，而最有可能的 memset(buf,0,sizeof
-buf)的含义。只有当第三个参数为文字零时，才发出诊断信息。如果是某个被
-折叠为零的表达式、将零转换为某种类型等，那么用户错误地交换参数而不发
-出任何警告的可能性要小得多。此警告是由 `-Wall` 启用的。
+
+警告对 memset 内置函数的可疑调用，如果第二个参数不是零，第三个参数是零。这就警告了 `memset(buf,sizeof buf,0)`，而最有可能的 `memset(buf,0, sizeof buf)` 的含义。只有当第三个参数为文字零时，才发出诊断信息。如果是某个被折叠为零的表达式、将零转换为某种类型等，那么用户错误地交换参数而不发出任何警告的可能性要小得多。此警告是由 `-Wall` 启用的。
+
 -Waddress
+
 警告可疑的内存地址使用。这包括在条件表达式中使用函数的地址，如
-voidfunc(void);如果(func)，并与字符串文字的内存地址进行比较，如 if(x=
-"abc")。这种用法通常表示程序员的错误:函数的地址总是计算为 true，所以它
-们在条件下的使用通常表明程序员在函数调用中忘记了括号;与字符串文本的
-比较会导致未指定的行为，在 C 语言中是不可移植的，因此它们通常表明程序
-员打算使用 strcmp。此警告是由 `-Wall` 启用的。
+`void func(void); if (func), `，并与字符串文字的内存地址进行比较，如 `if (x == "abc")`。这种用法通常表示程序员的错误:函数的地址总是计算为 true，所以它们在条件下的使用通常表明程序员在函数调用中忘记了括号;与字符串文本的比较会导致未指定的行为，在 C 语言中是不可移植的，因此它们通常表明程序员打算使用 `strcmp`。此警告是由 `-Wall` 启用的。
+
 -Wlogical-op
-警告表达式中逻辑运算符的可疑使用。这包括在可能需要位运算符的上下文中
-使用逻辑运算符。当逻辑运算符的操作数相同时，也要警告:
-extern int;
-如果(a < 0 && a < 0){...}
+
+警告表达式中逻辑运算符的可疑使用。这包括在可能需要位运算符的上下文中使用逻辑运算符。当逻辑运算符的操作数相同时，也要警告:
+
+```
+extern int a;
+if (a < 0 && a < 0) { … }
+```
+
 -Wlogical-not-parentheses
-在比较的左手边操作中，警告不要使用逻辑。如果正确的操作数被认为是布尔
-表达式，则此选项不发出警告。其目的是检测可疑代码如下:
-int;...
 
+在比较的左手边操作中，警告不要使用逻辑。如果正确的操作数被认为是布尔表达式，则此选项不发出警告。其目的是检测可疑代码如下:
 
-如果(!一个> 1){...}
+```
+int a;
+…
+if (!a > 1) { … }
+```
 
 可以通过将 LHS 封装到括号中来抑制警告:
 
-如果(a) > 1){...}
+```
+if ((!a) > 1) { … }
+```
+
 此警告是由 `-Wall` 启用的。
+
 -Waggregate-return
+
 如果定义或调用任何返回结构或联合的函数，则发出警告。(在可以返回数组的语
 言中，这也会引发警告。)
+
 -Wno-aggressive-loop-optimizations
+
 警告，如果在循环中使用常数数量的迭代，编译器会在一个或多个迭代中在某些
 语句中检测未定义的行为。
+
 -Wno-attributes
+
 如果使用了意外的__attribute__(如不可识别的属性、应用于变量的函数属性等)，
 请不要发出警告。
+
 -Wno-builtin-declaration-mismatch
+
 如果使用错误的签名或作为非函数声明内置函数，则发出警告。此警告默认启用。
+
 -Wno-builtin-macro-redefined
+
 如果重新定义了某些内置宏，请不要发出警告。这抑制了重新定义
 __TIMESTAMP__、__TIME__、__DATE__、__FILE__和__BASE_FILE__的警告。
+
 -Wstrict 原型(仅 C 和 Objective-C)
+
 如果一个函数被声明或定义而没有指定参数类型，则发出警告。(如果前面有
 指定参数类型的声明，则允许使用旧式函数定义而无需警告。)
+
 -Wold-style-declaration (C 和 Objective-C)
+
 根据 C 标准，在声明中警告过时的用法。例如，如果像静态这样的存储类说明
 符不是声明中的首要内容，则要发出警告。这个警告也是由 `-Wextra` 启用的。
+
 -Wold-style-definition (C 和 Objective-C)
+
 警告如果使用旧式函数定义。即使有先前的原型，也会给出警告。
+
 -Wmis- parameter 类型(仅 C 和 Objective-C)
+
 在 k&r 风格的函数中，没有类型说明符来声明函数参数:
-空白 foo(bar){ }
+
+```
+void foo(bar) { }
+```
+
 这个警告也是由 `-Wextra` 启用的。
+
 -Wmis- prototype(仅 C 和 Objective-C)
-如果定义的全局函数没有先前的原型声明，则发出警告。即使定义本身提供了
-一个原型，也会发出此警告。使用此选项可以检测头文件中没有匹配原型声明
-的全局函数。这个选项对 C++无效，因为所有的函数声明都提供原型和不匹配
 
+如果定义的全局函数没有先前的原型声明，则发出警告。即使定义本身提供了一个原型，也会发出此警告。使用此选项可以检测头文件中没有匹配原型声明的全局函数。这个选项对 C++无效，因为所有的函数声明都提供原型和不匹配的声明声明声明重载，而不是与前面的声明冲突。使用 `-Wmis- declaration` 检测 C++中丢失的声明。
 
-的声明声明声明重载，而不是与前面的声明冲突。使用 `-Wmis- declaration` 检
-测 C++中丢失的声明。
 -Wmissing-declarations
+
 警告如果没有先前的声明就定义了全局函数。即使定义本身提供了一个原型，
 也要这样做。使用此选项可以检测未在头文件中声明的全局函数。在 C 中，没
 有对以前的非原型声明的函数发出警告;使用 `-Wmissing 原型` 来检测缺失的原
 型。在 C++中，函数模板、内联函数或匿名名称空间中的函数都不会发出警告。
+
 -Wmissing-field-initializers
+
 如果结构的初始化器有一些字段丢失，则发出警告。例如，以下代码会导致这样
 的警告，因为 x。h 是隐式零:
 结构{int f, g, h;};结构 s x = {3,4};
@@ -5016,11 +5216,15 @@ __TIMESTAMP__、__TIME__、__DATE__、__FILE__和__BASE_FILE__的警告。
 结构{int f, g, h;};s = {};
 这个警告包含在 `-Wextra` 中。要获得没有此警告的其他 `-Wextra` 警告，请使用 `-
 Wextra-Wno -missing-field-initializers` 。
+
 -Wno-multichar
+
 如果使用了多字符常量( `FOOF` )，请不要发出警告。通常，它们在用户的代码
 中表示一个输入错误，因为它们具有实现定义的值，并且不应该在可移植代码
 中使用。
--Wnormalized =[没有| | id nfc | nfkc]
+
+-Wnormalized=[none|id|nfc|nfkc]
+
 在 ISO C 和 ISO C++中，两个标识符是不同的，如果它们是不同的字符序列。但
 是，有时当使用基本 ASCII 字符集之外的字符时，可以有两个看起来相同的不
 同字符序列。为了避免混淆，iso10646 国际编码标准制定了一些标准化规则，
@@ -5032,16 +5236,7 @@ Wextra-Wno -missing-field-initializers` 。
 不幸的是，ISO C 和 ISO C++在标识符中允许使用一些字符，当转换为 NFC 时，
 在标识符中不允许使用这些字符。也就是说，无法在可移植的 ISO C 或 C++中
 使用这些符号，也无法在 NFC 中使用所有标识符。 `-Wnormalization =id` 抑制
-
-
-这些字符的警告。希望相关标准的未来版本能够纠正这一点，这就是为什么这
-
-个选项不是默认选项。
-
-你 可以 开关 的 警告 从 为 所有 字符 通过 写作
-
- `-Wnormalized =没有` 或 `-Wno-normalized` 。只有在使用其他规范化方案(如
- `D` )时才应该这样做，否则您很容易创建几乎看不到的 bug。
+这些字符的警告。希望相关标准的未来版本能够纠正这一点，这就是为什么这个选项不是默认选项。你 可以 开关 的 警告 从 为 所有 字符 通过 写作`-Wnormalized =没有` 或 `-Wno-normalized` 。只有在使用其他规范化方案(如`D` )时才应该这样做，否则您很容易创建几乎看不到的 bug。
 ISO 10646 中的一些字符具有不同的含义，但在某些字体或显示方法中看起来
 是相同的，尤其是应用了格式之后。例如\u207F， `上标拉丁小字母 N` ，显示
 的就像放在上标中的普通 N。ISO 10 646 定义了 NFKC 规范化方案，将所有这
@@ -5049,29 +5244,41 @@ ISO 10646 中的一些字符具有不同的含义，但在某些字体或显示�
 您的代码不在 NFKC 中。这个警告与对包含字母 O 的每个标识符的警告类似，
 因为它可能与数字 0 混淆，因此不是默认值，但是如果不能固定编程环境以清
 晰地显示这些字符，则可以作为本地编码约定使用。
+
 -Wno-deprecated
+
 不要警告不赞成使用的特性。参见第 7.11 节[弃用特性]，第 798 页。
+
 -Wno-deprecated-declarations
+
 不要对函数的使用发出警告(请参阅第 6.31 节[函数属性]，第 464 页)，变量(参
 见第 6.32 节[变量属性]，第 513 页)和类型(参见第 6.33 节[类型属性]，第 524
 页)，使用弃用属性标记为弃用。
+
 -Wno-overflow
+
 不要在常量表达式中警告编译时溢出。
--Wno-odr 警告在链接时间优化过程中有一个定义规则违反。需要启用 `-flto-odr- merge` 。默认
-启用。
+-Wno-odr 警告在链接时间优化过程中有一个定义规则违反。需要启用 `-flto-odr- merge` 。默认启用。
+
 -Wopenmp-simd
+
 警告向量化器成本模型是否覆盖用户设置的 OpenMP simd 指令。 `-fsimd-cost-
 model=unlimited` 选项可以用来放宽成本模型。
+
 -Wover 共乘 init(仅 C 和 Objective-C)
+
 如果使用指定的初始化器时重写了没有副作用的初始化字段，则发出警告(参见第
 6.27 节[指定初始化器]，第 461 页)。
+
+
 这个警告包含在 `-Wextra` 中。要得到没有此警告的其他 `-Wextra` 警告，请使用 `-
 Wextra-Wno - over 约车 init` 。-Wover 共乘副作用(仅 C 和 Objective-C)
 当使用指定的初始化器时，如果带有副作用的初始化字段被重写(请参见第
 6.27 节[指定初始化器]，第 461 页)。此警告默认启用。
 
+-Wpacked
 
--Wpacked 警告如果一个结构被赋予了填充属性，但是填充属性对结构的布局或大小没有影
+警告如果一个结构被赋予了填充属性，但是填充属性对结构的布局或大小没有影
 响。这样的结构可能会被错误地对齐，而不会带来什么好处。例如，在这段代
 码中，变量 f。虽然 structbar 中的 x 本身没有 pack 属性，但它是不对齐的:
 struct foo {
@@ -5080,7 +5287,9 @@ int x;char, b, c, d;
 字符 z;struct
 foo f;
 };
+
 -Wpacked-bitfield-compat
+
 GCC 的 4.1、4.2 和 4.3 系列忽略 char 类型的位域上的填充属性。这在 GCC 4.4
 中得到了修正，但是更改会导致结构布局的差异。GCC 在 GCC 4.4 中当这样一
 个字段的偏移量发生变化时通知您。例如，在这个结构中，字段 a 和 b 之间不
@@ -5090,7 +5299,7 @@ struct foo
 b:8;
 } __attribute__((包装));
 此警告默认启用。使用 `-Wno-packed-bitfield-compat` 禁用此警告。
--Wpacked -not 对齐(C, C++， Objective-C 和 objective - C++ only)
+-Wpacked -not 对齐(C, C++， Objective-C 和 Objective-C++ only)
 如果填充结构或联合中显式指定对齐的结构字段被不对齐，则发出警告。例如，
 将对结构体发出警告，例如，在本代码中， `结构体` 的 alignment1 是小于 8 的:
 struct __attribute__(对齐(8)))S8 {char a[8];};struct __attribute__((包装))
@@ -5100,10 +5309,14 @@ struct S8 S8;
 -Wpadd 警告如果在结构中包含了填充，可以对结构中的元素进行对齐，也可以对整个结
 构进行对齐。有时，当这种情况发生时，可以重新排列结构的字段，以减少填
 充，从而使结构更小。
+
 -Wredundant-decls
+
 如果在同一范围内声明了多个内容，即使在多个声明有效且没有更改的情况下，
 也要发出警告。
+
 -Wno-restrict
+
 当限制限定参数引用的对象(或者，在 C++中，__limitt 限定参数)被另一个参数
 别名引用时，或者当这些对象之间的副本重叠时，发出警告。例如，下面对
 strcpy 函数的调用试图通过将字符串的初始字符替换为最后四个字符来截断字
@@ -5117,9 +5330,13 @@ strcpy 函数的调用试图通过将字符串的初始字符替换为最后四�
 }
  `-Wlimit` 选项检测一些简单重叠的实例，即使没有优化，但在 `-O2` 和以上情况下
 效果最好。它包含在 `-Wall` 中。
+
 -Wnested-externs(仅限 C 和 Objective-C)
+
 如果在函数中遇到了 extern 声明，则发出警告。
+
 -Wno-inherited-variadic-ctor
+
 当继承的基类具有一个 C 变量构造函数时，禁止使用 C++ 11 继承构造函数的
 警告;由于省略号没有继承，所以默认情况下警告是打开的。
 - 如果声明为内联的函数不能内联，则发出警告。即使使用此选项，编译器也不会警告系
@@ -5127,49 +5344,66 @@ strcpy 函数的调用试图通过将字符串的初始字符替换为最后四�
 编译器使用各种启发式来确定是否内联一个函数。例如，编译器考虑到正在内
 联的函数的大小和当前函数中已经完成的内联量。因此，源程序中看似无关紧
 要的更改可能导致 `-Winline` 产生的警告出现或消失。
--Wno-invalid-offsetof (c++和 objective - C++)
+
+-Wno-invalid-offsetof (c++和 Objective-C++)
+
 禁止将 offsetof 宏应用到非 pod 类型。根据 2014 年 ISO C++标准，对非标准布
 局类型应用 offsetof 是没有定义的。然而，在现有的 C++实现中，offsetof 通常
 会产生有意义的结果。此标志是针对那些意识到自己正在编写非可移植代码，
 并且有意忽略该警告的用户的。
 在将来的 C++标准版本中，对 offsetof 的限制可以放宽。
+
 -Wint-in-bool-context
+
 警告可疑地使用需要布尔值的整型值，例如条件表达式(?:)在布尔上下文中使
 用非布尔整型常量，如 if(a<=b?2:3)。或布尔上下文中有符号整数的左移，如
 for(a=0;1< a;a+);同样，对于所有类型的乘法，不管数据类型如何。此警告由 `-
 Wall` 启用。-Wno-int-to-pointer-cast
 抑制从类型转换到指针类型的不同大小的整数的警告。在 C++中，对较小大小
 的指针类型进行强制转换是错误的。默认情况下启用 `Wint-to-pointer-cast` 。
+
 -Wno -point -cast (C 和 Objective-C)
+
 抑制从指针到不同大小的整数类型的强制转换的警告。
+
 -Winvalid-pch
+
 如果在搜索路径中发现了预编译头(请参阅第 3.21 节[预编译头]，第 425 页)，但
 不能使用，则发出警告。
+
 -Wlong-long
 
-
-如果使用长龙类型请警告。在 ISO C90 和 C++ 98 模式中，可以使用 `-Wpedantic
+如果使用 long long 类型请警告。在 ISO C90 和 C++ 98 模式中，可以使用 `-Wpedantic
 `或 `-Wtraditional` 来实现这一点。要抑制警告消息，请使用 `-Wno-long-long` 。
+
 -Wvariadic-macros
+
 警告，如果在 ISO C90 模式中使用变量宏，或者在 ISO C99 模式中使用 GNU 替
 代语法。这可以通过 `-Wpedantic` 或 `-Wtraditional` 实现。要抑制警告消息，
 请使用 `-Wno - variradical -macros` 。
+
 -Wvarargs
+
 在使用用于处理变量参数(如 va_start)的宏时发出警告。这是默认的。要抑制
 警告消息，请使用 `-Wno-varargs` 。
+
 -Wvector-operation-performance
+
 警告如果向量操作不是通过架构的 SIMD 功能实现的。主要用于性能调优。向
 量运算可以分段实现，即在每个向量元素上执行标量运算;非并行，即矢量操
 作是使用更宽类型的标量来实现的，通常性能效率更高;和 asasasinglescalar，
 这意味着向量属于标量类型。
+
 -Wno-virtual-move-assign
+
 禁止使用非平凡的 C++ 11 移动赋值操作符继承虚拟基的警告。这是危险的，
 因为如果虚拟基础沿着多个路径可达，那么它将被移动多次，这可能意味着两
 个对象最终都处于 move -from 状态。如果编写 move 赋值操作符以避免从
 moved-from 对象移动，则可以禁用此警告。
--Wvla 警告代码中是否使用了可变长度数组。 `-Wno-vla` 阻止可变长度数组的 `-Wpedantic` 警
-告。
+-Wvla 警告代码中是否使用了可变长度数组。 `-Wno-vla` 阻止可变长度数组的 `-Wpedantic` 警告。
+
 -Wvla-larger-than=n
+
 如果使用此选项，编译器将警告使用可变长度的数组，这些数组的大小要么是无
 界的，要么是受大于 n 字节的参数的限制。这与 `-Walloca-larger-than=n` 的工作方
 式类似，但使用可变长度数组。
@@ -5178,35 +5412,47 @@ moved-from 对象移动，则可以禁用此警告。
 这个警告不是由 `-Wall` 启用的，只有在 `-ftree-vrp` 是活动的时候才会激活(默认
 值为 `-O2` 及以上)。
 参见 `-Walloca-larger-than=n` 。
+
 -Wvolatile-register-var
+
 警告，如果寄存器变量被声明为 volatile。volatile 修饰符不会抑制所有可能消
 除对寄存器变量的读和/或写的优化。此警告是由 `-Wall` 启用的。
+
 -Wdisabled-optimization
+
 如果请求的优化传递被禁用，则发出警告。此警告一般不会表明您的代码有任
 何问题;它仅仅表明 GCC 的优化器不能有效地处理代码。通常，问题是您的代
 码太大或太复杂;当优化本身可能花费过多的时间时，GCC 拒绝优化程序。
--Wpointer-sign (C 和 Objective-C)
 
+-Wpointer-sign (C 和 Objective-C)
 
 警告指针参数的传递或赋值不同。此选项仅支持 C 和 Objective-C。它被 `-Wall`
 和 `-Wpedantic` 所暗示，可以用 `-Wno - pointersign` 来禁用。
+
 -Wstack-protector
-此选项仅在 `-fstack- protection` 激活时才有效。它警告那些不受堆栈破坏保护的函
+
+此选项仅在 `-fstack-protection` 激活时才有效。它警告那些不受堆栈破坏保护的函
 数。
+
 -Woverlength-strings
+
 警告超过 C 标准中指定的 `最小最大` 长度的字符串常量。现代编译器通常允许
 字符串常量比标准的最小限制长得多，但是非常便携的程序应该避免使用更长
 的字符串。
+
 该限制适用于字符串常量串联之后，不计算尾轴。在 C90 中，限制是 509 个
 字符;在 C99 年，它被提高到 4095 。c++ 98 没有指定规范的最小最大值，所以
-我们不诊断 C++中的超长字符串。
-这 选项 是 隐含 通过  `-Wpedantic` , 和 可以 是 禁用 与
+我们不诊断 C++中的超长字符串。这 选项 是 隐含 通过  `-Wpedantic` , 和 可以 是 禁用 与
  `-Wno-overlength-strings` 。
+ 
 -Wunfixed -float-constant(仅 C 和 Objective-C)
+
 对任何没有后缀的浮动常量发出警告。当与 `-Wsystem -header` 一起使用时，
 它会警告系统头文件中的此类常量。这在编写使用 FLOAT_ CONST_DECIMAL64
 pragma 从十进制浮点扩展到 C99 的代码时非常有用。
+
 -Wno 指定-init(仅 C 和 Objective-C)
+
 当使用一个位置初始化器来初始化被标记为 designated_init 属性的结构时，不要
 使用警告。
 - 当编译函数或 OpenMP 构造无法发出 HSAIL 时，whsa 发出警告。
@@ -6403,7 +6649,7 @@ int f(){
 联盟 a_union t;t。d
 = 3.0;返回 t.i;
 }
-从不同的工会成员那里阅读，而不是最近写给他们的(被称为 `类型双关语` )，
+从不同的联合成员那里阅读，而不是最近写给他们的(被称为 `类型双关语` )，
 这种做法很常见。即使使用 `-fstrict- alialize` ，只要通过 union 类型访问内存，
 也允许输入-punning。因此，上面的代码运行正常。参见第 4.9 节[结构结合枚
 举和位域实现]，第 433 页。但是，本代码可能不:
@@ -7335,7 +7581,7 @@ prefetch-min-insn-to-mem-ratio
 在循环中启用预取的指令数和内存引用数之间的最小比率。
 use-canonical-types
 编译器是否应该使用 `规范` 类型系统。默认情况下，这个值应该是
-1 ，它使用更有效的内部机制来比较 C++和 objective - C++中的类型。
+1 ，它使用更有效的内部机制来比较 C++和 Objective-C++中的类型。
 但是，如果规范类型系统中的错误导致编译失败，则将该值设置
 为 0 以禁用规范类型。
 switch-conversion-max-branch-ratio
@@ -9078,7 +9324,7 @@ http://gcc.gnu.org/wiki/Visibility。
 在某些情况下，例如当将 pack 属性应用到结构字段时，可能无法使用一个正
 确对齐目标机器的读或写来访问该字段。在这种情况下，GCC 退回到生成多个
 访问，而不是在运行时出错或截断结果的代码。
-注意:由于 C/ C++ 11 内存模型的限制，不允许对非位域成员进行写访问。因此，
+注意:由于 C/C++ 11 内存模型的限制，不允许对非位域成员进行写访问。因此，
 建议将字段类型的所有位定义为位域成员。
 此选项的默认值由目标处理器的应用程序二进制接口决定。
 -fsync-libcalls
@@ -9663,7 +9909,7 @@ auxname` 。 auxname 是由输出文件的名称生成的，如果显式指定�
 
 限;因此 dbg_cnt 总是返回 true，除非这个选项设置了上限。例如，对于 `-fdbg-
 cnt=dce:10,tail_call:0` ， dbg_ cnt(dce)仅在前 10 次调用时返回 true。-print-file-
-name =图书馆
+name =库
 打印将在链接时使用的库文件库的完整的绝对名称，不要做其他任何事情。有
 了这个选项，GCC 就不会编译或链接任何东西;它只打印文件名。
 - print-multi-directory
@@ -10196,7 +10442,7 @@ lp_count -mirq-ctrl-saved =寄存器范围,眨眼
 不建议使用这个选项。
 - mswape 传递到汇编程序以启用交换字节排序扩展指令。还设置预处理器符号__Xswape。
 - mtelephony
-传递给汇编程序以启用电话的双操作数和单操作数指令。还设置预处理器符号
+传递给汇编程序以启用调用的双操作数和单操作数指令。还设置预处理器符号
 __Xtelephony。不建议使用这个选项。
 - mxy 传递给汇编程序以启用 XY 内存扩展。还设置预处理器符号__Xxy。
 以下选项控制如何注释汇编代码:
@@ -11405,7 +11651,7 @@ sim 卡 这个选项被 cris-axis-elf 识别，它安排连接来自模拟器库
 - mmac 允许使用多重累积指令。默认情况下禁用。
 - mcr16cplus
 - mcr16c 为 CR16C 或 CR16C+体系结构生成代码。CR16C +架构是违约。
-- msim 连接图书馆 libsim。a 与模拟器兼容。只适用于 ELF 编译器。
+- msim 连接库 libsim。a 与模拟器兼容。只适用于 ELF 编译器。
 - mint32 选择整数类型为 32 位宽。
 - mbit-ops
 为位操作生成 sbit/cbit 指令。
@@ -11838,7 +12084,7 @@ mfdpic’就没有效果。如果优化速度和编译共享库(例如，  `-fPI
 需要，所以它更有可能是一个胜利。如果不是， `-mno-gprel-ro` 可以用来禁用
 它。
 - multilib-library-pic
-连接到(图书馆，而不是 FD) pic 图书馆。它由 `-mlibrary-pic` 以及 `-fPIC` 和 `-
+连接到(库，而不是 FD) pic 库。它由 `-mlibrary-pic` 以及 `-fPIC` 和 `-
 fPIC` 所暗示，而没有 `-mfdpic` 。您不应该必须显式地使用它。
 - mlinked-fp
 遵循 EABI 的要求，每当分配堆栈帧时，始终创建一个帧指针。这个选项是默
@@ -15798,7 +16044,7 @@ TILEPro 支持以下 `-m` 选项:
 
 
 - mno-long-calls
-把所有的电话都看成是远(近)的。如果假设调用距离很远，编译器总是将函数
+把所有的调用都看成是远(近)的。如果假设调用距离很远，编译器总是将函数
 的地址加载到寄存器中，并通过指针间接调用。
 - mno-ep
 - mep 不优化使用相同索引指针 4 次或更多次将指针复制到 ep 寄存器的基本块，并使用更
@@ -15905,7 +16151,7 @@ ALIGN__。
 毫克 输出 g 格式浮点数而不是 d 格式的代码。
 #### 3.18.53 Visium 选项
 
-- mdebug 执行文件 I/O 并注定在 MCM 目标上运行的程序应与此选项链接。它使图书馆变得
+- mdebug 执行文件 I/O 并注定在 MCM 目标上运行的程序应与此选项链接。它使库变得
 生动。一个和 libdebug。一个有关。程序应该在 GDB 远程调试存根控制下的
 目标上运行。
 - msim 程序执行文件 I/O 并在模拟器上运行的程序应与选项链接。这导致库 libc。一个和
@@ -16744,7 +16990,7 @@ memcpy、strlen 和 memset 的代码性能。
  `循环`
  `unrolled_loop`
 扩展成内联循环。
- `libcall`  经常使用图书馆电话。
+ `libcall`  经常使用库调用。
 - mmemcpy-strategy =策略
 重写内部决策启发式以决定__builtin_memcpy 是否应该内联，以及在知道复制
 
@@ -21566,7 +21812,7 @@ transparent_union
 类型是指针，那么必须尊重引用类型上的 const 这样的限定符，就像普通的指
 针转换一样。
 其次，参数通过透明联盟的第一个成员的调用约定传递给函数，而不是联盟本
-身的调用约定。所有工会成员必须拥有相同的机器代表;这对于这个论证的顺
+身的调用约定。所有联合成员必须拥有相同的机器代表;这对于这个论证的顺
 利进行是必要的。
 由于兼容性的原因，透明联合是为具有多个接口的库函数而设计的。例如，假
 设等待函数必须接受 int*类型的值来遵守 POSIX，或者接受 unionwait*类型的
@@ -22997,7 +23243,7 @@ G 浮点常数 0
 
 登记 D 注册
 
-z 电话中断了注册。
+z 调用中断了注册。
 qn 单个寄存器。如果 n 在 0 到 7 之间，对应的 D 寄存器。如果是 A，那么寄
 存器 P0。
 D 偶数 D W 登记 奇数 D 注册 e
@@ -23215,7 +23461,7 @@ R13 $r1 或$r3，或$r3r1 的 32 位值。
 
 Rdi 可以保存 64 位值的寄存器。
 
-生殖卫生图书馆 $r0 或$r1(寄存器具有可寻址的高/低字节)
+生殖卫生库 $r0 或$r1(寄存器具有可寻址的高/低字节)
 
 R23 r2 和 r3 美元
 
@@ -26071,7 +26317,7 @@ __builtin_bfin_ssync (void)
 #### 6.59.12 FR-V 内置函数
 
 GCC 提供许多特定于 fr - v 的内置函数。一般来说，这些功能是为了与 FR-V 系列、Softune
-C/ C++编译器手册(V6)、富士通半导体(Fujitsu Semiconductor)所描述的功能兼容。这两个
+C/C++编译器手册(V6)、富士通半导体(Fujitsu Semiconductor)所描述的功能兼容。这两个
 例外是__MDUNPACKH 和__MBTOHE, GCC 的形式通过指针而不是值传递 128 位的值。
 大多数函数都是以特定的 FR-V 指令命名的。这些函数被称为 `直接映射` ，在这里以表格形
 式进行总结。
@@ -31811,7 +32057,7 @@ Objective-C 运行时数据结构。这些函数在 Objective-C 运行时中是�
 同的运行时以不同的方式进行，所以这个头的函数是特定于 GNU Objective-C 运行时
 实现的。
 -  `objc / objc-exception。h` :这个头声明了一些与 Objective-C 异常相关的公共函数。例
-如，这个头中的函数允许您从普通的 C/ C++代码中抛出 Objective-C 异常。
+如，这个头中的函数允许您从普通的 C/C++代码中抛出 Objective-C 异常。
 -  `objc / objc-sync。h` :这个头声明了一些与 Objective-C @synchronized()语法相关的公共
 函数，允许您模拟一个 Objective-C @synchronized()块，使用普通的 C/C+代码。
 -  `objc /刺。h` :这个头声明一个公共运行时 API 线程层，它只由 GNU Objective-C 运行时
@@ -31943,7 +32189,7 @@ char * *
 
 和`}`
 
-工会 (后面跟着结构的名称(还是)? `如果工会没有名字)` ， `=` ， `成员的类
+联合 (后面跟着结构的名称(还是)? `如果联合没有名字)` ， `=` ， `成员的类
 
 型`
 
@@ -32037,7 +32283,7 @@ GNU Objective-C 支持@encode 语法，允许您从 C/Objective-C 类型创建�
 了对 GNU 运行时垃圾收集的支持。
 要启用对它的支持，您必须使用一个附加参数 `—enable-objc-gc` 来配置编译器。这将构
 建 boehm-gc 库，并构建一个附加的运行时库，该库具有支持垃圾收集器的几个增强功能。
-新库有一个新名称:libobjc_gc。不与非垃圾收集的图书馆发生冲突。
+新库有一个新名称:libobjc_gc。不与非垃圾收集的库发生冲突。
 当使用垃圾收集器时，将使用 Boehm-Demers-Weiser 收集器中可用的所谓类型化内存
 分配机制分配对象。这种模式需要关于指针位于对象内部的精确信息。这个信息在每个类
 初始化后立即计算一次。
@@ -32128,7 +32374,7 @@ expr;...
 } @finally {...
 @throw expr;...
 }
-@throw 语句可以出现在 Objective-C 或 objective - C++程序中的任何地方;当在@catch 块
+@throw 语句可以出现在 Objective-C 或 Objective-C++程序中的任何地方;当在@catch 块
 内部使用时，@throw 可能不会出现参数(如上面所示)，在这种情况下，@catch 捕获的对
 象将被重新抛出。
 注意，只有(指向)Objective-C 对象的指针可以使用此方案抛出并捕获。当抛出一个对象
@@ -32149,7 +32395,7 @@ expr;...
 惯用法兼容，但是由于下一个 Objective-C 运行时需要附加功能，新的异常只能在 Mac
 OS X 10.3 (Panther)和以后的系统上使用。
 - 如上所述，新的异常不支持处理除 Objective-C 对象之外的类型。此外，当使用
-objective - C++时，Objective-C 异常模型此时不会与 C++异常交互。这意味着您不能从
+Objective-C++时，Objective-C 异常模型此时不会与 C++异常交互。这意味着您不能从
 Objective-C 中抛出异常并在 C++中捕获它，反之亦然。,把...@catch)。
 
 ### 8.8 同步
@@ -32317,7 +32563,7 @@ objc_msg_lookup()调用，并且在动态注册方法时没有成功。
 由此创建的转发方法实现由 objc_msg_lookup()返回并执行，就好像它是一个普通的方法
 实现一样。调用转发方法实现时,通常是将包所有参数成某种对象(通常情况下,一个 `基础`
 的 NSInvocation 库),并将其交给程序员(forwardInvocation:)然后使用高级 API 允许操作方
-法调用所提供的 `基础` 图书馆。例如，程序员可能想要检查方法调用参数和名称，并可能
+法调用所提供的 `基础` 库。例如，程序员可能想要检查方法调用参数和名称，并可能
 在将方法调用转发到一个或多个本地对象(射孔:)或甚至远程对象(通过使用分布式对象或
 其他机制)之前更改它们。所有这些完成后，返回值将被返回，并且必须正确地返回给原
 始调用者。
@@ -33151,8 +33397,8 @@ u。我[1]= p - >[1];
 存储到指针中同样可以使用相同的联合。
 - 在 Solaris 中，malloc 函数位于 `libmalloc` 中。库可以分配只有 4 字节对齐的内存。由
 于 SPARC 上的 GCC 假定双精度浮点数是 8 字节对齐的，因此如果双精度浮点数存储
-在由 `libmalloc` 分配的内存中，则可能导致致命的信号。 `图书馆。
-解决方案是不使用 `libmalloc` 。 `图书馆。使用 malloc 和来自 `libc.a` 的相关函数;他们
+在由 `libmalloc` 分配的内存中，则可能导致致命的信号。 `库。
+解决方案是不使用 `libmalloc` 。 `库。使用 malloc 和来自 `libc.a` 的相关函数;他们
 没有这个问题。
 - 在 HP PA 机器上，ADB 有时不能处理使用 GCC 编译的函数。具体来说，它不能用于
 使用 alloca 或可变大小数组的函数。这是因为 GCC 不为这些函数生成 HP-UX 展开描
@@ -33575,7 +33821,7 @@ GCC 会更好。
 
 C 包含许多标准函数，它们返回大多数程序选择忽略的值。一个明显的例子是 printf。
 对这种做法的警告只会导致防御性程序员将带有数十个强制类型转换的程序变得无效。
-这种类型的投射是如此频繁，以至于它们变成了视觉噪音。编写这些类型转换变得如
+这种类型的强制类型转换是如此频繁，以至于它们变成了视觉噪音。编写这些类型转换变得如
 此自动化，以至于它们不再传递有关程序员意图的有用信息。对于不应该忽略返回值
 的函数，请使用 warn_unused_result 函数属性(参见第 6.31 节[函数属性]，第 464 页)。
 - 使-fshort-enums 默认。
@@ -33625,7 +33871,7 @@ GNU C 编译器支持这两种方言;您可以指定带符号的方言
 程序员通常在__STDC__上使用条件语句来询问使用 ISO C 的某些特性是否安全，例如
 函数原型或 ISO 令牌连接。由于 plain gcc 支持 ISO C 的所有特性，因此正确的答案是
  `yes` 。
-一些用户试图使用__STDC__检查某些图书馆设施的可用性。这在 ISO C 程序中实际上
+一些用户试图使用__STDC__检查某些库设施的可用性。这在 ISO C 程序中实际上
 是不正确的用法，因为 ISO C 标准规定，一个符合标准的独立实现应该定义__STDC__，
 即使它没有库设施。 `gcc-ansi-pedantic` 是符合标准的独立实现，因此需要定义
 __STDC__，尽管它没有 ISO C 库。
@@ -35303,7 +35549,7 @@ Contributors to GCC 817
 - Simon Kitching 为字符串清理和优化建议。
 - 用于配置修复、本地化更新、错误和构建修复。
 - 用于配置、线程和通道修复和 Kaffe 集成。JCL 原生指针更新。记录器 bug 修复。
-- David Lichteblau 为 JCL 支持图书馆全球/本地参考清理。
+- David Lichteblau 为 JCL 支持库全球/本地参考清理。
 - Aaron Luchko 用于 JDWP 更新和文档修复。
 - Ziga Mahkovec 用于 Graphics2D 升级到 Cairo 0.5 和新的 regex 特性。
 - Sven de Marothy 支持 BMP imageio, CSS 和 TextLayout 修复。GtkImage 重写、2D、
@@ -38650,7 +38896,7 @@ casinf .......................................613 年
 casinh .......................................613 年
 casinhf ......................................613 年
 casinhl ......................................613 年
-casinl .......................................613 年工会...............................演
+casinl .......................................613 年联合...............................演
 员 463 桌
 游........................................catanf .......................................cat
 anh .......................................
@@ -38713,7 +38959,7 @@ c++风格 538 年.....................常见变量属性 515 有符号和
 计.........................212 年编译器错误,报告......................855
 编译器与 C++预 处 理 程 序 3 编译器选
 项,c++ .........................编 译 器 选 项 ，Objective-C 和
-objective - C++
+Objective-C++
 ........................................... 55 岁 的 编 译 器 版 本,指
 定.....................9 COMPILER_PATH ...............................424 年
 复杂的共轭..........................449 年复数.............................448
@@ -39048,7 +39294,7 @@ _........................................._ 437 隐含#
 pragmaimplementation .............790 不兼容的
 GCC .....................841 年增加运营商..........................855 指
 数........................................613 年间接调用,...........................ARC
-484 年间接调用,ARM...........................485 年间接电话,黑
+484 年间接调用,ARM...........................485 年间接调用,黑
 鳍白鲑........................488 年间接调用,顿
 悟.......................489 年间接调用,MIPS ..........................495
 
@@ -39410,7 +39656,7 @@ io ....................波动 774 编译指示,诊断...........................
 编译指示,disinterrupt ..........................774 编译指示,菲
 尼..................................776 编译指
 示,init ..................................776 编译指示,............................长
-的电话长 773 编译指示,........................调用 774 编译指
+的调用长 773 编译指示,........................调用 774 编译指
 示,longcall ..............................775 编 译 指 示,马
 克................................775 编译指
 示,memregs ..................................................... 774 编译指示,
@@ -39746,7 +39992,7 @@ suffix ...............................531 年 未 定 义 行
 为...........................855 年......................未定义的函数值 855
 在 宏 的 程 序 设 计 中 有 下 划 线...446 年联
 盟........................................78 1 年联盟,............................铸造
-463 年工会........................................843 年未知的语
+463 年联合........................................843 年未知的语
 法,....................警告 81 未解决的引用和 `-
 nodefaultlibs` ...196 个未解决的参考文献和 dlib...196
 年.....................未使用的功能属性 479 年........................未
