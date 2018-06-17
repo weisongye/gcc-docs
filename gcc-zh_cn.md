@@ -919,7 +919,6 @@ GCC 可以编译 HSAIL 文本格式的二进制表示(BRIG)，如 HSA 程序员�
 ```
 
 ```
-Chapter 3: GCC Command Options 9
 ```
 ## 3 GCC 命令选项
 
@@ -1031,7 +1030,6 @@ Objective-C 和 objective - c++ 语言选项
 - fobjc-abi-version = n
 
 
-Chapter 3: GCC Command Options 11
 
 - fobjc-call-cxx-cdtors
 - fobjc-direct-dispatch
@@ -1142,7 +1140,6 @@ wmislead -indentation - wmis- wmis- attributes - wmis-花括号
 - Wunused-const-variable -Wunused-const-variable = n
 
 
-Chapter 3: GCC Command Options 13
 
 - Wunused-but-set-parameter -Wunused-but-set-variable
 - Wuseless-cast -Wvariadic-macros -Wvector-operation-performance
@@ -1254,7 +1251,6 @@ pathuristic -heuristic -fsched- hesched- heuristic -rank-heuristic
 - fsplit-paths
 
 
-Chapter 3: GCC Command Options 15
 
 - fsplit-wide-types -fssa-backprop -fssa-phiopt
 - fstdarg-opt -fstore-merging -fstrict-aliasing
@@ -1373,7 +1369,6 @@ object-file-name -fuse-ld = 链接器 - llibrary
 参见第 3.16 节[代码生成约定的选项]，第 202 页。
 
 
-Chapter 3: GCC Command Options 17
 
 - fcall-saved-reg -fcall-used-reg
 - ffixed-reg -fexceptions
@@ -1483,7 +1478,6 @@ Epiphany Options
 - mtune = cpu -mmultcost = num
 
 
-Chapter 3: GCC Command Options 19
 
 - munalign-prob-threshold = -mmpy-option 概率= multo
 - mdivi -rem -mcode-density -mll64 -mfpu=fpu -mrf16 ARM 选项
@@ -1592,7 +1586,6 @@ bundle -bundle_loader
 改要- mtune =要解决
 
 
-Chapter 3: GCC Command Options 21
 
 - mbwx -mmax -mfix -mcix
 - mfloat-vax -mfloat-ieee
@@ -1704,7 +1697,6 @@ mno -mshort
 - mmult -mno-opts -mrepeat -ms - m 上周六-msdram -msim -msimnovec -mtf -mtiny=n
 
 
-Chapter 3: GCC Command Options 23
 
 MicroBlaze 选项
 
@@ -1812,7 +1804,6 @@ mctor -mrelax Nios II 选项
 - m32 -mmainkernel - moptimization PDP- 11 选项
 
 
-Chapter 3: GCC Command Options 25
 
 - mfpu -msoft -mac0 -mno-ac0 -m40 -m45 -m10
 - mbcopy -mbcopy-builtin -mint32 -mno-int16
@@ -1922,7 +1913,6 @@ mno- stric- align -mrelocatable
 - mtraceback = traceback_type
 
 
-Chapter 3: GCC Command Options 27
 
 - maix-struct-return -msvr4-struct-return
 - mabi = abi-type -msecure-plt -mbss-plt
@@ -2031,7 +2021,6 @@ SPARC 选项
 项
 
 
-Chapter 3: GCC Command Options 29
 
 - mwarn-reloc -merror-reloc
 - msafe-dma -munsafe-dma
@@ -2143,7 +2132,6 @@ zSeries 选项。
 
 
 ```
-Chapter 3: GCC Command Options 31
 ```
 ### 3.2 控制输出类型的选项
 
@@ -2296,7 +2284,6 @@ header c++的 cpp-output
 
 
 ```
-Chapter 3: GCC Command Options 33
 ```
 ```
 objective-c objective-c-header objective-c-cpp-output objective-c+ objective-c+ c++
@@ -2403,7 +2390,6 @@ ooutput-file '。
 ```
 
 ```
-Chapter 3: GCC Command Options 35
 ```
 ```
 以下是来自 gcc ARM 端口的一个截短示例:
@@ -2503,7 +2489,6 @@ c++源文件通常使用其中一个后缀'。C ','。cc ','。cpp ','。CPP ','
 的方言:
 ```
 
-Chapter 3: GCC Command Options 37
 
 ansi 在 C 模式下，这相当于' -std=c90 '。在 c++模式下，它等价于
 “化 c + + 98”。
@@ -2624,7 +2609,6 @@ GNU 方言的“化 c + + 98”。
 ```
 
 ```
-Chapter 3: GCC Command Options 39
 ```
 ```
 “c + + 11”
@@ -2755,7 +2739,6 @@ GCC 通常生成特殊的代码来更有效地处理某些内置函数;例如，
 
 
 ```
-Chapter 3: GCC Command Options 41
 ```
 环。生成的代码通常既小又快，但是由于函数调用不再以这样的方式出现，因
 
@@ -2857,7 +2840,6 @@ typedef int UOW;结
 
 
 ```
-Chapter 3: GCC Command Options 43
 ```
 ```
 每种机器都有一个默认的 char 类型。它可以是默认的 unsignedchar，也可以是默
@@ -2945,7 +2927,6 @@ fabi-compat-version=2 '。
 
 
 ```
-Chapter 3: GCC Command Options 45
 ```
 ```
 支持 c++ 17 新 类 型 ， 这 需 要 更 多 的 对 齐 方 式 ， 而 不 是
@@ -3030,7 +3011,6 @@ std= C+ 98 '， ' -std= C+ 11 '，等等。
 
 
 ```
-Chapter 3: GCC Command Options 47
 ```
 - fno-implicit-templates
 不要为隐式实例化的非内联模板(即使用)生成代码;只发出用于显式实例化的代
@@ -3116,7 +3096,6 @@ Wsized-deallocation”警告可能需要添加定义的位置。
 
 
 ```
-Chapter 3: GCC Command Options 49
 ```
 - fno-threadsafe-statics
 不要发出额外的代码来使用 c++ ABI 中为本地静态的线程安全初始化指定的例
@@ -3199,7 +3178,6 @@ va_arg 抱怨。对于大多数目标，这实际上不会影响传递 ABI 的�
 
 
 ```
-Chapter 3: GCC Command Options 51
 ```
 ```
 此外，ABI 还更改了模板参数包、const_ cast、static_cast、前缀递增/递
@@ -3287,7 +3265,6 @@ noexcept)但编译器知道永远不会抛出异常的函数而计算为 false �
 
 
 ```
-Chapter 3: GCC Command Options 53
 ```
 义，因为它修改了一个非平凡类对象，因此得到了诊断。初始化或清除此类对
 
@@ -3375,7 +3352,6 @@ b - > f();
 
 
 ```
-Chapter 3: GCC Command Options 55
 ```
 在遇到主模板声明时发出警告。有些编码规则不允许模板，这可以用来执行该
 
@@ -3466,7 +3442,6 @@ Mac OS X 10.2 和更早版本上的下一个运行时一起使用)。-fobjc-gc
 
 
 ```
-Chapter 3: GCC Command Options 57
 ```
 - fobjc-nilcheck
 对于下一个使用 ABI 版本 2 的运行时，在进行实际的方法调用之前，检查方法
@@ -3553,7 +3528,6 @@ local-ivars”标志将禁用此行为，从而避免变量隐藏问题。-fivar
 
 
 ```
-Chapter 3: GCC Command Options 59
 ```
 - fdiagnostics-show-location =每一行
 只有在行包装模式下才有意义。指示诊断消息报告程序为物理行发送相同的源
@@ -3653,7 +3627,6 @@ gtk_widget_showall(dlg);^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 
 
 ```
-Chapter 3: GCC Command Options 61
 ```
 ```
 空白 show_cb(GtkDialog * dlg)
@@ -3744,7 +3717,6 @@ __extension__后的表达式中，Pedantic 警告也被禁用。但是，只有�
 
 
 ```
-Chapter 3: GCC Command Options 63
 ```
 应该使用这些转义路径;应用程序应该避免它们。参见第 6.46 节[替换关键字]，
 
@@ -3849,7 +3821,6 @@ c++ -Wnarrowing(只)
 
 
 ```
-Chapter 3: GCC Command Options 65
 ```
 - Wtype-limits
 - Wuninitialized
@@ -3939,7 +3910,6 @@ format-zero-length’。' -Wformat '由' -Wall '启用。
 - Wformat-overflow
 
 
-Chapter 3: GCC Command Options 67
 
 - Wformat-overflow =水平
 警告对格式化输入/输出函数(如 sprintf 和 vsprintf)的调用可能会
@@ -4027,7 +3997,6 @@ vsnprintf)的调用。当格式指令写入的确切字节数不能在编译时�
 
 
 ```
-Chapter 3: GCC Command Options 69
 ```
 ```
 由“-Wformat”启用的“-Wformat-truncation”的第一级
@@ -4117,7 +4086,6 @@ c++ 14 中，用户可以使用[[[[[[gnu::fallthrough]]]];，这是 gnu 的扩�
 
 
 ```
-Chapter 3: GCC Command Options 71
 ```
 - ' - wim 皱褶-fallthrough=0 '完全禁用警告。
 - “- wipleit -fallthrough=1”匹配。*正则表达式，任何注释都被用作
@@ -4201,7 +4169,6 @@ nonnull 声明主模板的显式专门化时，会发出警告。属性弃用、
 
 
 ```
-Chapter 3: GCC Command Options 73
 ```
 ```
 例如，由于下面的主函数模板声明同时使用了属性 malloc 和 alloc_size，因此
@@ -4291,7 +4258,6 @@ void 的函数的任何返回值(从函数体的尾部掉下来，认为返回�
 
 
 ```
-Chapter 3: GCC Command Options 75
 ```
 ```
 对于 c++，没有返回类型的函数总是会生成诊断消息，即使指定了' -Wno-
@@ -4379,7 +4345,6 @@ Wall”启用的。
 
 
 ```
-Chapter 3: GCC Command Options 77
 ```
 ```
 当函数中定义的类型定义未被使用时发出警告。此警告是由“-Wall”启用的。
@@ -4467,7 +4432,6 @@ foo(x);
 
 
 ```
-Chapter 3: GCC Command Options 79
 ```
 ```
 如果 y 的值总是 1 2 或 3 ，那么 x 总是初始化的，但是 GCC 不知道这个。为了
@@ -4564,7 +4528,6 @@ enum 颜色{蓝色，紫色，黄色};const char* f
 
 
 ```
-Chapter 3: GCC Command Options 81
 ```
 ```
 {静态 char buf [4];const
@@ -4655,7 +4618,6 @@ buf);...
 
 
 ```
-Chapter 3: GCC Command Options 83
 ```
 警告可能是格式属性候选的函数指针。注意这些只是可能的候选
 
@@ -4751,7 +4713,6 @@ func(有符号 int n)
 
 
 ```
-Chapter 3: GCC Command Options 85
 ```
 这个警告级别还警告说，对于结构体末端的数组和通过指针访问
 
@@ -4841,7 +4802,6 @@ int i = 1;
 算计算引入的最大或可能的最大错误，并在执行比较时(以及在生成输出时，
 
 
-Chapter 3: GCC Command Options 87
 
 这是另一个问题)允许它。特别是，与其测试相等性，不如检查这两个值是否
 
@@ -4929,7 +4889,6 @@ compatiblelocal '不会发出警告。因为它们的类型是不兼容的，如
 
 
 ```
-Chapter 3: GCC Command Options 89
 ```
 ```
 此警告由' -Wshadow=local '启用。
@@ -5020,7 +4979,6 @@ Wall”启用的。
 
 
 ```
-Chapter 3: GCC Command Options 91
 ```
 - Wtrigraphs
 如果遇到任何可能改变程序意义的三联图，请发出警告。注释中的三曲线图没
@@ -5113,7 +5071,6 @@ ILP32 目标上的 int 和 long。同样，类型限定符被忽略。函数类�
 
 
 ```
-Chapter 3: GCC Command Options 93
 ```
 类型的转换中，这个警告会在类型转换的指针变为成员类型时发出警告。此警
 
@@ -5207,7 +5164,6 @@ Wextra”启用的。
 
 
 ```
-Chapter 3: GCC Command Options 95
 ```
 - Wextra-semi(仅 c++,objective - C + +)
 在类内函数定义之后警告多余的分号。
@@ -5295,7 +5251,6 @@ int;...
 
 
 ```
-Chapter 3: GCC Command Options 97
 ```
 如果(!一个> 1){...}
 
@@ -5381,7 +5336,6 @@ Wextra- wno -missing-field-initializers”。
 
 
 ```
-Chapter 3: GCC Command Options 99
 ```
 这些字符的警告。希望相关标准的未来版本能够纠正这一点，这就是为什么这
 
@@ -5466,7 +5420,6 @@ strcpy 函数的调用试图通过将字符串的初始字符替换为最后四�
 
 
 ```
-Chapter 3: GCC Command Options 101
 ```
 ```
 {char a[] = "abcd1234";strcpy
@@ -5553,7 +5506,6 @@ moved-from 对象移动，则可以禁用此警告。
 
 
 ```
-Chapter 3: GCC Command Options 103
 ```
 ```
 警告指针参数的传递或赋值不同。此选项仅支持 C 和 Objective-C。它被“-Wall”
@@ -5646,7 +5598,6 @@ GCC 不再支持 DWARF 版本 1 ，它与版本 2 以及以后的版本有很大
 
 
 ```
-Chapter 3: GCC Command Options 105
 ```
 ```
 0 级根本不会产生任何调试信息。因此,“g0”否定“g”。
@@ -5731,7 +5682,6 @@ gas-locview-support
 
 
 ```
-Chapter 3: GCC Command Options 107
 ```
 gno-as-locview-support
 如果显式地请求“-gvariable-location-views”，则强制 GCC 在内部分配视图编号。
@@ -5832,7 +5782,6 @@ ginline-points
 
 
 ```
-Chapter 3: GCC Command Options 109
 ```
 ```
 的非模板类。其他编程语言都有泛型，但是“-femit-struct-debug-detail”还没有
@@ -5942,7 +5891,6 @@ o1 群优化。优化编译需要更多的时间，对于大型函数需要更�
 - funit-at-a-time
 
 
-Chapter 3: GCC Command Options 111
 
 - (^02) 更加优化。GCC 执行几乎所有支持的优化，这些优化不涉及空间速度的权衡。
 与' -O '相比，这个选项增加了编译时间和生成代码的性能。
@@ -6047,7 +5995,6 @@ o0 (^) 减少编译时间，使调试产生预期的结果。这是默认的。
 
 
 ```
-Chapter 3: GCC Command Options 113
 ```
 对 RTL 执行正向传播传递。通过尝试合并两个指令，并检查结果是否可以简
 
@@ -6143,7 +6090,6 @@ max-inline-ins -ins -auto 被
 
 
 ```
-Chapter 3: GCC Command Options 115
 ```
 - fno-keep-inline-dllexport
 这是一个更细粒度的“-fkeep-inline-functions”版本，它只适用于使用 dllexport
@@ -6229,7 +6175,6 @@ if 的主体上跳跃。
 
 
 ```
-Chapter 3: GCC Command Options 117
 ```
 - fgcse 执行一个全局通用的子表达式消除通行证。此传递还执行全局常量和复制传播。
 
@@ -6319,7 +6264,6 @@ CR16 和 MSP430 上，这个选项完全禁用。
 
 
 ```
-Chapter 3: GCC Command Options 119
 ```
 - fdevirtualize-at-ltrans
 在本地转换模式下运行链接时间优化器时，流执行主动去虚拟化所需的额外信
@@ -6407,7 +6351,6 @@ Briggs 着色不是针对所有架构实现的，但是对于支持它的目标�
 
 
 ```
-Chapter 3: GCC Command Options 121
 ```
 - fsched-pressure
 在寄存器分配之前启用寄存器压力敏感的 insn 调度。这只在启用寄存器分配
@@ -6493,7 +6436,6 @@ insns '或' -fschedule-insns2 '或' -O2 '或更高。
 
 
 ```
-Chapter 3: GCC Command Options 123
 ```
 ```
 interposition”，编译器假定如果函数发生了换位，重写函数将具有完全相同的
@@ -6580,7 +6522,6 @@ growth=value ')。默认情况下，此标志在“-O3”上启用。
 
 
 ```
-Chapter 3: GCC Command Options 125
 ```
 启用时，执行过程间的位常数传播。默认情况下，此标志在“-O2”上启用。它需
 
@@ -6666,7 +6607,6 @@ gimple。使用“-fgraphite-identity”，我们可以检查 GIMPLE ->石墨-> 
 
 
 ```
-Chapter 3: GCC Command Options 127
 ```
 - floop-nest-optimize
 启用基于 isl 的循环嵌套优化器。这是一个基于 Pluto 优化算法的通用循环嵌套
@@ -6758,7 +6698,6 @@ pthread”，因此只支持支持“-pthread”的目标。
 
 
 ```
-Chapter 3: GCC Command Options 129
 ```
 - ftree-ter
 在 SSA->正常阶段进行临时表达替换。单使用/单 def 临时器在其使用位置用其
@@ -6844,7 +6783,6 @@ buf)...
 
 
 ```
-Chapter 3: GCC Command Options 131
 ```
 不要用启发式猜测分支概率。
 
@@ -6936,7 +6874,6 @@ functions=24 '将对齐到下一个 32 字节的边界，只有在跳过 23 字�
 
 
 ```
-Chapter 3: GCC Command Options 133
 ```
 - falign-labels = n
 将所有分支目标对齐到一个 2 次幂的边界，跳过 n 个字节，如“- falignn -
@@ -7023,7 +6960,6 @@ GCC 将自动执行链接时优化。一般来说，您应该指定用于链接�
 链接器插件(见“-fuse-link -plugin -plugin -plugin -plugin -plugin)就使用的和外
 
 
-Chapter 3: GCC Command Options 135
 
 ```
 部可见的符号向编译器传递信息。当链接器插件不可用时，“- fall -program”应
@@ -7113,7 +7049,6 @@ make 程序，使用 n 个并行作业并行执行。环境变量 MAKE 可以用
 
 
 ```
-Chapter 3: GCC Command Options 137
 ```
 ```
 决方案，但' max '分区只用于内部测试。值“one”指定应该使用一个分区，而值
@@ -7203,7 +7138,6 @@ profile.afdo
 ```
 
 ```
-Chapter 3: GCC Command Options 139
 ```
 下面的选项控制编译器关于浮点运算的行为。这些选择在速度和正确性之间进行权衡。所
 
@@ -7295,7 +7229,6 @@ math '同时生效时，该选项将自动启用。
 
 
 ```
-Chapter 3: GCC Command Options 141
 ```
 假设浮点操作不能生成用户可见的陷阱，那么编译代码。这些陷阱包括零除、
 
@@ -7386,7 +7319,6 @@ Options]，第 172 页)之后，您可以使用“-fbranch- probability”对它
 
 
 ```
-Chapter 3: GCC Command Options 143
 ```
 尝试通过使用注册分配后留下的寄存器来避免计划代码中的错误依赖。这种优
 
@@ -7479,7 +7411,6 @@ int foo(空白)
 ——paramname =值
 
 
-Chapter 3: GCC Command Options 145
 
 在某些地方，GCC 使用各种常量来控制所完成的优化量。例如，GCC 不包含包
 
@@ -7568,7 +7499,6 @@ parammax- inlines -ins -auto '的限制。默认值是 15 。
 large-function-insns
 ```
 
-Chapter 3: GCC Command Options 147
 
 指定真正大函数的极限。对于内联后大于这个极限的函数，内联受到
 
@@ -7654,7 +7584,6 @@ gcse-unrestricted-cost
 默认值是 3 。
 ```
 
-Chapter 3: GCC Command Options 149
 
 ```
 max-hoist-depth
@@ -7736,7 +7665,6 @@ vect-max-version-for-alignment-checks
 数量。
 ```
 
-Chapter 3: GCC Command Options 151
 
 ```
 vect-max-version-for-alias-checks
@@ -7821,7 +7749,6 @@ ggc-min-heapsize
 RLIMIT 的限制，但下限是 4096(4 兆字节)，上限是 131072(128
 ```
 
-Chapter 3: GCC Command Options 153
 
 兆字节)。如果 GCC 不能在特定平台上计算 RAM，则使用下界。
 
@@ -7906,7 +7833,6 @@ simultaneous-prefetches
 l1-cache-line-size
 ```
 
-Chapter 3: GCC Command Options 155
 
 L1 缓存中缓存行的大小，以字节为单位。
 
@@ -8000,7 +7926,6 @@ max-vartrack-expr-depth
 级别数。这就将编译时间转换为更完整的调试信息。如果设置得
 ```
 
-Chapter 3: GCC Command Options 157
 
 太低，可以在调试信息中表示的值表达式可能最终不会被使用;设
 
@@ -8090,7 +8015,6 @@ lto-partitions
 lto-min-partition
 ```
 
-Chapter 3: GCC Command Options 159
 
 WHOPR 最小分区的大小(按估计指令)。这可以防止将非常小的程
 
@@ -8174,7 +8098,6 @@ chkp-max-ctor-size
 max-fsm-thread-path-insns
 ```
 
-Chapter 3: GCC Command Options 161
 
 在有限状态自动跳转线程路径上复制块时要复制的指令的最大数目。
 
@@ -8266,7 +8189,6 @@ GCC 支持许多命令行选项，用于控制将运行时工具添加到它通�
 
 
 ```
-Chapter 3: GCC Command Options 163
 ```
 • 对于面向概要文件的优化，使用相同的优化和代码生成选项以及“-
 
@@ -8357,7 +8279,6 @@ pointer-bounds '结合使用。
 
 
 ```
-Chapter 3: GCC Command Options 165
 ```
 注意，在对具有非调用异常的无效内存地址进行操作时，经过清理的原子构建项
 
@@ -8443,7 +8364,6 @@ fsanitize=undefined”进行浮点数除法可以获得不定式和非限定性�
 
 
 ```
-Chapter 3: GCC Command Options 167
 ```
 此选项允许插装调用，检查是否没有将空值传递给被非空函数属
 
@@ -8536,7 +8456,6 @@ conpo_conmp_conmp_conpo_conpo_conpo_conmp_conpo_conmp_conmp_1，
 
 
 ```
-Chapter 3: GCC Command Options 169
 ```
 ```
 目前英特尔 MPX 只有一个实现可用，因此启用这个特性需要 x86 GNU/Linux
@@ -8624,7 +8543,6 @@ fchk1 -use-wrappers”用于链接程序时，GCC 驱动程序会自动链接到
 
 
 ```
-Chapter 3: GCC Command Options 171
 ```
 ```
 宏__CET__是在使用“-fcf 保护”时定义的。对于值分支，__CET__的第一个比特被
@@ -8712,7 +8630,6 @@ binutils 版本 2.21 和之后的 gold linker 中实现的。
 
 
 ```
-Chapter 3: GCC Command Options 173
 ```
 ```
 是在执行完成之前构建的。使用' -fvtable-verify=std '将导致在加载和初始化共
@@ -8803,7 +8720,6 @@ NOP 指令被插入——可能在此之前，取决于 m——函数入口地�
 
 
 ```
-Chapter 3: GCC Command Options 175
 ```
 如果你使用“-E”选项，除了预处理，什么都没有做。其中一些选项只有与' -E '一起使用
 
@@ -8901,7 +8817,6 @@ $ $ foo(objpfx)。o:foo.c
 
 
 ```
-Chapter 3: GCC Command Options 177
 ```
 默认目标会被自动引用，就好像它是用“-MQ”给出的一样。
 
@@ -9001,7 +8916,6 @@ wchar_t。
 
 
 ```
-Chapter 3: GCC Command Options 179
 ```
 ```
 您不应该在自己的代码中编写这个#pragma，但是如果 PCH 文件在其他位置可
@@ -9094,7 +9008,6 @@ dn (^) 像' -dD '，但只发出宏名，而不是扩展名。
 
 
 ```
-Chapter 3: GCC Command Options 181
 ```
 此选项只对调试 GCC 有用。当从 CPP 或与' -E '一起使用时，它将转储关于位置
 
@@ -9192,7 +9105,6 @@ nodefaultlibs”或“-nodefaultlibs”。-nodefaultlibs
 
 
 ```
-Chapter 3: GCC Command Options 183
 ```
 - nostdlib
 在链接时不要使用标准的系统启动文件或库。没有启动文件，只有您指定的库
@@ -9275,7 +9187,6 @@ lead to subtle defects. Supplying them in cases where they are not necessary is 
 
 
 ```
-Chapter 3: GCC Command Options 185
 ```
 ```
 将链接到' liblsan '的共享版本。“-static-liblsan”选项指导 GCC 驱动程序静态地
@@ -9369,7 +9280,6 @@ isystem '或' -idirafter '指定的目录用于查找#include"file"和
 
 
 ```
-Chapter 3: GCC Command Options 187
 ```
 您可以使用' -I '来覆盖系统头文件，替换您自己的版本，因为这些目录在标准
 
@@ -9464,7 +9374,6 @@ dir/usr/include '。此选项禁止添加此类后缀。
 
 
 ```
-Chapter 3: GCC Command Options 189
 ```
 ### 3.16 代码生成约定的选项
 
@@ -9566,7 +9475,6 @@ fwrapv 指针'。
 
 
 ```
-Chapter 3: GCC Command Options 191
 ```
 ```
 考虑到可能抛出异常但对程序执行没有贡献的指令可以被优化。在 Ada 语言规
@@ -9655,7 +9563,6 @@ ISO C 不需要这种行为，在某些目标上，对变量引用可能会有�
 
 
 ```
-Chapter 3: GCC Command Options 193
 ```
 例如，给定这个 C 源文件:
 
@@ -9748,7 +9655,6 @@ fpic (^) 如果支持目标机器，则发出位置无关的代码，适用于�
 
 
 ```
-Chapter 3: GCC Command Options 195
 ```
 reg 必须是寄存器的名称。接受的寄存器名是专用的，在机器描述宏文件的
 
@@ -9835,7 +9741,6 @@ __declspec(dllexport)，你会得到几乎相同的语义和相同的语法。�
 
 
 ```
-Chapter 3: GCC Command Options 197
 ```
 请注意，来自项目外部的消息头，特别是来自您使用的任何其他库的系统消息
 
@@ -9933,7 +9838,6 @@ pass 注册到 pass 管理器中时，传递号被分配。大多数传递都按
 - fdump-rtl-combine
 
 
-Chapter 3: GCC Command Options 199
 
 在 RTL 指令组合通过后转储。
 
@@ -10017,7 +9921,6 @@ RTL 代后转储。
 转储后缩短分支。
 
 
-Chapter 3: GCC Command Options 201
 
 - fdump-rtl-sibling
 在兄弟调用优化之后转储。
@@ -10100,7 +10003,6 @@ dp 在汇编程序输出中转储 RTL 作为每个指令之前的注释。还打
 
 
 ```
-Chapter 3: GCC Command Options 203
 ```
 ```
 “生” 转储原始内部树数据。此选项仅适用于 c++。
@@ -10195,7 +10097,6 @@ fdump-tree-evrp”选项调用 GCC。可以选择指定转储文件的名称。�
 
 
 ```
-Chapter 3: GCC Command Options 205
 ```
 3. 发现通过转储文件的名字由三个 componentsseparated 一段:源文件的名称
 调用 GCC 来编译,一个数字后缀表明通过数字紧随其后的是字母“t”树传递
@@ -10282,7 +10183,6 @@ gcc -fopt-info-vec-missed =矢量。小姐-fopt-info-loop-optimized = loop.opt
 
 
 ```
-Chapter 3: GCC Command Options 207
 ```
 禁用 RTL 传递过去。 pass 是传递名。如果在编译器中多次静态地
 
@@ -10384,7 +10284,6 @@ yfoobar。我”、“dir2 / yfoobar。年代”和“dir2 / yfoobar.o”。
 
 
 ```
-Chapter 3: GCC Command Options 209
 ```
 每一行上的第一个数字是“用户时间”，即执行程序本身所花费的时间。第二个
 
@@ -10483,7 +10382,6 @@ auxname”。 auxname 是由输出文件的名称生成的，如果显式指定�
 
 
 ```
-Chapter 3: GCC Command Options 211
 ```
 限定符动态意味着函数动态地操作堆栈:除了上面描述的静态分配之外，函数
 
@@ -10586,7 +10484,6 @@ ABI，或者控制特定于该机器的优化。按照惯例，特定于机器�
 
 
 ```
-Chapter 3: GCC Command Options 213
 ```
 ```
 为指定的数据模型生成代码。允许的值是“ilp32”，用于类系统数据模型，其中
@@ -10671,7 +10568,6 @@ a '或本机。
 
 
 ```
-Chapter 3: GCC Command Options 215
 ```
 ```
 在[' -march '和' -mcpu '特性修饰词]的小节中列出了特性的允许值，第 232 页。
@@ -10764,7 +10660,6 @@ march=armv8.4-a”启用此选项。
 
 
 ```
-Chapter 3: GCC Command Options 217
 ```
 “rcpc” (^) 使 RcPc 扩展。这不会改变 GCC 的代码生成，而是传递给汇编程序，允许内联
 asm 语句使用来自 RcPc 扩展的指令。
@@ -10859,7 +10754,6 @@ A 之前使用此选项。
 
 
 ```
-Chapter 3: GCC Command Options 219
 ```
 - mno-postmodify
 代码生成调整，分别禁用 32 位负载的分割、生成后增量地址和生成后修改地址。
@@ -10960,7 +10854,6 @@ mcpu=ARC700 '启用。
 
 
 ```
-Chapter 3: GCC Command Options 221
 ```
 - mno-mpy 不为 ARC700 生成 mpy-family 指令。不建议使用这个选项。
 - mmul32x16
@@ -11077,7 +10970,6 @@ fpuda 支持双精度浮点硬件扩展，使用双精度辅助指令。还启�
 
 
 ```
-Chapter 3: GCC Command Options 223
 ```
 使用双精度辅助指令支持双精度浮点硬件扩展。还支持所有单精
 
@@ -11170,7 +11062,6 @@ arc-linux-uclibc 和 arceb-linux-uclibc 目标构建的工具链中启用此选�
 
 
 ```
-Chapter 3: GCC Command Options 225
 ```
 - Gnum 将外部可见数据的定义放在一个小数据部分中，如果该数据不大于 num bytes。对
 于任何弧配置，num 的默认值为 4 ，当我们有双负载/存储操作时，则为 8 。
@@ -11256,7 +11147,6 @@ cpu 支持的值是
 
 
 ```
-Chapter 3: GCC Command Options 227
 ```
 “ARC 700 ” 使用标准的乘数块对 ARC700 CPU 进行调优。
 
@@ -11347,7 +11237,6 @@ prologues 中选择的一组)，这些信息可以用来定位在一个可执行
 
 
 ```
-Chapter 3: GCC Command Options 229
 ```
 ```
 为运行在 little-endian 模式下的处理器生成代码。这是所有标准配置的默认值。
@@ -11430,7 +11319,6 @@ vfpv4 浮点指令，具有 32 个双精度寄存器。
 高级 SIMD (Neon) v2 和 VFPv4 浮点指令。
 
 
-Chapter 3: GCC Command Options 231
 
 ```
 “+nosimd”禁用高级 SIMD 指令(不禁用浮点)。
@@ -11541,7 +11429,6 @@ SIMD 和浮点指令。
 扩展。
 
 
-Chapter 3: GCC Command Options 233
 
 ```
 ' + nocrypto '
@@ -11642,7 +11529,6 @@ GNU/Linux 上得到支持，并不是所有的体系结构都能被识别。如�
 改名字(+扩展...)
 
 
-Chapter 3: GCC Command Options 235
 
 它指定目标 ARM 处理器的名称。GCC 使用这个名称来派生目标 ARM 架构的名
 
@@ -11733,7 +11619,6 @@ GNU/Linux 上得到支持，并不是所有的体系结构都能被识别。如�
 
 
 ```
-Chapter 3: GCC Command Options 237
 ```
 告诉编译器执行函数调用，首先将函数的地址加载到寄存器中，然后在这个寄
 
@@ -11830,7 +11715,6 @@ GNU 描述符方案，它为共享库提供了更好的性能。GNU 描述符方
 
 
 ```
-Chapter 3: GCC Command Options 239
 ```
 ```
 当使用具有重叠目标寄存器和基寄存器的 ldrd 指令时，一些 Cortex-M3 内核会
@@ -11928,7 +11812,6 @@ avr51 “增强”设备，程序内存有 128 个 KiB。
 ```
 
 ```
-Chapter 3: GCC Command Options 241
 ```
 ```
 mcu = atmega128, atmega128a, atmega128rfa1, atmega128rfr2,
@@ -12042,7 +11925,6 @@ attiny12, attiny15, attiny28, at90s1200 。
 
 
 ```
-Chapter 3: GCC Command Options 243
 ```
 - mrelax (^) 尝试替换调用 resp。用更短的 RCALL resp 进行 JMP 指令。RJMP 指令如果适
 用。设置“-mrelax”只会将“-mlink-relax”选项添加到汇编程序的命令行，并将“-
@@ -12133,7 +12015,6 @@ __trampolines_start 符号在链接器脚本中定义。
 
 
 ```
-Chapter 3: GCC Command Options 245
 ```
 ```
 LDI:r24 lo8(gs(函数)
@@ -12232,7 +12113,6 @@ __AVR_HAVE_MOVW__
 
 
 ```
-Chapter 3: GCC Command Options 247
 ```
 __AVR_HAVE_LPMX__
 
@@ -12337,7 +12217,6 @@ mfdpic”，则表示“-msim”。
 
 
 ```
-Chapter 3: GCC Command Options 249
 ```
 - momit-leaf-frame-pointer
 不要将帧指针保存在叶函数的寄存器中。这避免了保存、设置和恢复帧指针的
@@ -12426,7 +12305,6 @@ mmultiore”一起使用。
 
 
 ```
-Chapter 3: GCC Command Options 251
 ```
 #### 3.18.7 C6X 选项
 
@@ -12527,7 +12405,6 @@ stack-frame = n
 
 
 ```
-Chapter 3: GCC Command Options 253
 ```
 ```
 sim 卡 这个选项被 cris-axis-elf 识别，它安排连接来自模拟器库的输入-输出函数。连
@@ -12623,7 +12500,6 @@ builtin”和“-mlong-branch”。
 
 
 ```
-Chapter 3: GCC Command Options 255
 ```
 ```
 生成适合快速周转开发的代码，例如允许 GDB 动态加载。o '文件到已经运行的程
@@ -12714,7 +12590,6 @@ ld(1)。
 
 
 ```
-Chapter 3: GCC Command Options 257
 ```
 这些选项被传递给达尔文链接器。达尔文链接人页面详细描述了它们。
 
@@ -12805,7 +12680,6 @@ fptmtrap-mode”。陷阱模式可以设置为以下四个值之一:
 
 
 ```
-Chapter 3: GCC Command Options 259
 ```
 通常，GCC 检查一个 32 或 64 位的整数常量，看看它是否可以在两个或三个指
 
@@ -12925,7 +12799,6 @@ mtune=native”如果 GCC 不识别处理器，就没有效果。
 
 
 ```
-Chapter 3: GCC Command Options 261
 ```
 “数量” 表示时钟周期的十进制数。
 
@@ -13032,7 +12905,6 @@ mfdpic’就没有效果。如果优化速度和编译共享库(例如， ' -fPI
 
 
 ```
-Chapter 3: GCC Command Options 263
 ```
 在生成线程本地代码时，假设有一个很大的 TLS 段。
 
@@ -13127,7 +12999,6 @@ fPIC”所暗示，而没有“-mfdpic”。您不应该必须显式地使用它
 
 
 ```
-Chapter 3: GCC Command Options 265
 ```
 此开关主要用于调试编译器，在将来的版本中可能会被删除。
 
@@ -13230,7 +13101,6 @@ ms”。
 
 
 ```
-Chapter 3: GCC Command Options 267
 ```
 - mno-space-regs
 生成假定目标没有空间寄存器的代码。这允许 GCC 生成更快的间接调用，并使
@@ -13313,7 +13183,6 @@ unix95.o '。' -munix=98 '提供额外的预定义。
 
 
 ```
-Chapter 3: GCC Command Options 269
 ```
 _XOPEN_UNIX， _XOPEN_SOURCE_EXTENDED， _INCLUDE__STDC_A1_SOURCE 和
 
@@ -13405,7 +13274,6 @@ Do(不要)生成代码，使用融合的乘法/加法或乘法/减法指令。�
 
 
 ```
-Chapter 3: GCC Command Options 271
 ```
 - mfixed-range =寄存器范围
 生成将给定寄存器范围视为固定寄存器的代码。固定寄存器是寄存器分配器不能
@@ -13492,7 +13360,6 @@ spec-insns
 
 
 ```
-Chapter 3: GCC Command Options 273
 ```
 - mmultiply-enabled
 使乘法指令。
@@ -13586,7 +13453,6 @@ section 属性)。这是默认的。
 
 
 ```
-Chapter 3: GCC Command Options 275
 ```
 #### 3.18.22 M680x0 选项
 
@@ -13685,7 +13551,6 @@ mc68020 (^) 为 68020 生成输出。当编译器配置为基于 68020 的系统
 
 
 ```
-Chapter 3: GCC Command Options 277
 ```
 - m68060 (^) 为 68060 生成输出。当编译器配置为基于 68060 的系统时，这是默认值。它
 等于‘-march=68060’。
@@ -13769,7 +13634,6 @@ rtd 指令由 68010 、 68020 、 68030 、 68040 、 68060 和 CPU32 处理器�
 
 
 ```
-Chapter 3: GCC Command Options 279
 ```
 ```
 控制 GCC 是否将 int、long、longlong、float、double 和 long double 变量对齐
@@ -13859,7 +13723,6 @@ GOTs 一起工作。然而，使用“-mxgot”生成的代码效率较低，因
 
 
 ```
-Chapter 3: GCC Command Options 281
 ```
 - mno-lsim
 假设已经提供了运行时支持，因此省略了链接器命令行中的模拟器库(' libsima .)。
@@ -13955,7 +13818,6 @@ mtf (^) 使所有函数默认为.far 部分。如果没有此选项，函数默�
 
 
 ```
-Chapter 3: GCC Command Options 283
 ```
 使用给定 CPU 的特性和调度代码。支持的值采用格式' vX.YY '。 Z ' ，其中 X 是
 
@@ -14049,7 +13911,6 @@ GCC 根据这个选项的值定义两个宏。第一个是_MIPS_ ARCH，它给�
 
 
 ```
-Chapter 3: GCC Command Options 285
 ```
 ```
 _mips_arch 的大写值。例如，' -march=r2000 '将_MIPS_ARCH 设置为“r2000”，
@@ -14137,7 +13998,6 @@ FP32 或 FP64 相互链接，但不能两者都链接。FP64A 扩展与 FP64 扩
 
 
 ```
-Chapter 3: GCC Command Options 287
 ```
 FRE 模式结合使用，并允许 FP32 和 FP64A 代码在不改变 FPU 模式的情况下
 
@@ -14226,7 +14086,6 @@ GCC 通常使用一条指令从 get 加载值。虽然这是相对有效的，�
 
 
 ```
-Chapter 3: GCC Command Options 289
 ```
 ```
 “-mnan=legacy”选项选择了遗留编码。在这种情况下，安静的 NaNs (qNaNs)表
@@ -14322,7 +14181,6 @@ sdata”是所有配置的默认值。
 
 
 ```
-Chapter 3: GCC Command Options 291
 ```
 如果链接器抱怨应用程序使用了太多的小数据，那么您可能需要尝试使用“-
 
@@ -14411,7 +14269,6 @@ MIPS 系统通过生成条件陷阱或中断指令来以零为单位检查除法
 
 
 ```
-Chapter 3: GCC Command Options 293
 ```
 - mmemcpy
 - mno-memcpy
@@ -14494,7 +14351,6 @@ R10K 上，即使是失败的指令也会有副作用。
 
 
 ```
-Chapter 3: GCC Command Options 295
 ```
 ```
 内存区域，那么缓存的数据将覆盖 dmaed 数据。有关完整的描述，包括其他
@@ -14583,7 +14439,6 @@ _clear_cache 时生成 synci 指令(如果启用)。
 
 
 ```
-Chapter 3: GCC Command Options 297
 ```
 ```
 “-mexplicit-relocs”效应。使用“-mno- explain -relocs”，这种优化可以由汇编程
@@ -14675,7 +14530,6 @@ Chapter 3: GCC Command Options 297
 
 
 ```
-Chapter 3: GCC Command Options 299
 ```
 - mam33- 2 使用特定于 AM33/2.0 处理器的特性生成代码。
 - mam34 使用特定于 AM34 处理器的特性生成代码。
@@ -14769,7 +14623,6 @@ mhwmult = 描述目标支持的硬件类型乘以。接受的值为“none”，
 
 
 ```
-Chapter 3: GCC Command Options 301
 ```
 - mcode-region =
 - mdata-region =
@@ -14860,7 +14713,6 @@ Chapter 3: GCC Command Options 301
 
 
 ```
-Chapter 3: GCC Command Options 303
 ```
 ```
 “本地” 为非外部、弱或未初始化的公共符号的小数据对象生成 gp 相关访
@@ -14959,7 +14811,6 @@ Volatile 内存访问通过加载和存储指令的 I/O 变体绕过缓存。默
 单精度浮点数:
 
 
-Chapter 3: GCC Command Options 305
 
 ```
 “fadd”，“fsubs”，“fdivs”，“fmuls”二值运
@@ -15060,7 +14911,6 @@ Chapter 3: GCC Command Options 305
 
 
 ```
-Chapter 3: GCC Command Options 307
 ```
 - mcustom-fcmpnes = 251
 - mcustom-fmuls = 252
@@ -15155,7 +15005,6 @@ m10 为 PDP-11/10 生成代码。^
 
 
 ```
-Chapter 3: GCC Command Options 309
 ```
 ```
 不要使用 abshi2 模式。
@@ -15259,7 +15108,6 @@ mtune '设置的调度参数。
 
 
 ```
-Chapter 3: GCC Command Options 311
 ```
 ```
 生成允许 ld 和 ld.的代码，以便使用非可执行的.plt 和. get 节构建可执行文件
@@ -15355,7 +15203,6 @@ endian PowerPC 系统上使用“-mmultiple”，因为当处理器处于 little
 
 
 ```
-Chapter 3: GCC Command Options 313
 ```
 ```
 式时，这些指令不能工作。例外是 PPC740 和 PPC750，它们允许在 little-
@@ -15442,7 +15289,6 @@ mbig-endian”选项与“-mbig”选项相同。
 
 
 ```
-Chapter 3: GCC Command Options 315
 ```
 ```
 “regroup_exact”
@@ -15534,7 +15380,6 @@ libads。”和“libc.a”。
 
 
 ```
-Chapter 3: GCC Command Options 317
 ```
 ```
 在 System V.4 和嵌入式 PowerPC 系统上，指定您正在为一个 VxWorks 系统进行
@@ -15623,7 +15468,6 @@ math '和' -fno- trappingmath ')。注意，虽然序列的吞吐量通常高于
 
 
 ```
-Chapter 3: GCC Command Options 319
 ```
 “所有” 启用所有估计指令。
 
@@ -15715,7 +15559,6 @@ mabi=lp64 '，其中不会在寄存器中传递浮点参数。
 ```
 
 ```
-Chapter 3: GCC Command Options 321
 ```
 ```
 ' -march=rv32if-mabi=ilp32d '无效，因为 ABI 要求在 F 寄存器中传递 64 位值，但
@@ -15808,7 +15651,6 @@ __RL78_G13__或__RL78_G14__。
 ```
 
 ```
-Chapter 3: GCC Command Options 323
 ```
 - mg10
 - mg13
@@ -15899,7 +15741,6 @@ mno-powerpc64”。
 
 
 ```
-Chapter 3: GCC Command Options 325
 ```
 ```
 ' -mcpu=powerpc '， ' -mcpu=powerpc64 '， ' -mcpu=powerpc64le '指定纯 32
@@ -15988,7 +15829,6 @@ endianness。
 
 
 ```
-Chapter 3: GCC Command Options 327
 ```
 - mno-vsx 生成使用(不使用)向量/标量(VSX)指令的代码，并允许使用允许更直接访问 VSX 指
 令集的内置函数。
@@ -16076,7 +15916,6 @@ FPRs 之外，还要将浮点参数传递给堆栈上的寄存器保存区域之
 
 
 ```
-Chapter 3: GCC Command Options 329
 ```
 对 AIX 调用约定进行了扩展，但最初并没有对调用函数的 K&R C 进行文档化处
 
@@ -16166,7 +16005,6 @@ contract=off”。
 
 
 ```
-Chapter 3: GCC Command Options 331
 ```
 ```
 在 System V.4 和嵌入式 PowerPC 系统上，不(do)假设不对齐的内存引用由系统处
@@ -16260,7 +16098,6 @@ insn 进入一个新组。
 
 
 ```
-Chapter 3: GCC Command Options 333
 ```
 - mcall-netbsd
 在 System V.4 和嵌入式 PowerPC 系统中，为 NetBSD 操作系统编译代码。
@@ -16349,7 +16186,6 @@ mrelocatable”选项不兼容。“-msdata=eabi”选项也设置了“-memb”
 
 
 ```
-Chapter 3: GCC Command Options 335
 ```
 - msdata 在 System V.4 和嵌入式 PowerPC 系统上，如果使用“-meabi”，则编译代码与“-
 msdata=eabi”相同，否则编译代码与“-msdata=sysv”相同。
@@ -16439,7 +16275,6 @@ math '和' -fno- trappingmath ')。注意，虽然序列的吞吐量通常高于
 ```
 
 ```
-Chapter 3: GCC Command Options 337
 ```
 ```
 “div”可以实现单精度和双精度的交互逼近指令。
@@ -16531,7 +16366,6 @@ fpu
 
 
 ```
-Chapter 3: GCC Command Options 339
 ```
 ```
 然而，浮点指令仅为 32 位浮点值生成，因此如果使用“-m64bit-double”选项，
@@ -16629,7 +16463,6 @@ limit '。因此，如果在命令行中指定' -min -register=4 '和' -mpid '�
 
 
 ```
-Chapter 3: GCC Command Options 341
 ```
 启用或禁用字符串操作指令 SMOVF、SCMPU、SMOVB、SMOVU、SUNTIL
 
@@ -16730,7 +16563,6 @@ m64”。
 ```
 
 ```
-Chapter 3: GCC Command Options 343
 ```
 台面
 
@@ -16826,7 +16658,6 @@ stack-guard 选项，则选择小于编译函数的帧大小的最小 2 倍。�
 
 
 ```
-Chapter 3: GCC Command Options 345
 ```
 ```
 对于具有 hotpatch 属性的单个函数，可以重写此选项。
@@ -16930,7 +16761,6 @@ m4 - 500 为 SH4- 500 生成代码(没有 FPU)。将' -isa=sh4-nofpu '传递给�
 
 
 ```
-Chapter 3: GCC Command Options 347
 ```
 ```
 生成 代码 为 的 SH4a 假设 的 浮点 单位 是 默认情况下为
@@ -17022,7 +16852,6 @@ SH4A，适用于多核系统。由于硬件指令只支持 32 位原子变量对
 ```
 
 ```
-Chapter 3: GCC Command Options 349
 ```
 ```
 该参数指定线程控制块结构中变量的字节偏移量，当选择“soft-tcb”
@@ -17114,7 +16943,6 @@ math 优化”和“-ffinite-math-only”有效。
 
 
 ```
-Chapter 3: GCC Command Options 351
 ```
 - mpretend-cmove
 为条件移动指令模式选择零位移条件分支。这会导致 SH4 处理器上的代码更快。
@@ -17208,7 +17036,6 @@ casa 指令。这是默认的。
 
 
 ```
-Chapter 3: GCC Command Options 353
 ```
 ```
 使用“- msd -struct-return”，编译器在返回结构或联合的函数中生成检查代码，
@@ -17299,7 +17126,6 @@ mno-vis”。
 
 
 ```
-Chapter 3: GCC Command Options 355
 ```
 - mvis3
 - mno-vis3
@@ -17388,7 +17214,6 @@ mcpu=leon '之外，在 CPU 上使用 FPU 支持 V8 或 V9 时，默认设置为
 
 
 ```
-Chapter 3: GCC Command Options 357
 ```
 这些内存模型在 SPARC-V9 架构手册的附录 D 中正式定义，如处理器的 PSTATE 中
 
@@ -17481,7 +17306,6 @@ nops”。禁用与
 
 
 ```
-Chapter 3: GCC Command Options 359
 ```
 #### 3.18.48 系统 V 选项
 
@@ -17586,7 +17410,6 @@ __v850e__。
 
 
 ```
-Chapter 3: GCC Command Options 361
 ```
 ```
 如果不定义“-mv850”或“-mv850e”或“-mv850e2”或“-mv850e2”或“-mv850e2v3”
@@ -17679,7 +17502,6 @@ libsim。一个有关。
 
 
 ```
-Chapter 3: GCC Command Options 363
 ```
 - mno-fpu
 - msoft-float
@@ -17779,7 +17601,6 @@ cpu 类型的选择是:
 Intel Lakemont MCU，基于 Intel 奔腾 CPU。
 ```
 
-Chapter 3: GCC Command Options 365
 
 ```
 “pentium-mmx”
@@ -17868,7 +17689,6 @@ SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES,
 PCLMUL, FSGSBASE, RDRND，
 
 
-Chapter 3: GCC Command Options 367
 
 FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT,
 
@@ -17971,7 +17791,6 @@ MOVBE, F16C, BMI, AVX, PCL MUL, AES, SSE4.2, SSE4.1, CX16, ABM,
 SSE4A, SSSE3, SSE2, SSE, MMX 和 64 位指令集扩展。
 
 
-Chapter 3: GCC Command Options 369
 
 ```
 “winchip-c6”
@@ -18062,7 +17881,6 @@ Haswell 和 Silvermont。如果您知道代码运行的 CPU，那么应该使
 
 
 ```
-Chapter 3: GCC Command Options 371
 ```
 - mfpmath =单位
 生成选定单元的浮点算法。单位的选择是:
@@ -18158,7 +17976,6 @@ CPU 总是有一个 FPU 时，该选项被覆盖，因此指令不需要仿真�
 
 
 ```
-Chapter 3: GCC Command Options 373
 ```
 ```
 longdouble 对齐到 16 字节的边界，方法是将 longdouble 填充为额外的 32 位
@@ -18250,7 +18067,6 @@ boundary=3 '来保持堆栈边界对齐到 8 字节边界。因为 x86-64 ABI �
 
 
 ```
-Chapter 3: GCC Command Options 375
 ```
 节的堆栈对齐，所以这是 ABI 不兼容的，并且打算在堆栈空间是重要限制的受
 
@@ -18347,7 +18163,6 @@ mincoming-stack-boundary”，则使用“-mpreferred-stack-boundary”指定的
 
 
 ```
-Chapter 3: GCC Command Options 377
 ```
 这些开关可以在 MMX、SSE、SSE2、SSE3、SSSE3、SSE4.1、AVX、AVX2、
 
@@ -18449,7 +18264,6 @@ RSQRTPS)，并使用一个附加的 Newton-Raphson 步骤来提高精度，而�
 
 
 ```
-Chapter 3: GCC Command Options 379
 ```
 ```
 请注意，GCC 在 RSQRTSS(或 RSQRTPS)中实现了 1.0f/sqrtf(x)，而不需要“-
@@ -18538,7 +18352,6 @@ GCC 通常使用的方式不同。特别是在使用 GCC 和本机 Microsoft 编
 的内存地址最高。
 
 
-Chapter 3: GCC Command Options 381
 
 2. 每个数据对象都有一个对齐要求。除了结构、结合和数组之外，所有数据
 
@@ -18637,7 +18450,6 @@ memcpy、strlen 和 memset 的代码性能。
 
 
 ```
-Chapter 3: GCC Command Options 383
 ```
 ```
 列表中三联项的最大大小必须按递增顺序指定。alg 的最小字节大小是第一个
@@ -18722,7 +18534,6 @@ branch=thunk-extern”不相容，因为在大型代码模型中，thunk 函数�
 
 
 ```
-Chapter 3: GCC Command Options 385
 ```
 ```
 ' -fcf-protection=branch '和' -fcheck-pointer-bounds '，因为不能修改外部 thunk 以
@@ -18815,7 +18626,6 @@ Windows 预定义宏，但不影响运行时库/启动代码的选择。
 
 
 ```
-Chapter 3: GCC Command Options 387
 ```
 - fwritable-relocated-rdata
 此选项可用于 MinGW 和 Cygwin 目标。它指定将只读部分中的重定位数据放
@@ -18907,7 +18717,6 @@ CALLX 指令。默认值是“-mno-longcalls”。这个选项应该在调用目
 ```
 
 ```
-Chapter 3: GCC Command Options 389
 ```
 ### 3.19 指定要传递给它们的子进程和开关
 
@@ -19011,7 +18820,6 @@ Spec 字符串是要传递给相应程序的命令行选项的列表。此外，
 文件。与“%g”不同，这对争论没有任何意义。
 
 
-Chapter 3: GCC Command Options 391
 
 % gsuffix (^) 替换一个有后缀的文件名，每次编译都选择一次，并将参数标记为“%d”。为
 了减少拒绝服务攻击的暴露，现在选择文件名的方式很难预测，即使以前选择
@@ -19104,7 +18912,6 @@ Y % 输出“-Wa”指定的累计汇编程序选项。
 
 
 ```
-Chapter 3: GCC Command Options 393
 ```
 ```
 %L 处理 lib 规范。这是一个规范字符串，用于决定链接器的命令行中包含哪些库。
@@ -19211,7 +19018,6 @@ CPP。
 
 
 ```
-Chapter 3: GCC Command Options 395
 ```
 % { X } *: (^) 如果一个或多个名称以-S 开头的交换机被指定给 GCC，则替换 X。通常 X 只被
 替换一次，不管有多少这样的开关出现。但是，如果%*出现在 X 中的某个位
@@ -19307,7 +19113,6 @@ GCC_EXEC_PREFIX
 
 
 ```
-Chapter 3: GCC Command Options 397
 ```
 如果设置了 GCC_EXEC_PREFIX，它将指定一个前缀，用于在编译器执行的子程
 
@@ -19416,7 +19221,6 @@ SOURCE_DATE_EPOCH 的值必须是一个 UNIX 时间戳，定义为自 1970 年 1
 
 
 ```
-Chapter 3: GCC Command Options 399
 ```
 ### 3.21 使用预编译头
 
@@ -19544,7 +19348,6 @@ ABI 决定”。参见第 9 章[二进制兼容性]、第 817 页和 http://gcc.
 由 ABI。
 
 
-Chapter 4: C Implementation-Defined Behavior 403
 
 - 执行字符集成员的值 _(C90_ 、 _C99_ 和 _C11 5.2.1)_ 。
 由 ABI。
@@ -19668,7 +19471,6 @@ C99 附件 F 如下。
 
 
 ```
-Chapter 4: C Implementation-Defined Behavior 405
 ```
 C99 附件 F 如下。
 
@@ -19778,7 +19580,6 @@ C90 6.5.2.1, C99 和 C11 6.7.2, C99 和 C11 6.7.2.1) 。
 
 
 ```
-Chapter 4: C Implementation-Defined Behavior 407
 ```
 6.7.2.1) 。
 
@@ -19896,7 +19697,6 @@ C99 和 C11) 的方法
 ```
 
 ```
-Chapter 4: C Implementation-Defined Behavior 409
 ```
 ### 4.15 体系结构
 
@@ -20015,7 +19815,6 @@ __auto_type(参见第 6.6 节[typeof]，第 446 页)。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 413
 ```
 ```
 构造一个临时的对象来保存语句表达式的结果，该对象用于调用 Foo。因此 Foo 观察到的
@@ -20122,7 +19921,6 @@ can do more than simply store label addresses in label variables.
 
 
 ```
-Chapter 6: Extensions to the C Language Family 415
 ```
 ```
 注意，这并不能检查下标是否在 C 中的 bounds-array 索引中。
@@ -20224,7 +20022,6 @@ goto 失败;
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 417
 ```
 嵌套函数总是没有链接。声明一个带有外部或静态的是错误的。如果需要在定义之前声
 
@@ -20340,7 +20137,6 @@ typeof(x[0](1))
 假设 x 是指向函数的指针数组;所描述的类型是函数值的类型。
 ```
 
-Chapter 6: Extensions to the C Language Family 419
 
 ```
 这里有一个用 typename 作为参数的例子:typeof (int *)
@@ -20446,7 +20242,6 @@ GCC 附带的特殊库例程。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 421
 ```
 ### 6.10 复数
 
@@ -20538,7 +20333,6 @@ __fp16 类型只能用作<arm_fp16 中定义的 intrinsic 的参数。h>，或�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 423
 ```
 ```
 ARM 目标为__fp16 和浮点值之间的转换提供硬件支持，作为 VFP 和 NEON(高级 SIMD)
@@ -20641,7 +20435,6 @@ p3 乘以 8 ，得到 0x1 的值。fp3 和 1.55e1 是一样的。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 425
 ```
 海湾合作委员会对技术报告草案规定的定点类型的支持是不完整的:
 
@@ -20745,7 +20538,6 @@ RAM)读取的这些数据，因此需要 AVR-LibC 中的 pgm_read_byte 以及属
 
 
 ```
-Chapter 6: Extensions to the C Language Family 427
 ```
 ```
 被更改，那么这仍然适用。在这种情况下，正确的限定条件是 constvolatile，因此编
@@ -20850,7 +20642,6 @@ char 类型的单个成员一样。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 429
 ```
 ### 6.19 可变长度的数组
 
@@ -20957,7 +20748,6 @@ struct foo { int[4];};struct foo f();
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 431
 ```
 ### 6.23 空指针和函数指针的算术
 
@@ -21058,7 +20848,6 @@ int a[6] = {0,0,0,0,15,0,0,29,0};
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 433
 ```
 如果其中的值有副作用，那么副作用只发生一次，而不是针对范围初始化器初始化的每个
 
@@ -21167,7 +20956,6 @@ int j = i + 2;
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 435
 ```
 将同一函数的不同声明的兼容属性规范合并。不与已应用于同一函数声明的属性兼容的属
 
@@ -21274,7 +21062,6 @@ cold 函数上的 cold 属性用于通知编译器该函数不太可能被执行
 
 
 ```
-Chapter 6: Extensions to the C Language Family 437
 ```
 ```
 于处理不太可能的条件(如 perror)的函数标记为 cold，可以改进在罕见情况下
@@ -21375,7 +21162,6 @@ sscanf、sscanf、strftime、vfprintf、vfprintf 和 vsprintf 的格式，无论
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 439
 ```
 ```
 求这些警告，都不需要修改。在 C99 模式下，还检查函数 snprintf、vsnprintf、
@@ -21469,7 +21255,6 @@ __attribute__((ifunc(“resolve_memcpy”)));
 
 
 ```
-Chapter 6: Extensions to the C Language Family 441
 ```
 ```
 在 c++中，ifunc 属性接受一个字符串，该字符串是解析器函数的损坏名。对于
@@ -21572,7 +21357,6 @@ no_sanitize_thread
 
 
 ```
-Chapter 6: Extensions to the C Language Family 443
 ```
 no_sanitize_undefined
 函数上的 no_sanitize_undefined 属 性 用 于 通 知 编 译 器 在 使 用“-
@@ -21654,7 +21438,6 @@ nothrow nothrow 属性用于通知编译器函数不能抛出异常。例如，�
 
 
 ```
-Chapter 6: Extensions to the C Language Family 445
 ```
 ```
 而其他选项则假定使用-f 前缀。您还可以使用“#pragmaGCCoptimize”pragma
@@ -21755,7 +21538,6 @@ stack_protect
 
 
 ```
-Chapter 6: Extensions to the C Language Family 447
 ```
 ```
 例如，在 x86 上，您可以使用目标(“sse4.1,arch=core2”)属性和另一个目标
@@ -21865,7 +21647,6 @@ int i __attribute__(能见度(“隐藏”));
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 449
 ```
 此属性仅适用于特定的名称空间主体，而不适用于相同名称空间的其他定义;
 
@@ -21973,7 +21754,6 @@ __attribute__(目标(“+crc+nocrypto”))
 
 
 ```
-Chapter 6: Extensions to the C Language Family 451
 ```
 ```
 {
@@ -22085,7 +21865,6 @@ naked 这个属性允许编译器构造必需的函数声明，同时允许函�
 
 
 ```
-Chapter 6: Extensions to the C Language Family 453
 ```
 个人电脑
 
@@ -22188,7 +21967,6 @@ OS_main 属性可以在函数输入时禁用中断时使用。当必须更改堆
 
 
 ```
-Chapter 6: Extensions to the C Language Family 455
 ```
 信号 在 AVR 上使用这个属性来指示指定的函数是一个中断处理程序。当这个属性
 
@@ -22288,7 +22066,6 @@ long_call short_call
 
 
 ```
-Chapter 6: Extensions to the C Language Family 457
 ```
 #### 6.31.9 H8/300 函数属性
 
@@ -22396,7 +22173,6 @@ seth/add3/jl 指令序列)。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 459
 ```
 中断 interrupt_handler
 使用此属性指示指定的函数是一个中断处理程序。当这个属性出现时，编译器
@@ -22503,7 +22279,6 @@ dllimport
 
 
 ```
-Chapter 6: Extensions to the C Language Family 461
 ```
 在支持可见性属性的系统中，该属性还意味着“默认”可见性。显式指定任何其
 
@@ -22614,7 +22389,6 @@ microMIPS 和非 microMIPS 代码可能会与一些 GCC 扩展(如__ builtin_app
 
 
 ```
-Chapter 6: Extensions to the C Language Family 463
 ```
 nocompression
 在 MIPS 目标上，可以使用 no 压缩函数属性在本地关闭 MIPS16 和 microMIPS
@@ -22740,7 +22514,6 @@ asm 或基本的 asm 和 C 代码混合使用，但它们不能依赖于可靠�
 
 
 ```
-Chapter 6: Extensions to the C Language Family 465
 ```
 ```
 在编译 Nios II 时，允许以下选项:
@@ -22851,7 +22624,6 @@ PowerPC V2.05 体系结构的处理器上实现的通用注册指令的代码。
 “popcntb”
 ```
 
-Chapter 6: Extensions to the C Language Family 467
 
 ```
 “no-popcntb”
@@ -22954,7 +22726,6 @@ naked 这个属性允许编译器构造必需的函数声明，同时允许函�
 
 
 ```
-Chapter 6: Extensions to the C Language Family 469
 ```
 fast_interrupt
 在 RX 端口上使用这个属性来指示指定的函数是一个快速中断处理程序。这就
@@ -23056,7 +22827,6 @@ interrupt_handler
 
 
 ```
-Chapter 6: Extensions to the C Language Family 471
 ```
 nosave_low_regs
 在 SH 目标上使用这个属性来指示一个 interrupt_handler 函数不应该保存和恢
@@ -23170,7 +22940,6 @@ ms_hook_prologue
 
 
 ```
-Chapter 6: Extensions to the C Language Family 473
 ```
 ```
 在 32 位和 64 位 x86 目标上，可以使用这个函数属性使 GCC 生成 Windows XP
@@ -23278,7 +23047,6 @@ aes 的
 “popcnt”
 
 
-Chapter 6: Extensions to the C Language Family 475
 
 ```
 “no-popcnt”
@@ -23386,7 +23154,6 @@ protection=branch '选项编译时，不应该检测通过指针的调用。编
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 477
 ```
 译器假设函数的地址来自指针，是控制流传输的有效目标。通过
 
@@ -23491,7 +23258,6 @@ warn_if_not_aligned(对齐)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 479
 ```
 此属性指定结构字段的阈值，以字节为单位。如果结构字段对齐到阈值以下，
 
@@ -23593,7 +23359,6 @@ main()
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 481
 ```
 ```
 /*初始化堆栈指针*/ init_sp(堆栈+
@@ -23691,7 +23456,6 @@ RAM 浪费在只读数据或从 flash 中读取数据。通过避免使用 progm
 
 
 ```
-Chapter 6: Extensions to the C Language Family 483
 ```
 ```
 编译器将 0x4000 添加到 progmem 中的对象地址和声明，并在闪
@@ -23796,7 +23560,6 @@ seth/add3 指令来加载它们的地址)。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 485
 ```
 #### 6.32.8 议员变量属性
 
@@ -23915,7 +23678,6 @@ shared 使用这个属性在.shared 内存空间中放置一个变量。这个�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 487
 ```
 #### 6.32.12 PowerPC 变量属性
 
@@ -24023,7 +23785,6 @@ __attribute__((对齐(8)));
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 489
 ```
 常会使复制操作更有效，因为编译器可以使用任何指令复制最大的内存块，当
 
@@ -24125,7 +23886,6 @@ may_alias
 
 
 ```
-Chapter 6: Extensions to the C Language Family 491
 ```
 ```
 中，一个 lvalue 表达式去引用这样一个指针被视为具有字符类型。有关别名问
@@ -24221,7 +23981,6 @@ __up;
 
 
 ```
-Chapter 6: Extensions to the C Language Family 493
 ```
 ```
 该接口允许使用 int*调用约定传递 int*或 unionwait*参数。程序可以调用任何
@@ -24334,7 +24093,6 @@ GCC 允许将属性设置为 C 标签。有关使用属性的确切语法，请�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 495
 ```
 ```
 asm goto(“some asm”::::NoError);
@@ -24435,7 +24193,6 @@ Attributes]第 533 页，了解应用于 enumerators 的属性的语义。有关
 
 
 ```
-Chapter 6: Extensions to the C Language Family 497
 ```
 属性说明符列表是一个或多个属性说明符的序列，不由任何其他标记分隔。
 
@@ -24559,7 +24316,6 @@ declarator-type-list 类型”，则 TD1 为 ident 指定类型“deriveddeclara
 
 
 ```
-Chapter 6: Extensions to the C Language Family 499
 ```
 针到函数类型，则将其视为应用于指针目标类型;如果将此类属性应用于非指针到函数类
 
@@ -24668,7 +24424,6 @@ GCC 实现了三种不同的声明函数内联的语义。一种是' -std=gnu89 
 }
 ```
 
-Chapter 6: Extensions to the C Language Family 501
 
 如果您正在编写一个要包含在 ISO C90 程序中的头文件，请编写__inline__而不是 inline -
 __。参见第 6.46 节[替换关键字]，第 595 页。
@@ -24765,7 +24520,6 @@ asm 关键字允许您在 C 代码中嵌入汇编指令。GCC 提供了两种形
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 503
 ```
 ```
 您还可以使用 asm 关键字来覆盖 C 符号的汇编程序名，或者将 C 变量放在特定的寄存
@@ -24871,7 +24625,6 @@ asm 关键字是 GNU 的扩展。当编写可以用' -ansi '和各种' -std '选
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 505
 ```
 ```
 goto 这个限定符通知编译器，asm 语句可能会跳转到 GotoLabels 中列出的标签之一。看到
@@ -24975,7 +24728,6 @@ printf(“%u: %u %u\n”，x, dwSomeValue, dwRes);}
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 507
 ```
 ```
 下面的示例演示了需要使用 volatile 限定符的情况。它使用 x86 rdtsc 指令，它读取计算
@@ -25076,7 +24828,6 @@ ertemplate]，第 547 页)可能有助于解决这个问题。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 509
 ```
 ```
 “xchg{l}\t{%}ebx， %1”对应两者
@@ -25180,7 +24931,6 @@ uint32_t 掩码= 1234;uint32_t 指数;
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 511
 ```
 ```
 asm(“bsfl %(aMask)%(aIndex)”
@@ -25277,7 +25027,6 @@ __asm__(“指令”
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 513
 ```
 ```
 饰符(例如' %k2 '而不是' %2 ')。通常，这些限定符是硬件相关的。x86 支持的修饰符列表见
@@ -25373,7 +25122,6 @@ void dscal (size_t n, double *x, double alpha)
 还可以定义一个变量，并将其作为与输入绑定的输出，与 a0 和 a1 绑定，分别与 ap 和 lda
 
 
-Chapter 6: Extensions to the C Language Family 515
 
 绑定。当然，对于绑定的输出，asm 在修改输出寄存器后不能使用输入值，因为它们是一
 个和相同的寄存器。更重要的是，如果您省略了输出的早期 clobber，那么 GCC 可能会将
@@ -25470,7 +25218,6 @@ int frob(int x)
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 517
 ```
 #### 6.45.2.8 x86 操作数修饰符
 
@@ -25572,7 +25319,6 @@ asm 接受一个输入，在内部弹出，并产生两个输出。asm(“fsinco
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 519
 ```
 ```
 这个 asm 接受两个输入，由 fyl2xp1 操作码弹出，并用一个输出替换它们。对于编译器来
@@ -25661,7 +25407,6 @@ const_vector)是允许的。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 521
 ```
 允许匹配指定操作数的操作数。如果一个数字与同一选项中的字母一起使用，
 
@@ -25777,7 +25522,6 @@ k 堆栈指针寄存器
 w 浮点寄存器、高级 SIMD 向量寄存器或 SVE
 ```
 
-Chapter 6: Extensions to the C Language Family 523
 
 向量寄存器
 
@@ -25879,7 +25623,6 @@ AVR 家庭 - config / AVR / constraints.md '
 
 
 ```
-Chapter 6: Extensions to the C Language Family 525
 ```
 ```
 l 寄存器从 r0 到 r15 a。 注册从
@@ -25985,7 +25728,6 @@ N 检查添加/子指令的 64 位宽常量
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 527
 ```
 G 浮点常数，适用于存储立即
 
@@ -26094,7 +25836,6 @@ O 常数 0 或 1
 或 bin x 的位域掩码 适用于 bext 或 bin 的倒置位域掩码
 ```
 
-Chapter 6: Extensions to the C Language Family 529
 
 ```
 l 16 位无符号常数，4(0)的倍数。 65532 年代 签署的 20 位常数
@@ -26194,7 +25935,6 @@ R02 $r0 或$r2，或$r2r0 的 32 位值。
 R13 $r1 或$r3，或$r3r1 的 32 位值。
 ```
 
-Chapter 6: Extensions to the C Language Family 531
 
 Rdi 可以保存 64 位值的寄存器。
 
@@ -26308,7 +26048,6 @@ R 可以在非宏加载或存储中使用的地址。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 533
 ```
 ```
 ZC:一种内存操作数，其地址由基寄存器和偏移量构成，适用于与 ll 和 sc 具有
@@ -26409,7 +26148,6 @@ Ip05 无符号的移动 45 指令的 5 比特值，范围为 16 - 47 。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 535
 ```
 ```
 Iu06 addri36 的无符号立即 6 位值约束。sp 教诲
@@ -26506,7 +26244,6 @@ R 在操作码中编码的一种内存引用。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 537
 ```
 PowerPC 和 IBM RS6000——“ 配置 / RS6000 / constraints.md”
 
@@ -26617,7 +26354,6 @@ wM 如果有 XXLORC 指令，将向量常数与所有 1 匹配。
 wQ 与 lq 和 stq 指令一起工作的内存地址。
 
 
-Chapter 6: Extensions to the C Language Family 539
 
 wS 矢量常数，可以装载 XXSPLTIB &符号 ex10 -。
 锡安。
@@ -26700,7 +26436,6 @@ Ws1 使用 SP 作为基本寄存器的内存引用，具有可选性
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 541
 ```
 1 字节偏移量。
 
@@ -26803,7 +26538,6 @@ e 浮点寄存器。它相当于 SPARC-V8 体系结构上的“f”，并包含 
 V9 体系结构上的上下浮动点寄存器。
 ```
 
-Chapter 6: Extensions to the C Language Family 543
 
 ```
 c 浮点寄存器状态码。
@@ -26897,7 +26631,6 @@ TI C6X 家族 ——“ 配置 / C6X / constraints.md”
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 545
 ```
 A 谓词寄存器在寄存器文件 A 中(C64X 上为 A0-A2，其他为 A1 和
 
@@ -27020,7 +26753,6 @@ I 签署了 8 位整数常数。
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 547
 ```
 J 签署了 16 位整数常数。
 
@@ -27144,7 +26876,6 @@ I 在 0 范围内的整数常数。 31 日,32 位的变化。
 J 在 0 范围内的整数常数。 63 年为 64 位的变化。
 ```
 
-Chapter 6: Extensions to the C Language Family 549
 
 K 签署了 8 位整数常数。
 
@@ -27261,7 +26992,6 @@ GCC 不支持对非静态局部变量使用这个特性，因为这些变量没�
 
 
 ```
-Chapter 6: Extensions to the C Language Family 551
 ```
 ```
 要指定函数的汇编器名称，请在函数定义之前为其编写一个声明，并将 asm 放在那里，如
@@ -27374,7 +27104,6 @@ asm(“sysint”:“= r”(结果):“0”(p1),“r”(p2));
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 553
 ```
 ```
 定义寄存器变量并不保留寄存器。除了调用扩展的 asm 之外，指定寄存器的内容没有得
@@ -27471,7 +27200,6 @@ __PRETTY_FUNCTION__ =无效:子(int)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 555
 ```
 #### void * __builtin_return_address(无符号 int 级别) (内置函数)
 
@@ -27589,7 +27317,6 @@ a = l + a; /*错误，不能将 long 转换为 int. */^
 
 
 ```
-Chapter 6: Extensions to the C Language Family 557
 ```
 ```
 typedef int v4si __attribute__ (vector_size (16)));
@@ -27696,7 +27423,6 @@ uintptr_t 类型一样。也就是说，它们不受指针指向的类型大小�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 559
 ```
 第一个参数指向的对象必须是整数或指针类型。它不能是布尔型。
 
@@ -27801,7 +27527,6 @@ __ATOMIC_SEQ_CST
 执行所有其他__ATOMIC_SEQ_CST 操作的总排序。
 
 
-Chapter 6: Extensions to the C Language Family 561
 
 注意，在 c++ 11 内存模型中，fence(例如，“__atomic_thread_fence”)与其他针对特定内
 存位置的原子操作(例如，原子负载)一起生效;对特定内存位置的操作不一定会以相同的方
@@ -27932,7 +27657,6 @@ memorder)
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 563
 ```
 ```
 这些内置函数执行名称建议的操作，并返回以前在*ptr 中的值。对指针参数执行操
@@ -28088,7 +27812,6 @@ bool __builtin_smull_overflow (long int a, long int b, long int *res) (内置函
 
 
 ```
-Chapter 6: Extensions to the C Language Family 565
 ```
 bool __builtin_smulll_overflow (long long long long int a, long long
 
@@ -28223,7 +27946,6 @@ memcpy__builtin_memcpy_chk 内置函数。这个内置的参数有一个附加�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 567
 ```
 如果不知道这个参数的大小，那么这个参数就是在 dest 参数指向或(size_t)- 1 的对象中剩
 余的字节数。
@@ -28334,7 +28056,6 @@ void __builtin___bnd_store_ptr_bounds (const void[内置函数]**ptr_addr, const
 
 
 ```
-Chapter 6: Extensions to the C Language Family 569
 ```
 ```
 extern void *__wrap_memset (void *dst, int c, size_t len)
@@ -28447,7 +28168,6 @@ p,isxdigit,放低,toupper,实 验 室,ldexp,log10,日
 
 
 ```
-Chapter 6: Extensions to the C Language Family 571
 ```
 vprintf 和 vsprintf 都被识别为内置函数，除非指定了' -fno-builtin '(或为单个函数指定' -
 fno- build -function ')。
@@ -28555,7 +28275,6 @@ foo_float (tmp); 其他\ \ abort(); \ tmp; \
 
 
 ```
-Chapter 6: Extensions to the C Language Family 573
 ```
 #### 类型 __builtin_call_with_static_chain(call_exp, (内置函数)pointer_exp)
 
@@ -28666,7 +28385,6 @@ __builtin_constant_p(表达)?(表达式):1,
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 575
 ```
 ```
 这是一个可接受的初始化器，即使表达式不是常量表达式，包括__builtin_constant_p
@@ -28779,7 +28497,6 @@ int __builtin_LINE() (内置函数)
 }
 ```
 
-Chapter 6: Extensions to the C Language Family 577
 
 void __builtin___clear_cache (char *begin, char *end)[内置函数]这个函数用于刷新开
 
@@ -28812,7 +28529,6 @@ a[i] = a[i] + b[i];
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 578
 ```
 ```
 Similar to
@@ -28885,7 +28601,6 @@ _Decimal128 __builtin_infd128(空白) (内置函数)
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 579
 ```
 ```
 [Built-in Function]
@@ -29032,7 +28747,6 @@ __builtin_popcount (unsigned int x) (内置函数)
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 581
 ```
 ```
 [Built-in Function]
@@ -29163,7 +28877,6 @@ uint64_t __builtin_bswap64 (uint64tx) (内置函数)
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 583
 ```
 ```
 unsigned int __builtin_aarch64_get_fpcr () void
@@ -29273,7 +28986,6 @@ __aligned nof__(*(char *)val) >= alignval，因为 alignof 只看到取消引用
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 585
 ```
 空白__builtin_arc_brk(空白) (内置函数)
 
@@ -29421,7 +29133,6 @@ __builtin_arc_lr()
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 587
 ```
 ```
 __builtin_arc_sleep()
@@ -29519,7 +29230,6 @@ __v8hi __builtin_arc_vasrsrwi (__v8hi, const int)
 __v8hi __builtin_arc_vasrwi (__v8hi, const int)
 ```
 
-Chapter 6: Extensions to the C Language Family 589
 
 __v8hi __builtin_arc_vsr8awi (__v8hi, const int)
 __v8hi __builtin_arc_vsr8i (__v8hi, const int)
@@ -29613,7 +29323,6 @@ d .城市翻译
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 591
 ```
 #### 6.59.7 ARM C 语言扩展 (ACLE)
 
@@ -29722,7 +29431,6 @@ fract get_bits (uint_ur_t uval)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 593
 ```
 #### 6.59.11 黑鳍白鲑内置函数
 
@@ -29829,7 +29537,6 @@ uw2__MDROTLI(uw2 常量) _c = __MDROTLI(a,b)_^ MDROTLIa # b,c^
 void__MDSUBACCS(acc,acc) __MDSUBACCS(b) MDSUBACCSa b
 
 
-Chapter 6: Extensions to the C Language Family 595
 
 void__MDUNPACKH(uw1 * uw2) (^) __MDUNPACKH(乙) MDUNPACKHa b
 uw2__MEXPDHD(uw1 常量) _c = __MEXPDHD(a,b)_ MEXPDHDa # b,c
@@ -29928,7 +29635,6 @@ void__IACCsetl(iaccreg sw1x)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 597
 ```
 void__data_prefetch0(constvoid * x)
 使用 dcpl 指令将地址 x 的内容加载到数据缓存中。
@@ -30032,7 +29738,6 @@ v_2qiqi_2v_构建
 imm0_31)等__builtin_mips_extp(a64、手机等)等
 ```
 
-Chapter 6: Extensions to the C Language Family 599
 
 ```
 __builtin_mips_extpdp(a64 imm0_31)等
@@ -30143,7 +29848,6 @@ uint16x4_t);uint32x2_t paddw_u (uint32x2_t s,
 uint32x2_t);uint16x4_t paddh_u (uint16x4_t s,
 
 
-Chapter 6: Extensions to the C Language Family 601
 
 ```
 uint16x4_t);uint8x8_t paddb_u (uint8x8_t s, uint8x8_t);int32x2_t
@@ -30254,7 +29958,6 @@ v2sf__builtin_mips_plu_ps(v2sf,v2sf)对下上(plu.ps)。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 603
 ```
 v2sf__builtin_mips_puu_ps(v2sf,v2sf)对上部(puu.ps)。
 
@@ -30366,7 +30069,6 @@ v2sf a、b;如果
 
 
 ```
-Chapter 6: Extensions to the C Language Family 605
 ```
 ```
 upper_halves_are_equal();
@@ -30464,7 +30166,6 @@ MSA 实现 128 位宽矢量寄存器，对 8 - 、 16 - 、 32 - 和 64 - 整数
 
 
 ```
-Chapter 6: Extensions to the C Language Family 607
 ```
 - imm_n4096_4088，一个范围为- 512 到 511 的整数文本，左移 3 位，即。， - 4096 ， - 4088,
 4080, 4088;
@@ -30561,7 +30262,6 @@ v16u8 __builtin_msa_binsli_b (v16u8, v16u8, imm0_7);v8u16
 __builtin_msa_binsli_h (v8u16, v8u16, imm0_15);v4u32
 ```
 
-Chapter 6: Extensions to the C Language Family 609
 
 ```
 __builtin_msa_binsli_w (v4u32, v4u32, imm0_31);v2u64
@@ -30656,7 +30356,6 @@ __builtin_msa_clti_u_d(v2u64 imm0_31);
 __builtin_msa_copy_s_h(v8i16 imm0_7);等
 ```
 
-Chapter 6: Extensions to the C Language Family 611
 
 ```
 __builtin_msa_copy_s_w(v4i32 imm0_3);i64
@@ -30745,7 +30444,6 @@ v4f32 __builtin_msa_ffqr_w(v8i16);v2f64
 __builtin_msa_ffqr_d(v4i32);
 ```
 
-Chapter 6: Extensions to the C Language Family 613
 
 ```
 v16i8 __builtin_msa_fill_b(手机等);v8i16
@@ -30831,7 +30529,6 @@ v16i8 __builtin_msa_ilvev_b(v16i8 v16i8);v8i16
 __builtin_msa_ilvev_h(v8i16 v8i16);v4i32
 ```
 
-Chapter 6: Extensions to the C Language Family 615
 
 ```
 __builtin_msa_ilvev_w(v4i32 v4i32);v2i64
@@ -30926,7 +30623,6 @@ __builtin_msa_mod_u_h(v8u16 v8u16);v4u32
 __builtin_msa_mod_u_w(v4u32 v4u32);v2u64
 ```
 
-Chapter 6: Extensions to the C Language Family 617
 
 ```
 __builtin_msa_mod_u_d(v2u64 v2u64);v16i8
@@ -31019,7 +30715,6 @@ v16i8 __builtin_msa_srai_b(v16i8 imm0_7);v8i16
 __builtin_msa_srai_h(v8i16 imm0_15);v4i32
 ```
 
-Chapter 6: Extensions to the C Language Family 619
 
 ```
 __builtin_msa_srai_w(v4i32 imm0_31);v2i64
@@ -31120,7 +30815,6 @@ __delay_cycles(longlongcycles)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 621
 ```
 这将插入一个指令序列，该指令序列需要完全完成周期(在 0 到 17E9 之间)。
 
@@ -31239,7 +30933,6 @@ IBM PowerPC Cell Broadband Engine Architecture CPU。
 这是一个例子:
 
 
-Chapter 6: Extensions to the C Language Family 623
 
 ```
 #ifdef __BUILTIN_CPU_SUPPORTS__
@@ -31333,7 +31026,6 @@ spe 的 CPU 有一个信号处理扩展单元。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 625
 ```
 ```
 浮动__builtin_recipdivf(浮动,浮动);浮动__builtin_rsqrtf(浮动);双
@@ -31426,7 +31118,6 @@ int scalar_cmp_exp_gt (double arg1, double arg2);int scalar_cmp_exp_lt
 arg2);int scalar_cmp_exp_unordered (double arg1, double arg2);
 ```
 
-Chapter 6: Extensions to the C Language Family 627
 
 ```
 bool scalar_test_data_class(浮动源，const int 条件);bool scalar_test_data_class(双
@@ -31521,7 +31212,6 @@ vec_all_nez(向量无符号短，向量无符号短);int vec_all_nez(向量符�
 量符号 int);int vec_all_nez(向量无符号 int，向量无符号 int);
 
 
-Chapter 6: Extensions to the C Language Family 629
 
 ```
 int vec_any_eqz(向量签名 char，向量签名 char);int vec_any_eqz (vector
@@ -31614,7 +31304,6 @@ vec_all_nez、vec_any_eqz 和 vec_cmpnez 对两个向量参数中相同位置的
 
 
 ```
-Chapter 6: Extensions to the C Language Family 631
 ```
 ```
 vec_cntlz_lsbb 函数返回连续的主要字节元素数量的计数(从提供的 vector 参数中从位置
@@ -31714,7 +31403,6 @@ vec_abs(向量签名 int);向量 float vec_abs(向量 float);
 符号 int);
 ```
 
-Chapter 6: Extensions to the C Language Family 633
 
 ```
 矢量符号矢量符号矢量符号矢量符号矢量符号矢量符号矢量符号矢量符号矢量符号
@@ -31813,7 +31501,6 @@ int);向量 bool short vec_andc (vector bool short, vector bool short);向量有
 向量有符号的短 vec_andc(向量有符号的短，向量有符号的短);向量无符号短向量
 ```
 
-Chapter 6: Extensions to the C Language Family 635
 
 ```
 矢量无符号短矢量(矢量无符号短，矢量 bool 短);
@@ -31899,7 +31586,6 @@ double, const int);
 vec_dss(const int);空白 vec_dssall(无效);
 ```
 
-Chapter 6: Extensions to the C Language Family 637
 
 ```
 void vec_dst (const vector unsigned char *， int, const int);void vec_dst (const
@@ -32001,7 +31687,6 @@ vec_lvewx (int, long *);向量 unsigned int vec_lvewx (int, unsigned
 long *);
 ```
 
-Chapter 6: Extensions to the C Language Family 639
 
 ```
 向量签名短 vec_lvehx (int, short *);向量无符号短 vec_lvehx (int，无
@@ -32092,7 +31777,6 @@ vector unsigned char);
 char vec_mergel(矢量无符号字符，矢量无符号字符);
 ```
 
-Chapter 6: Extensions to the C Language Family 641
 
 ```
 向量 bool short vec_mergel (vector bool short, vector bool short);向量像素
@@ -32182,7 +31866,6 @@ void vec_mtvscr (vector signed int);void vec_mtvscr
 (vector unsigned int);空 vec_mtvscr (vector bool
 ```
 
-Chapter 6: Extensions to the C Language Family 643
 
 ```
 int);void vec_mtvscr (vector signed short);void
@@ -32272,7 +31955,6 @@ vec_pack(向量无符号 int，向量无符号 int);
 向量无符号 char vec_packsu(向量无符号短，向量无符号短);
 ```
 
-Chapter 6: Extensions to the C Language Family 645
 
 ```
 矢量无符号的 char vec_packsu(矢量签名短，矢量签名短);
@@ -32370,7 +32052,6 @@ short，
 向量符号 char
 ```
 
-Chapter 6: Extensions to the C Language Family 647
 
 ```
 向量有符号字符，向量无符号
@@ -32466,7 +32147,6 @@ vector unsigned char);
 向量无符号长 int vec_sll(向量无符号长 int，向量无符号字符);
 ```
 
-Chapter 6: Extensions to the C Language Family 649
 
 ```
 向量 bool short vec_sll (vector bool short, vector unsigned int);向量 bool short vec_sll
@@ -32559,7 +32239,6 @@ vec_vsrab (vector unsigned char, vector unsigned char);
 符号 int);向量无符号 int(向量无符号 int，向量无符号短);
 ```
 
-Chapter 6: Extensions to the C Language Family 651
 
 ```
 向量无符号 int vec_srl(向量无符号 int，向量无符号 char);向量 bool int vec_srl(向量 bool
@@ -32662,7 +32341,6 @@ char, int, vector 符号 char *);void vec_stl(向量签名 char, int，签名 ch
 vec_stl (vector unsigned char, int, vector unsigned char *);void vec_stl (vector
 ```
 
-Chapter 6: Extensions to the C Language Family 653
 
 ```
 unsigned char, int, unsigned char *);void vec_stl (vector bool char, int, vector bool char
@@ -32755,7 +32433,6 @@ int vec_vsum4sbs(向量签名 char，向量签名 int);
 vector unsigned int);
 ```
 
-Chapter 6: Extensions to the C Language Family 655
 
 ```
 向量符号 int(向量符号 int，向量符号 int);向量符号 int 向量和(向量符号 int，向量符号
@@ -32855,7 +32532,6 @@ bool short, vector unsigned short);int vec_all_le(向量无符号短，向量 bo
 short, vector signed short);int vec_all_le(矢量签名短，矢量 bool short);int
 ```
 
-Chapter 6: Extensions to the C Language Family 657
 
 ```
 vec_all_le(向量有符号短，向量有符号短);int vec_all_le(向量 bool int，向量
@@ -32958,7 +32634,6 @@ bool int);int vec_any_le(向量符号 int，向量符号 int);int vec_any_le(向
 float，向量 float);
 ```
 
-Chapter 6: Extensions to the C Language Family 659
 
 ```
 int vec_any_lt (vector bool char, vector unsigned char);int vec_any_lt(向量无符
@@ -33063,7 +32738,6 @@ vec_rsqrt(向量双);向量双 vec_rsqrte(向量双);矢量双矢量(矢量双�
 长，向量长);矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量无符号长矢量长矢量长
 ```
 
-Chapter 6: Extensions to the C Language Family 661
 
 ```
 矢量长矢量长矢量长矢量长矢量长矢量长矢量矢量无符号长矢量(矢量无符号长，矢量无
@@ -33163,7 +32837,6 @@ STXVD2X '和' STXVW4X '指令。
 矢量长矢量长矢量 abs(矢量长矢量长);
 
 
-Chapter 6: Extensions to the C Language Family 663
 
 ```
 矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量长矢量向量无
@@ -33258,7 +32931,6 @@ bool 短);向量无符号短向量(向量无符号短，向量无符号短);向�
 test_vsi_packsu_vssi_vssi(向量符号短 x，
 ```
 
-Chapter 6: Extensions to the C Language Family 665
 
 ```
 向量无符号 char vec_packsu(向量有符号短，向量有符号短)向量无符号 char vec_packsu(向量无符
@@ -33343,7 +33015,6 @@ long long, vector unsigned long long);
 矢量，矢量无符号长矢量);
 ```
 
-Chapter 6: Extensions to the C Language Family 667
 
 ```
 矢量长矢量长矢量长矢量长矢量长矢量长矢量长向量无符号长字符 vec_vsrd(向量无符号
@@ -33430,7 +33101,6 @@ vec_vprtyb(向量 long);
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 669
 ```
 向量无符号长 vec_vprtyb(向量无符号长);向量__int128_t
 vec_vprtyb(向量__int128_t);向量__uint128_t vec_vprtyb(向量
@@ -33521,7 +33191,6 @@ vec_test_data_class 内置函数返回一个向量，该向量表示为条件参
 0 x01 测试-Denormal
 
 
-Chapter 6: Extensions to the C Language Family 671
 
 如果任何被启用的测试条件都为真，那么结果向量中的相应条目就是- 1 。否则(所有启用
 
@@ -33616,7 +33285,6 @@ unsigned char *);
 
 
 ```
-Chapter 6: Extensions to the C Language Family 673
 ```
 #### 功能
 
@@ -33707,7 +33375,6 @@ else if (tx_state == _htm_suspend)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 675
 ```
 #### 6.59.23.2 PowerPC HTM 高级内联函数
 
@@ -33813,7 +33480,6 @@ GCC 支持一些 RX 指令，这些指令不能通过使用内置函数在 C 编
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 677
 ```
 空白__builtin_rx_clrpsw(int) (内置函数)
 
@@ -33953,7 +33619,6 @@ _HTM_TBEGIN_PERSISTENT
 
 
 ```
-Chapter 6: Extensions to the C Language Family 679
 ```
 _HTM_FIRST_USER_ABORT_CODE (宏观)
 
@@ -34084,7 +33749,6 @@ __builtin_vis_fmul8x16au(v4qi v2hi);v4hi
 __builtin_vis_fmul8x16al(v4qi v2hi);v4hi
 ```
 
-Chapter 6: Extensions to the C Language Family 681
 
 ```
 __builtin_vis_fmul8sux16(v8qi v4hi);v4hi
@@ -34182,7 +33846,6 @@ v8qi __builtin_vis_fpsub8(v8qi v8qi);v8qi
 __builtin_vis_fpsubs8(v8qi v8qi);v8qi
 ```
 
-Chapter 6: Extensions to the C Language Family 683
 
 ```
 __builtin_vis_fpsubus8(v8qi v8qi);v4hi
@@ -34285,7 +33948,6 @@ _smpyh (int, int) int _smpyhl
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 685
 ```
 ```
 int _sshl (int, int) int _subc
@@ -34401,7 +34063,6 @@ CPU 类型的 ifunc 解析器中使用，或者在不支持构造函数优先级
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 687
 ```
 ```
 静态 void (*resolve_memcpy (void))
@@ -34499,7 +34160,6 @@ AMD 家庭 17 h CPU。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 689
 ```
 ```
 (v4hi, v4hi, v4hi, v4hi, v4hi, v4hi, v4hi, v2si, v4hi, v4hi,
@@ -34605,7 +34265,6 @@ unsignedint__builtin_ia32_crc32hi(unsignedint,unsignedshort)生成 crc32w 机器
 
 
 ```
-Chapter 6: Extensions to the C Language Family 691
 ```
 unsignedint__builtin_ia32_crc32si(unsignedint,unsignedint)生成 crc32l 机器指令。
 
@@ -34708,7 +34367,6 @@ __builtin_ia32_fxrstor64
 当使用“-mxsave”时，可以使用以下内置函数。它们都生成作为名称一部分的机器指令。
 ```
 
-Chapter 6: Extensions to the C Language Family 693
 
 ```
 void __builtin_ia32_xsave (void *， long long long long long
@@ -34811,7 +34469,6 @@ int _xtest() (RTM 函数)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 695
 ```
 空白_xabort(状态) (RTM 函数)
 
@@ -34929,7 +34586,6 @@ ARM 目标定义了实用程序，用于控制向函数添加 long_call 和 shor
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 697
 ```
 long_calls
 设置所有后续函数具有 long_call 属性。
@@ -35049,7 +34705,6 @@ optionsalign =对齐
 
 
 ```
-Chapter 6: Extensions to the C Language Family 699
 ```
 ```
 此实用程序设置结构中的字段对齐。对齐的值可以是 mac68k，以模拟 m68k
@@ -35154,7 +34809,6 @@ __attribute__(scalar_storage_order)的结构和联合。
 
 
 ```
-Chapter 6: Extensions to the C Language Family 701
 ```
 ```
 这个语用声明 symbol1 是 symbol2 的一个弱别名。如果在当前的翻译单元中没
@@ -35264,7 +34918,6 @@ S/390 和 Nios II。# pragmaGCCoptimize(“字符串”...)
 
 
 ```
-Chapter 6: Extensions to the C Language Family 703
 ```
 ((优化(“STRING”))。选项的括号是可选的。有关优化属性和属性语法的更多信
 
@@ -35366,7 +35019,6 @@ __thread 说明符可以单独使用，使用外部或静态说明符，但不�
 ```
 
 ```
-Chapter 6: Extensions to the C Language Family 705
 ```
 ```
 __thread 指定符可以应用于类的任何全局、文件范围的静态、函数范围的静态或静态数
@@ -35454,7 +35106,6 @@ A 声明为静态和__thread 的本地变量或类数据成员给出了变量或
 
 
 ```
-Chapter 6: Extensions to the C Language Family 707
 ```
 ```
 除了__thread 之外，在给定的 decl-specifier-seq 中最多应该出现一个存储
@@ -35482,7 +35133,6 @@ x2a;我= 052;我=
 
 
 ```
-Chapter 7: Extensions to the C++ Language 709
 ```
 ## 7 对 c++ 语言的扩展
 
@@ -35583,7 +35233,6 @@ catch 子句或异常规范中的类型时。
 ```
 
 ```
-Chapter 7: Extensions to the C++ Language 711
 ```
 本节中的大部分内容也适用于模板实例化，但也有其他选项。参见第 7.5 节[模
 
@@ -35677,7 +35326,6 @@ AT&T c++转换器 Cfront 通过创建模板存储库的概念解决了模板实�
 or ‘.cc’.
 
 
-Chapter 7: Extensions to the C++ Language 713
 
 代码倾向于将非内联成员模板的定义分离到一个单独的文件中，该文件应该单
 
@@ -35779,7 +35427,6 @@ abi_tag 属性可以应用于函数、变量或类声明。它修改实体的损
 
 
 ```
-Chapter 7: Extensions to the C++ Language 715
 ```
 属性也可以应用到内联名称空间，但不影响名称空间的损坏名称;在本例中，
 
@@ -35875,7 +35522,6 @@ __has_nothrow_copy(类型)
 
 
 ```
-Chapter 7: Extensions to the C++ Language 717
 ```
 ```
 如果__has_trivial_copy(类型)为 true，那么该 trait 为 true，否则，如果 type 是
@@ -35979,7 +35625,6 @@ __is_union(类型)
 
 
 ```
-Chapter 7: Extensions to the C++ Language 719
 ```
 ```
 如果类型是一种 cv 结合类型([basic.化合物])这一特征是正确的，否则它是假
@@ -36129,7 +35774,6 @@ Objective-C 运行时数据结构。这些函数在 Objective-C 运行时中是�
 
 
 ```
-Chapter 8: GNU Objective-C Features 723
 ```
 #### 8.1.2 传统 GNU Objective-C 运行时 API
 
@@ -36231,7 +35875,6 @@ GNU 运行时的+load 实现保证了以下内容:
 何使用 Objective-C。
 ```
 
-Chapter 8: GNU Objective-C Features 725
 
 Objective-C 编译器为所有类型生成类型编码。这些类型编码在运行时用于查找关于选择
 器和方法以及关于对象和类的信息。
@@ -36323,7 +35966,6 @@ constint constint *是一个指针,因此编码^ ri。相反,int *常量
 
 
 ```
-Chapter 8: GNU Objective-C Features 727
 ```
 ```
 最后，在编码 constchar*和 char*const 时存在一个复杂的问题。因为 char * *和编码 c ^,
@@ -36427,7 +36069,6 @@ class_ivar_set_gcinvisible(自我,“弱点”,是的);
 
 
 ```
-Chapter 8: GNU Objective-C Features 729
 ```
 {返回弱点;
 
@@ -36532,7 +36173,6 @@ expr;...
 
 
 ```
-Chapter 8: GNU Objective-C Features 731
 ```
 - 在下一个运行时中，虽然当前设计为与 NSException 类提供的 NS_ handler 样式的习
 惯用法兼容，但是由于下一个 Objective-C 运行时需要附加功能，新的异常只能在 Mac
@@ -36628,7 +36268,6 @@ for(集合表达式中的对象表达式)
 
 
 ```
-Chapter 8: GNU Objective-C Features 733
 ```
 #### 8.9.4 快速枚举协议
 
@@ -36729,7 +36368,6 @@ objc_msg_lookup()调用，并且在动态注册方法时没有成功。
 通查找来进行进一步的查找。
 ```
 
-Chapter 8: GNU Objective-C Features 735
 
 这个钩子通常只用于“基础”库，比如 GNUstep Base, GNUstep Base 使用它来实现它们的
 高级方法 forwarding API，通常基于 forwardInvocation: method。因此，除非您正在实现
@@ -36880,7 +36518,6 @@ c++编译器使用的 c++库包括标准的 c++库，具有 c++标准中定义�
 
 
 ```
-Chapter 10: gcov—a Test Coverage Program 741
 ```
 ## 10 gcov-a 测试覆盖计划
 
@@ -36977,7 +36614,6 @@ lcount 将重复多次。
 ```
 
 ```
-Chapter 10: gcov—a Test Coverage Program 743
 ```
 ```
 数:8,8,2,1,1,0,lcount: 8,0,1,0, lcount:
@@ -37067,7 +36703,6 @@ l”或“-p”选项，则可能会更复杂。详细信息请参阅这些选�
 行文本
 
 
-Chapter 10: gcov—a Test Coverage Program 745
 
 当命令行选项请求时，附加的块信息可以继承每一行。对于不包含代码的行，执行计数
 
@@ -37182,7 +36817,6 @@ Foo 构造函数的实例。您还可以看到，第 30 行包含一些未执行
 - - - : 0:来源:tmp.cpp
 
 
-Chapter 10: gcov—a Test Coverage Program 747
 
 - - - : 0:图:tmp.gcno
 - - - : 0:数据:tmp.gcda
@@ -37306,7 +36940,6 @@ stdio. h >
 类 Foo < char >;
 
 
-Chapter 10: gcov—a Test Coverage Program 749
 
 - - - : 16:
 
@@ -37407,7 +37040,6 @@ __gcov_dump(void)将导致此时收集的配置文件信息转储为'。gcda”�
 ```
 
 ```
-Chapter 10: gcov—a Test Coverage Program 751
 ```
 ```
 序使用具有优先级为 99 的静态析构函数来调用__gcov_dump 函数。因此，__gcov_dump 在
@@ -37655,7 +37287,6 @@ ned_ptr)
 联合 d2i *p =(联合 d2i *) unaligned ptr;联盟 d2i u;
 
 
-Chapter 13: Known Causes of Trouble with GCC 759
 
 ```
 u。我[0]= p - >[0];
@@ -37748,7 +37379,6 @@ int a、b;
 如果您使用“-W”选项和“-O”选项，当 GCC 认为可能出现这样的问题时，您将得到警告。
 
 
-Chapter 13: Known Causes of Trouble with GCC 761
 
 • 在宏参数中间使用预处理指令的程序不能与 GCC 一起工作。例如，像这样的程序是行
 
@@ -37841,7 +37471,6 @@ GCC 需要安装一些系统头文件的正确版本。这是因为大多数目�
 
 
 ```
-Chapter 13: Known Causes of Trouble with GCC 763
 ```
 可以为不同的机器模型制作不同的固定头文件集，并安排一个符号链接结构，以便使
 
@@ -37948,7 +37577,6 @@ c++是一种复杂的、不断发展的语言，它的标准定义(ISO c++标准
 ```
 
 ```
-Chapter 13: Known Causes of Trouble with GCC 765
 ```
 ```
 此声明仅确定 Foo 类具有一个名为 Foo: bar 的 int 类型，以及一个名为 Foo:::方法的成员
@@ -38054,7 +37682,6 @@ charfunc(p);
 ```
 
 ```
-Chapter 13: Known Causes of Trouble with GCC 767
 ```
 ```
 在这种情况下，将一个指针保存到 c_str 成员函数返回的 C 字符串似乎是合理的，并使用
@@ -38164,7 +37791,6 @@ GNU C 编译器支持这两种方言;您可以指定带符号的方言
 效。
 
 
-Chapter 13: Known Causes of Trouble with GCC 769
 
 许多用户喜欢 GNU C 编译器，因为它提供了跨机器统一的环境。如果编译器在某些机
 
@@ -38270,7 +37896,6 @@ GNU 编译器可以生成两种诊断:错误和警告。每一种都有不同的
 个“-W”选项(例如，“-Wall”请求各种有用的警告)。
 ```
 
-Chapter 13: Known Causes of Trouble with GCC 771
 
 如果可能的话，GCC 总是尝试编译您的程序;它永远不会无缘无故地拒绝一个程序，它的
 
